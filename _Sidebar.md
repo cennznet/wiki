@@ -1,13 +1,28 @@
 ![Centrality](./images/cogs.png)
 
-# CENNZnet
 
-- [Home](Home)
+- [Intro](Intro)
 - Getting Started
-    - [Installing Dependencies](Installing-Dependencies)
-    - [Run a Full Node](Running-a-Full-Node)
-    - [Run a Validator Node](Validator-Guide)
-    - [Nominator Staking Guide](Nominator-Staking-Guide)
+    - CENNZnet Overview
+- Guides
+    - CENNZnet development
+        - [Installing Dependencies](Guides/CENNZnet%20Development/Installing-Dependencies)
+        - [Release Notes](Guides/CENNZnet%20Development/Release-Notes)
+        - [Repository Relationships](Guides/CENNZnet%20Development/Repository-Relationships)
+        - [Making a New Release (Legacy)](Guides/CENNZnet%20Development/Making-a-New-Release)
+        - [Regenerate genesis files](Guides/CENNZnet%20Development/Regenerating-genesis-files-on-Release)
+        - [Dendrology](Guides/CENNZnet%20Development/Dendrology)
+
+    - Node operators
+        - [Run a Full Node](Guides/Node%20operators/Running-a-Full-Node)
+        - [Run a Validator Node](Guides/Node%20operators/Validator-Guide)
+        - [Nominator Staking Guide](Guides/Node%20operators/Nominator-Staking-Guide)
+
+    - Dapp Development
+    
+    - CENNZnet Infrastructures
+
+
     - [Accounts and Keypairs](Accounts-and-Keypairs)
     - [Token Economy](Token-Economy)
     - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
@@ -19,10 +34,7 @@
     - [Doughnut Permissioning](Doughnut-Permissioning)
     - [Smart Contracts](Using-Smart-Contracts-on-CENNZnet)
 - Developer
-    - [Release Notes](Release-Notes)
-    - [Repository Relationships](Repository-Relationships)
-    - [Making a New Release (Legacy)](Making-a-New-Release)
-    - [Regenerate genesis files](Regenerating-genesis-files-on-Release)
+
 - Reference
     - [Javascript API](https://github.com/cennznet/api.js/blob/develop/README.md)
     - [Extrinsics](https://github.com/cennznet/api.js/blob/develop/docs/cennznet/extrinsics.md)

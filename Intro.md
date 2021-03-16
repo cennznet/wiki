@@ -1,4 +1,4 @@
-[[/images/banner.png|CENNZnet]]
+![CENNZnet](./images/banner.png)
 
 ## Intro
 CENNZnet is a public blockchain based on Proof of Stake (PoS) consensus built on top of the [Plug](https://github.com/plugblockchain/plug-blockchain/) framework.
@@ -24,35 +24,6 @@ Join the Discord server by clicking on the badge below!
 
 [![Support Server](https://img.shields.io/discord/801219591636254770.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://discord.gg/AnB3tRtkJ4)
 
-## Resources
-
-- Getting Started
-    - [Installing Dependencies](Installing-Dependencies)
-    - [Accounts and Keypairs](Accounts-and-Keypairs)
-    - [Run a Full Node](Running-a-Full-Node)
-    - [Run a Validator Node](Validator-Guide)
-    - [Nominator Staking Guide](Nominator-Staking-Guide)
-    - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
-    - [Interact with CENNZnet using the API](Interact-with-CENNZnet--using-the-API)
-    - [Interact with CENNZnet using the UI](Exploring-the-CENNZnet-UI)
-- Features
-    - [CENNZX Exchange](CENNZX-Exchange)
-    - [Sylo Runtime Modules](Sylo-Runtime-Modules)
-- Developer
-    - [Release Notes](Release-Notes)
-    - [Repository Relationships](Repository-Relationships)
-    - [Making a New Release](Making-a-New-Release)
-- Reference
-    - [Javascript API](https://github.com/cennznet/api.js/blob/develop/README.md)
-    - [Extrinsics](https://github.com/cennznet/api.js/blob/develop/docs/cennznet/extrinsics.md)
-    - [Storage](https://github.com/cennznet/api.js/blob/develop/docs/cennznet/storage.md)
-    - [RPC](https://github.com/cennznet/api.js/blob/develop/docs/cennznet/rpc.md)
-    - [Constants](https://github.com/cennznet/api.js/blob/develop/docs/cennznet/constants.md)
-    - [Events](https://github.com/cennznet/api.js/blob/develop/docs/cennznet/events.md)
-    - [Errors](https://github.com/cennznet/api.js/blob/develop/docs/cennznet/errors.md)
-    - [Transaction Error Codes](Transaction-Error-Codes)
-    - [Developer API cheatsheet](https://github.com/cennznet/cennznet/wiki/Developer-API-Cheatsheet)
-    - [Block Explorer API](https://github.com/cennznet/CENNZnet-explorer-API)
 
 ## Quick Start
 
