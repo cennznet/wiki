@@ -22,19 +22,17 @@
         - [Smart Contracts](Guides/Dapp%20development/Using-Smart-Contracts-on-CENNZnet)
             - [Interact with CENNZnet using the API](Guides/Dapp%20development/Interact-with-CENNZnet--using-the-API)
        
-        - Examples
-            - [Demo app](https://github.com/cennznet/cennznet/wiki/Example-demo-app)
-            - [Generic Assets](API-examples-Generic-Assets)
-            - [CENNZX Spot](API-examples-CENNZX-Spot)
-            - [Attestation](API-examples-Attestation)
-            - [CENNZnet identity provider](https://github.com/cennznet/cennznet-identity-provider)
-
     - CENNZnet infrastructures
         - [CENNZX Exchange](Guides/CENNZnet%20infrastructures/CENNZX-Exchange)
         - [Interact with CENNZnet using the UI](Exploring-the-CENNZnet-UI)
         - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
 
-
+- Examples
+    - [Demo app](https://github.com/cennznet/cennznet/wiki/Example-demo-app)
+    - [Generic Assets](Examples/API-examples-Generic-Assets)
+    - [CENNZX Spot](Examples/API-examples-CENNZX-Spot)
+    - [Attestation](Examples/API-examples-Attestation)
+    - [CENNZnet identity provider](https://github.com/cennznet/cennznet-identity-provider)
 
 
 - References
