@@ -1,6 +1,5 @@
 ![Centrality](./images/cogs.png)
 
-- [Intro](Intro)
 - Getting Started
     - CENNZnet Overview
 - Guides
@@ -21,7 +20,8 @@
         - [Accounts and Keypairs](Guides/Dapp%20development/Accounts-and-Keypairs)
         - [Token Economy](Guides/Dapp%20development/Token-Economy)
         - [Smart Contracts](Guides/Dapp%20development/Using-Smart-Contracts-on-CENNZnet)
-
+            - [Interact with CENNZnet using the API](Guides/Dapp%20development/Interact-with-CENNZnet--using-the-API)
+       
         - Examples
             - [Demo app](https://github.com/cennznet/cennznet/wiki/Example-demo-app)
             - [Generic Assets](API-examples-Generic-Assets)
@@ -31,29 +31,26 @@
 
     - CENNZnet infrastructures
         - [CENNZX Exchange](Guides/CENNZnet%20infrastructures/CENNZX-Exchange)
+        - [Interact with CENNZnet using the UI](Exploring-the-CENNZnet-UI)
+        - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
 
- 
-    - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
-    - [Interact with CENNZnet using the API](Interact-with-CENNZnet--using-the-API)
-    - [Interact with CENNZnet using the UI](Exploring-the-CENNZnet-UI)
+
+
 
 - References
     - CENNZnet API
-        - [Developer API cheatsheet](https://github.com/cennznet/cennznet/wiki/Developer-API-Cheatsheet)
-        - [Javascript API](https://github.com/cennznet/api.js/blob/develop/README.md)
-        - [Extrinsics](https://github.com/cennznet/api.js/blob/develop/docs/cennznet/extrinsics.md)
-        - [Storage](https://github.com/cennznet/api.js/blob/develop/docs/cennznet/storage.md)
-        - [RPC](https://github.com/cennznet/api.js/blob/develop/docs/cennznet/rpc.md)
-        - [Constants](https://github.com/cennznet/api.js/blob/develop/docs/cennznet/constants.md)
-        - [Events](https://github.com/cennznet/api.js/blob/develop/docs/cennznet/events.md)
-        - [Errors](https://github.com/cennznet/api.js/blob/develop/docs/cennznet/errors.md)
-        - [Transaction Error Codes](Transaction-Error-Codes)
-        - [Staking API](https://github.com/cennznet/cennznet/wiki/Staking-API)
+        - [CENNZnet API](References/CENNZnet%20API/CENNZnet%20API)
+        - [Transaction Error Codes](References/CENNZnet%20API/Transaction-Error-Codes)    
+        - [Developer API cheatsheet](References/CENNZnet%20API/Developer-API-Cheatsheet)
+        - [Developer API cheatsheet](References/CENNZnet%20API/Javascript-API-Reference)
+        - [Staking API](References/CENNZnet%20API/Staking-API)
+        - [Subscriptions](References/CENNZnet%20API/Subscriptions)        
     - Runtime modules
-        - [Sylo Runtime Modules](Sylo-Runtime-Modules)
-        - [Doughnut Permissioning](Doughnut-Permissioning)
+        - [Sylo Runtime Modules](References/Runtime%20modules/Sylo-Runtime-Modules)
+        - [Doughnuts](References/Runtime%20modules/Doughnut)
+        - [Doughnut Permissioning](References/Runtime%20modules/Doughnut-Permissioning)
     - Uncover
-        - [Block Explorer API](https://github.com/cennznet/CENNZnet-explorer-API)
+        - [Block Explorer API](References/Uncover/UncoverAPI)
 
 
 
