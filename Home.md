@@ -50,13 +50,14 @@ Check `my-node` is running [here](http://cennznet-telemetry.centrality.me/#/CENN
 
 ## Unfrastructure Links
 Centrality hosted CENNZnet full nodes and ecosystem services
-```
-Block explorer API: https://service.eks.centralityapp.com/cennznet-explorer-api/api/
-Nikau full nodes:   wss://nikau.centrality.me/public/ws
-Mainnet full nodes: wss://cennznet.unfrastructure.io/public/ws
-CENNZnet UI:        https://cennznet.io/
-Block Explorer:     https://uncoverexplorer.com/
-DB snapshots:
-- https://s3-ap-southeast-1.amazonaws.com/cennznet-snapshots.centralityapp.com/azalea/1.2.2/validator/index.html
-- https://s3-ap-southeast-1.amazonaws.com/cennznet-snapshots.centralityapp.com/azalea/1.2.2/fullnode/index.html
-```
+
+Block explorer API: https://service.eks.centralityapp.com/cennznet-explorer-api/api/  
+Nikau full nodes:   wss://nikau.centrality.me/public/ws  
+Mainnet full nodes: wss://cennznet.unfrastructure.io/public/ws  
+CENNZnet UI:        https://cennznet.io/  
+Block Explorer:     https://uncoverexplorer.com/  
+
+Mainnet DB snapshots:
+- https://s3-ap-southeast-1.amazonaws.com/cennznet-snapshots.centralityapp.com/azalea/1.2.2/validator/index.html  
+- https://s3-ap-southeast-1.amazonaws.com/cennznet-snapshots.centralityapp.com/azalea/1.2.2/fullnode/index.html  
+
