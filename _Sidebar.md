@@ -1,5 +1,3 @@
-![Centrality](./images/cogs.png)
-
 - Getting Started
     - CENNZnet Overview
 - Guides
