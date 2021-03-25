@@ -53,7 +53,7 @@ In addition, if the block references valid uncle blocks, the author also gets 2 
 Finally, 1 point goes to the author of a referenced uncle block.  
 
 The following diagram shows an example of the authorship points process
-![authorship-rewards](./images/staking/authorship-rewards.png)
+![authorship-rewards](../../images/staking/authorship-rewards.png)
 
 #### Reward Calculation (worked example)
 ```python3
