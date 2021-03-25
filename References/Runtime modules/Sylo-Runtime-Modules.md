@@ -13,7 +13,7 @@ There are several Sylo runtime modules:
 
 These can be accessed from the drop down menu on [cennznet.io/#/extrinsics](https://cennznet.io/#/extrinsics)
 
-[[/images/ui/extrinsics-sylo.png|sylo-extrinsic]]
+![sylo-extrinsic](../../images/ui/extrinsics-sylo.png)
 
 Sylo storage can be accessed on [cennznet.io/#/chainstate](https://cennznet.io/#/chainstate), and select any of the `sylo` modules from the drop-down menu. 
 
