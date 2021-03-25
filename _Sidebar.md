@@ -10,11 +10,11 @@
         - [Interact with CENNZnet using the API](Guides/Dapp-development/Interact-with-CENNZnet--using-the-API)
     - CENNZnet development
         - [Installing Dependencies](Guides/CENNZnet-development/Installing-Dependencies)
-        - [Release Notes](Guides/CENNZnet-development/Release-Notes)
         - [Repository Relationships](Guides/CENNZnet-development/Repository-Relationships)
         - [Making a New Release (Legacy)](Guides/CENNZnet-development/Making-a-New-Release)
         - [Regenerate genesis files](Guides/CENNZnet-development/Regenerating-genesis-files-on-Release)
         - [Dendrology](Guides/CENNZnet-development/Dendrology)
+        - [Setting up Linux subsystem on Windows](Guides/CENNZnet-development/Set-up-Linux-Sub-system-for-Windows)
     - Node operators
         - [Run a Full Node](Guides/Node-operators/Running-a-Full-Node)
         - [Run a Validator Node](Guides/Node-operators/Validator-Guide)
@@ -43,3 +43,4 @@
         - [Doughnut Permissioning](References/Runtime-modules/Doughnut-Permissioning)
     - Uncover
         - [Block Explorer API](References/Uncover/UncoverAPI)
+    - [Release Notes](References/Release-Notes)

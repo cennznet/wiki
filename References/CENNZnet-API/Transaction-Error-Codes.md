@@ -1,3 +1,5 @@
+# Transaction error codes
+
 General
 ---
 Any transaction may fail with one of the following common errors (inherited from [plug](https://github.com/plugblockchain/plug-blockchain/blob/d3a65efbd1e8251f87a063665bd8964f7f3afb25/primitives/runtime/src/transaction_validity.rs#L36))

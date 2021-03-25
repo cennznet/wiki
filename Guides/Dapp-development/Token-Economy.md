@@ -1,3 +1,5 @@
+# Token Economy
+
 CENNZnet is built with a native multi-token economy, similar to the ERC20 specification aka *generic assets*. Any account on CENNZnet can hold a balance of one or more of these assets.
 
 

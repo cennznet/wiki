@@ -1,3 +1,5 @@
+# CENNZX Exchange
+
 CENNZX is a decentralised spot exchange built into the CENNZnet protocol.
 It is based on the Uniswap contract's automated market maker algorithm.
 It allows investors to create asset liquidity pools and earn fees from trades, while it allows traders

@@ -1,3 +1,5 @@
+# Cheatsheet
+
 ## Get the latest block height
 with curl:
 ```bash

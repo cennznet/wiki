@@ -1,3 +1,5 @@
+# Doughnut permissioning
+
 Doughnuts are Proofs of Delegation between two or more cryptographic keypairs. Doughnuts let us prove that one address delegates something to another address.
 
 For example, if `Alice` wants to let `Bob` use her account, but only to send tokens to `Charlie`. This could be achieved using a doughnut by doing the following:

@@ -1,3 +1,5 @@
+# Dendrology
+
 Here is a list of branches and their purposes:
 
 - Active branches:

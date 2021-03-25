@@ -1,3 +1,5 @@
+# Making a new release
+
 - Make a new release:
   - Ensure changelog.md is up to date
   - Bump Cargo.toml and runtime/Cargo.toml to remove beta part

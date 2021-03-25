@@ -1,3 +1,5 @@
+# Release notes
+
 ## CENNZnet v1.1.0-rc1
 * Adds support for multi-currency payment of the fees including the gas fee
 * Scales down CPAY and CENNZ balances plus fee payments for a better user experience

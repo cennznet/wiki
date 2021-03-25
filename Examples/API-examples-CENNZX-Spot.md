@@ -1,3 +1,5 @@
+# API examples for CENNZX Spot
+
 The examples used here will focus on CENNZ and CentraPay assets, thier asset IDs are:
 * CentraPay - id `16000`
 * CENNZ - id `16001`

@@ -1,3 +1,5 @@
+# Staking API
+
 ## Common staking queries
 
 Get the active staking era info

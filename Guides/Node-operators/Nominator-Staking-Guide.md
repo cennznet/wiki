@@ -1,3 +1,5 @@
+# Nominator staking guide
+
 Staking user tokens on CENNZnet AKA _nominating_, is the process of placing tokens at stake behind validator accounts.  
 It allows ordinary token holders to participate in securing the network by supporting validator nodes with their tokens.  
 In return, for locking their tokens the user will share a pro-rata Cpay reward with their chosen validators (assuming those validators are elected). Equally, the nominator's tokens are at risk of slash if the validator commits a serious offense.  

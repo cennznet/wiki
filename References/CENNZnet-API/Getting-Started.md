@@ -1,3 +1,5 @@
+# Getting started with the CENNZnet API
+
 The CENNZnet blockchain features a rich API for developing your D'App.
 
 The easiest way to get started is to follow our [API getting started guide](Interact-with-CENNZnet--using-the-API)

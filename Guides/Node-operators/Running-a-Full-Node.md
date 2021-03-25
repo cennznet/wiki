@@ -1,3 +1,5 @@
+# Running a full node
+
 ## Using Docker
 
 Make sure Docker daemon is installed (see [here](Installing-Dependencies#Docker)) and running.

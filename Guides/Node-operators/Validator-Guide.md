@@ -1,3 +1,5 @@
+# Validator guide
+
 CENNZnet validator nodes are responsible for authoring new blocks and voting in the finalization protocol.  
 
 Requirements for validators are simply:

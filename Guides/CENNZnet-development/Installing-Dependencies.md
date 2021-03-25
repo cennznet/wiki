@@ -1,3 +1,5 @@
+# Installing dependencies
+
 ## Rust
 
 The recommended way to install Rust is to follow the official instructions [here](https://www.rust-lang.org/tools/install).

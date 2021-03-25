@@ -1,3 +1,5 @@
+# Subscriptions
+
 The storage on CENNZnet is always changing. The CENNZnet API provides a subscription mechanism; this allows your D'App to update as soon as the storage that you care about changes.
 
 General details of subscription mechanisms are described in the [Polkadot API docs](https://polkadot.js.org/api/start/); this guide provides a summary and examples for CENNZnet.

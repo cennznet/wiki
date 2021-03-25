@@ -1,4 +1,5 @@
 # Technical API Reference
+
 [CENNZnet API github](https://github.com/cennznet/api.js)
 
 **sections**:

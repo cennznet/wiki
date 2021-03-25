@@ -1,3 +1,5 @@
+# Using Smart Contracts on CENNZnet
+
 ⚠️ smart contract functionality is still under development and is not production ready
 ---
 

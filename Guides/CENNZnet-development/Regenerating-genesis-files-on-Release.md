@@ -1,3 +1,5 @@
+# Regenerating genesis files on release
+
 ## Background
 The purpose of regenerating genesis config files is to allow newly built CENNZnet clients to connect to existing chains/networks which were started with an older version of the runtime.
 Regenerating vs. generating new is required so that the genesis block does not fork.

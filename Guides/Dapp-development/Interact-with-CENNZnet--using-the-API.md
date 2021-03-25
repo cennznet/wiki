@@ -1,3 +1,5 @@
+# Interacting with CENNZnet using the API
+
 ## Installation and Setup
 
 Install Node.js (`>=10.16.3`) and Yarn (`>= 1.19.0`).
