@@ -1,5 +1,6 @@
 - Getting Started
     - CENNZnet Overview
+---
 - Guides
     - Dapp development
         - [Accounts and Keypairs](Guides/Dapp-development/Accounts-and-Keypairs)
@@ -21,12 +22,14 @@
         - [CENNZX Exchange](Guides/CENNZnet-infrastructures/CENNZX-Exchange)
         - [Interact with CENNZnet using the UI](Guides/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
         - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
+---
 - Examples
     - [Demo app](Examples/Example-demo-app)
     - [Generic Assets](Examples/API-examples-Generic-Assets)
     - [CENNZX Spot](Examples/API-examples-CENNZX-Spot)
     - [Attestation](Examples/API-examples-Attestation)
     - [CENNZnet identity provider](https://github.com/cennznet/cennznet-identity-provider)
+---
 - Reference
     - CENNZnet API
         - [Getting Started](References/CENNZnet-API/Getting-Started)

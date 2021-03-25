@@ -1,10 +1,9 @@
-# CENNZnet Wiki
+# Welcome to the CENNZnet Wiki!
 
-> Documentations and guides for [CENNZnet](https://cennz.net)
 
-- Welcome to the blockchain for amazing DApps!
-- The first natively permissioned, public blockchain in the world.
+> Let's build amazing DApps! 🤩
 
 
 [Get Started](Home)
+[CENNZ.net](https://cennz.net)
 [GitHub](https://github.com/cennznet/cennznet)
