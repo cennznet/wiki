@@ -4,24 +4,24 @@
     - CENNZnet Overview
 - Guides
     - Dapp development
-        - [Accounts and Keypairs](Guides/Dapp%20development/Accounts-and-Keypairs)
-        - [Token Economy](Guides/Dapp%20development/Token-Economy)
-        - [Smart Contracts](Guides/Dapp%20development/Using-Smart-Contracts-on-CENNZnet)
-        - [Interact with CENNZnet using the API](Guides/Dapp%20development/Interact-with-CENNZnet--using-the-API)
+        - [Accounts and Keypairs](Guides/Dapp-development/Accounts-and-Keypairs)
+        - [Token Economy](Guides/Dapp-development/Token-Economy)
+        - [Smart Contracts](Guides/Dapp-development/Using-Smart-Contracts-on-CENNZnet)
+        - [Interact with CENNZnet using the API](Guides/Dapp-development/Interact-with-CENNZnet--using-the-API)
     - CENNZnet development
-        - [Installing Dependencies](Guides/CENNZnet%20development/Installing-Dependencies)
-        - [Release Notes](Guides/CENNZnet%20development/Release-Notes)
-        - [Repository Relationships](Guides/CENNZnet%20development/Repository-Relationships)
-        - [Making a New Release (Legacy)](Guides/CENNZnet%20development/Making-a-New-Release)
-        - [Regenerate genesis files](Guides/CENNZnet%20development/Regenerating-genesis-files-on-Release)
-        - [Dendrology](Guides/CENNZnet%20development/Dendrology)
+        - [Installing Dependencies](Guides/CENNZnet-development/Installing-Dependencies)
+        - [Release Notes](Guides/CENNZnet-development/Release-Notes)
+        - [Repository Relationships](Guides/CENNZnet-development/Repository-Relationships)
+        - [Making a New Release (Legacy)](Guides/CENNZnet-development/Making-a-New-Release)
+        - [Regenerate genesis files](Guides/CENNZnet-development/Regenerating-genesis-files-on-Release)
+        - [Dendrology](Guides/CENNZnet-development/Dendrology)
     - Node operators
-        - [Run a Full Node](Guides/Node%20operators/Running-a-Full-Node)
-        - [Run a Validator Node](Guides/Node%20operators/Validator-Guide)
-        - [Nominator Staking Guide](Guides/Node%20operators/Nominator-Staking-Guide)
+        - [Run a Full Node](Guides/Node-operators/Running-a-Full-Node)
+        - [Run a Validator Node](Guides/Node-operators/Validator-Guide)
+        - [Nominator Staking Guide](Guides/Node-operators/Nominator-Staking-Guide)
     - CENNZnet infrastructures
-        - [CENNZX Exchange](Guides/CENNZnet%20infrastructures/CENNZX-Exchange)
-        - [Interact with CENNZnet using the UI](Guides/CENNZnet%20infrastructures/Exploring-the-CENNZnet-UI)
+        - [CENNZX Exchange](Guides/CENNZnet-infrastructures/CENNZX-Exchange)
+        - [Interact with CENNZnet using the UI](Guides/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
         - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
 - Examples
     - [Demo app](Examples/Example-demo-app)
@@ -31,15 +31,15 @@
     - [CENNZnet identity provider](https://github.com/cennznet/cennznet-identity-provider)
 - Reference
     - CENNZnet API
-        - [Getting Started](References/CENNZnet%20API/Getting-Started)
-        - [Cheatsheet](References/CENNZnet%20API/Cheatsheet)
-        - [Staking API](References/CENNZnet%20API/Staking)
-        - [Subscriptions](References/CENNZnet%20API/Subscriptions)
-        - [Technical Reference](References/CENNZnet%20API/Technical-Reference)
-        - [Transaction Error Codes](References/CENNZnet%20API/Transaction-Error-Codes)
+        - [Getting Started](References/CENNZnet-API/Getting-Started)
+        - [Cheatsheet](References/CENNZnet-API/Cheatsheet)
+        - [Staking API](References/CENNZnet-API/Staking)
+        - [Subscriptions](References/CENNZnet-API/Subscriptions)
+        - [Technical Reference](References/CENNZnet-API/Technical-Reference)
+        - [Transaction Error Codes](References/CENNZnet-API/Transaction-Error-Codes)
     - Runtime modules
-        - [Sylo Runtime Modules](References/Runtime%20modules/Sylo-Runtime-Modules)
-        - [Doughnuts](References/Runtime%20modules/Doughnut)
-        - [Doughnut Permissioning](References/Runtime%20modules/Doughnut-Permissioning)
+        - [Sylo Runtime Modules](References/Runtime-modules/Sylo-Runtime-Modules)
+        - [Doughnuts](References/Runtime-modules/Doughnut)
+        - [Doughnut Permissioning](References/Runtime-modules/Doughnut-Permissioning)
     - Uncover
         - [Block Explorer API](References/Uncover/UncoverAPI)

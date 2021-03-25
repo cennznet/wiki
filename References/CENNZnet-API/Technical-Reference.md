@@ -2,12 +2,12 @@
 [CENNZnet API github](https://github.com/cennznet/api.js)
 
 **sections**:
-- [constants](References/CENNZnet%20API/Technical-Reference?id=title-constants)
-- [errors](References/CENNZnet%20API/Technical-Reference?id=title-errors)
-- [events](References/CENNZnet%20API/Technical-Reference?id=title-events)
-- [extrinsics](References/CENNZnet%20API/Technical-Reference?id=title-extrinsics)
-- [rpc](References/CENNZnet%20API/Technical-Reference?id=title-rpc)
-- [storage](References/CENNZnet%20API/Technical-Reference?id=title-storage)
+- [constants](References/CENNZnet-API/Technical-Reference?id=title-constants)
+- [errors](References/CENNZnet-API/Technical-Reference?id=title-errors)
+- [events](References/CENNZnet-API/Technical-Reference?id=title-events)
+- [extrinsics](References/CENNZnet-API/Technical-Reference?id=title-extrinsics)
+- [rpc](References/CENNZnet-API/Technical-Reference?id=title-rpc)
+- [storage](References/CENNZnet-API/Technical-Reference?id=title-storage)
 
 [Constants](https://raw.githubusercontent.com/cennznet/api.js/develop/docs/cennznet/constants.md ':include :type=tsdoc')
 

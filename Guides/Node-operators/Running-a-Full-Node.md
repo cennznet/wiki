@@ -13,7 +13,7 @@ $ docker run cennznet/cennznet:1.2.0 \
 ```
 
 Check its status on the telemetry site:
-http://cennznet-telemetry.centrality.me/#/CENNZnet%20Azalea
+http://cennznet-telemetry.centrality.me/#/CENNZnet-Azalea
 
 ## Building from Source
 

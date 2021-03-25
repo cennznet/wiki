@@ -11,7 +11,7 @@ Minimum hardware spec
 This guide documents the important concepts and processes involved in running a CENNZnet validator node.  
 
 Key Links:
-- [CENNZnet node telemetry](http://cennznet-telemetry.centrality.me/#/CENNZnet%20Azalea)
+- [CENNZnet node telemetry](http://cennznet-telemetry.centrality.me/#/CENNZnet-Azalea)
 - [CENNZnet UI](https://cennznet.io)
 - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags?page=1&ordering=last_updated)
 - [MainNet DB snapshots](https://s3-ap-southeast-1.amazonaws.com/cennznet-snapshots.centralityapp.com/azalea/1.2.2/validator/index.html)

@@ -44,9 +44,9 @@ cd cennznet && cargo build --release
     --telemetry-url 'ws://cennznet-telemetry.centrality.me:8000/submit 0'
 ```
 
-Check `my-node` is running [here](http://cennznet-telemetry.centrality.me/#/CENNZnet%20Azalea).
+Check `my-node` is running [here](http://cennznet-telemetry.centrality.me/#/CENNZnet-Azalea).
 
-*For more details on running a node, look at [Running a Full Node](Guides/Node%20operators/Running-a-Full-Node).*
+*For more details on running a node, look at [Running a Full Node](Guides/Node-operators/Running-a-Full-Node).*
 
 ## Unfrastructure Links
 Centrality hosted CENNZnet full nodes and ecosystem services
