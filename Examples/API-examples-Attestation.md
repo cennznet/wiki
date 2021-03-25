@@ -1,3 +1,5 @@
+# API examples for Attestation
+
 Attestation is used to make and check claims made by an `issuer` about a `holder` regarding a `topic` with a `value`.
 For a more detailed explanation, see the [Attestation Plug Documentation](https://github.com/plugblockchain/plug-blockchain/wiki/Attestation).
 

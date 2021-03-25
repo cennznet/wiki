@@ -1,3 +1,5 @@
+# API examples for Generic Assets
+
 ## Transferring funds
 The most common thing to do with Generic Assets is to transfer some funds.
 The two core assets in CENNZnet are:

@@ -1,0 +1,61 @@
+# Making a new release
+
+- Make a new release:
+  - Ensure changelog.md is up to date
+  - Bump Cargo.toml and runtime/Cargo.toml to remove beta part
+  - Generate a new genesis file for local: `./scripts/upgrade-genesis.sh local`
+  - Ensure the changes are PR and merged to master
+  - Perform deploy new Kauri network tasks if needed
+  - Tag master as new release
+  - Prepare for next release
+    - Bump `spec_version` and `impl_version` in runtime/src/lib.rs
+    - Bump Cargo.toml and runtime/Cargo.toml
+    - Ensure there is new version entry in changelog.md
+    - Ensure all changes are PR and merged to master
+- Perform Runtime Upgrade
+  - Kauri
+    - Ensure wasm file is updated
+    - Load Kauri sudo key in cennzent-ui
+    - Use cennzet-ui sudo consensus.setCode and select the wasm file. Path should be `./runtime/wasm/target/wasm32-unknown-unknown/release/cennznet_runtime.wasm`
+    - Submit and ensure the transaction is confirmed
+    - Use cennznet-ui Toolbox, RPC calls, chain.getRuntimeVersion(latest block hash) to verify the runtime is expected
+  - Rimu
+    - Checkout `stable` branch
+    - Cherry-pick the changes
+    - Ensure versions are updated (runtime version and Cargo.toml version)
+    - Ensure wasm file is rebuilt and updated
+    - Ensure all changes are committed
+    - Backup a fully synced validator node
+    - Perform sudo staking.setValidatorCount to reduce validator count to 7 (the number of our validators). This ensures we have control of all the validators.
+    - Wait for the new Era so that all other validators are moved to next-up pool.
+    - Add `--no-grandpa` flag to all validator nodes and restart them one by one
+      - This will stop block finalization
+    - Load Rimu sudo key in cennzent-ui
+    - Use cennzet-ui sudo consensus.setCode and select the wasm file. Path should be `./runtime/wasm/target/wasm32-unknown-unknown/release/cennznet_runtime.wasm`
+    - Submit and ensure the transaction is confirmed
+    - Use cennznet-ui Toolbox, RPC calls, chain.getRuntimeVersion(latest block hash) to verify the runtime is expected
+    - Remove `--no-grandpa` flag to all validator modes and restart them one by one
+      - This should resume block finalization
+    - Perform sudo staking.setValidatorCount to set validator count back to original number
+    - *If the chain is bricked due to upgrade*
+      - Restore all validators with backup before upgrade
+      - Ensure the upgrade transaction won't be processed
+        - This can be done by use [`author_removeExtrinsic`](https://github.com/paritytech/substrate/pull/2732) to ban the upgrade transaction 
+        - Or run all the validators in an isolated network (ensures other nodes won't relay the upgrade transaction)
+        - Then make a different harmless transaction with sudo account to bump the nonce, hence make the upgrade transaction invalid
+- Deploy new testnet (FOR BREAKING CHANGE ONLY)
+  - Deploy Kauri:
+    - Generate a new genesis file for Kauri: `./scripts/upgrade-genesis.sh kauri`
+    - Ensure the changes are PR and merged to master
+    - Deploy the change by reseting Kuari nodes and redeploy them
+      - Cameron to provide reset script
+  - Deploy Rimu:
+    - Checkout `stable` branch
+    - Cherry-pick the changes
+    - Update Rimu network name version in src/chain_spec/testnet.rs
+    - Generate a new genesis file for Rimu: `./scripts/upgrade-genesis.sh rimu`
+    - Ensure all changes are committed
+    - Deploy the change by reseting Rimu nodes and redeploy them
+      - Ask Bryan or Cameron if you don't know how to do this
+    - Cherry pick or merge changes from `stable` to `master`
+    - Rimu genesis file must be same in both stable branch and master

@@ -2,11 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>CENNZnet Wiki</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  
+  <link rel="icon" href="images/favicon.ico" />
+
+  <!-- Theme: Simple -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+  
+  <style>
+    :root {
+      --theme-color: #1130FF;
+      --base-font-family:  "Open Sans";
+      /* --cover-text-align: left; */
+      --cover-background-color: hsl(228, 67%, 34%);
+    }
+  </style>
 </head>
 <body>
   <div id="app"></div>
@@ -15,9 +29,11 @@
       name: 'CENNZnet Wiki',
       repo: 'https://github.com/cennznet/cennznet',
       homepage: 'Home.md',
+      coverpage  : '_CoverPage.md',
       loadSidebar: '_Sidebar.md',
       loadFooter: '_Footer.md',
     }
+
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
@@ -25,5 +41,10 @@
   <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
   <!-- Sidebar collapse -->
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <!-- Search -->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <!-- docsify-themeable (latest v0.x.x) -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+
 </body>
 </html>
