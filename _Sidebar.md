@@ -24,7 +24,7 @@
 
     - CENNZnet infrastructures
         - [CENNZX Exchange](Guides/CENNZnet%20infrastructures/CENNZX-Exchange)
-        - [Interact with CENNZnet using the UI](Exploring-the-CENNZnet-UI)
+        - [Interact with CENNZnet using the UI](Guides/CENNZnet%20infrastructures/Exploring-the-CENNZnet-UI)
         - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
 
 - Examples
