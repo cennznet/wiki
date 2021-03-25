@@ -28,6 +28,7 @@ These error codes will be raised during any normal transaction, especially those
 CENNZ-X
 ---
 These error codes come from the CENNZ-X spot exchange, they will be seen during trades or investor liquidity operations. They may also be seen by any transaction which uses multi-currency fee payment.
+
 | Code             | Description            |
 |------------------|------------------------|
 | 195   | Trader has insufficient balance for the requested trade |
@@ -37,5 +38,3 @@ These error codes come from the CENNZ-X spot exchange, they will be seen during 
 | 204   | Trading an asset for itself is invalid |
 | 205   | Not enough liquidity in the exchange to fulfill the requested trade |
 | 206   | Trade cost would exceed the specified maximum |
-
-
