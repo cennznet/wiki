@@ -3,6 +3,12 @@
 - Getting Started
     - CENNZnet Overview
 - Guides
+    - Dapp development
+        - [Accounts and Keypairs](Guides/Dapp%20development/Accounts-and-Keypairs)
+        - [Token Economy](Guides/Dapp%20development/Token-Economy)
+        - [Smart Contracts](Guides/Dapp%20development/Using-Smart-Contracts-on-CENNZnet)
+            - [Interact with CENNZnet using the API](Guides/Dapp%20development/Interact-with-CENNZnet--using-the-API)
+
     - CENNZnet development
         - [Installing Dependencies](Guides/CENNZnet%20development/Installing-Dependencies)
         - [Release Notes](Guides/CENNZnet%20development/Release-Notes)
@@ -16,19 +22,13 @@
         - [Run a Validator Node](Guides/Node%20operators/Validator-Guide)
         - [Nominator Staking Guide](Guides/Node%20operators/Nominator-Staking-Guide)
 
-    - Dapp development
-        - [Accounts and Keypairs](Guides/Dapp%20development/Accounts-and-Keypairs)
-        - [Token Economy](Guides/Dapp%20development/Token-Economy)
-        - [Smart Contracts](Guides/Dapp%20development/Using-Smart-Contracts-on-CENNZnet)
-            - [Interact with CENNZnet using the API](Guides/Dapp%20development/Interact-with-CENNZnet--using-the-API)
-       
     - CENNZnet infrastructures
         - [CENNZX Exchange](Guides/CENNZnet%20infrastructures/CENNZX-Exchange)
         - [Interact with CENNZnet using the UI](Exploring-the-CENNZnet-UI)
         - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
 
 - Examples
-    - [Demo app](https://github.com/cennznet/cennznet/wiki/Example-demo-app)
+    - [Demo app](Examples/Example-demo-app)
     - [Generic Assets](Examples/API-examples-Generic-Assets)
     - [CENNZX Spot](Examples/API-examples-CENNZX-Spot)
     - [Attestation](Examples/API-examples-Attestation)
