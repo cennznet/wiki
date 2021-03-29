@@ -48,7 +48,7 @@ To trade or provide liquidity on the exchange, go to [cennznet.io][cennznet_io_e
 * `addLiquidity` - become a liquidity provider
 * `removeLiquidity` - recover your holdings as a liquidity provider
 
-![extrinsics-cennzx](../../images/ui/extrinsics-cennzx.png)
+![extrinsics-cennzx](../../assets/images/ui/extrinsics-cennzx.png)
 
 To access pricing data, go to [cennznet.io][cennznet_io_toolbox], and select `cennzx` from the drop-down menu. There will be options to query:
 * `buyPrice` - how much `sell_asset` is required to obtain a specific amount of `buy_asset`

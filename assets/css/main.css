@@ -1,0 +1,8 @@
+:root {
+    line-height: 2;
+    --theme-color: #1130FF;
+    --base-font-family:  "Open Sans";
+    /* --cover-text-align: left; */
+    --cover-background-color: hsl(231, 47%, 14%);
+  }
+

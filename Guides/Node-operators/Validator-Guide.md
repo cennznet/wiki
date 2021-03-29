@@ -55,7 +55,7 @@ In addition, if the block references valid uncle blocks, the author also gets 2 
 Finally, 1 point goes to the author of a referenced uncle block.  
 
 The following diagram shows an example of the authorship points process
-![authorship-rewards](../../images/staking/authorship-rewards.png)
+![authorship-rewards](../../assets/images/staking/authorship-rewards.png)
 
 #### Reward Calculation (worked example)
 ```python3
@@ -243,6 +243,6 @@ docker run -p 9944:9944 -it \
 
 ### Appendix: Staking Ledger Storage
 
-![staking-txs](../../images/staking/staking-txs.png)
+![staking-txs](../../assets/images/staking/staking-txs.png)
 
 _staking ledger changes throughout the validator staking process. The controller signs some messages, however data is always linked against the stash_* 

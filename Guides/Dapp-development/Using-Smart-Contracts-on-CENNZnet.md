@@ -23,15 +23,15 @@ There are several ways to get started with `Ink!`:
 
 Navigate to [https://cennznet.io/#/contracts](cennznet.io/#/contracts)
 
-![contract-empty](../../images/ui/contract-empty.png)
+![contract-empty](../../assets/images/ui/contract-empty.png)
 
 Click the Code tab.
 
-![contract-code](../../images/ui/contract-code.png)
+![contract-code](../../assets/images/ui/contract-code.png)
 
 Click "Upload WASM", select your WASM and metadata.json (under contract ABI) and click "Upload".
 
-![contract-upload](../../images/ui/contract-upload.png)
+![contract-upload](../../assets/images/ui/contract-upload.png)
 
 
 Click "deploy" to deploy the uploaded WASM on an account.
@@ -40,15 +40,15 @@ Click "deploy" to deploy the uploaded WASM on an account.
 * You will need to provide an 'endowment' to keep the account alive.
 * You also have the option of selecting which instantiation function to use. In our case, we have `new` or `default`.
 
-![contract-deploy](../../images/ui/contract-deploy.png)
+![contract-deploy](../../assets/images/ui/contract-deploy.png)
 
 After deployment the contract will show up on the Contracts tab.
 
-![contract-deployed](../../images/ui/contract-deployed.png)
+![contract-deployed](../../assets/images/ui/contract-deployed.png)
 
 Click on execute, and you will be able to execute code on the contract.
 
-![contract-call](../../images/ui/contract-call.png)
+![contract-call](../../assets/images/ui/contract-call.png)
 
 ## Deployment and Execution with CENNZnet API
 
