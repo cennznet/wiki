@@ -5,6 +5,9 @@
 
     /* Side bar */
     --sidebar-nav-link-before-content-l3 : '';
+    --sidebar-name-font-weight: 600;
+    --sidebar-nav-link-font-weight--active        : 600;
+    --sidebar-nav-link-text-decoration--hover     : ;
 
     /* Cover page */
     --cover-background-color: hsl(231, 47%, 14%);
@@ -13,7 +16,3 @@
     --heading-h1-font-weight: 600; 
     --heading-h2-font-weight: 600;
   }
-
-h1.app-name {
-    font-weight: 600; 
-}
