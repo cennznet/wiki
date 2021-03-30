@@ -1,5 +1,6 @@
-- Getting Started
-    - CENNZnet Overview
+- Getting started
+    - [CENNZnet primer](Getting-started/CENNZnet-primer)
+    - [CENNZnet technical overview](Getting-started/CENNZnet-technical-overview)
 ---
 - Guides
     - Dapp development
