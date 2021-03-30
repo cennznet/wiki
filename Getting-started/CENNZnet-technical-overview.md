@@ -75,7 +75,7 @@ The top layer interface of CENNZnet exposes callables that belong to the followi
 
 ![Interface](../assets/images/technical-overview/interface.png)
 
-### Joining the network
+## Joining the network
 
 As a DApp developer, it is beneficial to join the network. Having nodes of your own allows your DApp to have better and faster access to the network. You can also monitise from the nodes by participating in staking as a validator.
 
