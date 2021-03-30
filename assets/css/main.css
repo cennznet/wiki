@@ -1,0 +1,19 @@
+:root {
+    line-height: 2;
+    --theme-color: #1130FF;
+    --base-font-family:  "Open Sans";
+
+    /* Side bar */
+    --sidebar-nav-link-before-content-l3 : '';
+    --sidebar-name-font-weight: 600;
+    --sidebar-nav-link-font-weight--active        : 600;
+    --sidebar-nav-link-text-decoration--hover     : ;
+
+    /* Cover page */
+    --cover-background-color : hsl(213, 54%, 54%);
+    --cover-heading-font-weight : 600;
+
+    --strong-font-weight: 800;
+    --heading-h1-font-weight: 600; 
+    --heading-h2-font-weight: 600;
+  }

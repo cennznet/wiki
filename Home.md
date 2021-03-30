@@ -1,4 +1,4 @@
-![CENNZnet](./images/banner.png)
+![CENNZnet](./assets/images/banner.png)
 
 ## Intro
 CENNZnet is a public blockchain based on Proof of Stake (PoS) consensus built on top of the [Plug](https://github.com/plugblockchain/plug-blockchain/) framework.

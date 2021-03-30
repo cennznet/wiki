@@ -128,7 +128,7 @@ The easiest way to add liquidity is via the Cennznet GUI.
 Go to https://cennznet.io/#/extrinsics
 Add liquidity to the exchange pool of 16000 and 16001.
 
-![add_liquidity](../images/ui/add_liquidity.png)
+![add_liquidity](../assets/images/ui/add_liquidity.png)
 
 In this example, we will add 1,000,000,000 units of 16000, and 200,000,000 of 16001.
 The exchange rate between 16000 and 16001 will be expected to be around 5:1
