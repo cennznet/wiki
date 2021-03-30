@@ -35,6 +35,12 @@ The CENNZnet API documentation is generated from the CENNZnet runtime modules wh
 
 For the latest version of methods and sample API usages, please refer to the [API docs](https://github.com/cennznet/api.js/tree/develop/docs).
 
+
+## CENNZnet news and updates
+* ***[Centrality's Medium publication](https://medium.com/centrality)***: publishes news and update articles.
+* ***[CENNZnet Discord server](https://discord.gg/AnB3tRtkJ4)***: is a forum for the CENNZnet Dev community.
+
+
 ## Contributing
 
 CENNZnet, as well as its related tools (including this wiki) are completely open source. This means CENNZnet relies on the open source community's contribution.
