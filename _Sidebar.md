@@ -1,8 +1,9 @@
-- Getting Started
-    - CENNZnet Overview
+- Getting started
+    - [CENNZnet primer](Getting-started/CENNZnet-primer)
+    - [CENNZnet technical overview](Getting-started/CENNZnet-technical-overview)
 ---
 - Guides
-    - Dapp development
+    - DApp development
         - [Accounts and Keypairs](Guides/Dapp-development/Accounts-and-Keypairs)
         - [Token Economy](Guides/Dapp-development/Token-Economy)
         - [Smart Contracts](Guides/Dapp-development/Using-Smart-Contracts-on-CENNZnet)
