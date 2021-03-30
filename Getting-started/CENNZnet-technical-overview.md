@@ -27,7 +27,7 @@ It also serves as a very helpful development tool. If you a new to CENNZnet DApp
 
 #### UNcover 
 
-A website that allows you to explore and search for transactions, addresses, prices and other activities on CENNZnet MainNet. This information may not be stored on a single node.
+[UNcover](https://uncoverexplorer.com/) allows you to explore and search for transactions, addresses, prices and other activities on CENNZnet MainNet. This information may not be stored on a single node.
 
 ## How CENNZnet works
 
