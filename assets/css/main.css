@@ -10,8 +10,9 @@
     --sidebar-nav-link-text-decoration--hover     : ;
 
     /* Cover page */
-    --cover-background-color: hsl(231, 47%, 14%);
+    --cover-background-color : hsl(213, 54%, 54%);
     --cover-heading-font-weight : 600;
+
     --strong-font-weight: 800;
     --heading-h1-font-weight: 600; 
     --heading-h2-font-weight: 600;
