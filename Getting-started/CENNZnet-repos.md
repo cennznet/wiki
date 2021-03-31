@@ -16,31 +16,26 @@ The CENNZnet API is a JavaScript API that allows you to interact with CENNZnet p
 
 ### [CENNZnet.io](https://github.com/cennznet/ui)
 
-[CENNZnet.io](https://cennznet.io/#/) provides a wallet and a GUI to the CENNZnet API. It connects to and communicates with a CENNZnet node.
+[CENNZnet.io](https://cennznet.io/#/) provides a wallet and the GUI version of the CENNZnet API. It connects to and communicates with a CENNZnet node.
 
 
 ### [Wiki](https://github.com/cennznet/wiki)
 
+This is the repository for this wiki you are reading now.
 
+### [UNcover](https://github.com/cennznet/explorer)
 
-### [UNcover](https://github.com/cennznet/explorer)?
+[UNcover](https://uncoverexplorer.com/) is an explorer that search for transactions, addresses, prices and other activities on CENNZnet MainNet.
 
+### [CENNZnet CLI](https://github.com/cennznet/cli)
 
-
-### CENNZX ?
-
+This is a minimal command line environment that lets you use the CENNZnet API.
 
 ## Related repositories
 
 ### [Plug](https://github.com/plugblockchain/plug-blockchain)
 
 Plug is a fork of substrate which Centrality maintains. CENNZnet is built with Plug. 
-
-
-## Templates and examples
-[Quick start VueJS template](https://github.com/cennznet/cennznet-vue-template)
-
-
 
 
 
