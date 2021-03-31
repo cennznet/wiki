@@ -18,11 +18,16 @@ There are a couple tools that let you interact with CENNZnet visually. These too
 
 #### CENNZnet.io
 
-A website that provides a wallet and a GUI to the CENNZnet API and communicates with a node.
+[CENNZnet.io](https://cennznet.io/#/) provides a wallet and a GUI to the CENNZnet API. It connects to and communicates with a CENNZnet node.
+
+It also serves as a very helpful development tool. If you a new to CENNZnet DApp development, be sure to read the following user guides to CENNZnet.io:
+* [Intro Guide to CENNZnet.io](https://medium.com/centrality/using-cennznet-io-ac5a90f9a2cb)
+* [Advanced Guide to CENNZnet.io](https://medium.com/centrality/advanced-guide-to-cennznet-io-33be90f26ff3)
+
 
 #### UNcover 
 
-A website that allows you to explore and search for transactions, addresses, prices and other activities on CENNZnet MainNet. This information may not be stored on a single node.
+[UNcover](https://uncoverexplorer.com/) is an explorer that search for transactions, addresses, prices and other activities on CENNZnet MainNet. This information may not be stored on a single node.
 
 ## How CENNZnet works
 
@@ -70,7 +75,7 @@ The top layer interface of CENNZnet exposes callables that belong to the followi
 
 ![Interface](../assets/images/technical-overview/interface.png)
 
-### Joining the network
+## Joining the network
 
 As a DApp developer, it is beneficial to join the network. Having nodes of your own allows your DApp to have better and faster access to the network. You can also monitise from the nodes by participating in staking as a validator.
 
