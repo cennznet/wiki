@@ -18,7 +18,7 @@ There are a couple tools that let you interact with CENNZnet visually. These too
 
 #### CENNZnet.io
 
-[CENNZnet.io](https://cennznet.io/#/) provides a wallet and a GUI to the CENNZnet API and communicates with a node.
+[CENNZnet.io](https://cennznet.io/#/) provides a wallet and a GUI to the CENNZnet API. It connects to and communicates with a CENNZnet node.
 
 It also serves as a very helpful development tool. If you a new to CENNZnet DApp development, be sure to read the following user guides to CENNZnet.io:
 * [Intro Guide to CENNZnet.io](https://medium.com/centrality/using-cennznet-io-ac5a90f9a2cb)
