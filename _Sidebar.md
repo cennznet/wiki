@@ -12,15 +12,11 @@
 ---
 - DApp development
     - Guides
-        - [Interact with CENNZnet using the API](Guides/Dapp-development/Interact-with-CENNZnet--using-the-API)
-        - [Token Economy](Guides/Dapp-development/Token-Economy)
-        - [Smart Contracts](Guides/Dapp-development/Using-Smart-Contracts-on-CENNZnet)
-
+        - [Interact with CENNZnet using the API](Dapp-development/Guides/Interact-with-CENNZnet--using-the-API)
+        - [Token Economy](Dapp-development/Guides/Token-Economy)
+        - [Smart Contracts](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet)
     - Examples
-        - [Demo app](Examples/Example-demo-app)
-        - [Generic Assets](Examples/API-examples-Generic-Assets)
-        - [CENNZX Spot](Examples/API-examples-CENNZX-Spot)
-        - [Attestation](Examples/API-examples-Attestation)
+        - [Demo app](Dapp-development/Examples/Example-demo-app)
         - [CENNZnet identity provider](https://github.com/cennznet/cennznet-identity-provider)
 ---
 - CENNZnet development
@@ -32,12 +28,7 @@
     - [Setting up Linux subsystem on Windows](Guides/CENNZnet-development/Set-up-Linux-Sub-system-for-Windows)
 
 ---
-- CENNZnet References
-    - CENNZnet infrastructures
-        - [Interact with CENNZnet using the UI](Guides/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
-        - [CENNZX Exchange](Guides/CENNZnet-infrastructures/CENNZX-Exchange)
-        - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
-
+- References
     - CENNZnet API
         - [Getting Started](References/CENNZnet-API/Getting-Started)
         - [Cheatsheet](References/CENNZnet-API/Cheatsheet)
@@ -46,10 +37,22 @@
         - [Subscriptions](References/CENNZnet-API/Subscriptions)
         - [Technical Reference](References/CENNZnet-API/Technical-Reference)
         - [Transaction Error Codes](References/CENNZnet-API/Transaction-Error-Codes)
+        - API Examples
+            - [Generic Assets](References/CENNZnet-API/Examples/API-examples-Generic-Assets)
+            - [CENNZX Spot](References/CENNZnet-API/Examples/API-examples-CENNZX-Spot)
+            - [Attestation](References/CENNZnet-API/Examples/API-examples-Attestation)
+
+    - CENNZnet infrastructures
+        - [Interact with CENNZnet using the UI](Guides/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
+        - [CENNZX Exchange](Guides/CENNZnet-infrastructures/CENNZX-Exchange)
+        - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
+
     - Runtime modules
         - [Sylo Runtime Modules](References/Runtime-modules/Sylo-Runtime-Modules)
         - [Doughnuts](References/Runtime-modules/Doughnut)
         - [Doughnut Permissioning](References/Runtime-modules/Doughnut-Permissioning)
+
     - Uncover
         - [Block Explorer API](References/Uncover/UncoverAPI)
+
     - [Release Notes](References/Release-Notes)
