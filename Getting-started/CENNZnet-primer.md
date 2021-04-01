@@ -24,9 +24,9 @@ CENNZnet Wiki is for:
 * The open source community that's building CENNZnet
 * Node operators/participants of CENNZnet
 
-Therefore in the Guides section, you will find that the documents are grouped into corresponding categories.
+You will find that the documents are grouped into corresponding categories in this wiki.
 
-This Wiki is also an open source project.
+This Wiki is also an open source project. You are welcome to contribute!
 
 
 ### API Documentation
