@@ -20,12 +20,15 @@
         - [CENNZnet identity provider](https://github.com/cennznet/cennznet-identity-provider)
 ---
 - CENNZnet development
-    - [Installing Dependencies](Guides/CENNZnet-development/Installing-Dependencies)
-    - [Repository Relationships](Guides/CENNZnet-development/Repository-Relationships)
-    - [Making a New Release (Legacy)](Guides/CENNZnet-development/Making-a-New-Release)
-    - [Regenerate genesis files](Guides/CENNZnet-development/Regenerating-genesis-files-on-Release)
-    - [Dendrology](Guides/CENNZnet-development/Dendrology)
-    - [Setting up Linux subsystem on Windows](Guides/CENNZnet-development/Set-up-Linux-Sub-system-for-Windows)
+    - Guides
+        - [Installing Dependencies](CENNZnet-development/Guides/Installing-Dependencies)
+        - [Setting up Linux subsystem on Windows](CENNZnet-development/Guides/Set-up-Linux-Sub-system-for-Windows)
+        - [Making a New Release (Legacy)](CENNZnet-development/Guides/Making-a-New-Release)
+        - [Regenerate genesis files](CENNZnet-development/Guides/Regenerating-genesis-files-on-Release)
+    - Notes
+        - [Dendrology](CENNZnet-development/Notes/Dendrology)
+        - [Repository Relationships](CENNZnet-development/Notes/Repository-Relationships)
+        - [Release Notes](CENNZnet-development/Notes/Release-Notes)
 
 ---
 - References
@@ -43,8 +46,8 @@
             - [Attestation](References/CENNZnet-API/Examples/API-examples-Attestation)
 
     - CENNZnet infrastructures
-        - [Interact with CENNZnet using the UI](Guides/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
-        - [CENNZX Exchange](Guides/CENNZnet-infrastructures/CENNZX-Exchange)
+        - [Interact with CENNZnet using the UI](References/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
+        - [CENNZX Exchange](References/CENNZnet-infrastructures/CENNZX-Exchange)
         - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
 
     - Runtime modules
@@ -55,4 +58,4 @@
     - Uncover
         - [Block Explorer API](References/Uncover/UncoverAPI)
 
-    - [Release Notes](References/Release-Notes)
+    
