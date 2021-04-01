@@ -5,10 +5,10 @@
 ---
 - Network participating
     - Staking
-        - [Validator Staking Guide](Guides/Node-operators/Validator-Guide)
-        - [Nominator Staking Guide](Guides/Node-operators/Nominator-Staking-Guide)
+        - [Validator Staking Guide](Network-participating/Staking/Validator-Guide)
+        - [Nominator Staking Guide](Network-participating/Staking/Nominator-Staking-Guide)
     - Node operating
-        - [Running a Full Node](Guides/Node-operators/Running-a-Full-Node)
+        - [Running a Full Node](Network-participating/Node-operating/Running-a-Full-Node)
 ---
 - DApp development
     - Guides
