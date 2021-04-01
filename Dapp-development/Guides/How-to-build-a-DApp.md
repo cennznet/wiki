@@ -8,10 +8,15 @@ s compatible with JavaScript.
 * Interact with CENNZnet's MainNet using the CENNZnet JavaScript API.
 * You may need to write and deploy Smart Contracts if you need custom methods that's not provided by the core modules.
 
+## The architecture of a DApp
+
 As outlined in the [CENNZnet technical overview](Getting-started/CENNZnet-technical-overview), your DApp can communicate with CENNZnet in 2 ways:
 1) Calling methods of the runtime modules
 2) Calling smart contracts
 
+![Architecture](../../assets/images/how-to-build-a-dapp/architecture.png)
+
+## A DApp's communication with a node
 
 
 ## Storage considerations
