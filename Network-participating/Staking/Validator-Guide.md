@@ -148,39 +148,65 @@ There are two ways to start a node:
 
 #### Starting a fresh node
 
-Replace <MY_NODE> with a name you like and run the command.
 ```bash
+# Edit this command before running it:
+# 1. Replace “<VERSION>” with the latest version number, for example, “1.4.0”. The release number can be found here.
+# 2. Replace “<MY_NODE>” with a name you’d like to call your node
+# 3. Run it and inspect it from Docker dashboard
+
+# Note: the -d option makes the docker container run in detached mode, which means it'll continue running even if you close terminal.
+# You can use --it if you'd rather keep the terminal window open and see the output there.
+# Please don't shut down the validator node without performing a "chill" action, to avoid penalties.
+
 # Warning: The following command allows for setting session key. This exposes a security risk.
 # The RPC methods should be constrained to use on localhost only
 # Protect your PRC port with network security rules and the firewall
-docker run -p 9944:9944 -it \
-  cennznet/cennznet:1.3.1 \
-  --chain=/cennznet/genesis/azalea.raw.json \
-  --validator \
-  --name=<MY_NODE> \
-  --telemetry-url 'ws://cennznet-telemetry.centrality.me:8000/submit 0' \
-  --rpc-methods=Unsafe --ws-external \
-  --rpc-cors=all --rpc-methods=Unsafe
+
+docker run -p 9944:9944 -p 9933:9933 -d --restart=always \
+cennznet/cennznet:<VERSION> \
+--chain=/cennznet/genesis/azalea.raw.json \
+--validator \
+--name=<MY_NODE> \
+--telemetry-url 'ws://cennznet-telemetry.centrality.me:8000/submit 0' \
+--rpc-methods=Unsafe \
+--ws-external \
+--rpc-external \
+--rpc-cors=https://cennznet.io
 ```
 Some bootnodes are included in the genesis/chain config, to supply additional bootnodes use: `--bootnodes=<multiaddress>`
+
+[LABEL](https://gist.github.com/Amy-Centrality/95cd1170fd143c6dc7bec05327faaa11/raw/fresh_validator_node.sh':include')
+
+
 
 
 #### Starting a node from a snapshot
 
 1. Download the latest archive of validator nodes from [here](https://s3-ap-southeast-1.amazonaws.com/cennznet-snapshots.centralityapp.com/azalea/1.2.2/validator/index.html)
 2. Unzip the archive
-3. Replace the </path/to/dir/containing/the/unzipped/archive> in the following command with the path to where you’ve unzipped the archive, and <MY_NODE> with a name you like
-4. Run the command
+3. Customise and run the command below
 
 
 ```bash
-docker run -p 9944:9944 -it -v </path/to/dir/containing/the/unzipped/archive>:/mnt/cennznet \
- cennznet/cennznet:1.3.1 --validator \
- --chain=/cennznet/genesis/azalea.raw.json \
- --base-path /mnt/cennznet --unsafe-ws-external \
- --unsafe-rpc-external --rpc-cors all --rpc-methods=Unsafe \
- --telemetry-url 'ws://cennznet-telemetry.centrality.me:8000/submit 0' \
- --name <MY_NODE>
+# Note: the -d option makes the docker container run in detached mode, which means it'll continue running even if you close terminal.
+# You can use --it if you'd rather keep the terminal window open and see the output there.
+# Please don't shut down the validator node without performing a "chill" action, to avoid penalties.
+
+# Edit this command before running it:
+# Replace “<VERSION>” with the latest version number, for example, “1.4.0”. The release number can be found here.
+# Replace “<MY_NODE>” with a name you’d like to call your node
+# Replace the “</path/to/dir/containing/the/unzipped/archive>” in the following command with the path to where you’ve unzipped the archive, and run the command in your terminal.
+
+docker run -p 9944:9944 -p 9933:9933 -d --restart=always \
+-v </path/to/dir/containing/the/unzipped/archive>:/mnt/cennznet \
+cennznet/cennznet:<VERSION> --validator \
+--chain=/cennznet/genesis/azalea.raw.json \
+--base-path /mnt/cennznet --unsafe-ws-external \
+--unsafe-rpc-external \
+--rpc-external \
+--rpc-cors=https://cennznet.io --rpc-methods=Unsafe \
+--telemetry-url 'ws://cennznet-telemetry.centrality.me:8000/submit 0' \
+--name <MY_NODE>
 ```
 
 ### 3) Claim session keys
@@ -228,17 +254,29 @@ await api.tx.staking.validate({ commission }).signAndSend(controllerKeypair);
 ## Nikau 🌴 TestNet
 Join the testnet and try it out!
 ```bash
+# Edit this command before running it:
+# 1. Replace “<VERSION>” with the latest version number, for example, “1.4.0”. The release number can be found here.
+# 2. Replace “<MY_NODE>” with a name you’d like to call your node
+# 3. Run it and inspect it from Docker dashboard
+
+# Note: the -d option makes the docker container run in detached mode, which means it'll continue running even if you close terminal.
+# You can use --it if you'd rather keep the terminal window open and see the output there.
+# Please don't shut down the validator node without performing a "chill" action, to avoid penalties.
+
 # Warning: The following command allows for setting session key. This exposes a security risk.
 # The RPC methods should be constrained to use on localhost only
 # Protect your PRC port with network security rules and the firewall
-docker run -p 9944:9944 -it \
-  cennznet/cennznet:1.3.1 \
-  --chain=/cennznet/genesis/nikau.raw.json \
-  --validator \
-  --name=<MY_NODE> \
-  --telemetry-url 'ws://cennznet-telemetry.centrality.me:8000/submit 0' \
-  --rpc-methods=Unsafe --ws-external \
-  --rpc-cors=all
+
+docker run -p 9944:9944 -p 9933:9933 -d --restart=always \
+cennznet/cennznet:<VERSION> \
+--chain=/cennznet/genesis/nikau.raw.json \
+--validator \
+--name=<MY_NODE> \
+--telemetry-url 'ws://cennznet-telemetry.centrality.me:8000/submit 0' \
+--rpc-methods=Unsafe \
+--ws-external \
+--rpc-external \
+--rpc-cors=https://cennznet.io
 ```
 
 ### Appendix: Staking Ledger Storage
