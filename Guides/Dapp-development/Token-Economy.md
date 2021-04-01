@@ -8,6 +8,8 @@ CENNZnet is built with a native multi-token economy, similar to the ERC20 specif
 Two assets on CENNZnet have special roles in the economy. CENNZ is the network staking token, while CPAY is the network fee token.
 CENNZ is used to participate in network staking duties and governance.
 
+For more information on the benefits and economics of the dual token economy, please refer to our article [The dual token economy: explaining CENNZ and CPAY](https://medium.com/centrality/the-dual-token-economy-explaining-cennz-and-cpay-c9bd3c5b7430).
+
 As a side-effect an account's CENNZ balance may be partially locked e.g.
 an account has staked some of it's CENNZ and will not be able to transfer those tokens, until it has exited the staking system.
 

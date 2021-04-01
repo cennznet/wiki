@@ -4,11 +4,14 @@
     - [CENNZnet repositories](Getting-started/CENNZnet-repos)
 ---
 - Guides
+    - Node operators
+        - [Run a Full Node](Guides/Node-operators/Running-a-Full-Node)
+        - [Run a Validator Node](Guides/Node-operators/Validator-Guide)
+        - [Nominator Staking Guide](Guides/Node-operators/Nominator-Staking-Guide)
     - DApp development
-        - [Accounts and Keypairs](Guides/Dapp-development/Accounts-and-Keypairs)
+        - [Interact with CENNZnet using the API](Guides/Dapp-development/Interact-with-CENNZnet--using-the-API)
         - [Token Economy](Guides/Dapp-development/Token-Economy)
         - [Smart Contracts](Guides/Dapp-development/Using-Smart-Contracts-on-CENNZnet)
-        - [Interact with CENNZnet using the API](Guides/Dapp-development/Interact-with-CENNZnet--using-the-API)
     - CENNZnet development
         - [Installing Dependencies](Guides/CENNZnet-development/Installing-Dependencies)
         - [Repository Relationships](Guides/CENNZnet-development/Repository-Relationships)
@@ -16,13 +19,9 @@
         - [Regenerate genesis files](Guides/CENNZnet-development/Regenerating-genesis-files-on-Release)
         - [Dendrology](Guides/CENNZnet-development/Dendrology)
         - [Setting up Linux subsystem on Windows](Guides/CENNZnet-development/Set-up-Linux-Sub-system-for-Windows)
-    - Node operators
-        - [Run a Full Node](Guides/Node-operators/Running-a-Full-Node)
-        - [Run a Validator Node](Guides/Node-operators/Validator-Guide)
-        - [Nominator Staking Guide](Guides/Node-operators/Nominator-Staking-Guide)
     - CENNZnet infrastructures
-        - [CENNZX Exchange](Guides/CENNZnet-infrastructures/CENNZX-Exchange)
         - [Interact with CENNZnet using the UI](Guides/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
+        - [CENNZX Exchange](Guides/CENNZnet-infrastructures/CENNZX-Exchange)
         - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
 ---
 - Examples
@@ -36,6 +35,7 @@
     - CENNZnet API
         - [Getting Started](References/CENNZnet-API/Getting-Started)
         - [Cheatsheet](References/CENNZnet-API/Cheatsheet)
+        - [Accounts and Keypairs](References/CENNZnet-API/Accounts-and-Keypairs)
         - [Staking API](References/CENNZnet-API/Staking)
         - [Subscriptions](References/CENNZnet-API/Subscriptions)
         - [Technical Reference](References/CENNZnet-API/Technical-Reference)
