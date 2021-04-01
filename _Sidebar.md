@@ -12,7 +12,7 @@
 ---
 - DApp development
     - Guides
-        - [The architecture of a DApp](Dapp-development/Guides/The-architecture-of-a-DApp)
+        - [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp)
         - [Interact with CENNZnet using the API](Dapp-development/Guides/Interact-with-CENNZnet--using-the-API)
         - [Token Economy](Dapp-development/Guides/Token-Economy)
         - [Smart Contracts](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet)
