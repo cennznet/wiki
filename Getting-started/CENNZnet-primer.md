@@ -48,4 +48,4 @@ When contributing to the [CENNZnet repo](https://github.com/cennznet/cennznet), 
 
 If the idea of DApps(Decentralised Apps) is new to you, please first read our article [What is a DApp and why are they useful?](https://cennz.net/blog/featured-blog-post/what-is-a-dapp/).
 
-The next step would be to read the [CENNZnet technical overview](Getting-started/CENNZnet-technical-overview), and then you can head to the DApp development section.
+The next step would be to read the [CENNZnet technical overview](Getting-started/CENNZnet-technical-overview), and then you can head to [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp) in the Dapp development section.
