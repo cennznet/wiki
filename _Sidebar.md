@@ -49,14 +49,12 @@
     - CENNZnet infrastructures
         - [Interact with CENNZnet using the UI](References/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
         - [CENNZX Exchange](References/CENNZnet-infrastructures/CENNZX-Exchange)
+        - [Uncover API](References/CENNZnet-infrastructures/UncoverAPI)
         - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
 
     - Runtime modules
         - [Sylo Runtime Modules](References/Runtime-modules/Sylo-Runtime-Modules)
         - [Doughnuts](References/Runtime-modules/Doughnut)
         - [Doughnut Permissioning](References/Runtime-modules/Doughnut-Permissioning)
-
-    - Uncover
-        - [Block Explorer API](References/Uncover/UncoverAPI)
 
     
