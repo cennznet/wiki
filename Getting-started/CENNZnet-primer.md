@@ -22,7 +22,7 @@ CENNZnet Wiki is suited to:
 * The open source community that's building CENNZnet
 * Node operators/participants of CENNZnet
 
-Guides to support these varied needs can be found appropriately categorised under CENNZnet Development > Guides.
+Guides to support these varied needs can be found appropriately categorised in the sidebar.
 
 This Wiki is an open source project.
 
