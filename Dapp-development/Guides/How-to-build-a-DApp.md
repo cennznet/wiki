@@ -17,7 +17,7 @@ As described in the [CENNZnet technical overview](Getting-started/CENNZnet-techn
 
 ## A DApp's communication with a node
 
-To communicate with a blockchain, you will need to connect to a node. You can connect to a node via the CENNZnet API or [CENNZnet.io](http://cennznet.io/).
+To communicate with a blockchain, you will need to connect to a node. You can connect to a node via the [CENNZnet API](https://github.com/cennznet/api.js) or [CENNZnet.io](http://cennznet.io/).
 
 While you are working on your DApp, you can typically connect to an existing node on the MainNet. But for the best performance in a production environment, you may run and connect to your own node. 
 

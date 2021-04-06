@@ -2,7 +2,7 @@
 
 The CENNZnet blockchain features a rich API for developing your D'App.
 
-The easiest way to get started is to follow our [API getting started guide](Interact-with-CENNZnet--using-the-API)
+The easiest way to get started is to follow our [API getting started guide](Dapp-development/Guides/Interact-with-CENNZnet--using-the-API)
 
 For a detailed reference on how the API works, see the [Polkadot API reference](https://polkadot.js.org/api/start/)
 
