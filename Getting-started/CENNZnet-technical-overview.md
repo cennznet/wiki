@@ -35,7 +35,7 @@ CENNZnet is a public blockchain network, which means anyone can join the network
 
 By joining the network, you participate in block production, which keeps the network running, and governance, which determines the rules and logic of CENNZnet. This means CENNZnet is a decentralised system owned by the participants of the network. 
 
-The CENNZnet team from Centrality is the founding members of CENNZnet. We currently perform most of the tasks to maintain and develop the network. As time goes on, CENNZnet will become more decentralised and eventually run by the community of developers and investors.
+The CENNZnet team from Centrality are the founding members of CENNZnet. We currently perform most of the tasks to maintain and develop the network. As time goes on, CENNZnet will become more decentralised and eventually run by the community of developers and investors.
 
 ### CENNZnet networks and genesis files
 
