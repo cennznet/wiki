@@ -1,14 +1,17 @@
 ![CENNZnet](./assets/images/banner.png)
 
-## Intro
-CENNZnet is a public blockchain based on Proof of Stake (PoS) consensus built on top of the [Plug](https://github.com/plugblockchain/plug-blockchain/) framework.
+## Intro to CENNZnet
 
-The PoS algorithm facilitates fairness compared to the widely used Proof of Work algorithm through a process of staking.
+CENNZnet is a public blockchain network that powers decentralised applications (DApps) and the crypto currencies CENNZ and CPAY. It is built on top of the [Plug](https://github.com/plugblockchain/plug-blockchain/) framework.
 
-It also allows CENNZ holders to participate in the process of staking and get rewarded for it.
-CENNZnet implements a decentralised currency exchange (CENNZX), fully managed by users, providing spot price trades and integrated multi-currency fee payment.
+CENNZnet features:
+* ***Proof of Stake (PoS) [consensus mechanism](https://cennz.net/publications/understanding-consensus-mechanisms/)***: Facilitates a secure system while also rewarding our community. 
+* ***[Dual token economy](https://cennz.net/publications/tokens-on-cennznet-understanding-the-dual-token-economy/)***: CENNZnet has 2 tokens: CPAY and CENNZ. This ensures that gas fees remain stable while the CENNZ token value can fluctuate with crypto markets.
+* ***Decentralised governance***: CENNZnet functions 100% on-chain using blockchain’s built in voting mechanisms.
+* ***CENNZX***: CENNZnet implements a decentralised currency exchange (CENNZX) which provides spot price trades and integrated multi-currency fee payment.
 
-Decentralized applications (DApps) built on CENNZnet can seamlessly interact with the users of other DApps.
+Our mission is to provide a user-first experience for both DApp developers and their end users. We aim to make blockchain based services accessible for first time builders and end users so that everyone can enjoy the increased network transparency, data privacy and reliability that decentralisation offers. 
+
 
 ## Community
 
@@ -25,7 +28,8 @@ Join the Discord server by clicking on the badge below!
 [![Support Server](https://img.shields.io/discord/801219591636254770.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge)](https://discord.gg/AnB3tRtkJ4)
 
 
-## Quick Start
+## Handy notes
+### Starting a CENNZnet node
 
 Start a full node named `my-node` and connect it to the CENNZnet MainNet:
 ```bash
@@ -46,9 +50,9 @@ cd cennznet && cargo build --release
 
 Check `my-node` is running [here](http://cennznet-telemetry.centrality.me/#/CENNZnet-Azalea).
 
-*For more details on running a node, look at [Running a Full Node](Guides/Node-operators/Running-a-Full-Node).*
+*For more details on running a node, look at [Running a Full Node](Network-participating/Node-operating/Running-a-Full-Node).*
 
-## Unfrastructure Links
+### Centrality hosted infrastructures
 Centrality hosted CENNZnet full nodes and ecosystem services
 
 Block explorer API: https://service.eks.centralityapp.com/cennznet-explorer-api/api/  
