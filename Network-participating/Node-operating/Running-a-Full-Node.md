@@ -96,8 +96,9 @@ $ ./target/release/cennznet -- --help        # using binary
 
 Fresh nodes may take days to complete synchronisation. To make the process faster, the CENNZnet team takes snapshots of the nodes.
 
-The [Validator node archives](https://s3-ap-southeast-1.amazonaws.com/cennznet-snapshots.centralityapp.com/azalea/1.2.2/validator/index.html) contains the full history, therefore requires a larger amount of storage space. 
-The [Full node archives](https://s3-ap-southeast-1.amazonaws.com/cennznet-snapshots.centralityapp.com/azalea/1.2.2/fullnode/index.html) contain the history of the last 256 blocks. This allows you to interact with the chain, but doesn't have the history of earlier blocks.
+The [Archive(Validator) Node archives can be found here](https://s3-ap-southeast-1.amazonaws.com/cennznet-snapshots.centralityapp.com/azalea/1.2.2/validator/index.html).
+
+The [Full Node archives can be found here](https://s3-ap-southeast-1.amazonaws.com/cennznet-snapshots.centralityapp.com/azalea/1.2.2/fullnode/index.html).
 
 To run a node with an archive,
 * Download the latest archive

@@ -8,10 +8,12 @@
         - [Validator Staking Guide](Network-participating/Staking/Validator-Guide)
         - [Nominator Staking Guide](Network-participating/Staking/Nominator-Staking-Guide)
     - Node operating
+        - [Types of nodes](Network-participating/Node-operating/Types-of-nodes)
         - [Running a Full Node](Network-participating/Node-operating/Running-a-Full-Node)
 ---
 - DApp development
     - Guides
+        - [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp)
         - [Interact with CENNZnet using the API](Dapp-development/Guides/Interact-with-CENNZnet--using-the-API)
         - [Token Economy](Dapp-development/Guides/Token-Economy)
         - [Smart Contracts](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet)
@@ -48,14 +50,12 @@
     - CENNZnet infrastructures
         - [Interact with CENNZnet using the UI](References/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
         - [CENNZX Exchange](References/CENNZnet-infrastructures/CENNZX-Exchange)
+        - [Uncover API](References/CENNZnet-infrastructures/UncoverAPI)
         - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
 
     - Runtime modules
         - [Sylo Runtime Modules](References/Runtime-modules/Sylo-Runtime-Modules)
         - [Doughnuts](References/Runtime-modules/Doughnut)
         - [Doughnut Permissioning](References/Runtime-modules/Doughnut-Permissioning)
-
-    - Uncover
-        - [Block Explorer API](References/Uncover/UncoverAPI)
 
     
