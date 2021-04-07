@@ -9,6 +9,7 @@
         - [Nominator Staking Guide](Network-participating/Staking/Nominator-Staking-Guide)
     - Node operating
         - [Types of nodes](Network-participating/Node-operating/Types-of-nodes)
+        - [Running a Development Node](Network-participating/Node-operating/Running-a-Dev-Node)
         - [Running a Full Node](Network-participating/Node-operating/Running-a-Full-Node)
         - [Running nodes from snapshots](Network-participating/Node-operating/Running-nodes-from-snapshots)
 ---

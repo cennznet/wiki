@@ -20,11 +20,6 @@ There are a couple tools that let you interact with CENNZnet visually. These too
 
 [CENNZnet.io](https://cennznet.io/#/) provides a wallet and a GUI to the CENNZnet API. It connects to and communicates with a CENNZnet node.
 
-It also serves as a very helpful development tool. If you a new to CENNZnet DApp development, be sure to read the following user guides to CENNZnet.io:
-* [Intro Guide to CENNZnet.io](https://medium.com/centrality/using-cennznet-io-ac5a90f9a2cb)
-* [Advanced Guide to CENNZnet.io](https://medium.com/centrality/advanced-guide-to-cennznet-io-33be90f26ff3)
-
-
 #### UNcover 
 
 [UNcover](https://uncoverexplorer.com/) is an explorer that search for transactions, addresses, prices and other activities on CENNZnet MainNet. This information may not be stored on a single node.
@@ -74,6 +69,15 @@ The top layer interface of CENNZnet exposes callables that belong to the followi
 * Smart contract functions: public functions that can be deployed and called by anyone.
 
 ![Interface](../assets/images/technical-overview/interface.png)
+
+## Development tools
+
+[CENNZnet.io](https://cennznet.io/#/) is the most important development tool. If you a new to CENNZnet DApp development, be sure to read the following user guides to CENNZnet.io:
+* [Intro Guide to CENNZnet.io](https://medium.com/centrality/using-cennznet-io-ac5a90f9a2cb)
+* [Advanced Guide to CENNZnet.io](https://medium.com/centrality/advanced-guide-to-cennznet-io-33be90f26ff3)
+
+To avoid paying gas fees during development, it's useful to set up a Development Node. See this guide,
+[Running a Development Node](Network-participating/Node-operating/Running-a-Dev-Node), to set up a development node.
 
 ## Joining the network
 

@@ -14,6 +14,13 @@ A Full Node contains the history of the last 256 blocks. This allows you to inte
 
 DApps can connect to a Full Node or an Archive Node to communicate with CENNZnet.
 
+## Development Nodes
+
+These are special nodes for development purposes. They are completely disconnected from the MainNet or the TestNet, so that you have a local sandbox environment for testing.
+
+A development node comes with test accounts that own billions of CENNZ and CPAY. This allows you to test your DApps without paying real money.
+
+
 ## Light Nodes
 
 A Light Node contain only the runtime and the current state. It doesn't store past extrinsics and so cannot restore the full chain from genesis. 

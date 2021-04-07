@@ -11,12 +11,12 @@ To run a node with an archive,
 * Unzip the archive
 * Add the argument  '-v </path/to/dir/containing/the/unzipped/archive>:/mnt/cennznet' to 'docker run'. This mounts the volume to the docker container, so that the container has access to the archive.
 * Add the argument '--base-path /mnt/cennznet' to 'cennznet/cennznet'. This puts the archive in use.
-
-For example,
+* Modify the following command. Replace `<version>` with the [latest release](https://github.com/cennznet/cennznet/releases) version number, Eg, 1.4.0. edit the the path to archive and the node name.
+* Run the command
 
 ```bash
 docker run -p 9944:9944 -it -v </path/to/dir/containing/the/unzipped/archive>:/mnt/cennznet \
- cennznet/cennznet:1.3.1
+ cennznet/cennznet:<version>
  --base-path /mnt/cennznet \
  --chain=/cennznet/genesis/azalea.raw.json \
  --unsafe-ws-external \
