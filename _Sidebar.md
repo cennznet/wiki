@@ -20,7 +20,7 @@
         - [Token Economy](Dapp-development/Guides/Token-Economy)
         - [Smart Contracts](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet)
     - Examples
-        - [Demo app](Dapp-development/Examples/Example-demo-app)
+        - [Example App walk-through](Dapp-development/Examples/Example-demo-app)
         - [CENNZnet identity provider](https://github.com/cennznet/cennznet-identity-provider)
 ---
 - CENNZnet development
