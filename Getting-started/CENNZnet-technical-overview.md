@@ -83,4 +83,4 @@ To avoid paying gas fees during development, it's useful to set up a Development
 
 As a DApp developer, it is beneficial to join the network. Having nodes of your own allows your DApp to have better and faster access to the network. You can also monitise from the nodes by participating in staking as a validator.
 
-To learn about how to set up a validator node, read our guides in the Guides -> Node operators section.
+To learn about how to set up a node, read our guides in the Network participating -> Node operating section.
