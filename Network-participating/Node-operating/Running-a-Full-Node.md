@@ -91,3 +91,14 @@ To get detailed descriptions on the flags, run either of the following:
 $ docker run cennznet/cennznet:1.1.1 --help  # using docker
 $ ./target/release/cennznet -- --help        # using binary
 ```
+
+## Synchronisation
+
+When you start a node with a genesis file, it only holds the initial block. This means it only knows about the very beginning of CENNZnet but not any events that every other nodes acknowledges. Synchronisation is the process where the node learns the history (existing blocks) on the network, so it's up to date with the latest events on the MainNet.
+
+The node finishes synchronising when the best block number is the same or close to the target block number. 
+Example output from the node:
+
+```
+INFO ⚙️ Syncing 21.2 bps, target=#1140132 (1 peers), best: #532405 (0xfad8…07ea), finalized #531968 (0x1a24…d249), ⬇ 7.3kiB/s ⬆ 60 B/s
+```

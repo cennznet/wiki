@@ -7,4 +7,3 @@
 
 
 [Let's get started!](Home)
-[GitHub](https://github.com/cennznet/cennznet)

@@ -1,6 +1,6 @@
 :root {
     line-height: 1.8;
-    --theme-color: #1130FF;
+    --theme-color: #7587ff;
     --base-font-family:  "Open Sans";
 
     /* Side bar */
@@ -10,8 +10,10 @@
     --sidebar-nav-link-text-decoration--hover     : ;
 
     /* Cover page */
-    --cover-background-color : hsl(213, 54%, 54%);
+    --cover-background-color : hsl(213, 59%, 42%);
     --cover-heading-font-weight : 600;
+    --cover-button-primary-background : #7483e8;
+    --cover-button-primary-border : 1px solid var(--cover-button-primary-background);
 
     --strong-font-weight: 800;
     --heading-h1-font-weight: 600; 

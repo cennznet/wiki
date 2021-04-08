@@ -11,7 +11,12 @@
 
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
   <!-- Theme: Simple -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/style.min.css" type="text/css">
+
+  <!-- docsify-themeable styles-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" title="light">
+  <link rel="stylesheet alternative" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css" title="dark">
 
   <!-- Sidebar collapse -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
@@ -29,6 +34,16 @@
       coverpage  : '_CoverPage.md',
       loadSidebar: '_Sidebar.md',
       loadFooter: '_Footer.md',
+      darklightTheme: {
+                defaultTheme : 'dark',
+                dark: {
+                    
+                },
+                light: {
+                    
+                }
+
+            }
     }
 
   </script>
@@ -43,8 +58,15 @@
   <!-- Pagination -->
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
 
-  <!-- docsify-themeable (latest v0.x.x) -->
-  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+  <!--- Darklight theme toggle -->
+  <script
+      src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/main.min.js"
+      type="text/javascript">
+  </script>
+  <script
+      src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@3/dist/docsify-themeable/index.min.js"
+      type="text/javascript">
+  </script>
 
 </body>
 </html>
