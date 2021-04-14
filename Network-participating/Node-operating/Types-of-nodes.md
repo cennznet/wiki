@@ -14,11 +14,11 @@ A Full Node contains the history of the last 256 blocks. This allows you to inte
 
 DApps can connect to a Full Node or an Archive Node to communicate with CENNZnet.
 
-## Development Nodes
+## Development Chain/Nodes
 
-These are special nodes for development purposes. They are completely disconnected from the MainNet or the TestNet, so that you have a local sandbox environment for testing.
+The development chains are special chains that consists of one local node. They are completely disconnected from the MainNet or the TestNet, so that you have a local sandbox environment for testing.
 
-A development node comes with test accounts that own billions of CENNZ and CPAY. This allows you to test your DApps without paying real money.
+A development chains comes with test accounts that own billions of CENNZ and CPAY. This allows you to test your DApps without paying real money.
 
 
 ## Light Nodes

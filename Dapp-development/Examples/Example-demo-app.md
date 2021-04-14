@@ -33,7 +33,7 @@ cd src
 ```
 
 Now you are all set up. For the app to work, you need to run a local test chain to interact with.
-Follow the instruction here [to setup a local dev chain](https://github.com/cennznet/cennznet/wiki/Running-a-Full-Node#to-run-a-test-blockchain-locally).
+Follow the instruction here [to setup a local dev chain](Node-operating/Running-a-Dev-Chain).
 
 You can run the example app now.
 

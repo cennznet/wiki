@@ -20,8 +20,8 @@ Most DApps require customised storage on the blockchain. This is done through Sm
 * [Intro Guide to CENNZnet.io](https://medium.com/centrality/using-cennznet-io-ac5a90f9a2cb)
 * [Advanced Guide to CENNZnet.io](https://medium.com/centrality/advanced-guide-to-cennznet-io-33be90f26ff3)
 
-To avoid paying gas fees during development, it's useful to set up a Development Node. See this guide,
-[Running a Development Node](Network-participating/Node-operating/Running-a-Dev-Node), to set up a development node.
+To avoid paying gas fees during development, it's useful to set up a Development Chain. See this guide,
+[Running a Development Chain](Network-participating/Node-operating/Running-a-Dev-Chain), to set up a development chain.
 
 ## Next steps
 
