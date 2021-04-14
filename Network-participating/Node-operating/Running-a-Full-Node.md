@@ -42,31 +42,6 @@ Config files for specific CENNZnet networks are available in the main repository
 
 The `<name>.raw.json` versions should be used as they're compatible with multiple client versions, while the `<name>.json` merely serves as a human readable reference of the config, but does not maintain compatibility between client versions.
 
-## To run a test blockchain locally
-During development, you may want to interact with a local test net to test your program before connecting to the main blockchain. Interacting with the real blockchain results in in-reversible transactions, and almost all interactions will require some amount of payment, either as a form of transaction fees, or gas payment.
-
-1. Build your cennznet locally, or setup the docker image of cennznet.
-2. Launch the local chain using the following command:
-
-```bash
-./target/release/cennznet --chain=dev --base-path=/tmp/cennznet --name=test --validator --alice --unsafe-ws-external --ws-port=9944 --rpc-cors=all
-```
-
-`--chain=dev`: Local developer chain will be launched
-
-`--validator` : Launch the chain with a local node as validator. The blockchain cannot produce new blocks if there are no validator connected.
-
-`--alice` : use alice's account as the "origin" of the local node.
-
-`--unsafe-ws-external --ws-port=9944 --rpc-cors=all` : Enables full WebSocket connectivity (unsafe for validators)
-
-## Connecting to your Local test blockchain via UI
-Once the local test chain is up and running, you can interact with it using the cennznet webpage UI. 
-1. Go to the website: https://cennznet.io/#/settings
-2. For the first option: `remote node/endpoint to connect to` select "Local Node" option instead of "CENNZnet"
-3. Select "Save and refresh".
-You should be able to connect to the local chain now and send transactions and queries via the website UI.
-
 ## Enabling Ws/RPC Ports
 The following combination of flags will allow the node's RPC and/or websocket functionality to be exposed.
 ```bash
