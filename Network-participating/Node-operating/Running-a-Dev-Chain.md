@@ -1,6 +1,6 @@
-# Running a development node
+# Running a development chain
 
-A development node gives you a local sandbox environment for testing your features.
+A development chain/node gives you a local sandbox environment for testing your features.
 
 * Install [Docker](https://www.docker.com/)
 * Modify the following command. Replace `<version>` with the [latest release](https://github.com/cennznet/cennznet/releases) version number, Eg, 1.4.0. 
