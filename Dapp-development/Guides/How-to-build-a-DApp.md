@@ -45,4 +45,4 @@ To start building with CENNZnet in 5 minutes, try the [CENNZnet Quick Start Temp
 
 This is a minimal DApp that connects to the CENNZNet MainNet via the CENNZnet API, and listens for the latest block number.
 
-After having a play with the quick start template, check out the [Example App walk-through](Dapp-development/Examples/Example-demo-app) and learn more about CENNZnet API in the References area.
+After having a play with the quick start template, check out the [Example App walk-through](Dapp-development/Examples/Example-demo-app) and then [learn more about the CENNZnet API](References/CENNZnet-API/Getting-Started).
