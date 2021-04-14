@@ -1,6 +1,7 @@
 - Getting started
     - [CENNZnet primer](Getting-started/CENNZnet-primer)
     - [CENNZnet technical overview](Getting-started/CENNZnet-technical-overview)
+    - [CENNZnet DApp development](Getting-started/CENNZnet-dapp-development)
     - [CENNZnet repositories](Getting-started/CENNZnet-repos)
 ---
 - Network participating

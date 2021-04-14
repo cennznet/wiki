@@ -6,7 +6,7 @@ There are many pieces of technology and tools that contribute to CENNZnet. This 
 
 ![Interact with CENNZnet](../assets/images/technical-overview/highlevel.png)
 
-You can either interact with CENNZnet programmatically  through the JavaScript API, or through visual interfaces.
+You can either interact with CENNZnet programmatically through the JavaScript API, or through visual interfaces.
 
 ### CENNZnet API
 
@@ -52,7 +52,7 @@ Runtime modules are building blocks of CENNZnet that provide bundles of function
 #### Smart Contracts
 
 Smart contracts are small pieces of code that allows developers to add custom functionalities on top of the core functions provided by the runtime modules.
-Smart contracts can be created, deployed, and called by anyone on the network.
+Smart contracts can be created, deployed, and called by anyone on the network. Smart contracts on CENNZnet are written in [Rust](https://www.rust-lang.org/).
 Our article [What are smart contracts](https://cennz.net/publications/what-are-smart-contracts/) explains smart contracts in more detail.
 
 
@@ -69,15 +69,6 @@ The top layer interface of CENNZnet exposes callables that belong to the followi
 * Smart contract functions: public functions that can be deployed and called by anyone.
 
 ![Interface](../assets/images/technical-overview/interface.png)
-
-## Development tools
-
-[CENNZnet.io](https://cennznet.io/#/) is the most important development tool. If you a new to CENNZnet DApp development, be sure to read the following user guides to CENNZnet.io:
-* [Intro Guide to CENNZnet.io](https://medium.com/centrality/using-cennznet-io-ac5a90f9a2cb)
-* [Advanced Guide to CENNZnet.io](https://medium.com/centrality/advanced-guide-to-cennznet-io-33be90f26ff3)
-
-To avoid paying gas fees during development, it's useful to set up a Development Node. See this guide,
-[Running a Development Node](Network-participating/Node-operating/Running-a-Dev-Node), to set up a development node.
 
 ## Joining the network
 
