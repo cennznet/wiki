@@ -23,13 +23,13 @@ Make sure Rust is installed on your machine (see [here](Installing-Dependencies#
 
 Clone the repository and build the binary:
 
-```console
+```bash
 $ git clone https://github.com/cennznet/cennznet --branch release/1.2.0 && cd cennznet
 $ cargo build --release
 ```
 
 Then run the binary directly:
-```console
+```bash
 $ ./target/release/cennznet \
     --chain=genesis/azalea.raw.json \
     --name=<NODE_NAME> \
@@ -87,7 +87,7 @@ The following combination of flags will allow the node's RPC and/or websocket fu
 ## Other Flags
 
 To get detailed descriptions on the flags, run either of the following:
-```console
+```bash
 $ docker run cennznet/cennznet:1.1.1 --help  # using docker
 $ ./target/release/cennznet -- --help        # using binary
 ```

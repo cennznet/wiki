@@ -9,12 +9,12 @@ curl -H "Content-Type: application/json" \
 ```
 
 with the [@cennznet/api](https://www.npmjs.com/package/@cennznet/api):
-```javascript
+```js
 let block = (await api.rpc.chain.getBlock());
 ```
 
 Or subscribe:
-```javascript
+```js
 // use `subscribeFinalizedHeads` for finalized only
 await api.rpc.chain.subscribeNewHeads((header) => {
   console.log(header.toJSON());

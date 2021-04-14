@@ -54,13 +54,13 @@ Click on execute, and you will be able to execute code on the contract.
 
 When using contracts with the API, you will need the following additional imports:
 
-```node
+```js
 const { compactAddLength, u8aToU8a} = require('@polkadot/util');
 const fs = require('fs');
 ```
 
 ### Uploading a contract
-```node
+```js
 let wasm = fs.readFileSync("myContract.wasm");
 await api.tx.contracts.putCode(gas_limit, compactAddLength(u8aToU8a(wasm)));
 ```
@@ -68,7 +68,7 @@ await api.tx.contracts.putCode(gas_limit, compactAddLength(u8aToU8a(wasm)));
 * `wasm` needs to be encoded appropriately for transport and have the length added.
 
 ### Instantiating a contract
-```node
+```js
 api.tx.contracts.instantiate(endowment, gas_limit, code_hash, compactAddLength(dataload));
 ```
 * `endowment` - the amount of CentraPay that the created contract account will be endowed with (taken from the caller)
@@ -77,7 +77,7 @@ api.tx.contracts.instantiate(endowment, gas_limit, code_hash, compactAddLength(d
 * `dataload` - the instantiation function to call and its encoded arguments
 
 ### Calling a contract
-```node
+```js
 api.tx.contracts.call(contract_address, transfer, gas_limit, compactAddLength(dataload));
 ```
 * `contract_address` - the address of the smart contract to call

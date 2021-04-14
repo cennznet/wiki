@@ -5,7 +5,7 @@ For Windows, Cennznet may require the Linux subsystem to build.
 ### 1. Enable Linux Subsystem
 Open your Windows PowerShell (you may need to run using Administrator Privilege), run this command:
 
-```
+```bash
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
@@ -16,7 +16,7 @@ Ubuntu will finish installing after a while and prompt you to create a new Usern
 
 Now you should be able to use Ubuntu via the CLI. To access your HDD, use 
 
-```
+```bash
 $cd /mnt/<drive letter>/<path>
 ```
 
@@ -25,13 +25,13 @@ Selecting “Quick Edit Mode” allows you to paste by right-clicking the consol
 
 ### 3. Update the native package manager
 
-```
+```bash
 sudo apt update
 ```
 
 ### 4. Install required tool-chain for Linux
 
-```
+```bash
 sudo apt install -y cmake pkg-config libssl-dev git gcc build-essential clang libclang-dev
 ```
 
@@ -41,11 +41,11 @@ Now your Linux is ready to install Rust.
 
 1. Install Rust on your machine [here](https://rustup.rs/) 
 2. Use Rust stable by default:
-```
+```bash
 rustup default stable
 ```
 3. Install the following nightly toolchains:
-```
+```bash
 rustup install nightly
 rustup target add --toolchain=nightly wasm32-unknown-unknown
 ```

@@ -8,7 +8,7 @@ For a detailed reference on how the API works, see the [Polkadot API reference](
 
 ### API Object
 The full Blockchain API is accessed by creating an API object:
-```node
+```js
 // Create the API and wait until ready
 const api = await Api.create({
   provider: 'ws://localhost:9944'
@@ -18,7 +18,7 @@ The object needs:
 * The websocket address (for testing locally, the default is `ws://localhost:9944`)
 
 The import required to build the API object is:
-```node
+```js
 const { Api } = require('@cennznet/api');
 ```
 
@@ -28,7 +28,7 @@ One of the key features of CENNZnet is delegated dispatch calls. This allows `Bo
 
 When sending an extrinsic, doughnuts are attached when signing:
 
-```node
+```js
 const txHash = await api.tx.genericAsset
   .transfer(assetId, keyring.charlie.address, 1500000000)
   .signAndSend(keyring.alice, {doughnut: encoded_doughnut});
@@ -51,7 +51,7 @@ const unsub = await api.tx.genericAsset.transfer(CENNZ, bob.address, 10000)
 
 ### 1. Generic Asset
 
-```node
+```js
 api.tx.genericAsset.transfer(asset, to, amount)
 ```
 Transfer `amount` of `asset` from the sender's free balance to the `to` account.
@@ -60,29 +60,29 @@ Transfer `amount` of `asset` from the sender's free balance to the `to` account.
 * `to` - Receiver of the asset
 * `amount` - Amount to send
 
-```node
+```js
 api.tx.genericAsset.mint(asset, to, amount)
 ```
 Mints `amount` of `asset` into account `to` and increases its total issuance. The sender must have `mint` permissions.
 
-```node
+```js
 api.tx.genericAsset.burn(asset, target, amount)
 ```
 Burns `amount` of `asset` from `target` account and decreases its total issuance. The sender must have `burn` permissions.
 
-```node
+```js
 api.query.genericAsset.freeBalance(asset, who)
 ```
 Get the free balance of `asset` held by account `who`.
 
-```node
+```js
 api.query.genericAsset.reservedBalance(asset, who)
 ```
 Get the reserved balance of `asset` held by account `who`.
 
 ### 2. CENNZX Spot
 
-```node
+```js
 api.tx.cennzxSpot.buyAsset(recipient, asset_to_sell, asset_to_buy, buy_amount, maximum_sell)
 ```
 Buy `asset_to_buy` with `asset_to_sell`. User specifies an exact `buy_amount` and a `maximum_sell` amount.
@@ -93,7 +93,7 @@ Buy `asset_to_buy` with `asset_to_sell`. User specifies an exact `buy_amount` an
 * `buy_amount` - The amount of `asset_to_buy` to purchase
 * `maximum_sell` - Maximum `asset_to_sell` we are willing to pay
 
-```node
+```js
 api.tx.cennzxSpot.sellAsset(recipient, asset_to_sell, asset_to_buy, sell_amount, minimum_buy)
 ```
 Sell `asset_to_sell` for `asset_to_buy`. User specifies an exact `sell_amount` and a `minimum_buy` amount.
@@ -104,7 +104,7 @@ Sell `asset_to_sell` for `asset_to_buy`. User specifies an exact `sell_amount` a
 * `sell_amount` - The amount of `asset_to_sell` to trade
 * `minimum_buy` - Minimum `asset_to_buy` we are willing to trade for
 
-```node
+```js
 api.tx.cennzxSpot.addLiquidity(asset_id, minimum_liquidity, asset_amount, core_amount)
 ```
 Deposit core asset and trade asset the current ratio to mint `liquidity`.
@@ -115,7 +115,7 @@ Returns amount of `liquidity` minted.
 * `asset_amount` - Amount of trade asset to add
 * `core_amount` - Amount of core asset to add
 
-```node
+```js
 api.tx.cennzxSpot.removeLiquidity(asset_id, liquidity_to_withdraw, min_asset_withdraw, min_core_withdraw)
 ```
 Burn exchange `liquidity` to withdraw core asset and trade asset at the current ratio
@@ -125,29 +125,29 @@ Burn exchange `liquidity` to withdraw core asset and trade asset at the current 
 * `min_asset_withdraw` - The minimum trade asset withdrawn
 * `min_core_withdraw` - The minimum core asset withdrawn
 
-```node
+```js
 api.rpc.cennzx.buyPrice(asset_to_buy, buy_amount, asset_to_sell)
 ```
 Get the price in `asset_to_sell` to buy `buy_amount` of `asset_to_buy`.
 
-```node
+```js
 api.rpc.cennzx.sellPrice(asset_to_sell, sell_amount, asset_to_buy)
 ```
 Get the value of `asset_to_buy` when selling `sell_amount` of `asset_to_sell`.
 
-```node
+```js
 api.rpc.cennzx.liquidityValue(account_id, asset_id)
 ```
 Get the value of liquidity owned by `account_id` for the exchange pool holding `asset_id`.
 
-```node
+```js
 api.rpc.cennzx.liquidityPrice(asset_id, liquidity_amount)
 ```
 Get the cost in (`core_asset`, `trade_asset`) to buy `liquidity_amount` from the `asset_id` exchange pool.
 
 ### 3. Attestation
 
-```node
+```js
 api.tx.attestation.setClaim(holder, topic, value)
 ```
 Make a claim of `value` on `topic` about `holder`.
@@ -156,7 +156,7 @@ Make a claim of `value` on `topic` about `holder`.
 * `topic` - The claim topic encoded as a U256
 * `value` - The claim value encoded as a U256
 
-```node
+```js
 api.tx.attestation.removeClaim(holder, topic)
 ```
 Remove a previously made claim on `topic` about `holder`.

@@ -8,7 +8,7 @@ The two core assets in CENNZnet are:
 
 To make a CPAY transfer:
 
-```javascript
+```js
 let cpayId = (await api.tx.genericAsset.spendingAssetId());
 let receiver = keyring.charlie.address;
 let sender = keyring.alice;
@@ -93,7 +93,7 @@ let balance = await api.query.genericAsset.freeBalance(cennz, account);
 
 If we want to know Alice's balance in real-time, we can use a subscription:
 
-```javascript
+```js
 let unsub = await api.query.genericAsset
 .freeBalance(cennz, account, (balance) => {
   console.log(`Alice's CENNZ balance is: ${balance}`);
