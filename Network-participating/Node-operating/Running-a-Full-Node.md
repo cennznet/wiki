@@ -48,7 +48,7 @@ During development, you may want to interact with a local test net to test your 
 1. Build your cennznet locally, or setup the docker image of cennznet.
 2. Launch the local chain using the following command:
 
-```
+```bash
 ./target/release/cennznet --chain=dev --base-path=/tmp/cennznet --name=test --validator --alice --unsafe-ws-external --ws-port=9944 --rpc-cors=all
 ```
 
