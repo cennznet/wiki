@@ -23,7 +23,7 @@ Sylo storage can be accessed on [cennznet.io/#/chainstate](https://cennznet.io/#
 
 The javascript API provides the same interfaces available through the UI.
 
-```node
+```js
 /// Sylo E2Ee
 /// - Extrinsics
 api.tx.syloE2Ee.registerDevice(device_id, pre_key_bundles);
@@ -33,7 +33,7 @@ api.tx.syloE2Ee.withdrawPkbs(request_id, wanted_pre_key_bundles);
 /// - State
 api.query.syloE2Ee.preKeyBundles((account_id, device_id)); // Returns `Vec<PreKeyBundle>`
 ```
-```node
+```js
 /// Sylo Groups
 /// - Extrinsics
 api.tx.syloGroups.acceptInvite(group_id, payload, invite_key, inbox_id, signature, group_data);
@@ -50,7 +50,7 @@ api.query.syloGroups.memberships(account_id); // Returns `Vec<AccountId, u32>`
 api.query.syloGroups.memberDevices(group_id); // Returns `Vec<Hash>`
 ```
 
-```node
+```js
 /// Sylo Inbox
 /// - Extrinsics
 api.tx.syloInbox.addValue(peer_id, value);
@@ -61,7 +61,7 @@ api.query.syloInbox.nextIndexes(account_id); // Returns `MessageId`
 api.query.syloInbox.values(account_id); // Returns `Vec<(MessageId, Message)>`
 ```
 
-```node
+```js
 /// Sylo Response
 /// - Extrinsics
 api.tx.syloResponse.removeResponse(request_id);
@@ -70,7 +70,7 @@ api.tx.syloResponse.removeResponse(request_id);
 api.query.syloResponse.responses((account_id, request_id)); // Returns `Response`
 ```
 
-```node
+```js
 /// Sylo Vault
 /// - Extrinsics
 api.tx.syloVault.deleteValues(keys);
@@ -80,7 +80,7 @@ api.tx.syloVault.upsertValue(key, value);
 api.query.syloVault.vault(account_id); // Returns `Vec<(VaultKey, ValueValue)>`
 ```
 
-```node
+```js
 /// Sylo Device
 /// - State
 api.query.syloDevice.devices(account_id); // Returns `Vec<DeviceId>`

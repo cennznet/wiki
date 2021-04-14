@@ -5,7 +5,7 @@
 Install Node.js (`>=10.16.3`) and Yarn (`>= 1.19.0`).
 
 The library as a package is published [here](https://www.npmjs.com/package/@cennznet/api)
-```
+```bash
 $> npm i --save @cennznet/api
 ```
 
@@ -13,12 +13,12 @@ First, [run a local CENNZnet node](https://github.com/cennznet/cennznet/wiki/Run
 The `--dev` flag will start the node as a single validator on a development network, also enabling full access to the node's JSON-RPC API.  
 This is not recommended for real validator nodes; but it is fine for testing.
 
-```sh
+```bash
 docker run cennznet/cennznet:1.2.2 --dev --tmp
 ```
 
 If you want to know more about these parameters use:
-```sh
+```bash
 docker run cennznet/cennznet:1.2.2 --help
 ```
 
@@ -27,19 +27,19 @@ Once API (@cennznet/api) is installed, it is available either in Promise version
 * Connect to node via [RxJS](https://github.com/cennznet/api.js/blob/develop/docs/examples/rx/01_simple_connect/index.js) version of API
 
 Run the above examples  
-```
+```bash
 node start
 ```
 
 Should see output similar to:
-```
+```bash
 You are connected to chain Development using CENNZnet Node v1.2.0-...
 ```
 
 The `Api` object is dynamically populated with query and transaction methods once connected to a node.  
 Here `types` specify CENNZnet specific types which are additional to the `@polkadot/api` library.  
 In your application, you may develop new types for your runtime modules which will need to be included here also.  
-```javascript
+```js
 // Create the API and wait until ready
 const api = await Api.create({
   provider: address,
@@ -48,7 +48,7 @@ const api = await Api.create({
 ```
 
 The API is used to fetch a bunch of data using promises/rxjs. In the case of `Promise.all` the values are not returned until all contained promises are resolved:
-```javascript
+```js
 // Retrieve the chain & node information information via rpc calls
 const [chain, nodeName, nodeVersion] = await Promise.all([
   api.rpc.system.chain(),

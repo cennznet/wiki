@@ -10,7 +10,7 @@ The easiest way to get started with Docker is via [Docker Desktop](https://www.d
 
 Alternatively, your favorite package manager can also be used like the below example:
 
-```console
+```bash
 $ choco install docker-desktop  # Windows
 $ brew cask install docker      # macOS
 $ sudo apt install docker.io    # Ubuntu

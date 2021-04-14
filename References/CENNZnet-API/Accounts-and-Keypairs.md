@@ -23,7 +23,7 @@ Video guide: https://youtu.be/B_lvxt-An6g
 ## Creating an Account (javascript)
 The [@polkadot/ui-keyring](https://www.npmjs.com/package/@polkadot/ui-keyring) javascript package provides a simple way to create CENNZnet accounts and basic wallet functionality for persistence, encryption, etc.
 
-```javascript
+```js
 import keyring from '@polkadot/ui-keyring';
 import { cryptoWaitReady } from '@polkadot/util-crypto';
 
@@ -54,6 +54,6 @@ subkey inspect --network default "spend report solution aspect tilt omit market 
 To verify an address head over to: https://cennznet.io/#/accounts/addressBook and try adding it.
 Alternatively, [@polkadot/keyring](https://www.npmjs.com/package/@polkadot/keyring) provides utility functions to decode an address:
 
-```javascript
+```js
 keyring.decodeAddress('5CZtJLXtVzrBJq1fMWfywDa6XuRwXekGdShPR4b8i9GWSbzB');
 ```

@@ -81,7 +81,7 @@ api.rpc.cennzx.liquidityPrice(exchangeAsset, liquidityAmount);
 
 _Note: if the calling account should always receive the traded token, we can set recipient to `null`:_
 
-```node
+```js
 api.tx.cennzx.buyAsset(null, assetToSell, assetToBuy, buyAmount, maximumSell);
 ```
 

@@ -14,13 +14,14 @@ The field will be unused when actually creating the genesis block otherwise the 
 
 ### How To
 1) Checkout and compile the new release branch e.g.
-```
+```bash
 git checkout 1.1.0-rc1 && cargo build
 ```
 
 2) Modify the readable json files to include the new field(s)  
 (In the CENNZnet 1.1.0 release a field called `assetMeta` was added
 [via this change upstream](https://github.com/plugblockchain/plug-blockchain/pull/93))
+
 ```diff
 # genesis/nikau.json:53
             16001,

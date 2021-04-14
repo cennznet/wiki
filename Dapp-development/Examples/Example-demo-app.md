@@ -20,13 +20,13 @@ We will cover 3 example use-cases:
 ## How to get started with the JS app
 1. Clone the example app [code repository](https://github.com/cennznet/api-example-app)
 
-```
+```bash
 git clone git@github.com:cennznet/api-example-app.git
 ```
 
 2. Navigate to your project folder 
 
-```
+```bash
 cd api-example-app
 yarn
 cd src
@@ -37,7 +37,7 @@ Follow the instruction here [to setup a local dev chain](https://github.com/cenn
 
 You can run the example app now.
 
-```
+```bash
 node index.js --help
 ```
 
@@ -46,19 +46,19 @@ You should see a list of supported commands and how to use them.
 ## How to use the JS app
 You can call the functions provided in this app to interact with your blockchain. To call a function, append the name of the function and parameters as arguments.
 
-```
+```bash
 node index.js balances
 ```
 You should see some results returned from querying the chain on current balances for A(lice) and B(ob).
 
 For each of the supported commands, some parameters may be options. You can get more info on it by:
 
-```
+```bash
 node index.js transfer -h
 ```
 You should now see more info about how to use this command.
 
-```
+```bash
 usage: index.js transfer [-h] to amount [asset_id] [sub]
 
 Positional arguments:
@@ -82,7 +82,7 @@ In this section, we will use some example use-cases to demonstrate how this app 
 Use case: Alice want to send 2,000,000 units of asset ID:16000 to Bob. For this, you can use the "transfer" call.
 1. Check the starting balances:
 
-```
+```bash
 node index.js balances
 
 Response:
@@ -91,7 +91,7 @@ Asset:16000: A: 1000000000000000000000000000, B:1000000000000000000000000000
 
 2. Make the transfer transaction:
 
-```
+```bash
 node index.js transfer bob 987654321 16000 true
 
 
@@ -108,7 +108,7 @@ Transaction is Successful
 
 3. Check the new balances
 
-```
+```bash
 node index.js balances
 
 Response:                     
@@ -136,7 +136,7 @@ The exchange rate between 16000 and 16001 will be expected to be around 5:1
 2. Make the exchange
 In our demo app call:
 
-```
+```bash
 node index.js buy_asset alice 16000 16001 100
 
 Response:
@@ -154,14 +154,14 @@ Alice has bought 100 unit of 16000 with 502 units of 16001, and the exchange rat
 Use case: Alice wants to make some "Claim" about her opinion about Bob.
 1. Create the claim
 Alice claims that bob's "coolness" has a value of "average"
-```
+```bash
 node index.js set_claim bob coolness average
 ```
 
 
 2. Query the claim 
 
-```
+```bash
 node index.js query_claim bob coolness
 
 Response:
@@ -171,13 +171,13 @@ Has value:average
 
 3. Update the claim
 
-```
+```bash
 node index.js set_claim bob coolness super-duper
 ```
 
 4. Query the new value
 
-```
+```bash
 node index.js query_claim bob coolness
 
 Response:
@@ -189,13 +189,13 @@ The value has been updated.
 
 5. Removing the claim
 
-```
+```bash
 node index.js remove_claim bob coolness
 ```
 
 6. Check if the claim is removed
 
-```
+```bash
 node index.js query_claim bob coolness 
 
 Response:
