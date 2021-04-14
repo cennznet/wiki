@@ -59,7 +59,7 @@
 
     - Runtime modules
         - [Sylo Runtime Modules](References/Runtime-modules/Sylo-Runtime-Modules)
-        - [Doughnuts](References/Runtime-modules/Doughnut)
+        - [Doughnut](References/Runtime-modules/Doughnut)
         - [Doughnut Permissioning](References/Runtime-modules/Doughnut-Permissioning)
 
     
