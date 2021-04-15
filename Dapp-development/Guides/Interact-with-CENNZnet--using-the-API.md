@@ -9,7 +9,7 @@ The library as a package is published [here](https://www.npmjs.com/package/@cenn
 $> npm i --save @cennznet/api
 ```
 
-First, [run a local CENNZnet node](https://github.com/cennznet/cennznet/wiki/Running-a-Full-Node).  
+First, [run a Full Node](Network-participating/Node-operating/Running-a-Full-Node).  
 The `--dev` flag will start the node as a single validator on a development network, also enabling full access to the node's JSON-RPC API.  
 This is not recommended for real validator nodes; but it is fine for testing.
 
