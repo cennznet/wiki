@@ -22,8 +22,7 @@
         - [Interact with CENNZnet using the API](Dapp-development/Guides/Interact-with-CENNZnet--using-the-API)
         - [Token Economy](Dapp-development/Guides/Token-Economy)
         - [Smart Contracts](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet)
-    - Examples
-        - [CENNZnet identity provider](https://github.com/cennznet/cennznet-identity-provider)
+        
 ---
 - CENNZnet development
     - Guides
