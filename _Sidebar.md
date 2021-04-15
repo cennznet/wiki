@@ -18,12 +18,11 @@
 - DApp development
     - Guides
         - [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp)
+        - [Demo DApp walk-through](Dapp-development/Examples/Example-demo-app)
         - [Interact with CENNZnet using the API](Dapp-development/Guides/Interact-with-CENNZnet--using-the-API)
         - [Token Economy](Dapp-development/Guides/Token-Economy)
         - [Smart Contracts](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet)
-    - Examples
-        - [Example App walk-through](Dapp-development/Examples/Example-demo-app)
-        - [CENNZnet identity provider](https://github.com/cennznet/cennznet-identity-provider)
+        
 ---
 - CENNZnet development
     - Guides

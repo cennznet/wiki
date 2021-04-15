@@ -1,9 +1,9 @@
-# Example App walk-through
+# Demo App walk-through
 
 We have created an example JS app with a basic CLI that provides you with examples of using CENNZnet's API.
 You can find the [code repository here](https://github.com/cennznet/api-example-app).
 
-Before you start here, please look through the [Cennznet JS API getting started page](https://github.com/cennznet/cennznet/wiki/Interact-with-CENNZnet--using-the-API)
+Before you start here, please look through the [Interact with CENNZnet using the API](Dapp-development/Guides/Interact-with-CENNZnet--using-the-API).
 
 You will need to install Node.js (>=10.16.3) and Yarn (>= 1.19.0).
 
@@ -15,7 +15,7 @@ Items covered in this guide include:
 We will cover 3 example use-cases:
 - Sending and Receiving Assets using the [Generic Assets](API-examples-Generic-Assets) module
 - Trading in the [CENNZX Spot Exchange](#cennzx-spot-exchange)
-- Setting and checking for claims using [Attestation](https://github.com/cennznet/cennznet/wiki/API-examples-Attestation)
+- Setting and checking for claims using [Attestation](References/CENNZnet-API/Examples/API-examples-Attestation)
 
 ## How to get started with the JS app
 1. Clone the example app [code repository](https://github.com/cennznet/api-example-app)
@@ -33,7 +33,7 @@ cd src
 ```
 
 Now you are all set up. For the app to work, you need to run a local test chain to interact with.
-Follow the instruction here [to setup a local dev chain](Node-operating/Running-a-Dev-Chain).
+Follow the instruction here [to setup a local dev chain](Network-participating/Node-operating/Running-a-Dev-Chain).
 
 You can run the example app now.
 

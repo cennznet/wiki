@@ -16,4 +16,4 @@ $ brew cask install docker      # macOS
 $ sudo apt install docker.io    # Ubuntu
 ```
 
-Note that if you want to build Cennznet locally(instead of running a docker image) on Windows, you may need to use the Linux subsystem. You can follow the instructions here to [Setup for Linux Subsystem for Windows](https://github.com/cennznet/cennznet/wiki/Set-up-Linux-Sub-system-for-Windows).
+Note that if you want to build Cennznet locally(instead of running a docker image) on Windows, you may need to use the Linux subsystem. You can follow the instructions here to [Setting up Linux subsystem on Windows](CENNZnet-development/Guides/Set-up-Linux-Sub-system-for-Windows).

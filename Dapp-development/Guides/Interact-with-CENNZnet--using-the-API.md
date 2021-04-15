@@ -6,10 +6,10 @@ Install Node.js (`>=10.16.3`) and Yarn (`>= 1.19.0`).
 
 The library as a package is published [here](https://www.npmjs.com/package/@cennznet/api)
 ```bash
-$> npm i --save @cennznet/api
+npm i --save @cennznet/api
 ```
 
-First, [run a local CENNZnet node](https://github.com/cennznet/cennznet/wiki/Running-a-Full-Node).  
+First, [run a Full Node](Network-participating/Node-operating/Running-a-Full-Node).  
 The `--dev` flag will start the node as a single validator on a development network, also enabling full access to the node's JSON-RPC API.  
 This is not recommended for real validator nodes; but it is fine for testing.
 
