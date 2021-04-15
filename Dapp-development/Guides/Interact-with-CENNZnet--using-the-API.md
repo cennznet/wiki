@@ -6,7 +6,7 @@ Install Node.js (`>=10.16.3`) and Yarn (`>= 1.19.0`).
 
 The library as a package is published [here](https://www.npmjs.com/package/@cennznet/api)
 ```bash
-$> npm i --save @cennznet/api
+npm i --save @cennznet/api
 ```
 
 First, [run a Full Node](Network-participating/Node-operating/Running-a-Full-Node).  
