@@ -1,4 +1,4 @@
-# Example App walk-through
+# Demo App walk-through
 
 We have created an example JS app with a basic CLI that provides you with examples of using CENNZnet's API.
 You can find the [code repository here](https://github.com/cennznet/api-example-app).
