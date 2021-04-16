@@ -1,4 +1,4 @@
-# Interacting with CENNZnet using the API
+# Getting started with the CENNZnet API
 
 ## Installation and Setup
 
@@ -14,12 +14,12 @@ The `--dev` flag will start the node as a single validator on a development netw
 This is not recommended for real validator nodes; but it is fine for testing.
 
 ```bash
-docker run cennznet/cennznet:1.2.2 --dev --tmp
+docker run cennznet/cennznet:1.4.0 --dev --tmp
 ```
 
 If you want to know more about these parameters use:
 ```bash
-docker run cennznet/cennznet:1.2.2 --help
+docker run cennznet/cennznet:1.4.0 --help
 ```
 
 Once API (@cennznet/api) is installed, it is available either in Promise version or RxJS version  

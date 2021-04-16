@@ -1,8 +1,8 @@
-# Getting started with the CENNZnet API
+# Intro to the CENNZnet API
 
-The CENNZnet blockchain features a rich API for developing your D'App.
+The CENNZnet blockchain features a rich API for developing your DApp.
 
-The easiest way to get started is to follow our [API getting started guide](Dapp-development/Guides/Interact-with-CENNZnet--using-the-API)
+Before you start here, please follow our [Getting started with the CENNZnet API guide](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API)
 
 For a detailed reference on how the API works, see the [Polkadot API reference](https://polkadot.js.org/api/start/)
 
@@ -163,3 +163,7 @@ Remove a previously made claim on `topic` about `holder`.
 
 * `holder` - Account ID of the claim `holder`
 * `topic` - The claim topic encoded as a U256
+
+## Next steps
+
+For more information about the CENNZnet API, head to the References->CENNZnet API section in the side bar!

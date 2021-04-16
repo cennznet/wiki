@@ -4,10 +4,9 @@ During development, you may want to interact with a local test net to test your 
 
 ### Running from docker image
 * Install [Docker](https://www.docker.com/)
-* Modify the following command. Replace `<version>` with the [latest release](https://github.com/cennznet/cennznet/releases) version number, Eg, 1.4.0. 
 * Run the command:
 ```bash
-docker run -p 9944:9944 -it --rm  cennznet/cennznet:<version> --dev --ws-external
+docker run -p 9944:9944 cennznet/cennznet:1.4.0 --dev --tmp
 ```
 
 ### Running a local build of CENNZnet

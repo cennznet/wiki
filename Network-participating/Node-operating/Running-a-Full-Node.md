@@ -7,7 +7,7 @@ Make sure Docker daemon is installed (see [here](Installing-Dependencies#Docker)
 Then run a CENNZnet full node:
 
 ```bash
-$ docker run cennznet/cennznet:1.2.0 \
+$ docker run cennznet/cennznet:1.4.0 \
     # genesis is included in the image
     --chain=/cennznet/genesis/azalea.raw.json \
     --name=<NODE_NAME> \
@@ -63,7 +63,7 @@ The following combination of flags will allow the node's RPC and/or websocket fu
 
 To get detailed descriptions on the flags, run either of the following:
 ```bash
-$ docker run cennznet/cennznet:1.1.1 --help  # using docker
+$ docker run cennznet/cennznet:1.4.0 --help  # using docker
 $ ./target/release/cennznet -- --help        # using binary
 ```
 
