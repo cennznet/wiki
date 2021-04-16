@@ -163,3 +163,7 @@ Remove a previously made claim on `topic` about `holder`.
 
 * `holder` - Account ID of the claim `holder`
 * `topic` - The claim topic encoded as a U256
+
+## Next steps
+
+For more information about the CENNZnet API, head to the References->CENNZnet API section in the side bar!
