@@ -18,8 +18,8 @@
 - DApp development
     - Guides
         - [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp)
-        - [Demo DApp walk-through](Dapp-development/Examples/Example-demo-app)
-        - [Interact with CENNZnet using the API](Dapp-development/Guides/Interact-with-CENNZnet--using-the-API)
+        - [Getting Started with the CENNZnet API](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API)
+        - [Intro to the CENNZnet API](Dapp-development/Guides/Intro-to-the-CENNZnet-API)
         - [Token Economy](Dapp-development/Guides/Token-Economy)
         - [Smart Contracts](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet)
         
@@ -38,7 +38,6 @@
 ---
 - References
     - CENNZnet API
-        - [Getting Started](References/CENNZnet-API/Getting-Started)
         - [Cheatsheet](References/CENNZnet-API/Cheatsheet)
         - [Accounts and Keypairs](References/CENNZnet-API/Accounts-and-Keypairs)
         - [Staking API](References/CENNZnet-API/Staking)

@@ -1,4 +1,4 @@
-# Interacting with CENNZnet using the API
+# Getting started with the CENNZnet API
 
 ## Installation and Setup
 
