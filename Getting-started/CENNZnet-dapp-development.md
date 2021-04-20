@@ -25,7 +25,7 @@ During development, it's useful to use a sandbox local environment, so that you 
 
 ## The pre-production environment
 
-Once your feature is ready to be shared with a wider audience, you can test it on the TestNet (Nikau), the pre-production environment, before you deploy it to the MainNet (Azalea).
+Once your feature is ready to be shared with a wider audience, you can test it on the TestNet(Nikau)🌴, the pre-production environment, before you deploy it to the MainNet(Azalea).
 
 The TestNet provides a similar environment to the MainNet, and it's a safe place to fail. 
 

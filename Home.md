@@ -34,7 +34,7 @@ Join the Discord server by clicking on the badge below!
 Start a full node named `my-node` and connect it to the CENNZnet MainNet:
 ```bash
 # via docker
-$ docker run cennznet/cennznet:1.3.0 \
+$ docker run cennznet/cennznet:1.4.0 \
     --chain=/cennznet/genesis/azalea.raw.json \
     --name=my-node \
     --telemetry-url 'ws://cennznet-telemetry.centrality.me:1024 0'
@@ -56,8 +56,8 @@ Check `my-node` is running [here](http://cennznet-telemetry.centrality.me/#/CENN
 Centrality hosted CENNZnet full nodes and ecosystem services
 
 Block explorer API: https://service.eks.centralityapp.com/cennznet-explorer-api/api/  
-Nikau full nodes:   wss://nikau.centrality.me/public/ws  
-Mainnet full nodes: wss://cennznet.unfrastructure.io/public/ws  
+TestNet(Nikau)🌴 full nodes:   wss://nikau.centrality.me/public/ws  
+MainNet full nodes: wss://cennznet.unfrastructure.io/public/ws  
 CENNZnet UI:        https://cennznet.io/  
 Block Explorer:     https://uncoverexplorer.com/  
 
