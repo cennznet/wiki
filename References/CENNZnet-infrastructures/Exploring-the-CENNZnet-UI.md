@@ -1,4 +1,4 @@
-# Exploring the CENNZnet UI
+# CENNZnet.io
 
 CENNZnet provides a browser-based UI tool for interacting with the CENNZnet blockchain: [cennznet.io](https://cennznet.io/).
 

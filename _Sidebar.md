@@ -50,7 +50,8 @@
             - [Attestation](References/CENNZnet-API/Examples/API-examples-Attestation)
 
     - CENNZnet infrastructures
-        - [Interact with CENNZnet using the UI](References/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
+        - [CENNZnet.io](References/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
+        - [CENNZnet Faucet](References/CENNZnet-infrastructures/CENNZnet-faucet)
         - [CENNZX Exchange](References/CENNZnet-infrastructures/CENNZX-Exchange)
         - [Uncover API](References/CENNZnet-infrastructures/UncoverAPI)
         - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
