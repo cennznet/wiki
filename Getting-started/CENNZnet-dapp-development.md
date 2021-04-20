@@ -20,8 +20,16 @@ Most DApps require customised storage on the blockchain. This is done through Sm
 * [Intro Guide to CENNZnet.io](https://medium.com/centrality/using-cennznet-io-ac5a90f9a2cb)
 * [Advanced Guide to CENNZnet.io](https://medium.com/centrality/advanced-guide-to-cennznet-io-33be90f26ff3)
 
-To avoid paying gas fees during development, it's useful to set up a Development Chain. See this guide,
-[Running a Development Chain](Network-participating/Node-operating/Running-a-Dev-Chain), to set up a development chain.
+During development, it's useful to use a sandbox local environment, so that you can start from a clean state as required. The Development Chain provides such an environment. To set one up, see this guide,
+[Running a Development Chain](Network-participating/Node-operating/Running-a-Dev-Chain).
+
+## The pre-production environment
+
+Once your feature is ready to be shared with a wider audience, you can test it on the TestNet (Nikau), the pre-production environment, before you deploy it to the MainNet (Azalea).
+
+The TestNet provides a similar environment to the MainNet, and it's a safe place to fail. 
+
+On the TestNet, you won't need to spend actual MainNet currencies. You can issue test currencies for yourself using the [CENNZnet Faucet](References/CENNZnet-infrastructures/CENNZnet-faucet).
 
 ## Next steps
 

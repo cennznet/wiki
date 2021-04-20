@@ -18,7 +18,7 @@ For more details on the base58 encoding spec. see [this guide](https://github.co
 
 ## Creating an Account (browser)
 You can create an account easily at https://cennznet.io/#/accounts  
-Video guide: https://youtu.be/B_lvxt-An6g
+* Read our [Intro Guide to CENNZnet.io](https://medium.com/centrality/using-cennznet-io-ac5a90f9a2cb) to learn what you need to know about accounts
 
 ## Creating an Account (javascript)
 The [@polkadot/ui-keyring](https://www.npmjs.com/package/@polkadot/ui-keyring) javascript package provides a simple way to create CENNZnet accounts and basic wallet functionality for persistence, encryption, etc.
