@@ -1,6 +1,6 @@
 # CENNZnet Faucet
 
-The CENNZnet Faucet is a service for issuing currencies to be used in the TestNet(Nikau), which is the pre-production environment to the MainNet(Alzelea).
+The CENNZnet Faucet is a service for issuing currencies to be used in the TestNet(Nikau), which is the [pre-production environment](/Getting-started/CENNZnet-dapp-development?id=the-pre-production-environment) to the MainNet(Alzelea).
 
 The Faucet can be accessed from [here](https://cennznet-faucet-ui.centrality.me/).
 
