@@ -57,8 +57,9 @@
         - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
 
     - Runtime modules
-        - [Sylo Runtime Modules](References/Runtime-modules/Sylo-Runtime-Modules)
         - [Doughnut](References/Runtime-modules/Doughnut)
         - [Doughnut Permissioning](References/Runtime-modules/Doughnut-Permissioning)
+        - [NFT](References/Runtime-modules/NFT)
+        - [Sylo Runtime Modules](References/Runtime-modules/Sylo-Runtime-Modules)
 
     
