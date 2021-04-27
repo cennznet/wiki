@@ -51,6 +51,7 @@
 
     - CENNZnet infrastructures
         - [CENNZnet.io](References/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
+        - [CENNZnet browser extension](References/CENNZnet-infrastructures/CENNZnet-browser-extension)
         - [CENNZnet Faucet](References/CENNZnet-infrastructures/CENNZnet-faucet)
         - [CENNZX Exchange](References/CENNZnet-infrastructures/CENNZX-Exchange)
         - [Uncover API](References/CENNZnet-infrastructures/UncoverAPI)
