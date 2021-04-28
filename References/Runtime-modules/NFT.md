@@ -32,40 +32,40 @@ api.tx.nft.createCollection('test-collection', schema, null);
 - collections should be given a utf-8 name
 - collections may set royalties entitlements on all secondary sales. This can be overridden per individual tokens later on
 
-![Create collection](../../assets/images/nft/create-collection.png)
+![Create collection](../../assets/images/nft-module/create-collection.png)
 
 *a new collection 'cennzpunks' is defined.*
 
-![Collection defined](../../assets/images/nft/collection-defined.png)
+![Collection defined](../../assets/images/nft-module/collection-defined.png)
 
 - each cennzpunk will have: a name, creation timestamp, ipfs image url, and an image hash for verification
 - also the creator 'charlie' will earn 0.3% on all future sales of any cennzpunk token
 
 ### Mint a token in the collection (collection owner only)
 
-![Create token](../../assets/images/nft/create-token.png)
+![Create token](../../assets/images/nft-module/create-token.png)
 
 *minting the first token in the cennzpunks collection*
 *each token in a collection is given an an auto-incrementing integer id on creation*
 
-![Token created](../../assets/images/nft/token-created.png)
+![Token created](../../assets/images/nft-module/token-created.png)
 
 ### Fixed price sale
 
-![Direct sale](../../assets/images/nft/direct-sale.png)
+![Direct sale](../../assets/images/nft-module/direct-sale.png)
 *selling token 0 on the open market*
 *it can be bought buy anyone for 12,345 CENNZ*
 
-![Direct sale created](../../assets/images/nft/direct-sale-created.png)
+![Direct sale created](../../assets/images/nft-module/direct-sale-created.png)
 
 
 ### Auction sale
-![Auction](../../assets/images/nft/auction.png)
+![Auction](../../assets/images/nft-module/auction.png)
 *auctioning cennzpunk 1*
 
 *the auction will close in 3000 blocks and has reserve price of 1,000,000 CPAY*
 
-![Auction created](../../assets/images/nft/auction-created.png)
+![Auction created](../../assets/images/nft-module/auction-created.png)
 
 ---
 
