@@ -51,14 +51,16 @@
 
     - CENNZnet infrastructures
         - [CENNZnet.io](References/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
+        - [CENNZnet browser extension](References/CENNZnet-infrastructures/CENNZnet-browser-extension)
         - [CENNZnet Faucet](References/CENNZnet-infrastructures/CENNZnet-faucet)
         - [CENNZX Exchange](References/CENNZnet-infrastructures/CENNZX-Exchange)
         - [Uncover API](References/CENNZnet-infrastructures/UncoverAPI)
         - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
 
     - Runtime modules
-        - [Sylo Runtime Modules](References/Runtime-modules/Sylo-Runtime-Modules)
         - [Doughnut](References/Runtime-modules/Doughnut)
         - [Doughnut Permissioning](References/Runtime-modules/Doughnut-Permissioning)
+        - [NFT](References/Runtime-modules/NFT)
+        - [Sylo Runtime Modules](References/Runtime-modules/Sylo-Runtime-Modules)
 
     
