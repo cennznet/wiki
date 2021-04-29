@@ -38,13 +38,18 @@ There is also a in-depth [Getting Started guide in the API repo](https://github.
 ## Code examples
 The [CENNZnet API repo](https://github.com/cennznet/api.js) contains many [code examples](https://github.com/cennznet/api.js/tree/develop/docs/examples) for both the Promise and the RxJS approaches. The examples cover common usages of the CENNZnet API. We will highlight a couple examples here for demonstration.
 
+Clone the API repo, so you can run the examples.
+```bash
+git clone https://github.com/cennznet/api.js.git
+```
+
 
 ### Basic connection
-This code example shows how to connect to a CENNZnet node using the CENNZnet API.
+This example, 01_simple_connect, shows how to connect to a CENNZnet node using the CENNZnet API.
 
 Once API (@cennznet/api) is installed, it is available either in Promise version or RxJS version  
-* Connect to node via [Promise](https://github.com/cennznet/api.js/blob/develop/docs/examples/promise/01_simple_connect/index.js) version of API
-* Connect to node via [RxJS](https://github.com/cennznet/api.js/blob/develop/docs/examples/rx/01_simple_connect/index.js) version of API
+* [Via Promise](https://github.com/cennznet/api.js/blob/develop/docs/examples/promise/01_simple_connect/index.js) version of API
+* [Via RxJS](https://github.com/cennznet/api.js/blob/develop/docs/examples/rx/01_simple_connect/index.js) version of API
 
 Run the examples by running
 ```bash
@@ -78,21 +83,21 @@ const [chain, nodeName, nodeVersion] = await Promise.all([
 ```
 
 ### Sending a transaction to the blockchain
+Example 06_make_transfer shows how to make a transfer using the API.
 
-* [Making a transfer example via Promise](https://github.com/cennznet/api.js/blob/develop/docs/examples/promise/06_make_transfer/index.js)
-* [Making a transfer example via RxJS](https://github.com/cennznet/api.js/blob/develop/docs/examples/rx/06_make_transfer/index.js)
+* [Via Promise](https://github.com/cennznet/api.js/blob/develop/docs/examples/promise/06_make_transfer/index.js)
+* [Via RxJS](https://github.com/cennznet/api.js/blob/develop/docs/examples/rx/06_make_transfer/index.js)
 
-We are using the `keyring.alice` and `keyring.bob` test accounts which are immediately available on a develop blockchain. 
+In this example, we are using the `keyring.alice` and `keyring.bob` test accounts, which are available on a develop blockchain. 
 
 Next, we want to confirm the transfer actually happens, so we can subscribe to any balance changes.
 
 ### Reading data from the blockchain
+Example 03_listen_to_balance_change shows how to listen to balance change using the API.
 
-* [Subscribe change in balance via Promise](https://github.com/cennznet/api.js/blob/develop/docs/examples/promise/03_listen_to_balance_change/index.js).
-* [Subscribe change in balance via RxJS](https://github.com/cennznet/api.js/blob/develop/docs/examples/rx/03_listen_to_balance_change/index.js).
+* [Via Promise](https://github.com/cennznet/api.js/blob/develop/docs/examples/promise/03_listen_to_balance_change/index.js).
+* [Via RxJS](https://github.com/cennznet/api.js/blob/develop/docs/examples/rx/03_listen_to_balance_change/index.js).
 
-For more information on using the API:
-* [Polkadot API docs](https://polkadot.js.org/api/start/)
 
 ## Send Messages to Smart Contracts
 To use the API with Smart Contracts, refer to the [Smart Contract Guide](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet)
