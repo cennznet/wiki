@@ -79,8 +79,8 @@ const [chain, nodeName, nodeVersion] = await Promise.all([
 
 ### Sending a transaction to the blockchain
 
-* [Promise](https://github.com/cennznet/api.js/blob/develop/docs/examples/promise/06_make_transfer/index.js)
-* [RxJS](https://github.com/cennznet/api.js/blob/develop/docs/examples/rx/06_make_transfer/index.js)
+* [Making a transfer example via Promise](https://github.com/cennznet/api.js/blob/develop/docs/examples/promise/06_make_transfer/index.js)
+* [Making a transfer example via RxJS](https://github.com/cennznet/api.js/blob/develop/docs/examples/rx/06_make_transfer/index.js)
 
 We are using the `keyring.alice` and `keyring.bob` test accounts which are immediately available on a develop blockchain. 
 
@@ -88,8 +88,8 @@ Next, we want to confirm the transfer actually happens, so we can subscribe to a
 
 ### Reading data from the blockchain
 
-* Subscribe change in balance via [Promise](https://github.com/cennznet/api.js/blob/develop/docs/examples/promise/03_listen_to_balance_change/index.js) way.
-* Subscribe change in balance via [RxJS](https://github.com/cennznet/api.js/blob/develop/docs/examples/rx/03_listen_to_balance_change/index.js) way.
+* [Subscribe change in balance via Promise](https://github.com/cennznet/api.js/blob/develop/docs/examples/promise/03_listen_to_balance_change/index.js).
+* [Subscribe change in balance via RxJS](https://github.com/cennznet/api.js/blob/develop/docs/examples/rx/03_listen_to_balance_change/index.js).
 
 For more information on using the API:
 * [Polkadot API docs](https://polkadot.js.org/api/start/)
