@@ -14,10 +14,10 @@ npm i --save @cennznet/api
 A [development node](Network-participating/Node-operating/Types-of-nodes?id=development-chainnodes) gives you a sandbox environment for developing new features.
 
 Run the following command to start a dev node. 
-The `--dev` flag will start the node as a single validator on a development network, also enabling full access to the node's JSON-RPC API.   
+The `--dev` flag will start the node as a single validator on a development network, also enabling full access to the node's JSON-RPC API.
 
 ```bash
-docker run cennznet/cennznet:1.4.0 --dev --tmp
+docker run -p 9944:9944 cennznet/cennznet:1.4.0 --dev --ws-external
 ```
 
 For help, run:
