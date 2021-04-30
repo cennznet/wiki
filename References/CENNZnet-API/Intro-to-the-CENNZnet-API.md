@@ -36,7 +36,7 @@ const txHash = await api.tx.genericAsset
 
 ### Paying Transaction Fees Using a Non-Fee Asset
 
-Transaction fees are usually paid in CentraPay, however fees can be paid in another token by using a `TransactionPayment` object:
+Transaction fees are usually paid in CPay, however fees can be paid in another token by using a `TransactionPayment` object:
 
 ```js
 import {generateTransactionPayment} from '@cennznet/types/runtime/transaction-payment/TransactionPayment';
