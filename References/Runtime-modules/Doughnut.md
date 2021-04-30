@@ -1,4 +1,4 @@
-# Doughnut
+# Doughnut module
 
 Doughnut format specification:
 - https://github.com/cennznet/doughnut-paper/

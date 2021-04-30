@@ -1,7 +1,7 @@
 # API examples for CENNZX Spot
 
-The examples used here will focus on CENNZ and CentraPay assets, thier asset IDs are:
-* CentraPay - id `16000`
+The examples used here will focus on CENNZ and CPay assets, thier asset IDs are:
+* CPay - id `16000`
 * CENNZ - id `16001`
 
 ## Trading
@@ -13,28 +13,28 @@ When you want to buy a specific `amount` of an asset, there are two useful calls
 * `buyPrice`
 * `buyAsset`
 
-To find out the current `buy` price of an asset use the RPC API. For example, if we wanted to buy `5000 CentraPay` using `CENNZ`
+To find out the current `buy` price of an asset use the RPC API. For example, if we wanted to buy `5000 CPay` using `CENNZ`
 ```js
-let centraPay = 16000;
+let CPay = 16000;
 let cennz = 16001;
 let amount = 5000;
 
-let price = await api.rpc.cennzx.buyPrice(centraPay, amount, cennz);
+let price = await api.rpc.cennzx.buyPrice(CPay, amount, cennz);
 
-console.log(`${amount} CentraPay can be bought for ${price} CENNZ`);
+console.log(`${amount} CPay can be bought for ${price} CENNZ`);
 ```
-Assuming there is some liquidity in the CENNZ/CentraPay pool, we should see something like this:
+Assuming there is some liquidity in the CENNZ/CPay pool, we should see something like this:
 ```
-5000 CentraPay can be bought for 5016 CENNZ
+5000 CPay can be bought for 5016 CENNZ
 ```
 Unfortunately, `api.rpc.cennzx` calls cannot be subscribed to directly, but we could achieve this by subscribing to `cennzxSpot` related events - or even storage changes on the exchangePool's balance (advanced).
 
-If we decide that the price of CentraPay is fair we can execute a trade:
+If we decide that the price of CPay is fair we can execute a trade:
 ```js
 let maxCennzToSell = 5016;
 
 let txHash = await api.tx.cennzxSpot
-  .buyAsset(null, cennz, centraPay, amount, maxCennzToSell)
+  .buyAsset(null, cennz, CPay, amount, maxCennzToSell)
   .signAndSend(keyring.alice);
 ```
 The `null` argument specifies that the `recipient` of the trade is the `trader`; see below for an example where we specify another account to receive the traded asset.
@@ -44,44 +44,44 @@ When you want to sell a specific `amount` of an asset, there are two useful call
 * `sellPrice`
 * `sellAsset`
 
-To find out the current `sell` price of an asset use the RPC API. For example, if we wanted to sell `5000 CENNZ` for `CentraPay`
+To find out the current `sell` price of an asset use the RPC API. For example, if we wanted to sell `5000 CENNZ` for `CPay`
 ```js
-let centraPay = 16000;
+let CPay = 16000;
 let cennz = 16001;
 let amount = 5000;
 
-let price = await api.rpc.cennzx.sellPrice(cennz, amount, centraPay);
+let price = await api.rpc.cennzx.sellPrice(cennz, amount, CPay);
 
-console.log(`${amount} CENNZ can be sold for ${price} CentraPay`);
+console.log(`${amount} CENNZ can be sold for ${price} CPay`);
 ```
-Assuming there is some liquidity in the CENNZ/CentraPay pool, we should see something like this:
+Assuming there is some liquidity in the CENNZ/CPay pool, we should see something like this:
 ```
-5000 CENNZ can be sold for 4985 CentraPay
+5000 CENNZ can be sold for 4985 CPay
 ```
 
-If we decide that the amount of CentraPay is fair we can execute a trade:
+If we decide that the amount of CPay is fair we can execute a trade:
 ```js
-let minCentraPayToBuy = 4985;
+let minCPayToBuy = 4985;
 
 let txHash = await api.tx.cennzxSpot
-  .buyAsset(null, cennz, centraPay, amount, minCentraPayToBuy)
+  .buyAsset(null, cennz, CPay, amount, minCPayToBuy)
   .signAndSend(keyring.alice);
 ```
 
 ### Transferring an asset that you don't own to another account
 The CENNZX Spot exchange allows us to pay someone else in an asset we don't own.
 
-For example, say that Alice has no `CentraPay`, but Dave requires `1000 CentraPay` for his services. Alice can use CENNZX Spot to pay Dave using Alice's `CENNZ` balance:
+For example, say that Alice has no `CPay`, but Dave requires `1000 CPay` for his services. Alice can use CENNZX Spot to pay Dave using Alice's `CENNZ` balance:
 
 ```js
-let centraPay = 16000;
+let CPay = 16000;
 let cennz = 16001;
 let amount = 1000;
 let max_cennz_to_sell = 1500;
 let recepient = keyring.dave.address;
 
 let txHash = await api.tx.cennzxSpot
-  .buyAsset(recepient, cennz, centraPay, amount, max_cennz_to_sell)
+  .buyAsset(recepient, cennz, CPay, amount, max_cennz_to_sell)
   .signAndSend(keyring.alice);
 ```
 
@@ -90,44 +90,44 @@ Usually, for trade-critical transactions, you will want to ensure that the trade
 ## Investing
 Putting assets into the exchange means that your assets will grow as fees are accumulated from traders using the exchange.
 
-You could first check the liquidity price of putting assets into a pool. Say we wanted to put CENNZ and CentraPay into a pool:
+You could first check the liquidity price of putting assets into a pool. Say we wanted to put CENNZ and CPay into a pool:
 ```js
 let cennz = 16001;
 let liquidityAmount = 1000;
-let (centraPayPrice, cennzPrice) = api.rpc.cennzx.liquidityPrice(cennz, liquidityAmount);
+let (CPayPrice, cennzPrice) = api.rpc.cennzx.liquidityPrice(cennz, liquidityAmount);
 
-console.log(`To buy ${liquidityAmount} liquidity from the CENNZ exchange will cost:\n\t ${centraPayPrice} CentraPay\n\t ${cennzPrice} CENNZ`);
+console.log(`To buy ${liquidityAmount} liquidity from the CENNZ exchange will cost:\n\t ${CPayPrice} CPay\n\t ${cennzPrice} CENNZ`);
 ```
 We should see something like this:
 ```
 To buy 1000 liquidity from the CENNZ exchange will cost:
-   1001 CentraPay
+   1001 CPay
    1003 CENNZ`
 ```
 
 To add liquidity into a pool:
 ```js
 let txHash = await api.tx.cennzxSpot
-  .addLiquidity(cennz, liquidityAmount, cennzPrice, centraPayPrice)
+  .addLiquidity(cennz, liquidityAmount, cennzPrice, CPayPrice)
   .signAndSend(keyring.alice);
 ```
 
 You can check the value of your held liquidity at any time:
 ```js
-let (liquidityAmount, centraPayValue, cennzValue) = api.rpc.cennzx.liquidityValue(keyring.alice.address, cennz);
+let (liquidityAmount, CPayValue, cennzValue) = api.rpc.cennzx.liquidityValue(keyring.alice.address, cennz);
 
-console.log(`Holding ${liquidityAmount} liquidity in the CENNZ exchange. Current value:\n\t ${centraPayValue} CentraPay\n\t ${cennzValue} CENNZ`);
+console.log(`Holding ${liquidityAmount} liquidity in the CENNZ exchange. Current value:\n\t ${CPayValue} CPay\n\t ${cennzValue} CENNZ`);
 ```
 We should see something like this:
 ```
 Holding 1000 liquidity in the CENNZ exchange. Current value:
-   1001 CentraPay
+   1001 CPay
    1003 CENNZ`
 ```
 
 Finally, to convert liquidity back into assets, we use:
 ```js
 let txHash = await api.tx.cennzxSpot
-  .removeLiquidity(cennz, liquidityAmount, cennzValue, centraPayValue)
+  .removeLiquidity(cennz, liquidityAmount, cennzValue, CPayValue)
   .signAndSend(keyring.alice);
 ```

@@ -19,7 +19,6 @@
     - Guides
         - [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp)
         - [Getting Started with the CENNZnet API](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API)
-        - [Intro to the CENNZnet API](Dapp-development/Guides/Intro-to-the-CENNZnet-API)
         - [Token Economy](Dapp-development/Guides/Token-Economy)
         - [NFT Design](Dapp-development/Guides/How-to-design-NFTs)
         - [Smart Contracts](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet)
@@ -39,11 +38,13 @@
 ---
 - References
     - CENNZnet API
+        - [CENNZnet API Overview](References/CENNZnet-API/CENNZnet-API-Overview)
+        - [Intro to the CENNZnet API](References/CENNZnet-API/Intro-to-the-CENNZnet-API)
+        - [Technical Reference](References/CENNZnet-API/Technical-Reference)
         - [Cheatsheet](References/CENNZnet-API/Cheatsheet)
         - [Accounts and Keypairs](References/CENNZnet-API/Accounts-and-Keypairs)
         - [Staking API](References/CENNZnet-API/Staking)
         - [Subscriptions](References/CENNZnet-API/Subscriptions)
-        - [Technical Reference](References/CENNZnet-API/Technical-Reference)
         - [Transaction Error Codes](References/CENNZnet-API/Transaction-Error-Codes)
         - API Examples
             - [Generic Assets](References/CENNZnet-API/Examples/API-examples-Generic-Assets)
@@ -59,9 +60,13 @@
         - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
 
     - Runtime modules
+        - [Attestation](References/Runtime-modules/Attestation)
+        - [CENNZX](References/Runtime-modules/CENNZX)
         - [Doughnut](References/Runtime-modules/Doughnut)
         - [Doughnut Permissioning](References/Runtime-modules/Doughnut-Permissioning)
+        - [Generic-Asset](References/Runtime-modules/Generic-Asset)
         - [NFT](References/Runtime-modules/NFT)
+        - [Staking](References/Runtime-modules/Staking)
         - [Sylo Runtime Modules](References/Runtime-modules/Sylo-Runtime-Modules)
 
     

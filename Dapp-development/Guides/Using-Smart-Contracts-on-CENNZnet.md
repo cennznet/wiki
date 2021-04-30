@@ -71,7 +71,7 @@ await api.tx.contracts.putCode(gas_limit, compactAddLength(u8aToU8a(wasm)));
 ```js
 api.tx.contracts.instantiate(endowment, gas_limit, code_hash, compactAddLength(dataload));
 ```
-* `endowment` - the amount of CentraPay that the created contract account will be endowed with (taken from the caller)
+* `endowment` - the amount of CPay that the created contract account will be endowed with (taken from the caller)
 * `gas_limit` - specifies the maximum amount of gas to speed on instantiating the contract
 * `code_hash` - the hash of the contract WASM being instantiated
 * `dataload` - the instantiation function to call and its encoded arguments
@@ -81,7 +81,7 @@ api.tx.contracts.instantiate(endowment, gas_limit, code_hash, compactAddLength(d
 api.tx.contracts.call(contract_address, transfer, gas_limit, compactAddLength(dataload));
 ```
 * `contract_address` - the address of the smart contract to call
-* `transfer` - specifies an amount of CentraPay funds to transfer to the contract - this can be set to 0, but may be required by some contracts.
+* `transfer` - specifies an amount of CPay funds to transfer to the contract - this can be set to 0, but may be required by some contracts.
 * `gas_limit` - specifies the maximum amount of gas to speed on calling the contract
 * `dataload` - the function to call and its encoded arguments
 

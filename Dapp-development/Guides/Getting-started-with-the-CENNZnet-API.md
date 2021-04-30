@@ -2,38 +2,63 @@
 
 ## Installation and Setup
 
-Install Node.js (`>=10.16.3`) and Yarn (`>= 1.19.0`).
+Install [Node.js (`>=10.16.3`)](https://nodejs.org/en/) and [Yarn (`>= 1.19.0`)](https://yarnpkg.com/).
 
 The library as a package is published [here](https://www.npmjs.com/package/@cennznet/api)
 ```bash
 npm i --save @cennznet/api
 ```
 
-First, [run a Full Node](Network-participating/Node-operating/Running-a-Full-Node).  
-The `--dev` flag will start the node as a single validator on a development network, also enabling full access to the node's JSON-RPC API.  
-This is not recommended for real validator nodes; but it is fine for testing.
+## Running a development node
+
+A [development node](Network-participating/Node-operating/Types-of-nodes?id=development-chainnodes) gives you a sandbox environment for developing new features.
+
+Run the following command to start a dev node. 
+The `--dev` flag will start the node as a single validator on a development network, also enabling full access to the node's JSON-RPC API.
 
 ```bash
-docker run cennznet/cennznet:1.4.0 --dev --tmp
+docker run -p 9944:9944 cennznet/cennznet:latest --dev --ws-external
 ```
 
-If you want to know more about these parameters use:
+For help, run:
 ```bash
-docker run cennznet/cennznet:1.4.0 --help
+docker run cennznet/cennznet:latest --help
 ```
+For more information on the arguments, see [run a Full Node](Network-participating/Node-operating/Running-a-Full-Node). 
+
+## Using the API
+The CENNZnet API allows you to interact with a node in 2 ways:
+* [Javascript Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+* [RxJS observables](https://rxjs-dev.firebaseapp.com/guide/overview)
+
+You can choose the approach based on the requirements for your DApp. If you don't know which one to choose, the Promise version covers most use cases, and it doesn't require another library as it's a part of ES2015 specification. 
+
+There is also a in-depth [Getting Started guide in the API repo](https://github.com/cennznet/api.js/blob/develop/docs/GET_STARTED.md).
+
+## Code examples
+The [CENNZnet API repo](https://github.com/cennznet/api.js) contains many [code examples](https://github.com/cennznet/api.js/tree/develop/docs/examples) for both the Promise and the RxJS approaches. The examples cover common usages of the CENNZnet API. We will highlight a couple examples here for demonstration.
+
+Clone the API repo, so you can run the examples.
+```bash
+git clone https://github.com/cennznet/api.js.git
+```
+
+
+### Basic connection
+This example, 01_simple_connect, shows how to connect to a CENNZnet node using the CENNZnet API.
 
 Once API (@cennznet/api) is installed, it is available either in Promise version or RxJS version  
-* Connect to node via [Promise](https://github.com/cennznet/api.js/blob/develop/docs/examples/promise/01_simple_connect/index.js) version of API
-* Connect to node via [RxJS](https://github.com/cennznet/api.js/blob/develop/docs/examples/rx/01_simple_connect/index.js) version of API
+* [Via Promise](https://github.com/cennznet/api.js/blob/develop/docs/examples/promise/01_simple_connect/index.js) version of API
+* [Via RxJS](https://github.com/cennznet/api.js/blob/develop/docs/examples/rx/01_simple_connect/index.js) version of API
 
-Run the above examples  
+Run the examples by running
 ```bash
-node start
+yarn && yarn start
 ```
 
 Should see output similar to:
 ```bash
-You are connected to chain Development using CENNZnet Node v1.2.0-...
+You are connected to chain Development using CENNZnet Node v1.4.0-...
 ```
 
 The `Api` object is dynamically populated with query and transaction methods once connected to a node.  
@@ -57,24 +82,28 @@ const [chain, nodeName, nodeVersion] = await Promise.all([
 ]);
 ```
 
-## Using the API
+### Sending a transaction to the blockchain
+Example 06_make_transfer shows how to make a transfer using the API.
 
-### 1. Sending a transaction to the blockchain
+* [Via Promise](https://github.com/cennznet/api.js/blob/develop/docs/examples/promise/06_make_transfer/index.js)
+* [Via RxJS](https://github.com/cennznet/api.js/blob/develop/docs/examples/rx/06_make_transfer/index.js)
 
-* [Promise](https://github.com/cennznet/api.js/blob/develop/docs/examples/promise/06_make_transfer/index.js)
-* [RxJS](https://github.com/cennznet/api.js/blob/develop/docs/examples/rx/06_make_transfer/index.js)
-
-We are using the `keyring.alice` and `keyring.bob` test accounts which are immediately available on a develop blockchain. 
+In this example, we are using the `keyring.alice` and `keyring.bob` test accounts, which are available on a develop blockchain. 
 
 Next, we want to confirm the transfer actually happens, so we can subscribe to any balance changes.
 
-### 2. Getting data from the blockchain
+### Reading data from the blockchain
+Example 03_listen_to_balance_change shows how to listen to balance change using the API.
 
-* Subscribe change in balance via [Promise](https://github.com/cennznet/api.js/blob/develop/docs/examples/promise/03_listen_to_balance_change/index.js) way.
-* Subscribe change in balance via [RxJS](https://github.com/cennznet/api.js/blob/develop/docs/examples/rx/03_listen_to_balance_change/index.js) way.
+* [Via Promise](https://github.com/cennznet/api.js/blob/develop/docs/examples/promise/03_listen_to_balance_change/index.js).
+* [Via RxJS](https://github.com/cennznet/api.js/blob/develop/docs/examples/rx/03_listen_to_balance_change/index.js).
 
-For more information on using the API:
-* [Polkadot API docs](https://polkadot.js.org/api/start/)
 
-## Send Messages to Smart Contracts
-To use the API with Smart Contracts, refer to [call the contract](https://substrate.dev/substrate-contracts-workshop/#/0/calling-your-contract) in Substrate 
+## Send messages to Smart Contracts
+To use the API with Smart Contracts, refer to the [Smart Contract Guide](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet)
+
+## Next steps
+
+Dive into the References area to learn more about the CENNZnet API and runtime modules! 
+
+The [CENNZnet API Overview](References/CENNZnet-API/CENNZnet-API-Overview) is a good place to start!
