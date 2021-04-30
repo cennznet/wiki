@@ -37,6 +37,7 @@
 ---
 - References
     - CENNZnet API
+        - [CENNZnet API Overview](References/CENNZnet-API/CENNZnet-API-Overview)
         - [Intro to the CENNZnet API](References/CENNZnet-API/Intro-to-the-CENNZnet-API)
         - [Technical Reference](References/CENNZnet-API/Technical-Reference)
         - [Cheatsheet](References/CENNZnet-API/Cheatsheet)
