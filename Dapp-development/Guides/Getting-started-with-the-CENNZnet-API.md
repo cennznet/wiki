@@ -17,12 +17,12 @@ Run the following command to start a dev node.
 The `--dev` flag will start the node as a single validator on a development network, also enabling full access to the node's JSON-RPC API.
 
 ```bash
-docker run -p 9944:9944 cennznet/cennznet:1.4.0 --dev --ws-external
+docker run -p 9944:9944 cennznet/cennznet:latest --dev --ws-external
 ```
 
 For help, run:
 ```bash
-docker run cennznet/cennznet:1.4.0 --help
+docker run cennznet/cennznet:latest --help
 ```
 For more information on the arguments, see [run a Full Node](Network-participating/Node-operating/Running-a-Full-Node). 
 
@@ -31,7 +31,7 @@ The CENNZnet API allows you to interact with a node in 2 ways:
 * [Javascript Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 * [RxJS observables](https://rxjs-dev.firebaseapp.com/guide/overview)
 
-You can choose the approach based on the requirements for your DApp.
+You can choose the approach based on the requirements for your DApp. If you don't know which one to choose, the Promise version covers most use cases, and it doesn't require another library as it's a part of ES2015 specification. 
 
 There is also a in-depth [Getting Started guide in the API repo](https://github.com/cennznet/api.js/blob/develop/docs/GET_STARTED.md).
 

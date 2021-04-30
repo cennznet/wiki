@@ -6,7 +6,7 @@ During development, you may want to interact with a local test net to test your 
 * Install [Docker](https://www.docker.com/)
 * Run the command:
 ```bash
-docker run -p 9944:9944 cennznet/cennznet:1.4.0 --dev --ws-external
+docker run -p 9944:9944 cennznet/cennznet:latest --dev --ws-external
 ```
 
 ### Running a local build of CENNZnet
