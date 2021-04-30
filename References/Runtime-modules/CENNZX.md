@@ -125,7 +125,7 @@ A common use case is when users need to pay merchants in an asset they don't hol
 
 ### Seamless Fee Payment
 
-Transaction fees can be paid in any asset, provided there's liquidity in the CENNZX. This is achieved by attaching a `FeeExchange` to an extrinsic which will then seamlessly convert the elected asset into CentraPay for fees. This streamlines user onboarding and in-app experience. This feature is also available for paying gas on CENNZnet smart contracts.
+Transaction fees can be paid in any asset, provided there's liquidity in the CENNZX. This is achieved by attaching a `FeeExchange` to an extrinsic which will then seamlessly convert the elected asset into CPay for fees. This streamlines user onboarding and in-app experience. This feature is also available for paying gas on CENNZnet smart contracts.
 
 In the "transaction payment" example provided in the section above, the ```transactionPayment``` object created contains ways to pay for the transaction fee for the ```transfer``` extrinsics call. ```assetId:CENNZ``` can be replaced with any asset ID, and the CENNZX Exchange will automatically convert it into the correct asset for fee payment.
 
