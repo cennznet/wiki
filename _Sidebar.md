@@ -37,6 +37,14 @@
 
 ---
 - References
+    - CENNZnet infrastructures
+        - [CENNZnet.io](References/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
+        - [CENNZnet browser extension](References/CENNZnet-infrastructures/CENNZnet-browser-extension)
+        - [CENNZnet Faucet](References/CENNZnet-infrastructures/CENNZnet-faucet)
+        - [CENNZX Exchange](References/CENNZnet-infrastructures/CENNZX-Exchange)
+        - [Uncover API](References/CENNZnet-infrastructures/UncoverAPI)
+        - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
+        
     - CENNZnet API
         - [CENNZnet API Overview](References/CENNZnet-API/CENNZnet-API-Overview)
         - [Intro to the CENNZnet API](References/CENNZnet-API/Intro-to-the-CENNZnet-API)
@@ -50,14 +58,6 @@
             - [Generic Assets](References/CENNZnet-API/Examples/API-examples-Generic-Assets)
             - [CENNZX Spot](References/CENNZnet-API/Examples/API-examples-CENNZX-Spot)
             - [Attestation](References/CENNZnet-API/Examples/API-examples-Attestation)
-
-    - CENNZnet infrastructures
-        - [CENNZnet.io](References/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
-        - [CENNZnet browser extension](References/CENNZnet-infrastructures/CENNZnet-browser-extension)
-        - [CENNZnet Faucet](References/CENNZnet-infrastructures/CENNZnet-faucet)
-        - [CENNZX Exchange](References/CENNZnet-infrastructures/CENNZX-Exchange)
-        - [Uncover API](References/CENNZnet-infrastructures/UncoverAPI)
-        - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
 
     - Runtime modules
         - [Attestation](References/Runtime-modules/Attestation)
