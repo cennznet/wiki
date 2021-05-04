@@ -31,7 +31,9 @@ This Wiki is an open source project.
 
 The CENNZnet API documentation is generated from the CENNZnet runtime modules which are written in Rust.
 
-For the latest version of methods and sample API usages, please refer to the [API docs](https://github.com/cennznet/api.js/tree/develop/docs).
+The latest docs and sample API usages can be found [here](https://github.com/cennznet/api.js/tree/develop/docs).
+
+For an overview of the API, please read the [CENNZnet API Overview](References/CENNZnet-API/CENNZnet-API-Overview).
 
 
 ## CENNZnet news and updates
