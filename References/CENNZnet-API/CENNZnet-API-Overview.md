@@ -23,4 +23,8 @@ The derived methods don't have generated docs. They have comprehensive code docu
 
 ## Creating an instance
 
+### Connecting to the MainNet
+
+### Connecting to a local node
+
 ## Keyring

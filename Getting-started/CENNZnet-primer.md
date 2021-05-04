@@ -38,12 +38,16 @@ For the latest version of methods and sample API usages, please refer to the [AP
 * ***[Centrality's Medium publication](https://medium.com/centrality)***: publishes news and update articles.
 * ***[CENNZnet Discord server](https://discord.gg/AnB3tRtkJ4)***: is a forum for the CENNZnet Dev community.
 
-## Contributing
+## How to contribute
 
 CENNZnet, as well as its related tools including this wiki is a completely open source project. This means CENNZnet relies on the open source community's contribution.
 
-To contribute, please create Pull Requests.
-When contributing to the [CENNZnet repo](https://github.com/cennznet/cennznet), please read our [How to contribute](https://github.com/cennznet/cennznet/blob/develop/docs/CONTRIBUTING.md) guide.
+To contribute, please follow the standard process of contributing to a GitHub public repo:
+* Create a fork of the repo
+* Push changes to the fork
+* Create a Pull Request to the original repo
+
+When contributing to the [CENNZnet repo](https://github.com/cennznet/cennznet), please read our [PR checklist](https://github.com/cennznet/cennznet/blob/develop/docs/CONTRIBUTING.md).
 
 ## DApp development
 
