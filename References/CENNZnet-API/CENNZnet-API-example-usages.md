@@ -1,4 +1,4 @@
-# Intro to the CENNZnet API
+# CENNZnet API example usages
 
 The CENNZnet blockchain features a rich API for developing your DApp.
 

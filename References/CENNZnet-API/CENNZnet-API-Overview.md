@@ -21,3 +21,6 @@ The API methods have auto-generated lists for each type. These lists can be foun
 
 The derived methods don't have generated docs. They have comprehensive code documentation which can be found [here](https://github.com/cennznet/api.js/tree/develop/packages/api/src/derives).
 
+## Creating an instance
+
+## Keyring

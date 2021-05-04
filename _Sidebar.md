@@ -44,10 +44,10 @@
         - [CENNZX Exchange](References/CENNZnet-infrastructures/CENNZX-Exchange)
         - [Uncover API](References/CENNZnet-infrastructures/UncoverAPI)
         - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
-        
+
     - CENNZnet API
         - [CENNZnet API Overview](References/CENNZnet-API/CENNZnet-API-Overview)
-        - [Intro to the CENNZnet API](References/CENNZnet-API/Intro-to-the-CENNZnet-API)
+        - [CENNZnet API example usages](References/CENNZnet-API/CENNZnet-API-example-usages)
         - [Technical Reference](References/CENNZnet-API/Technical-Reference)
         - [Cheatsheet](References/CENNZnet-API/Cheatsheet)
         - [Accounts and Keypairs](References/CENNZnet-API/Accounts-and-Keypairs)
