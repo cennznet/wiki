@@ -21,6 +21,7 @@
         - [Getting Started with the CENNZnet API](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API)
         - [Token Economy](Dapp-development/Guides/Token-Economy)
         - [NFT Design](Dapp-development/Guides/How-to-design-NFTs)
+        - [NFT Royalties](Dapp-development/Guides/NFT-royalties)
         - [Smart Contracts](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet)
 
 ---
