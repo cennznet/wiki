@@ -48,7 +48,6 @@
     - CENNZnet API
         - [CENNZnet API Overview](References/CENNZnet-API/CENNZnet-API-Overview)
         - [CENNZnet API example usages](References/CENNZnet-API/CENNZnet-API-example-usages)
-        - [Technical Reference](References/CENNZnet-API/Technical-Reference)
         - [Cheatsheet](References/CENNZnet-API/Cheatsheet)
         - [Accounts and Keypairs](References/CENNZnet-API/Accounts-and-Keypairs)
         - [Staking API](References/CENNZnet-API/Staking)
