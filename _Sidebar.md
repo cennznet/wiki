@@ -59,6 +59,7 @@
             - [Attestation](References/CENNZnet-API/Examples/API-examples-Attestation)
 
     - Runtime modules
+        - [List of CENNZnet modules](References/Runtime-modules/List-of-cennet-modules)
         - [Attestation](References/Runtime-modules/Attestation)
         - [CENNZX](References/Runtime-modules/CENNZX)
         - [Doughnut](References/Runtime-modules/Doughnut)

@@ -1,5 +1,8 @@
 # Getting started with the CENNZnet API
 
+This guide will get you set up with the CENNZnet API and walk through a couple code examples.
+To understand how to use the API, please read the [CENNZnet API Overview](References/CENNZnet-API/CENNZnet-API-Overview).
+
 ## Installation and Setup
 
 Install [Node.js (`>=10.16.3`)](https://nodejs.org/en/) and [Yarn (`>= 1.19.0`)](https://yarnpkg.com/).

@@ -1,6 +1,8 @@
 # CENNZnet API example usages
 
-The CENNZnet blockchain features a rich API for developing your DApp. This document shows some example usages of the CENNZnet API that interacts with different runtime modules. To learn more about the runtime modules, check the [Runtime Module references](/References/Runtime-modules/Attestation).
+The CENNZnet blockchain features a rich API for developing your DApp. This document shows some example usages of the CENNZnet API that interacts with different runtime modules. To learn more about the runtime modules, check the [Runtime modules references](References/Runtime-modules/List-of-cennet-modules).
+
+Before you start here, please follow the [Getting started with the CENNZnet API guide](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API) and the [CENNZnet API Overview](References/CENNZnet-API/CENNZnet-API-Overview).
 
 ### API Object
 The full Blockchain API is accessed by creating an API object:
