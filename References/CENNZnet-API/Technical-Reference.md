@@ -1,6 +1,11 @@
-# Technical API Reference
+# Full list of APIs
 
-[CENNZnet API github](https://github.com/cennznet/api.js)
+The API methods have auto-generated lists for each type. This document contains the full list of APIs, which is the combination of all [docs](https://github.com/cennznet/api.js/tree/develop/docs/cennznet) available in the [CENNZnet API repo](https://github.com/cennznet/api.js).
+
+The API methods in the `api.derive` namespace don't have generated docs, due to implementation details. They have comprehensive code documentation, which can be found [here](https://github.com/cennznet/api.js/tree/develop/packages/api/src/derives).
+
+To learn more about the runtime modules, refer to the [List of CENNZnet modules](References/Runtime-modules/List-of-cennet-modules).
+
 
 **sections**:
 - [constants](References/CENNZnet-API/Technical-Reference?id=title-constants)

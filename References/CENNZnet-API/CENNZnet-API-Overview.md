@@ -21,12 +21,9 @@ There are the following types:
 * **derive**: provides compound queries that perform calculations based on storage queries in JavaScript. For example, `api.derive.staking.accountInfo`.
 * **rpc**: generally provides additional calculation performed by the node on top of storage reads. For example, `api.rpc.staking.accruedPayout`. RPC is the underlying mechanism for the other API endpoints. Therefore the RPC API endpoint also contains methods for node operators, such as setting local node session keys.
 
-
 ## API references
 
-The API methods have auto-generated lists for each type. These lists can be found [here](https://github.com/cennznet/api.js/tree/develop/docs/cennznet).
-
-The derived methods don't have generated docs, but they have comprehensive code documentation, which can be found [here](https://github.com/cennznet/api.js/tree/develop/packages/api/src/derives).
+The full list of APIs can be found in the [CENNZnet API Reference](References/CENNZnet-API/Technical-Reference).
 
 
 ## Using the API
