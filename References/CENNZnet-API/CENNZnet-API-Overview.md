@@ -1,6 +1,6 @@
 # CENNZnet API overview
 
-The CENNZnet API allows you to interact with a CENNZnet blockchain through a node using Javascript. You can use the API to connect to the MainNet through a public websocket, or to another network using a local node.
+The CENNZnet API allows you to interact with a CENNZnet blockchain through a node using Javascript. You can use the API to connect to the MainNet through a public WebSocket, or to another network using a local node.
 
 Before you start here, please read the [CENNZnet technical Overview](Getting-started/CENNZnet-technical-overview) and follow our [Getting started with the CENNZnet API guide](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API).
 
@@ -25,13 +25,26 @@ There are the following types:
 
 The full list of APIs can be found in the [CENNZnet API Reference](References/CENNZnet-API/Technical-Reference).
 
-
 ## Using the API
 
 ### Creating an instance
 
+Required import
+
+```Javascript
+const { Api } = require('@cennznet/api');
+```
+
 #### Connecting to the MainNet
+```Javascript
+const provider = 'wss://cennznet.unfrastructure.io/public/ws';
+const api = await Api.create({provider});
+```
 
 #### Connecting to a local node
+```Javascript
+const provider = 'ws://localhost:9944';
+const api = await Api.create({provider});
+```
 
 ### Keyring
