@@ -1,6 +1,6 @@
 # CENNZnet API overview
 
-The CENNZnet API allows you to interact with a CENNZnet blockchain through a node using Javascript. You can use the API to connect to the MainNet through a public WebSocket, or to another network using a local node.
+The CENNZnet API allows you to interact with a CENNZnet blockchain through a node using JavaScript.
 
 Before you start here, please read the [CENNZnet technical Overview](Getting-started/CENNZnet-technical-overview) and follow our [Getting started with the CENNZnet API guide](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API).
 
@@ -29,22 +29,74 @@ The full list of APIs can be found in the [CENNZnet API Reference](References/CE
 
 ### Creating an instance
 
-Required import
+You can use the API to connect to the MainNet through a public WebSocket, or to another network using a local node. When creating an instance of the API object, you can specify the network that it connects to.
 
-```Javascript
+To add the latest version of CENNZnet API package to your project, run
+```bash
+yarn add @cennznet/api
+```
+
+or add to package.json:
+```json
+"dependencies": {
+    "@cennznet/api": "^1.4.0"
+},
+```
+
+Then import the API in JavaScript:
+```JavaScript
 const { Api } = require('@cennznet/api');
 ```
 
 #### Connecting to the MainNet
-```Javascript
+
+Use the following snippet to connect to the MainNet (Azalea). This will connect you to one of the CENNZnet validator nodes:
+```JavaScript
 const provider = 'wss://cennznet.unfrastructure.io/public/ws';
 const api = await Api.create({provider});
 ```
 
 #### Connecting to a local node
-```Javascript
+
+Use the following snippet to connect to a local node:
+```JavaScript
 const provider = 'ws://localhost:9944';
 const api = await Api.create({provider});
 ```
 
 ### Keyring
+
+We use the @polkadot/keyring package to add accounts, retrieve key pairs and sign transactions.
+
+This is useful because some transactions require signing, and we don't want to store secret keys directly in the code.
+
+To add the Keyring package to your project, run:
+```bash
+yarn add @polkadot/keyring
+```
+or add to package.json:
+```json
+"dependencies": {
+    "@polkadot/keyring": "^4.1.1"
+},
+```
+
+In your JavaScript code:
+```JavaScript
+// Import the package
+const { Keyring } = require('@polkadot/keyring');
+
+// Specify the signing type when creating the Keyring instance
+const keyring = new Keyring({ type: 'sr25519' });
+```
+
+Now you can add your keys to the keyring securely by passing in their URI address:
+```JavaScript
+const alice = keyring.addFromUri('//Alice'); // Alice is predefined in the dev chain
+```
+
+To sign an extrinsic method:
+```JavaScript
+const extrinsic = api.tx.genericAsset.transfer(CENNZ, BOB, 12345);
+const hash = await extrinsic.signAndSend(alice);
+```

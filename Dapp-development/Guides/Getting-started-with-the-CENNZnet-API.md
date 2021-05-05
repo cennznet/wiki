@@ -34,7 +34,7 @@ The CENNZnet API allows you to interact with a node in 2 ways:
 * [Javascript Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 * [RxJS observables](https://rxjs-dev.firebaseapp.com/guide/overview)
 
-You can choose the approach based on the requirements for your DApp. If you don't know which one to choose, the Promise version covers most use cases, and it doesn't require another library as it's a part of ES2015 specification. 
+You can choose the approach based on the requirements for your DApp. If you don't know which one to choose, the Promise version covers most use cases, and it doesn't require another library as it's a part of ES2015 specification.
 
 There is also a in-depth [Getting Started guide in the API repo](https://github.com/cennznet/api.js/blob/develop/docs/GET_STARTED.md).
 
