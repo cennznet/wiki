@@ -38,10 +38,18 @@
 
 ---
 - References
+    - CENNZnet infrastructures
+        - [CENNZnet.io](References/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
+        - [CENNZnet browser extension](References/CENNZnet-infrastructures/CENNZnet-browser-extension)
+        - [CENNZnet Faucet](References/CENNZnet-infrastructures/CENNZnet-faucet)
+        - [CENNZX Exchange](References/CENNZnet-infrastructures/CENNZX-Exchange)
+        - [Uncover API](References/CENNZnet-infrastructures/UncoverAPI)
+        - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
+
     - CENNZnet API
         - [CENNZnet API Overview](References/CENNZnet-API/CENNZnet-API-Overview)
-        - [Intro to the CENNZnet API](References/CENNZnet-API/Intro-to-the-CENNZnet-API)
-        - [Technical Reference](References/CENNZnet-API/Technical-Reference)
+        - [CENNZnet API example usages](References/CENNZnet-API/CENNZnet-API-example-usages)
+        - [CENNZnet API Reference](References/CENNZnet-API/Technical-Reference)
         - [Cheatsheet](References/CENNZnet-API/Cheatsheet)
         - [Accounts and Keypairs](References/CENNZnet-API/Accounts-and-Keypairs)
         - [Staking API](References/CENNZnet-API/Staking)
@@ -52,15 +60,8 @@
             - [CENNZX Spot](References/CENNZnet-API/Examples/API-examples-CENNZX-Spot)
             - [Attestation](References/CENNZnet-API/Examples/API-examples-Attestation)
 
-    - CENNZnet infrastructures
-        - [CENNZnet.io](References/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
-        - [CENNZnet browser extension](References/CENNZnet-infrastructures/CENNZnet-browser-extension)
-        - [CENNZnet Faucet](References/CENNZnet-infrastructures/CENNZnet-faucet)
-        - [CENNZX Exchange](References/CENNZnet-infrastructures/CENNZX-Exchange)
-        - [Uncover API](References/CENNZnet-infrastructures/UncoverAPI)
-        - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
-
     - Runtime modules
+        - [List of CENNZnet modules](References/Runtime-modules/List-of-cennet-modules)
         - [Attestation](References/Runtime-modules/Attestation)
         - [CENNZX](References/Runtime-modules/CENNZX)
         - [Doughnut](References/Runtime-modules/Doughnut)

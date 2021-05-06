@@ -2,6 +2,9 @@
 
 The CENNZnet browser extension allows users to manage their CENNZnet accounts and sign transactions with their CENNZnet accounts. It also gives DApps access to CENNZnet accounts. This means DApp developers can use the CENNZnet extension for a quicker MVP
 
+## Repo
+The repo can be found [here](https://github.com/cennznet/extension)
+
 ## Installation
 
 Please install from the [Chrome Web Store](https://chrome.google.com/webstore/detail/cennznet-extension/feckpephlmdcjnpoclagmaogngeffafk).

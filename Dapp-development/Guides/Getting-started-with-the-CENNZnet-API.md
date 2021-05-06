@@ -1,5 +1,8 @@
 # Getting started with the CENNZnet API
 
+This guide will get you set up with the CENNZnet API and walk through a couple code examples.
+To understand how to use the API, please read the [CENNZnet API Overview](References/CENNZnet-API/CENNZnet-API-Overview).
+
 ## Installation and Setup
 
 Install [Node.js (`>=10.16.3`)](https://nodejs.org/en/) and [Yarn (`>= 1.19.0`)](https://yarnpkg.com/).
@@ -13,7 +16,7 @@ npm i --save @cennznet/api
 
 A [development node](Network-participating/Node-operating/Types-of-nodes?id=development-chainnodes) gives you a sandbox environment for developing new features.
 
-Run the following command to start a dev node. 
+Run the following command to start a dev node.
 The `--dev` flag will start the node as a single validator on a development network, also enabling full access to the node's JSON-RPC API.
 
 ```bash
@@ -31,7 +34,7 @@ The CENNZnet API allows you to interact with a node in 2 ways:
 * [Javascript Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 * [RxJS observables](https://rxjs-dev.firebaseapp.com/guide/overview)
 
-You can choose the approach based on the requirements for your DApp. If you don't know which one to choose, the Promise version covers most use cases, and it doesn't require another library as it's a part of ES2015 specification. 
+You can choose the approach based on the requirements for your DApp. If you don't know which one to choose, the Promise version covers most use cases, and it doesn't require another library as it's a part of ES2015 specification.
 
 There is also a in-depth [Getting Started guide in the API repo](https://github.com/cennznet/api.js/blob/develop/docs/GET_STARTED.md).
 

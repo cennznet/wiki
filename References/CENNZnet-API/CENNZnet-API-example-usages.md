@@ -1,10 +1,8 @@
-# Intro to the CENNZnet API
+# CENNZnet API example usages
 
-The CENNZnet blockchain features a rich API for developing your DApp.
+The CENNZnet blockchain features a rich API for developing your DApp. This document shows some example usages of the CENNZnet API that interacts with different runtime modules. To learn more about the runtime modules, check the [Runtime modules references](References/Runtime-modules/List-of-cennet-modules).
 
-Before you start here, please follow our [Getting started with the CENNZnet API guide](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API)
-
-For a detailed reference on how the API works, see the [Polkadot API reference](https://polkadot.js.org/api/start/)
+Before you start here, please follow the [Getting started with the CENNZnet API guide](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API) and the [CENNZnet API Overview](References/CENNZnet-API/CENNZnet-API-Overview).
 
 ### API Object
 The full Blockchain API is accessed by creating an API object:
@@ -163,7 +161,3 @@ Remove a previously made claim on `topic` about `holder`.
 
 * `holder` - Account ID of the claim `holder`
 * `topic` - The claim topic encoded as a U256
-
-## Next steps
-
-For more information about the CENNZnet API, head to the References->CENNZnet API section in the side bar!

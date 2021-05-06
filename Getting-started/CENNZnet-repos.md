@@ -23,6 +23,12 @@ The CENNZnet API is a JavaScript API that allows you to interact with CENNZnet p
 
 This is the repository for this wiki you are reading now.
 
+## Related repositories
+
+### [CENNZX UI](https://github.com/cennznet/cennzx-ui)
+The [CENNZX UI](References/CENNZnet-infrastructures/CENNZX-Exchange) is a DApp that interacts with the CENNZnet browser extension.
+
+
 ### [UNcover](https://github.com/cennznet/explorer)
 
 [UNcover](https://uncoverexplorer.com/) is an explorer that search for transactions, addresses, prices and other activities on CENNZnet MainNet.
@@ -30,8 +36,6 @@ This is the repository for this wiki you are reading now.
 ### [CENNZnet CLI](https://github.com/cennznet/cli)
 
 This is a minimal command line environment that lets you use the CENNZnet API.
-
-## Related repositories
 
 ### [Plug](https://github.com/plugblockchain/plug-blockchain)
 
