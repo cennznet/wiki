@@ -66,7 +66,7 @@
         - [CENNZX](References/Runtime-modules/CENNZX)
         - [Doughnut](References/Runtime-modules/Doughnut)
         - [Doughnut Permissioning](References/Runtime-modules/Doughnut-Permissioning)
-        - [Generic-Asset](References/Runtime-modules/Generic-Asset)
+        - [Generic Asset](References/Runtime-modules/Generic-Asset)
         - [NFT](References/Runtime-modules/NFT)
         - [Staking](References/Runtime-modules/Staking)
         - [Sylo Runtime Modules](References/Runtime-modules/Sylo-Runtime-Modules)

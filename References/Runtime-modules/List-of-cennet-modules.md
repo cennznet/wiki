@@ -5,7 +5,7 @@ CENNZnet is built on [Substrate](https://www.parity.io/substrate/), which provid
 ## CENNZnet specific modules
 
 ### Attestation
-The [Attestation](References/Runtime-modules/Attestation) module allows you to issue and check claims on accounts. For example, an issuer can set claims to verify if a person is older than 18 years old.
+The [Attestation](References/Runtime-modules/Attestation) module allows you to issue and check claims on accounts. 
 
 ### CENNZX
 The [CENNZX](References/Runtime-modules/CENNZX) module allows you to exchange between different types of generic assets on CENNZnet. It allows users to participate in exchange as a liquidity provider or as an exchange user.

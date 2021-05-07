@@ -1,19 +1,9 @@
 # Attestation Module
 
+The Attestation module allows you to issue and check claims on accounts. For example, an issuer can set claims to verify if a person is older than 18 years old.
 
-```js
-api.tx.attestation.setClaim(holder, topic, value)
-```
-Make a claim of `value` on `topic` about `holder`.
+## Main Interface
 
-* `holder` - Account ID of the claim `holder`
-* `topic` - The claim topic encoded as a U256
-* `value` - The claim value encoded as a U256
+[Extrinsic methods](https://github.com/cennznet/api.js/blob/develop/docs/cennznet/extrinsics.md#attestation)
 
-```js
-api.tx.attestation.removeClaim(holder, topic)
-```
-Remove a previously made claim on `topic` about `holder`.
-
-* `holder` - Account ID of the claim `holder`
-* `topic` - The claim topic encoded as a U256
+[Storage methods](https://github.com/cennznet/api.js/blob/develop/docs/cennznet/storage.md#attestation)
