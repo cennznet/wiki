@@ -14,7 +14,7 @@ The [CENNZX](References/Runtime-modules/CENNZX) module allows you to exchange be
 The [Doughnut](References/Runtime-modules/Doughnut) module let you prove that one address delegates something to another address. Doughnuts are Proofs of Delegation between two or more cryptographic key pairs. 
 
 ### Generic Asset
-The [Generic-Asset](References/Runtime-modules/Generic-Asset) module lets you mint, transfer, and burn different types of tokens. It also allows you to check balance on accounts.
+The [Generic Asset](References/Runtime-modules/Generic-Asset) module lets you mint, transfer, and burn different types of tokens. It also allows you to check balance on accounts.
 
 ### NFT
 The [NFT](References/Runtime-modules/NFT) module allows users to easily create and sell custom NFTs(non-fungible token). It also provides functionalities to sell and auction NFTs. 
@@ -59,6 +59,7 @@ The [Session pallet](https://substrate.dev/rustdocs/v3.0.0/pallet_session/index.
 The [Sudo pallet](https://substrate.dev/rustdocs/v3.0.0/pallet_sudo/index.html) provides "privileged functions" (i.e. functions that require Root access).
 
 ### System
+The System pallet provides system level configurations for the blockchain, as well as access to the raw storage.
 
 ### Timestamp
 The [Timestamp pallet](https://substrate.dev/rustdocs/v3.0.0/pallet_timestamp/index.html) provides functionality to get and set the on-chain time.
