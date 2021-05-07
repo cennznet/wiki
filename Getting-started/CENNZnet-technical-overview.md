@@ -1,5 +1,7 @@
 # CENNZnet technical overview
 
+CENNZnet is a blockchain network built and optimised for DApps(Decentralised Applications). It is built on [Substrate](https://www.parity.io/substrate/), which provides building blocks for the blockchain logic.
+
 There are many pieces of technology and tools that contribute to CENNZnet. This article will describe their purposes and how they fit together.
 
 ## Interacting with CENNZnet
