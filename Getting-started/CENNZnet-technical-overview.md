@@ -12,7 +12,7 @@ You can either interact with CENNZnet programmatically through the JavaScript AP
 
 ### CENNZnet API
 
-A JS API that lets you subscribe to events on CENNZnet, submit transactions, and interact with the nodes. The API lets you call extrinsic methods that are exposed by the runtime modules
+A [JS API](https://github.com/cennznet/api.js) that lets you subscribe to events on CENNZnet, submit transactions, and interact with the nodes. The API lets you call extrinsic methods that are exposed by the runtime modules
 
 ### Visual interfaces
 
@@ -20,11 +20,15 @@ There are a couple tools that let you interact with CENNZnet visually. These too
 
 #### CENNZnet.io
 
-[CENNZnet.io](https://cennznet.io/#/) provides a wallet and a GUI to the CENNZnet API. It connects to and communicates with a CENNZnet node.
+[CENNZnet.io](http://cennznet.io/), also known as the CENNZnet Portal, provides a wallet and a GUI to the CENNZnet API. It connects to and communicates with a CENNZnet node.
+
+See the [CENNZnet.io reference](References/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI) for more detail.
 
 #### UNcover 
 
 [UNcover](https://uncoverexplorer.com/) is an explorer that search for transactions, addresses, prices and other activities on CENNZnet MainNet. This information may not be stored on a single node.
+
+See the [UNcover reference](References/CENNZnet-infrastructures/Uncover) for more detail.
 
 ## How CENNZnet works
 
