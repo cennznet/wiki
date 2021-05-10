@@ -43,7 +43,7 @@
         - [CENNZnet browser extension](References/CENNZnet-infrastructures/CENNZnet-browser-extension)
         - [CENNZnet Faucet](References/CENNZnet-infrastructures/CENNZnet-faucet)
         - [CENNZX Exchange](References/CENNZnet-infrastructures/CENNZX-Exchange)
-        - [Uncover API](References/CENNZnet-infrastructures/UncoverAPI)
+        - [Uncover](References/CENNZnet-infrastructures/Uncover)
         - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
 
     - CENNZnet API
