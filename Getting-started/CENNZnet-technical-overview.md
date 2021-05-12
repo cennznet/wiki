@@ -47,7 +47,7 @@ In the CENNZnet repository, you can find 3 genesis configurations.
 
 * **Nikau🌴 (the TestNet)**: is the pre-production environment for testing bleeding edge features before they are deployed to Azalea. Nikau runs on nodes hosted on AWS. The CENNZnet team maintains Nikau and keeps it close to the MainNet.
 
-* **Rata (the local TestNet)**: is a sandbox chain for testing locally. It starts a chain of nodes that runs in docker containers, all on your local machine. This allows you to test complex scenarios that aren't possible to test with a development chain, which consists of 1 node only.
+* **Rata (the real TestNet)**: is a sandbox chain for testing locally. It starts a chain of nodes that runs in docker containers, all on your local machine. This allows you to test complex scenarios that aren't possible to test with a development chain, which consists of 1 node only.
 
 ### The internals of CENNZNet
 
