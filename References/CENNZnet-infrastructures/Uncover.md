@@ -1,4 +1,4 @@
-# Uncover
+# UNcover
 
 [UNcover](https://uncoverexplorer.com/) is an explorer that search for transactions, addresses, prices and other activities on CENNZnet MainNet. This information may not be stored on a single node.
 

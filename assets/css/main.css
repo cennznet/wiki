@@ -2,12 +2,25 @@
     line-height: 1.8;
     --theme-color: #7587ff;
     --base-font-family:  "Open Sans";
+    --base-font-size: 16px;
+    --base-font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial;
+
+    --code-font-size: 13px;
+
+    --content-max-width: 50em;
 
     /* Side bar */
     --sidebar-nav-link-before-content-l3 : '';
     --sidebar-name-font-weight: 600;
     --sidebar-nav-link-font-weight--active        : 600;
     --sidebar-nav-link-text-decoration--hover     : ;
+    --sidebar-nav-link-background-color--hover: blue;
+    --sidebar-nav-link-color--hover:white;
+    --sidebar-name-margin: 1rem 0 0;
+    --sidebar-name-text-align: left;
+    --sidebar-nav-margin: 1rem 0 0;
+    --sidebar-nav-indent: 0.4rem;
+    --sidebar-padding: 1.5rem;
 
     /* Cover page */
     --cover-background-color : hsl(213, 59%, 42%);
@@ -18,4 +31,4 @@
     --strong-font-weight: 800;
     --heading-h1-font-weight: 600; 
     --heading-h2-font-weight: 600;
-  }
+}

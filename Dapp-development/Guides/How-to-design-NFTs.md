@@ -1,18 +1,17 @@
-# How to: Design NFTs on CENNZnet
+# NFT Design
 
 In this guide we give a quick overview of the concepts related to NFTs and best practices for designing and storing them on CENNZnet.
 You should have some familiarity with the applications of cryptographic hashing to get the most out of this guide.
 
 ## Intro
-Non-fungible tokens (NFTs) are simply some owned data object stored on a blockchain.
-Since NFTs are just arbitrary data the things we can represent as NFTs are vast, artworks, in-game items, certifications, deeds of ownership, are some common examples.  
+Non-fungible tokens or *NFT*s are simply some owned data stored on a blockchain.
+Since NFTs are just arbitrary data, the things we can represent as NFTs are vast: artworks, in-game items, certifications, deeds of ownership, are some common examples.  
 If you can serialize it you can make it an NFT!  
 The proof of who owns an NFT (the piece of data) and management of it is assured by the underlying blockchain protocol.
 
-## NFT data modelling on CENNZNet
-So what constitutes a good NFT design on CENNZnet? 
+## Considerations
 
-Once you have something to tokenise as an NFT, the factors to consider are:
+Once you have some data to tokenise as an NFT, the important factors to consider are:
 - Minimising storage costs
 - Future-proof verification
 - Working with immutability

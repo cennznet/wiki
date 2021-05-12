@@ -1,4 +1,6 @@
-# Cheatsheet
+# Cookbook
+
+Common commands and patterns with CENNZnet API
 
 ## Get the latest block height
 with curl:
@@ -100,3 +102,17 @@ api.derive.fees.estimateFee({extrinsic, userFeeAssetId: cpayAssetId});
 ```
 
 also see: https://polkadot.js.org/docs/api/cookbook/tx/#how-do-i-estimate-the-transaction-fees
+
+### Pay Transaction Fees in Any Currency
+
+Transaction fees are usually paid in CPay, however fees can be paid in another token by using a `TransactionPayment` object:
+
+```js
+import { generateTransactionPayment } from '@cennznet/types/runtime/transaction-payment/TransactionPayment';
+// ...
+const transactionPayment = generateTransactionPayment({ tip: 0, assetId: CENNZ, maxPayment });
+const unsub = await api.tx.genericAsset.transfer(CENNZ, bob.address, 10000)
+  .signAndSend(alice,  {transactionPayment}, (result) => {
+    // ...wait for completion etc.
+  }
+```

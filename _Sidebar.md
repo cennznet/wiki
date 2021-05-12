@@ -1,14 +1,14 @@
 - Getting started
-    - [CENNZnet primer](Getting-started/CENNZnet-primer)
-    - [CENNZnet technical overview](Getting-started/CENNZnet-technical-overview)
-    - [CENNZnet DApp development](Getting-started/CENNZnet-dapp-development)
-    - [CENNZnet repositories](Getting-started/CENNZnet-repos)
+    - [Primer](Getting-started/CENNZnet-primer)
+    - [Technical Overview](Getting-started/CENNZnet-technical-overview)
+    - [DApp Development](Getting-started/CENNZnet-dapp-development)
+    - [Repositories](Getting-started/CENNZnet-repos)
 ---
-- Network participating
-    - Node operating
+- Network participation
+    - Node Operations
         - [Types of nodes](Network-participating/Node-operating/Types-of-nodes)
         - [Running a Full Node](Network-participating/Node-operating/Running-a-Full-Node)
-        - [Running nodes from snapshots](Network-participating/Node-operating/Running-nodes-from-snapshots)
+        - [Running from snapshots](Network-participating/Node-operating/Running-nodes-from-snapshots)
         - [Running a Development Chain](Network-participating/Node-operating/Running-a-Dev-Chain)
     - Staking
         - [Validator Staking Guide](Network-participating/Staking/Validator-Guide)
@@ -40,28 +40,27 @@
 - References
     - CENNZnet infrastructures
         - [CENNZnet.io](References/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
-        - [CENNZnet browser extension](References/CENNZnet-infrastructures/CENNZnet-browser-extension)
-        - [CENNZnet Faucet](References/CENNZnet-infrastructures/CENNZnet-faucet)
+        - [Browser Extension](References/CENNZnet-infrastructures/CENNZnet-browser-extension)
+        - [Faucet](References/CENNZnet-infrastructures/CENNZnet-faucet)
         - [CENNZX Exchange](References/CENNZnet-infrastructures/CENNZX-Exchange)
-        - [Uncover](References/CENNZnet-infrastructures/Uncover)
+        - [UNcover](References/CENNZnet-infrastructures/Uncover)
         - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
 
     - CENNZnet API
-        - [CENNZnet API Overview](References/CENNZnet-API/CENNZnet-API-Overview)
-        - [CENNZnet API example usages](References/CENNZnet-API/CENNZnet-API-example-usages)
-        - [CENNZnet API Reference](References/CENNZnet-API/Technical-Reference)
-        - [Cheatsheet](References/CENNZnet-API/Cheatsheet)
-        - [Accounts and Keypairs](References/CENNZnet-API/Accounts-and-Keypairs)
-        - [Staking API](References/CENNZnet-API/Staking)
+        - [Overview](References/CENNZnet-API/CENNZnet-API-Overview)
+        - [Accounts and Keypairs 🔑](References/CENNZnet-API/Accounts-and-Keypairs)
+        - [Cookbook 👩‍🍳](References/CENNZnet-API/Cookbook)
         - [Subscriptions](References/CENNZnet-API/Subscriptions)
+        - [Staking API](References/CENNZnet-API/Staking)
+        - [Technical Reference](References/CENNZnet-API/Technical-Reference)
         - [Transaction Error Codes](References/CENNZnet-API/Transaction-Error-Codes)
-        - API Examples
+        - Examples
             - [Generic Assets](References/CENNZnet-API/Examples/API-examples-Generic-Assets)
-            - [CENNZX Spot](References/CENNZnet-API/Examples/API-examples-CENNZX-Spot)
+            - [CENNZX](References/CENNZnet-API/Examples/API-examples-CENNZX-Spot)
             - [Attestation](References/CENNZnet-API/Examples/API-examples-Attestation)
 
     - Runtime modules
-        - [List of CENNZnet modules](References/Runtime-modules/List-of-cennznet-modules)
+        - [Overview](References/Runtime-modules/Modules-Overview)
         - [Attestation](References/Runtime-modules/Attestation)
         - [CENNZX](References/Runtime-modules/CENNZX)
         - [Doughnut](References/Runtime-modules/Doughnut)
