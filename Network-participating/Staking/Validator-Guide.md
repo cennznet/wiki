@@ -58,7 +58,7 @@ The following diagram shows an example of the authorship points process
 ![authorship-rewards](../../assets/images/staking/authorship-rewards.png)
 
 #### Reward Calculation (worked example)
-```python3
+```python
 inflation_rate = 8 / 100 # % annual inflation
 cennz_supply = 1_200_000_000 # at the beginning of the fiscal year
 # Supposing that the duration of an era is 24h and a fiscal year is 365 days
@@ -173,12 +173,8 @@ cennznet/cennznet:<VERSION> \
 --rpc-external \
 --rpc-cors=https://cennznet.io
 ```
-Some bootnodes are included in the genesis/chain config, to supply additional bootnodes use: `--bootnodes=<multiaddress>`
-
-[LABEL](https://gist.github.com/Amy-Centrality/95cd1170fd143c6dc7bec05327faaa11/raw/fresh_validator_node.sh':include')
-
-
-
+Some bootnodes are included in the genesis/chain config, to supply additional bootnodes use: `--bootnodes=<multiaddress>`.  
+[gist](https://gist.github.com/Amy-Centrality/95cd1170fd143c6dc7bec05327faaa11/raw/fresh_validator_node.sh)
 
 #### Starting a node from a snapshot
 

@@ -1,9 +1,7 @@
-# CENNZnet DApp development
+# DApp Development
 
-## Dev environment
-A machine with the following dependencies installed:
+Setup a machine with the following dependencies installed:
 * [Docker](https://www.docker.com/)
-
 * [Node.JS](https://nodejs.org/en/)
 
 ## What technologies do I need know to build DApps on CENNZnet?
@@ -16,16 +14,16 @@ Most DApps require customised storage on the blockchain. This is done through Sm
 
 ## Development tools
 
-[CENNZnet.io](https://cennznet.io/#/) is the most important development tool. If you a new to CENNZnet DApp development, be sure to read the following user guides to CENNZnet.io:
+[CENNZnet.io](https://cennznet.io/#/) is the most important development tool. If you are new to CENNZnet DApp development, be sure to read the following user guides to CENNZnet.io:
 * [Intro Guide to CENNZnet.io](https://medium.com/centrality/using-cennznet-io-ac5a90f9a2cb)
 * [Advanced Guide to CENNZnet.io](https://medium.com/centrality/advanced-guide-to-cennznet-io-33be90f26ff3)
 
-During development, it's useful to use a sandbox local environment, so that you can start from a clean state as required. The Development Chain provides such an environment. To set one up, see this guide,
+During development, it's useful to use a local sandbox environment, so that you can start from a clean state as required. The Development chain provides such an environment. To set one up, see this guide,
 [Running a Development Chain](Network-participating/Node-operating/Running-a-Dev-Chain).
 
 ## The pre-production environment
 
-Once your feature is ready to be shared with a wider audience, you can test it on the TestNet(Nikau)🌴, the pre-production environment, before you deploy it to the MainNet(Azalea).
+Once your feature is ready to be shared with a wider audience, you can test it on the TestNet (Nikau 🌴), the CENNZnet pre-production environment, before you deploy it to the MainNet (Azalea).
 
 The TestNet provides a similar environment to the MainNet, and it's a safe place to fail. 
 

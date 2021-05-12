@@ -1,4 +1,4 @@
-# Accounts and keypairs
+# Accounts and Keypairs
 
 ## Overview
 

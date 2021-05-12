@@ -1,19 +1,17 @@
-# CENNZnet primer
+# Primer
 
-## Learning about CENNZnet
-
-CENNZnet has three sources of information:
+There are 3 main sources of information for learning about CENNZnet:
 * [CENNZnet Knowledge Hub](https://cennz.net/knowledge-hub/)
 * [CENNZnet Wiki](Home)
 * [Code documentation](https://github.com/cennznet/api.js/tree/develop/docs)
 
-### CENNZnet Knowledge Hub
+### Knowledge Hub
 
 The Knowledge Hub hosts educational articles and user guides. It aims to provide information for startup-owners, investors as well as developers new to the blockchain field.
 
 If you are new to blockchain and DApp development, or need a bit of a refresher on some key concepts, head over to the [CENNZnet Knowledge Hub](https://cennz.net/knowledge-hub/), for a high-level introduction to CENNZnet, DApps (Decentralised Apps), and blockchain. 
 
-### CENNZnet Wiki
+### Wiki
 
 CENNZnet Wiki (where you currently are!) provides technical documentation and guides to CENNZnet.
 
@@ -36,13 +34,13 @@ The latest docs and sample API usages can be found [here](https://github.com/cen
 For an overview of the API, please read the [CENNZnet API Overview](References/CENNZnet-API/CENNZnet-API-Overview).
 
 
-## CENNZnet news and updates
+### News and Updates
 * ***[Centrality's Medium publication](https://medium.com/centrality)***: publishes news and update articles.
 * ***[CENNZnet Discord server](https://discord.gg/AnB3tRtkJ4)***: is a forum for the CENNZnet Dev community.
 
-## How to contribute
+### Contributing
 
-CENNZnet, as well as its related tools including this wiki is a completely open source project. This means CENNZnet relies on the open source community's contribution.
+CENNZnet, as well as its related tools including this wiki are completely open source projects. This means CENNZnet relies on the open source community's contribution.
 
 To contribute, please follow the standard process of contributing to a GitHub public repo:
 * Create a fork of the repo
@@ -51,8 +49,8 @@ To contribute, please follow the standard process of contributing to a GitHub pu
 
 When contributing to the [CENNZnet repo](https://github.com/cennznet/cennznet), please read our [PR checklist](https://github.com/cennznet/cennznet/blob/develop/docs/CONTRIBUTING.md).
 
-## DApp development
+### DApp development
 
 If the idea of DApps(Decentralised Apps) is new to you, please first read our article [What is a DApp and why are they useful?](https://cennz.net/blog/featured-blog-post/what-is-a-dapp/).
 
-The next step would be to read the [CENNZnet technical overview](Getting-started/CENNZnet-technical-overview), and then you can head to [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp) in the Dapp development section.
+The next step is to read the [CENNZnet technical overview](Getting-started/CENNZnet-technical-overview), and then try [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp)

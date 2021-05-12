@@ -1,4 +1,4 @@
-# CENNZnet API overview
+# API Overview
 
 The CENNZnet API allows you to interact with a CENNZnet blockchain through a node using JavaScript.
 
@@ -44,14 +44,14 @@ or add to package.json:
 ```
 
 Then import the API in JavaScript:
-```JavaScript
+```js
 const { Api } = require('@cennznet/api');
 ```
 
 #### Connecting to the MainNet
 
 Use the following snippet to connect to the MainNet (Azalea). This will connect you to one of the CENNZnet validator nodes:
-```JavaScript
+```js
 const provider = 'wss://cennznet.unfrastructure.io/public/ws';
 const api = await Api.create({provider});
 ```
@@ -59,7 +59,7 @@ const api = await Api.create({provider});
 #### Connecting to a local node
 
 Use the following snippet to connect to a local node:
-```JavaScript
+```js
 const provider = 'ws://localhost:9944';
 const api = await Api.create({provider});
 ```
@@ -82,7 +82,7 @@ or add to package.json:
 ```
 
 In your JavaScript code:
-```JavaScript
+```js
 // Import the package
 const { Keyring } = require('@polkadot/keyring');
 
@@ -91,12 +91,13 @@ const keyring = new Keyring({ type: 'sr25519' });
 ```
 
 Now you can add your keys to the keyring securely by passing in their URI address:
-```JavaScript
-const alice = keyring.addFromUri('//Alice'); // Alice is predefined in the dev chain
+```js
+// Alice is a predefined account in the dev chain
+const alice = keyring.addFromUri('//Alice');
 ```
 
-To sign an extrinsic method:
-```JavaScript
+To sign an extrinsic:
+```js
 const extrinsic = api.tx.genericAsset.transfer(CENNZ, BOB, 12345);
 const hash = await extrinsic.signAndSend(alice);
 ```

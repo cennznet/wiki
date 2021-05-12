@@ -1,8 +1,8 @@
-# List of CENNZnet Modules
+# Module Overview
 
-CENNZnet is built on [Substrate](https://www.parity.io/substrate/), which provides building blocks for blockchains. This document provides high-level overview of modules and links to the detailed documentation for each module.
+CENNZnet is built on [Substrate](https://www.parity.io/substrate/), which provides core building blocks for blockchains. This document provides high-level overview of modules and links to the detailed documentation for each module.
 
-## CENNZnet specific modules
+## CENNZnet modules
 
 ### Attestation
 The [Attestation](References/Runtime-modules/Attestation) module allows you to issue and check claims on accounts. 
@@ -11,7 +11,7 @@ The [Attestation](References/Runtime-modules/Attestation) module allows you to i
 The [CENNZX](References/Runtime-modules/CENNZX) module allows you to exchange between different types of generic assets on CENNZnet. It allows users to participate in exchange as a liquidity provider or as an exchange user.
 
 ### Doughnut
-The [Doughnut](References/Runtime-modules/Doughnut) module let you prove that one address delegates something to another address. Doughnuts are Proofs of Delegation between two or more cryptographic key pairs. 
+The [Doughnut](References/Runtime-modules/Doughnut) protocol allows you prove that one address delegates some permission to another address. Doughnuts are Proofs of Delegation between two or more cryptographic key pairs. 
 
 ### Generic Asset
 The [Generic Asset](References/Runtime-modules/Generic-Asset) module lets you mint, transfer, and burn different types of tokens. It also allows you to check balance on accounts.
