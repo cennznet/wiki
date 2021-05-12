@@ -6,7 +6,7 @@ Before you start here, please read the [CENNZnet technical Overview](Getting-sta
 
 ## What can you do with the CENNZnet API?
 
-The CENNZnet API exposes functionalities of the CENNZnet runtime modules. To learn about the functionalities of the runtime modules, check the [List of CENNZnet modules](References/Runtime-modules/List-of-cennet-modules).
+The CENNZnet API exposes functionalities of the CENNZnet runtime modules. To learn about the functionalities of the runtime modules, check the [List of CENNZnet modules](References/Runtime-modules/List-of-cennznet-modules).
 
 ## Structure of the interface
 
