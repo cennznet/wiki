@@ -74,9 +74,26 @@ api.tx.nft.createCollection('test-collection', schema, null);
 
 ---
 
-## usage with UI/API
-to use NFTs with UI or API, the required type definitions are below.
-(these will be available in the next @cennznet/api release).
+## Usage with cennznet.io
+
+If the NFT related fields aren't showing up as shown in the screenshots above, you may need to add the additional types to the UI.
+Go to https://cennznet.io/#/settings/developer, paste in the types below, then save and reload:
+```json
+{
+  "NFTSchema": {
+    "_": "Vec<(String, NFTAttributeTypeId)>"
+  },
+  "RoyaltiesSchedule": {
+    "entitlements": "Vec<(AccountId, Permill)>"
+  }
+}
+```
+
+## Usage with the API
+When using the API, use version **1.4.0-alpha.0** which includes the additional types.
+If you are using an older version, add the required type definitions below.
+
+To add additional types to the API, see [defining additional types](References/CENNZnet-API/CENNZnet-API-Overview?id=defining-additional-types)
 ```json
 {
   "CollectionId": "String",
