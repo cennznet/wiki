@@ -4,7 +4,8 @@
 
 Make sure Docker daemon is installed (see [here](Installing-Dependencies#Docker)) and running.
 
-Then run a CENNZnet full node:
+### Connecting to the MainNet
+Then run a CENNZnet full node that connects to the MainNet:
 
 ```bash
 $ docker run cennznet/cennznet:1.4.0 \
@@ -16,6 +17,12 @@ $ docker run cennznet/cennznet:1.4.0 \
 
 Check its status on the telemetry site:
 http://cennznet-telemetry.centrality.me/#/CENNZnet-Azalea
+
+### Connecting to Rata for development
+[Rata](Getting-started/CENNZnet-technical-overview?id=cennznet-networks-and-genesis-files) is a playground network for testing. The following command would run a node that connects to Rata and  with full WebSocket connectivity enabled (unsafe for validators).
+```bash
+docker run cennznet/cennznet:b7923b1 --chain=/cennznet/genesis/rata.raw.json --bootnodes=/dns4/bootnode-rata-0.centrality.me/tcp/30333/p2p/12D3KooWA6iSdKNJUpvNPTRzxiLfA2LzPgCTywWP2ZeRnabDaDEa --unsafe-ws-external --ws-port=9944 --rpc-cors=all
+```
 
 ## Building from Source
 

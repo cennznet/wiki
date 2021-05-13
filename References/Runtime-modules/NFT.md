@@ -1,7 +1,5 @@
 # NFT Module
 
-**NFT testnet here:** [wss://kong2.centrality.me/public/rata/ws](wss://kong2.centrality.me/public/rata/ws)
-
 The CENNZnet NFT module allows users to create custom NFTs using only the javascript API. This will allow  "point and click" UI experiences for users.
 
 Users create NFTs in *collections*  by defining a schema of attributes all tokens in the collection could contain.
@@ -12,6 +10,12 @@ Additionally the module integrates a marketplace so that NFT owners can:
 - create auction sales
 
 ---
+
+### Connecting to the NFT testnet
+**NFT testnet here:** [wss://kong2.centrality.me/public/rata/ws](wss://kong2.centrality.me/public/rata/ws)
+The NFT module is currently available on Rata. You can connect to it by putting in the above endpoint as Custom Endpoint in the Select Network window in cennznet.io.
+
+To run a local node that connects to Rata, use the command [here](Network-participating/Node-operating/Running-a-Full-Node?id=connecting-to-rata-for-development).
 
 
 ### Create a new collection (api)
