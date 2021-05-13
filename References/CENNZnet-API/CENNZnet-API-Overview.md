@@ -64,6 +64,14 @@ const provider = 'ws://localhost:9944';
 const api = await Api.create({provider});
 ```
 
+#### Defining additional types
+
+To use additional types that's not included in a particular release of API, pass in the types like this:
+```js
+// types is a JSON map
+await Api.create({ provider: 'ws://example.com', types });
+```
+
 ### Keyring
 
 We use the @polkadot/keyring package to add accounts, retrieve key pairs and sign transactions.
