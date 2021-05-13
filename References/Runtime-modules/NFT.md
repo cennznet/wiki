@@ -1,6 +1,7 @@
 # NFT Module
 
-The CENNZnet NFT module allows users to create custom NFTs using only the javascript API. This will allow  "point and click" UI experiences for users.
+The CENNZnet NFT module allows users to create custom NFTs using only the javascript API.  
+This allows  "point and click" UI experiences requiring 0-smart contracts.  
 
 Users create NFTs in *collections*  by defining a schema of attributes all tokens in the collection could contain.
 
@@ -14,26 +15,11 @@ Additionally the module integrates a marketplace so that NFT owners can:
 ### Connecting to the NFT testnet
 **NFT testnet here:** [wss://kong2.centrality.me/public/rata/ws](wss://kong2.centrality.me/public/rata/ws)
 
-The NFT module is currently available on Rata. You can connect to it by putting in the above endpoint as Custom Endpoint in the Select Network window in cennznet.io.
+The NFT module is currently available on Rata. You can connect to it by putting in the above endpoint as Custom Endpoint in the 'Select Network' window in cennznet.io.
 
 If you need to run a local node that connects to Rata, use the command [here](Network-participating/Node-operating/Running-a-Full-Node?id=connecting-to-rata-for-development).
 
-
-### Create a new collection (api)
-first use the js api to get the hex-encoding for the required values
-```js
-console.log(util.stringToHex('test-collection'));
-//> 0x746573742d636f6c6c656374696f6e
-
-// 0.3% | parts-per-million | 3,000 / 1,000,000
-console.log(api.createType('Permill', 3000).toHex());
-
-//> 0x00000bb8
-
-// create the collection
-api.tx.nft.createCollection('test-collection', schema, null);
-
-```
+### Creating a collection
 - collections should be given a utf-8 name
 - collections may set royalties entitlements on all secondary sales. This can be overridden per individual tokens later on
 
@@ -58,19 +44,18 @@ api.tx.nft.createCollection('test-collection', schema, null);
 ### Fixed price sale
 
 ![Direct sale](../../assets/images/nft-module/direct-sale.png)
-*selling token 0 on the open market*
-*it can be bought buy anyone for 12,345 CENNZ*
+*selling 'cennzpunk' 0 on the open market*
+*it can be bought by anyone for 12,345 CENNZ*
 
 ![Direct sale created](../../assets/images/nft-module/direct-sale-created.png)
 
 
 ### Auction sale
 ![Auction](../../assets/images/nft-module/auction.png)
-*auctioning cennzpunk 1*
-
-*the auction will close in 3000 blocks and has reserve price of 1,000,000 CPAY*
+*Auctioning 'cennzpunk' 1*
 
 ![Auction created](../../assets/images/nft-module/auction-created.png)
+*The auction will close in 3000 blocks and has reserve price of 1,000,000 CPAY*
 
 ---
 
@@ -90,11 +75,15 @@ Go to https://cennznet.io/#/settings/developer, paste in the types below, then s
 ```
 
 ## Usage with the API
-When using the API, use version **1.4.0-alpha.0** which includes the additional types.
+When using the API, use version **@cennznet/api@1.4.0-alpha.0** which includes the additional types.
 If you are using an older version, add the required type definitions below.
 
 To add additional types to the API, see [defining additional types](References/CENNZnet-API/CENNZnet-API-Overview?id=defining-additional-types)
-```json
+<details>
+<summary>
+Additional Types
+</summary>
+<pre>
 {
   "CollectionId": "String",
   "TokenId": "u32",
@@ -161,11 +150,12 @@ To add additional types to the API, see [defining additional types](References/C
     }
   }
 }
-```
+</pre>
+</details>
 
 ## Schema & Example Queries
 
-Supported NFT data types are listed here:
+Supported NFT attribute types are:
 ```rust
 i32
 u8
@@ -180,10 +170,41 @@ Hash
 Timestamp
 Url
 ```
-Some are just nice aliases which give meaning to the data e.g. Url is a String.
+Some are nice aliases which give meaning to the data e.g. Url is a String.
 
+### Create a Collection
+```js
+import { Api } from '@cennznet/api';
+import { keyring } from '@polkadot/keyring';
+
+let api = Api.create('ws://localhost:9944');
+let collectionOwner = new Keyring({ 'type': 'sr25519' }).addFromUri('//ExampleCollectionOwner');
+
+// 0.3% | parts-per-million | 3,000 / 1,000,000
+let royaltyFee = api.createType('Permill', 3000);
+
+let royalties = {
+  entitlements: [
+    [collectionOwner.address, royaltyFee]
+  ]
+}
+
+// create the collection
+let baseMetadataUri = 'https://example.com/metadata';
+await api.tx.nft
+  .createCollection(
+    'test-collection',
+    schema,
+    baseMetadataUri,
+    null
+  ).signAndSend(collectionOwner);
+
+```
+
+
+### Query Examples
 Any application can query an NFT collection's registered schema and make sense of it's tokens
-```typescript
+```js
 let schema = (await api.query.nft.collectionSchema('cennzpunks')).unwrap();
 console.log(schema.toHuman());
 
