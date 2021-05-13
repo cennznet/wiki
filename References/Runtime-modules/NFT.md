@@ -90,7 +90,7 @@ Go to https://cennznet.io/#/settings/developer, paste in the types below, then s
 ```
 
 ## Usage with the API
-When using the API, use version 1.4.0-alpha.0 which includes the additional types.
+When using the API, use version **1.4.0-alpha.0** which includes the additional types.
 If you are using an older version, add the required type definitions below.
 
 To add additional types to the API, see [defining additional types](References/CENNZnet-API/CENNZnet-API-Overview?id=defining-additional-types)
