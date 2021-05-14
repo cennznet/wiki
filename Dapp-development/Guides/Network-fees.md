@@ -35,5 +35,5 @@ If the account does not have CPay or not enough to cover the cost of the transac
 
 ## How do I get Cpay?
 
-Cpay can be obtained from participating exchanges or earned by staking CENNZ governance tokens to
+CPay can be obtained from participating exchanges or earned by staking CENNZ governance tokens to
 secure the network.  
