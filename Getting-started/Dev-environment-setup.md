@@ -6,19 +6,27 @@ Install the following,
 * [Yarn (`>= 1.19.0`)](https://yarnpkg.com/)
 * [Docker desktop](https://www.docker.com/products/docker-desktop)
 
-## Windows setup
+## Windows specific steps
 
-Run the docker desktop app to make sure it runs without errors. It may prompt you to go through a few steps to update system settings. 
+You will need Windows 10 which supports the Linux subsystem. This is used by Docker.
+
+### Install tools
+* [Git](https://git-scm.com/download/win)
+
+* [Download the Linux kernel update package](https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package)
+
+Restart the computer after you've completed the above steps!
+
+### Trouble shooting
+Run the docker desktop app to see if it gives errors. It's likely to prompt you to go through a few steps. 
 
 You may need to enable hardware assisted virtualization following the steps [here](https://docs.docker.com/docker-for-windows/troubleshoot/#virtualization-must-be-enabled).
 
-You will need the [Windows Subsystem for Linux set up]([https://docs.microsoft.com/en-us/windows/wsl/install-win10]).
 
 ## CENNZnet development
 
-
-## Rust
+### Rust
 The recommended way to install Rust is to follow the official instructions [here](https://www.rust-lang.org/tools/install).
 
-## Windows Subsystem for Linux
+### Windows Subsystem for Linux
 Note that if you want to build Cennznet locally(instead of running a docker image) on Windows, you may need to use the Linux subsystem. You can follow the instructions here to [Setting up Linux subsystem on Windows](CENNZnet-development/Guides/Set-up-Linux-Sub-system-for-Windows).
