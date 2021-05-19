@@ -8,10 +8,11 @@
     - Node Operations
         - [Types of nodes](Network-participating/Node-operating/Types-of-nodes)
         - [Running a Full Node](Network-participating/Node-operating/Running-a-Full-Node)
+        - [Running a Validator Node](Network-participating/Node-operating/Running-a-validator)
         - [Running from snapshots](Network-participating/Node-operating/Running-nodes-from-snapshots)
         - [Running a Development Chain](Network-participating/Node-operating/Running-a-Dev-Chain)
     - Staking
-        - [Validator Staking Guide](Network-participating/Staking/Validator-Guide)
+        - [Validator Staking Guide](Network-participating/Staking/Validator-Staking-Guide)
         - [Nominator Staking Guide](Network-participating/Staking/Nominator-Staking-Guide)
 
 ---
