@@ -3,6 +3,7 @@
     - [Technical Overview](Getting-started/CENNZnet-technical-overview)
     - [DApp Development](Getting-started/CENNZnet-dapp-development)
     - [Repositories](Getting-started/CENNZnet-repos)
+    - [Dev Environment Setup](Getting-started/Dev-environment-setup)
 ---
 - Network participation
     - Node Operations
@@ -27,7 +28,6 @@
 ---
 - CENNZnet development
     - Guides
-        - [Installing Dependencies](CENNZnet-development/Guides/Installing-Dependencies)
         - [Setting up Linux subsystem on Windows](CENNZnet-development/Guides/Set-up-Linux-Sub-system-for-Windows)
         - [Making a New Release (Legacy)](CENNZnet-development/Guides/Making-a-New-Release)
         - [Regenerate genesis files](CENNZnet-development/Guides/Regenerating-genesis-files-on-Release)
