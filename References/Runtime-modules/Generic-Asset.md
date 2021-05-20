@@ -15,6 +15,10 @@ For NFT(Non-fungible tokens), use the dedicated [NFT](References/Runtime-modules
 
 ## Example usages
 
+Listed below are some functionalities of the Generic Asset module.
+
+Check out the [Generic Assets API Example](References/CENNZnet-API/Examples/API-examples-Generic-Assets) for detailed examples of common use cases!
+
 ### Checking account balance
 ```js
 let assetID = 16000; // asset ID for CENNZ on Nikau
