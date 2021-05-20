@@ -30,3 +30,7 @@ The recommended way to install Rust is to follow the official instructions [here
 
 ### Windows Subsystem for Linux
 Note that if you want to build Cennznet locally(instead of running a docker image) on Windows, you may need to use the Linux subsystem. You can follow the instructions here to [Setting up Linux subsystem on Windows](CENNZnet-development/Guides/Set-up-Linux-Sub-system-for-Windows).
+
+## Next steps
+
+Head to the guide [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp) to get started!

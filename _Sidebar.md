@@ -51,6 +51,7 @@
         - [Overview](References/CENNZnet-API/CENNZnet-API-Overview)
         - [Accounts and Keypairs 🔑](References/CENNZnet-API/Accounts-and-Keypairs)
         - [Cookbook 👩‍🍳](References/CENNZnet-API/Cookbook)
+        - [NFT API](References/CENNZnet-API/NFT-API)
         - [Subscriptions](References/CENNZnet-API/Subscriptions)
         - [Staking API](References/CENNZnet-API/Staking)
         - [Technical Reference](References/CENNZnet-API/Technical-Reference)
