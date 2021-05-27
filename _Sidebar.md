@@ -2,6 +2,7 @@
     - [Primer](Getting-started/CENNZnet-primer)
     - [Technical Overview](Getting-started/CENNZnet-technical-overview)
     - [DApp Development](Getting-started/CENNZnet-dapp-development)
+    - [The Networks](Getting-started/CENNZnet-networks)
     - [Repositories](Getting-started/CENNZnet-repos)
     - [Dev Environment Setup](Getting-started/Dev-environment-setup)
 ---
