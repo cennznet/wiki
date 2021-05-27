@@ -38,17 +38,6 @@ By joining the network, you participate in block production, which keeps the net
 
 The CENNZnet team from Centrality are the founding members of CENNZnet. We currently perform most of the tasks to maintain and develop the network. As time goes on, CENNZnet will become more decentralised and eventually run by the community of developers and investors.
 
-### CENNZnet networks and genesis files
-
-Anyone can start a new CENNZnet network by starting a CENNZnet node. When you run a CENNZnet node, you can connect to an existing chain using a genesis file. The genesis file provides the initial state and configurations of the blockchain.
-
-In the CENNZnet repository, you can find 3 genesis configurations. 
-* **Azalea (the MainNet)**: is the production environment, where transactions and exchanges happen. The MainNet is used by all CENNZnet DApps. 
-
-* **Nikau🌴 (the TestNet)**: is the pre-production environment for testing bleeding edge features before they are deployed to Azalea. Nikau runs on nodes hosted on AWS. The CENNZnet team maintains Nikau and keeps it close to the MainNet.
-
-* **Rata (the playground)**: is the testing environment that's not kept close to the production environment. You can also use this genesis file to start a small sandbox chain for testing locally. It can start a chain of nodes that runs in docker containers, all on your local machine. This allows you to test complex scenarios that aren't possible to test with a development chain, which consists of 1 node only.
-
 ### The internals of CENNZNet
 
 #### Runtime Modules
@@ -75,9 +64,3 @@ The top layer interface of CENNZnet exposes callables that belong to the followi
 * Smart contract functions: public functions that can be deployed and called by anyone.
 
 ![Interface](../assets/images/technical-overview/interface.png)
-
-## Joining the network
-
-As a DApp developer, it is beneficial to join the network. Having nodes of your own allows your DApp to have better and faster access to the network. You can also monitise from the nodes by participating in staking as a validator.
-
-To learn about how to set up a node, read our guides in the Network participating -> Node operating section.
