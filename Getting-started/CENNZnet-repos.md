@@ -36,6 +36,13 @@ The [CENNZnet browser extension](References/CENNZnet-infrastructures/CENNZnet-br
 
 [UNcover](https://uncoverexplorer.com/) is an explorer that search for transactions, addresses, prices and other activities on CENNZnet MainNet.
 
+### NFT Demo DApp
+The [NFT Demo DApp](https://github.com/cennznet/NFTDemo) is an example DApp that uses the NFT module. It shows you how to:
+* Retrieve NFT token info using the API
+* Mint NFT tokens using the API
+* Include assets stored on [IPFS](https://ipfs.io/) as a part of a token
+* Interact with the CENNZnet Browser Extension
+
 ### [CENNZnet CLI](https://github.com/cennznet/cli)
 
 This is a minimal command line environment that lets you use the CENNZnet API.
