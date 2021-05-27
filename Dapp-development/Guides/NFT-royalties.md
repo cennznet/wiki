@@ -27,7 +27,7 @@ e.g. an NFT sells for `1000` CENNZ, royalties are calculated as follows:
 ## Creating a royalties schedule
 When creating an NFT collection the creator specifies which account(s) should receive royalties.
 
-All future token sales fro this collection will apply the given royalty schedule.
+All future token sales for this collection will apply the given royalty schedule.
 
 The entitlement % is expressed as parts-per-million i.e. `10,000 / 1,000,000` represents a 1% entitlement.
 
