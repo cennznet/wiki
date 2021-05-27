@@ -10,13 +10,17 @@ Additionally the module integrates a marketplace so that NFT owners can:
 - create auction sales
 
 ---
+### NFT Demo DApp
+The [NFT Demo DApp](https://github.com/cennznet/NFTDemo/tree/main/nft-demo) shows how to:
+* Retrieve NFT token info using the API
+* Mint NFT tokens using the API
+* Include assets stored on [IPFS](https://ipfs.io/) as a part of a token
+* Interact with the CENNZnet Browser Extension
+
 
 ### Connecting to the NFT testnet
-**NFT testnet here:** [wss://kong2.centrality.me/public/rata/ws](wss://kong2.centrality.me/public/rata/ws)
 
-The NFT module is currently available on Rata. You can connect to it by putting in the above endpoint as Custom Endpoint in the Select Network window in cennznet.io.
-
-If you need to run a local node that connects to Rata, use the command [here](Network-participating/Node-operating/Running-a-Full-Node?id=connecting-to-rata-for-development).
+The NFT module is currently available on Nikau🌴 and Rata. Learn about the different networks from [The Networks Guide](Getting-started/CENNZnet-networks).
 
 
 ### Create a new collection (api)
