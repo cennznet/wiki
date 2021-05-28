@@ -88,14 +88,21 @@ However, there can be valid situations where a token needs to be modified e.g. a
 
 A pattern for dealing with this situation is to create a new token in exchange for returning the old one. This involves the NFT owner's consent and respects immutability.
 
-In this code example the `user` burns an old token and the collection owner ('game developer' in our example) creates a new token for them in response.
+In this code example the `user` burns an old token and the collection owner ('game developer' in our example with collection id - 0) creates a new token for them in response.
 ```javascript
-// user burns an NFT mkaing it unusable
-await api.tx.nft.burn('example-collection-v1', 1).signAndSend(user);
+// user burns an NFT making it unusable
+const collectionId = 0;
+const seriesId = 0;
+const serialNumber = 0;
+const tokenId = [collectionId, seriesId, serialNumber];
+await api.tx.nft.burn(tokenId).signAndSend(user);
 
 // after seeing the old token was burned, the collection owner mints-
 // a new nft to the user
-await api.tx.nft.createToken('example-collection-v2', <newData>, user).signAndSend(collectionOwner);
+const tokenOwner = user;
+const metadataPath = null;
+const royaltiesSchedule = null;
+await api.tx.nft.mintUnique(collectionId, tokenOwner, <newData>, user, metadataPath, royaltiesSchedule).signAndSend(collectionOwner);
 ```
 
 ## IPFS
