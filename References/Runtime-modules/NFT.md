@@ -1,176 +1,82 @@
-# NFT Module
+# NFT Module 🃏
 
-The CENNZnet NFT module allows users to create custom NFTs using only the javascript API. This will allow  "point and click" UI experiences for users.
+The CENNZnet NFT module allows users to create custom NFTs using only the javascript API and simple transactions, without the need for smart contracts.  
 
-Users create NFTs in *collections*  by defining a schema of attributes all tokens in the collection could contain.
-
-Additionally the module integrates a marketplace so that NFT owners can:
+The module has an integrated marketplace allowing NFT owners to:  
 - define royalty schemes for secondary sales of tokens
-- create fixed price sales
-- create auction sales
+- create fixed price sales  
+- create auction sales  
 
----
-### NFT Demo DApp
+## NFT Demo DApp
 The [NFT Demo DApp](https://github.com/cennznet/NFTDemo) shows how to:
 * Retrieve NFT token info using the API
 * Mint NFT tokens using the API
 * Include assets stored on [IPFS](https://ipfs.io/) as a part of a token
 * Interact with the CENNZnet Browser Extension
 
+## Collections, Series, and Serial Numbers
+
+To allow the creation and growth of many possible NFTs, CENNZnet organizes tokens
+by collection, series, and serial number.  
+
+*__Collections__* - are namespaces for groups of related tokens. Every NFT belongs to exactly 1 collection.  
+Tokens within the same collection can be traded easily and the collection owner  
+can define certain business rules for its tokens e.g. royalties (more features coming soon)  
+
+*__Series__* - Represent "editions" of specific tokens  
+Every NFT belongs to exactly 1 series, a series may have 1 or more tokens  
+A series of 1 token i.e `1-of-1` represents an NFT (unique)  
+A series of multiple tokens `1-of-N` represents a semi-fungible token (SFT)  
+SFTs allow many copies of the same token to exist (distinguishable by an additional serial number)
+
+*__Serial Numbers__*
+serial numbers are unique per _series_
+
+*__Example__*: A token ID: `[1,3,3]` belongs to collection: `1`, series: `3`, with serial number `3`
+
 ---
 
-### Connecting to the NFT testnet
+### Creating a Collection
 
-The NFT module is currently available on Nikau🌴 and Rata. 
+First, define a collection to hold your tokens  
+- collections should be given a utf-8 name  
+- collections may set royalties entitlements on all secondary sales.  
+This can be overridden per individual tokens later on  
 
-Learn about the different networks from [The Networks Guide](Getting-started/CENNZnet-networks).
+**important** each new collection is given an integer ID  
+The collection ID should be used to reference it in future transactions  
+Check a block explorer to find your collection Id after the transaction e.g. https://uncoverexplorer.com  
 
+Here we create a collection named 'cennz-punks'  
+We state the metadata URI for this collection will be stored on the 'ipfs' protocol  (see [this](https://github.com/cennznet/cennznet/issues/442#issue-891616973) for more info on metadata URIs)  
 
-### Create a new collection (api)
-first use the js api to get the hex-encoding for the required values
-```js
-console.log(util.stringToHex('test-collection'));
-//> 0x746573742d636f6c6c656374696f6e
+*creating the collection*
+![Create collection](../../assets/images/nft-module/create-collection.png ':width=100')
 
-// 0.3% | parts-per-million | 3,000 / 1,000,000
-console.log(api.createType('Permill', 3000).toHex());
-
-//> 0x00000bb8
-
-// create the collection
-api.tx.nft.createCollection('test-collection', schema, null);
-
-```
-- collections should be given a utf-8 name
-- collections may set royalties entitlements on all secondary sales. This can be overridden per individual tokens later on
-
-![Create collection](../../assets/images/nft-module/create-collection.png)
-
-*a new collection 'cennzpunks' is defined.*
-
+*signing the transaction*
 ![Collection defined](../../assets/images/nft-module/collection-defined.png)
 
-- each cennzpunk will have: a name, creation timestamp, ipfs image url, and an image hash for verification
-- also the creator 'charlie' will earn 0.3% on all future sales of any cennzpunk token
-
-### Mint a token in the collection (collection owner only)
-
-![Create token](../../assets/images/nft-module/create-token.png)
-
-*minting the first token in the cennzpunks collection*
-*each token in a collection is given an an auto-incrementing integer id on creation*
-
-![Token created](../../assets/images/nft-module/token-created.png)
-
-### Fixed price sale
-
-![Direct sale](../../assets/images/nft-module/direct-sale.png)
-*selling token 0 on the open market*
-*it can be bought buy anyone for 12,345 CENNZ*
-
-![Direct sale created](../../assets/images/nft-module/direct-sale-created.png)
+Find the block with your transaction on [UNcover](https://uncoverexplorer.com/) and check the "events" view
+![collection created uncover](../../assets/images/nft-module/create-collection-uncover.png)
+Or the "explorer" tab on cennznet.io
+![collection created event](../../assets/images/nft-module/collection-created-event.png)
 
 
-### Auction sale
-![Auction](../../assets/images/nft-module/auction.png)
-*auctioning cennzpunk 1*
+### Mint a unique token in the collection (collection owner only)
 
-*the auction will close in 3000 blocks and has reserve price of 1,000,000 CPAY*
+When creating a token you can define its data fields or _attributes_  
+The token can be minted to another address.  
+This enables use cases like 'lazy minting' where an NFT is only created after payment is received  
+![Create unique token](../../assets/images/nft-module/create-unique-token.png)
+*minting the first token in the cennz-punks collection*  
+*it has a timestamp and name 'CENNZ Punk 1'*  
 
-![Auction created](../../assets/images/nft-module/auction-created.png)
+![Unique token created](../../assets/images/nft-module/create-unique-token-defined.png)
+*The tokens attributes/data are shown*
 
 ---
 
-## Usage with cennznet.io
-
-If the NFT related fields aren't showing up as shown in the screenshots above, you may need to add the additional types to the UI.
-Go to https://cennznet.io/#/settings/developer, paste in the types below, then save and reload:
-```json
-{
-  "NFTSchema": {
-    "_": "Vec<(String, NFTAttributeTypeId)>"
-  },
-  "RoyaltiesSchedule": {
-    "entitlements": "Vec<(AccountId, Permill)>"
-  }
-}
-```
-
-## Usage with the API
-When using the API, use version **1.4.0-alpha.0** which includes the additional types.
-If you are using an older version, add the required type definitions below.
-
-To add additional types to the API, see [defining additional types](References/CENNZnet-API/CENNZnet-API-Overview?id=defining-additional-types)
-```json
-{
-  "CollectionId": "String",
-  "TokenId": "u32",
-  "NFTAttribute": {
-    "name": "NFTAttributeName",
-    "value": "NFTAttributeValue"
-  },
-  "NFTAttributeValue": {
-    "_enum": {
-      "i32": "i32",
-      "u8": "u8",
-      "u16": "u16",
-      "u32": "u32",
-      "u64": "u64",
-      "u128": "u128",
-      "Bytes32": "[u8; 32]",
-      "Bytes": "Bytes",
-      "String": "String",
-      "Hash": "[u8; 32]",
-      "Timestamp": "Moment",
-      "Url": "String"
-    }
-  },
-  "NFTAttributeName": "String",
-  "NFTAttributeTypeId": {
-    "_enum": {
-      "i32": "",
-      "u8": "",
-      "u16": "",
-      "u32": "",
-      "u64": "",
-      "u128": "",
-      "Bytes32": "",
-      "Bytes": "",
-      "String": "",
-      "Hash": "",
-      "Timestamp": "",
-      "Url": ""
-    }
-  },
-  "NFTSchema": {
-    "_": "Vec<(String, NFTAttributeTypeId)>"
-  },
-  "RoyaltiesSchedule": {
-    "entitlements": "Vec<(AccountId, Permill)>"
-  },
-  "Listing": {
-    "_enum": {
-      "DirectListing": "DirectListing",
-      "AuctionListing": "AuctionListing"
-    }
-  },
-  "DirectListing": {
-    "payment_asset": "AssetId",
-    "fixed_price": "Balance",
-    "close": "BlockNumber",
-    "buyer": "AccountId"
-  },
-  "AuctionClosureReason": {
-    "_enum": {
-      "ExpiredNoBids": null,
-      "SettlementFailed": null,
-      "VendorCancelled": null
-    }
-  }
-}
-```
-
-## Schema & Example Queries
+## Token Attributes & Example Queries
 
 Supported NFT data types are listed here:
 ```rust
@@ -189,37 +95,23 @@ Url
 ```
 Some are just nice aliases which give meaning to the data e.g. Url is a String.
 
-Any application can query an NFT collection's registered schema and make sense of it's tokens
-```typescript
-let schema = (await api.query.nft.collectionSchema('cennzpunks')).unwrap();
-console.log(schema.toHuman());
+Query a collection's tokens
+```js
+let collectionId = 0;
+let collectionName = (await api.query.nft.collectionName(collectionId));
+console.log(collectionName);
+// Get collection tokens
+let tokens = (await api.derive.nft.tokenInfoForCollection(collectionId));
+console.log(tokens);
 
-/**
-[
-  [ 'name', 'Text' ],
-  [ 'ipfs_image_url', 'Url' ],
-  [ 'image_fingerprint', 'Hash' ],
-  [ 'created', 'Timestamp' ]
-]
-**/
-
-// get token 0
-let token0 = (await api.query.nft.tokens('cennzpunks', 0));
+// get individual token info by Id
+let collectionId = 0;
+let seriesId = 0;
+let serialNumber = 0;
+let token0 = (await api.derive.nft.tokenInfo(tokenId));
 console.log(token0.toHuman());
-/**
-[
-  { Text: 'cennzuki-chan' },
-  { Url: 'ipfs://somecontent.address/image/cennzuki-chan' },
-  {
-    Hash: '0xc11c0b2b1122cdeac5f4a896fd75fd552fe730139250b95932386544877ec623'
-  },
-  { Timestamp: '1,618,212,549' }
-]
-**/
 
-// All token Ids owned by the account in a given collection
-let owned = (await api.query.nft.collectedTokens('cennzpunks', '5FLSigC9HGRKVhB9FiEo4Y3koPsNmBmLJbpXg2mp1hXcS59Y'));
-/**
- [0, 1]
-**/
+// All token Ids owned by an account in a given collection
+let owner = '5FLSigC9HGRKVhB9FiEo4Y3koPsNmBmLJbpXg2mp1hXcS59Y';
+let owned = (await api.query.nft.collectedTokens(collectionId, owner));
 ```
