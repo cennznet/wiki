@@ -136,3 +136,6 @@ To create an SFT on CENNZnet
 1) First create a collection  
 2) Mint a series of tokens using `mintSeries`  
 The tokens will be issued with a unique serial number.  
+3) Issuing additional tokens in a series is always possible with `mintSeries`  
+
+See the [NFT API technical docs](../../References/CENNZnet-API/NFT-API) for further info on usage.  
