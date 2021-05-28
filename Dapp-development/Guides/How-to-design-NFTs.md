@@ -127,5 +127,5 @@ You should consider an SFT if you want to do any combination of the following:
 
 To create an SFT on CENNZnet  
 1) First create a collection  
-2) Mint a series of tokens  
+2) Mint a series of tokens using `mintSeries`  
 The tokens will be issued with a unique serial number.  
