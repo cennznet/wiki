@@ -1,23 +1,26 @@
 # Dev environment setup
 
-Install the following,
+## For using the CENNZnet API
+Install the latest stable versions of the following,
 
 * [Node.js (`>=10.16.3`)](https://nodejs.org/en/) 
-* [Yarn (`>= 1.19.0`)](https://yarnpkg.com/)
+* [Yarn (`>= 1.19.0`)](https://yarnpkg.com/getting-started/install)
+
+## For running a local dev node
 * [Docker desktop](https://www.docker.com/products/docker-desktop)
 
-## Windows specific steps
+### Windows specific steps
 
 You will need Windows 10 which supports the Linux subsystem. This is used by Docker.
 
-### Install tools
+#### Additional tools and packages
 * [Git](https://git-scm.com/download/win)
 
 * [Download the Linux kernel update package](https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package)
 
 Restart the computer after you've completed the above steps!
 
-### Trouble shooting
+#### Trouble shooting
 Run the docker desktop app to see if it gives errors. It's likely to prompt you to go through a few steps. 
 
 You may need to enable hardware assisted virtualization following the steps [here](https://docs.docker.com/docker-for-windows/troubleshoot/#virtualization-must-be-enabled).

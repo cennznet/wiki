@@ -20,7 +20,7 @@
 ---
 - DApp development
 	- [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp)
-	- [Getting Started with the CENNZnet API](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API)
+	- [Getting Started with the API](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API)
 	- [Network Fees](Dapp-development/Guides/Network-fees)
 	- [Token Economy](Dapp-development/Guides/Token-Economy)
 	- [NFT Design](Dapp-development/Guides/How-to-design-NFTs)
