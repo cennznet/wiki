@@ -4,6 +4,36 @@ The NFT module is available from API version 1.4.0+.
 
 This is the aggregated list of all API methods related to the NFT module. For the latest docs for particular versions of the API, please refer to the [docs in docs folder of the api.js repository](https://github.com/cennznet/api.js/tree/master/docs/cennznet).
 
+## Token IDs
+NFTs on CENNZnet are uniquely identifiable by a tuple of their collection, series, and serial number.  
+`(collectionId, seriesId, serialNumber)`  
+for example
+`(5,1,1)`  
+the token is from collection `5`, series `1` and has a serial number `1`  
+
+## Unique or Series?
+Unique tokens will forever be 1-of-1, Series tokens will be 1-of-n
+
+To create a token which must always be unique use a `mintUnique` transaction  
+To create tokens which have copies use a `mintSeries` transaction  
+
+```js
+let collectionId = 100;
+let tokenReceiver = '5HbSE3cPakKMk7cRjtE58WF6RD57boEQ2aFzPcSxmHmRYUCi';
+let uniqueTokenAttributes = [
+  {'Text': 'My rare token'},
+  {'Timestamp': 12345}
+];
+api.tx.nft.mintUnique(collectionId, tokenReceiver, uniqueTokenAttributes, null, null)
+
+let seriesAttributes = [
+  {'Text': 'My common token'},
+  {'Timestamp': 12345}
+];
+let quantity = 100;
+api.tx.nft.mintSeries(collectionId, quantity, tokenReceiver.address, seriesAttributes, metadataPath, null)
+```
+
 ## Derived methods
 Derived methods are helper methods written on the API side, to perform additional processing on the storage and RPC methods.
 
@@ -17,12 +47,11 @@ export function tokenInfoForCollection(instanceId: string, api: ApiInterfaceRx):
 
 // Usage
 const tokenInfos: DeriveTokenInfo[] = await api.derive.nft.tokenInfoForCollection(collectionId);
-const {tokenId, tokenDetails, owner} = tokenInfos[0];
+const {tokenId, tokenAttributes, owner} = tokenInfos[0];
 ```
 
 ## Storage methods
 [Docs in Github](https://github.com/cennznet/api.js/blob/master/docs/cennznet/storage.md#nft)
- 
  
 ### collectionMetadataURI(`CollectionId`): `Option<MetadataBaseURI>`
 - **interface**: `api.query.nft.collectionMetadataURI`
@@ -99,8 +128,6 @@ const {tokenId, tokenDetails, owner} = tokenInfos[0];
 ### tokenOwner(`(CollectionId,SeriesId), SerialNumber`): `AccountId`
 - **interface**: `api.query.nft.tokenOwner`
 - **summary**:   Map from a token to its owner The token Id is split in this map to allow better indexing (collection, series) + (serial number) 
-
-___
 
 ## RPC methods
 [Docs in Github](https://github.com/cennznet/api.js/blob/master/docs/cennznet/rpc.md#nft)
@@ -180,16 +207,12 @@ ___
 
   `quantity` - how many tokens to mint `owner` - the token owner, defaults to the caller Caller must be the collection owner 
 
-  -----------Weight is O(N) where N is `quantity` 
- 
 ### mintSeries(collection_id: `CollectionId`, quantity: `TokenCount`, owner: `Option<AccountId>`, attributes: `Vec<NFTAttributeValue>`, metadata_path: `Option<Bytes>`, royalties_schedule: `Option<RoyaltiesSchedule>`)
 - **interface**: `api.tx.nft.mintSeries`
 - **summary**:   Mint a series of tokens distinguishable only by a serial number (SFT) Series can be issued additional tokens with `mint_additional` 
 
   `quantity` - how many tokens to mint `owner` - the token owner, defaults to the caller `is_limited_edition` - signal whether the series is a limited edition or not `attributes` - all tokens in series will have these values `metadata_path` - URI path to token offchain metadata relative to the collection base URI Caller must be the collection owner 
 
-  -----------Performs O(N) writes where N is `quantity` 
- 
 ### mintUnique(collection_id: `CollectionId`, owner: `Option<AccountId>`, attributes: `Vec<NFTAttributeValue>`, metadata_path: `Option<Bytes>`, royalties_schedule: `Option<RoyaltiesSchedule>`)
 - **interface**: `api.tx.nft.mintUnique`
 - **summary**:   Mint a single token (NFT) 
@@ -223,7 +246,6 @@ ___
 ### transferBatch(tokens: `Vec<TokenId>`, new_owner: `AccountId`)
 - **interface**: `api.tx.nft.transferBatch`
 - **summary**:   Transfer ownership of a batch of NFTs (atomic) Tokens must be from the same collection Caller must be the token owner 
-
 
 ## Errors
 [Docs in Github](https://github.com/cennznet/api.js/blob/master/docs/cennznet/errors.md#nft)
@@ -281,7 +303,7 @@ ___
 
 ## Events
 [Docs in Github](https://github.com/cennznet/api.js/blob/master/docs/cennznet/events.md#nft)
-
+ 
 ### AuctionClosed(`CollectionId`, `ListingId`, `Reason`)
 - **summary**:   An auction has closed without selling (collection, listing, reason) 
  
