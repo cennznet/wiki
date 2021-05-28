@@ -15,6 +15,7 @@ Once you have some data to tokenise as an NFT, the important factors to consider
 - Minimising storage costs
 - Future-proof verification
 - Working with immutability
+- Level of Fungibility
 
 ### Minimising Storage Costs
 Blockchain storage should be thought of as a costly resource. This is because any storage will persist in the history of the blockchain for all time. This is often reflected in transaction fees, as the storage consumption of a transaction increases so does it's associated fee.
@@ -108,3 +109,23 @@ If we store our NFT metadata blob on an IPFS network we can roll the off-chain U
 ```
 
 https://nft.storage/ is a free service which builds on this to take some of the grunt work out of the IPFS setup process.
+
+## Semi-fungible Tokens (SFTs)
+
+The CENNZnet NFT module provide support for semi-fungible tokens.  
+SFTs represent a middle ground between between NFTs and fully fungible tokens.  
+They are ideal if you want a token which is trade-able 1:1 but also has some off-chain metadata associated with it.  
+A common example is an item with certified "copies" e.g. an art work, or less rare trading card.  
+
+You should consider an SFT if you want to do any combination of the following:  
+- represent something which is sellable or trade-able 1:1
+- represent something which is indivisible
+- represent an amount of something which is stored off-chain
+- represent balances of something which are not a currency
+
+## Creating SFTs
+
+To create an SFT on CENNZnet  
+1) First create a collection  
+2) Mint a series of tokens  
+The tokens will be issued with a unique serial number.  
