@@ -30,3 +30,6 @@ Check a validator's total, own, and nominated stake
 ```js
 (await api.derive.staking.erasStakers(era, validatorStashAddress))
 ```
+
+
+[Staking APIs](https://raw.githubusercontent.com/cennznet/api.js/master/docs/cennznet/staking.md ':include :type=tsdoc')

@@ -1,4 +1,4 @@
-# API Technical Reference
+# Full list of API methods
 
 The API methods have auto-generated lists for each type. This document contains the full list of APIs, which is the combination of all [docs](https://github.com/cennznet/api.js/tree/develop/docs/cennznet) available in the [CENNZnet API repo](https://github.com/cennznet/api.js).
 

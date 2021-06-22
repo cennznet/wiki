@@ -51,11 +51,13 @@
 - CENNZnet API
     - [Overview](CENNZnet-API/CENNZnet-API-Overview)
     - [Accounts and Keypairs 🔑](CENNZnet-API/Accounts-and-Keypairs)
+    - [Subscription Mechanism](CENNZnet-API/Subscriptions)
     - [Cookbook 👩‍🍳](CENNZnet-API/Cookbook)
+    - [Full list of API methods](CENNZnet-API/Technical-Reference)
+    - [CENNZX API](CENNZnet-API/CENNZX-API)
+    - [Generic Asset API](CENNZnet-API/Generic-Asset-API)
     - [NFT API](CENNZnet-API/NFT-API)
-    - [Subscriptions](CENNZnet-API/Subscriptions)
     - [Staking API](CENNZnet-API/Staking)
-    - [Technical Reference](CENNZnet-API/Technical-Reference)
     - [Transaction Error Codes](CENNZnet-API/Transaction-Error-Codes)
     - Examples
         - [Generic Assets](CENNZnet-API/Examples/API-examples-Generic-Assets)
