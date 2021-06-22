@@ -4,7 +4,7 @@ The Generic Asset module lets you mint, transfer, and burn different types of fu
 
 CENNZ and CPAY are both instances of Generic Asset. You can create you own type of tokens using this module. To learn more about how CENNZ and CPAY work in CENNZnet, refer to the [Token Economy](/Dapp-development/Guides/Token-Economy) document.
 
-For NFT(Non-fungible tokens), use the dedicated [NFT](References/Runtime-modules/NFT) module. 
+For NFT(Non-fungible tokens), use the dedicated [NFT](Runtime-modules/NFT) module. 
 
 
 ## API references
@@ -17,7 +17,7 @@ For NFT(Non-fungible tokens), use the dedicated [NFT](References/Runtime-modules
 
 Listed below are some functionalities of the Generic Asset module.
 
-Check out the [Generic Assets API Example](References/CENNZnet-API/Examples/API-examples-Generic-Assets) for detailed examples of common use cases!
+Check out the [Generic Assets API Example](CENNZnet-API/Examples/API-examples-Generic-Assets) for detailed examples of common use cases!
 
 ### Checking account balance
 ```js

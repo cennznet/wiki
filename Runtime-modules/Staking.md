@@ -8,4 +8,4 @@ Here's a list of documents related to how CENNZnet staking works.
 
 [Nominator staking Guide](Network-participating/Staking/Nominator-Staking-Guide)
 
-[Staking API](References/CENNZnet-API/Staking?id=common-staking-queries)
+[Staking API](CENNZnet-API/Staking?id=common-staking-queries)

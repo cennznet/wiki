@@ -5,22 +5,22 @@ CENNZnet is built on [Substrate](https://www.parity.io/substrate/), which provid
 ## CENNZnet modules
 
 ### Attestation
-The [Attestation](References/Runtime-modules/Attestation) module allows you to issue and check claims on accounts. 
+The [Attestation](Runtime-modules/Attestation) module allows you to issue and check claims on accounts. 
 
 ### CENNZX
-The [CENNZX](References/Runtime-modules/CENNZX) module allows you to exchange between different types of generic assets on CENNZnet. It allows users to participate in exchange as a liquidity provider or as an exchange user.
+The [CENNZX](Runtime-modules/CENNZX) module allows you to exchange between different types of generic assets on CENNZnet. It allows users to participate in exchange as a liquidity provider or as an exchange user.
 
 ### Doughnut
-The [Doughnut](References/Runtime-modules/Doughnut) protocol allows you prove that one address delegates some permission to another address. Doughnuts are Proofs of Delegation between two or more cryptographic key pairs. 
+The [Doughnut](Runtime-modules/Doughnut) protocol allows you prove that one address delegates some permission to another address. Doughnuts are Proofs of Delegation between two or more cryptographic key pairs. 
 
 ### Generic Asset
-The [Generic Asset](References/Runtime-modules/Generic-Asset) module lets you mint, transfer, and burn different types of tokens. It also allows you to check balance on accounts.
+The [Generic Asset](Runtime-modules/Generic-Asset) module lets you mint, transfer, and burn different types of tokens. It also allows you to check balance on accounts.
 
 ### NFT
-The [NFT](References/Runtime-modules/NFT) module allows users to easily create and sell custom NFTs(non-fungible token). It also provides functionalities to sell and auction NFTs. 
+The [NFT](Runtime-modules/NFT) module allows users to easily create and sell custom NFTs(non-fungible token). It also provides functionalities to sell and auction NFTs. 
 
 ### Staking
-The [Staking](References/Runtime-modules/Staking) module allows users to participate in staking to capitalise from their assets or hardware.
+The [Staking](Runtime-modules/Staking) module allows users to participate in staking to capitalise from their assets or hardware.
 
 ### Rewards
 The Rewards module can be considered an ‘internal’ module that looks after staking reward economics and payments. It's unlikely to be useful for DApp development, except for when tracking staking rewards.

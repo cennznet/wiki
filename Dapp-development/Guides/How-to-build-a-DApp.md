@@ -47,4 +47,4 @@ This is a minimal DApp that connects to the CENNZNet MainNet via the CENNZnet AP
 
 ## Next steps
 * [Get started with the CENNZnet API](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API)
-* [Learn to use CENNZnet.io](References/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI), which is the main dev tool for CENNZnet.
+* [Learn to use CENNZnet.io](CENNZnet-infrastructures/Exploring-the-CENNZnet-UI), which is the main dev tool for CENNZnet.

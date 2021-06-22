@@ -1,7 +1,7 @@
 # Getting started with the CENNZnet API
 
 This guide will get you set up with the CENNZnet API and walk through a couple code examples.
-To understand how to use the API, please read the [CENNZnet API Overview](References/CENNZnet-API/CENNZnet-API-Overview).
+To understand how to use the API, please read the [CENNZnet API Overview](CENNZnet-API/CENNZnet-API-Overview).
 
 ## Installation and Setup
 
@@ -109,4 +109,4 @@ To use the API with Smart Contracts, refer to the [Smart Contract Guide](Dapp-de
 
 Dive into the References area to learn more about the CENNZnet API and runtime modules! 
 
-The [CENNZnet API Overview](References/CENNZnet-API/CENNZnet-API-Overview) is a good place to start!
+The [CENNZnet API Overview](CENNZnet-API/CENNZnet-API-Overview) is a good place to start!

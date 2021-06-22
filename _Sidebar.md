@@ -39,38 +39,39 @@
         - [Release Notes](CENNZnet-development/Notes/Release-Notes)
 
 ---
-- References
-    - CENNZnet infrastructures
-        - [CENNZnet.io](References/CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
-        - [Browser Extension](References/CENNZnet-infrastructures/CENNZnet-browser-extension)
-        - [Faucet](References/CENNZnet-infrastructures/CENNZnet-faucet)
-        - [CENNZX Exchange](References/CENNZnet-infrastructures/CENNZX-Exchange)
-        - [UNcover](References/CENNZnet-infrastructures/Uncover)
-        - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
+- CENNZnet infrastructures
+    - [CENNZnet.io](CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
+    - [Browser Extension](CENNZnet-infrastructures/CENNZnet-browser-extension)
+    - [Faucet](CENNZnet-infrastructures/CENNZnet-faucet)
+    - [CENNZX Exchange](CENNZnet-infrastructures/CENNZX-Exchange)
+    - [UNcover](CENNZnet-infrastructures/Uncover)
+    - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
 
-    - CENNZnet API
-        - [Overview](References/CENNZnet-API/CENNZnet-API-Overview)
-        - [Accounts and Keypairs 🔑](References/CENNZnet-API/Accounts-and-Keypairs)
-        - [Cookbook 👩‍🍳](References/CENNZnet-API/Cookbook)
-        - [NFT API](References/CENNZnet-API/NFT-API)
-        - [Subscriptions](References/CENNZnet-API/Subscriptions)
-        - [Staking API](References/CENNZnet-API/Staking)
-        - [Technical Reference](References/CENNZnet-API/Technical-Reference)
-        - [Transaction Error Codes](References/CENNZnet-API/Transaction-Error-Codes)
-        - Examples
-            - [Generic Assets](References/CENNZnet-API/Examples/API-examples-Generic-Assets)
-            - [CENNZX](References/CENNZnet-API/Examples/API-examples-CENNZX-Spot)
-            - [Attestation](References/CENNZnet-API/Examples/API-examples-Attestation)
+---
+- CENNZnet API
+    - [Overview](CENNZnet-API/CENNZnet-API-Overview)
+    - [Accounts and Keypairs 🔑](CENNZnet-API/Accounts-and-Keypairs)
+    - [Cookbook 👩‍🍳](CENNZnet-API/Cookbook)
+    - [NFT API](CENNZnet-API/NFT-API)
+    - [Subscriptions](CENNZnet-API/Subscriptions)
+    - [Staking API](CENNZnet-API/Staking)
+    - [Technical Reference](CENNZnet-API/Technical-Reference)
+    - [Transaction Error Codes](CENNZnet-API/Transaction-Error-Codes)
+    - Examples
+        - [Generic Assets](CENNZnet-API/Examples/API-examples-Generic-Assets)
+        - [CENNZX](CENNZnet-API/Examples/API-examples-CENNZX-Spot)
+        - [Attestation](CENNZnet-API/Examples/API-examples-Attestation)
 
-    - Runtime modules
-        - [Overview](References/Runtime-modules/Modules-Overview)
-        - [Attestation](References/Runtime-modules/Attestation)
-        - [CENNZX](References/Runtime-modules/CENNZX)
-        - [Doughnut](References/Runtime-modules/Doughnut)
-        - [Doughnut Permissioning](References/Runtime-modules/Doughnut-Permissioning)
-        - [Generic Asset](References/Runtime-modules/Generic-Asset)
-        - [NFT](References/Runtime-modules/NFT)
-        - [Staking](References/Runtime-modules/Staking)
-        - [Sylo Runtime Modules](References/Runtime-modules/Sylo-Runtime-Modules)
+---
+- Runtime modules
+    - [Overview](Runtime-modules/Modules-Overview)
+    - [Attestation](Runtime-modules/Attestation)
+    - [CENNZX](Runtime-modules/CENNZX)
+    - [Doughnut](Runtime-modules/Doughnut)
+    - [Doughnut Permissioning](Runtime-modules/Doughnut-Permissioning)
+    - [Generic Asset](Runtime-modules/Generic-Asset)
+    - [NFT](Runtime-modules/NFT)
+    - [Staking](Runtime-modules/Staking)
+    - [Sylo Runtime Modules](Runtime-modules/Sylo-Runtime-Modules)
 
     

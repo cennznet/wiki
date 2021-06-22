@@ -4,16 +4,16 @@ The API methods have auto-generated lists for each type. This document contains 
 
 The API methods in the `api.derive` namespace don't have generated docs, due to implementation details. They have comprehensive code documentation, which can be found [here](https://github.com/cennznet/api.js/tree/develop/packages/api/src/derives).
 
-To learn more about the runtime modules, refer to the [List of CENNZnet modules](References/Runtime-modules/List-of-cennznet-modules).
+To learn more about the runtime modules, refer to the [List of CENNZnet modules](Runtime-modules/List-of-cennznet-modules).
 
 
 **sections**:
-- [constants](References/CENNZnet-API/Technical-Reference?id=title-constants)
-- [errors](References/CENNZnet-API/Technical-Reference?id=title-errors)
-- [events](References/CENNZnet-API/Technical-Reference?id=title-events)
-- [extrinsics](References/CENNZnet-API/Technical-Reference?id=title-extrinsics)
-- [rpc](References/CENNZnet-API/Technical-Reference?id=title-rpc)
-- [storage](References/CENNZnet-API/Technical-Reference?id=title-storage)
+- [constants](CENNZnet-API/Technical-Reference?id=title-constants)
+- [errors](CENNZnet-API/Technical-Reference?id=title-errors)
+- [events](CENNZnet-API/Technical-Reference?id=title-events)
+- [extrinsics](CENNZnet-API/Technical-Reference?id=title-extrinsics)
+- [rpc](CENNZnet-API/Technical-Reference?id=title-rpc)
+- [storage](CENNZnet-API/Technical-Reference?id=title-storage)
 
 [Constants](https://raw.githubusercontent.com/cennznet/api.js/develop/docs/cennznet/constants.md ':include :type=tsdoc')
 

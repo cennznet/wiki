@@ -27,7 +27,7 @@ Once your feature is ready to be shared with a wider audience, you can test it o
 
 The TestNet provides a similar environment to the MainNet, and it's a safe place to fail. 
 
-On the TestNet, you won't need to spend actual MainNet currencies. You can issue test currencies for yourself using the [CENNZnet Faucet](References/CENNZnet-infrastructures/CENNZnet-faucet).
+On the TestNet, you won't need to spend actual MainNet currencies. You can issue test currencies for yourself using the [CENNZnet Faucet](CENNZnet-infrastructures/CENNZnet-faucet).
 
 ## Next steps
 

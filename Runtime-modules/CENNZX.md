@@ -7,7 +7,7 @@ to make simple and easy trades between assets.
 
 Because CENNZX is native to the CENNZnet protocol it is also integrated with network gas payment to provide transactors the ability to pay their fees in any liquid asset.
 
-The user guides for CENNZX can be found [here](References/CENNZnet-infrastructures/CENNZX-Exchange)
+The user guides for CENNZX can be found [here](CENNZnet-infrastructures/CENNZX-Exchange)
 
 ## Overview
 
