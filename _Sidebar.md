@@ -5,8 +5,19 @@
     - [The Networks](Getting-started/CENNZnet-networks)
     - [Repositories](Getting-started/CENNZnet-repos)
     - [Dev Environment Setup](Getting-started/Dev-environment-setup)
+
 ---
-- Network participation
+- DApp Development Guides
+	- [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp)
+	- [Getting Started with the API](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API)
+	- [Network Fees](Dapp-development/Guides/Network-fees)
+	- [Token Economy](Dapp-development/Guides/Token-Economy)
+	- [NFT Design](Dapp-development/Guides/How-to-design-NFTs)
+	- [NFT Royalties](Dapp-development/Guides/NFT-royalties)
+	- [Smart Contracts](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet)
+
+---
+- Network Participation
     - Node Operations
         - [Types of nodes](Network-participating/Node-operating/Types-of-nodes)
         - [Running a Full Node](Network-participating/Node-operating/Running-a-Full-Node)
@@ -18,17 +29,7 @@
         - [Nominator Staking Guide](Network-participating/Staking/Nominator-Staking-Guide)
 
 ---
-- DApp development
-	- [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp)
-	- [Getting Started with the API](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API)
-	- [Network Fees](Dapp-development/Guides/Network-fees)
-	- [Token Economy](Dapp-development/Guides/Token-Economy)
-	- [NFT Design](Dapp-development/Guides/How-to-design-NFTs)
-	- [NFT Royalties](Dapp-development/Guides/NFT-royalties)
-	- [Smart Contracts](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet)
-
----
-- CENNZnet development
+- CENNZnet Development
     - Guides
         - [Setting up Linux subsystem on Windows](CENNZnet-development/Guides/Set-up-Linux-Sub-system-for-Windows)
         - [Making a New Release (Legacy)](CENNZnet-development/Guides/Making-a-New-Release)
@@ -39,7 +40,7 @@
         - [Release Notes](CENNZnet-development/Notes/Release-Notes)
 
 ---
-- CENNZnet infrastructures
+- CENNZnet Infrastructures
     - [CENNZnet.io](CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
     - [Browser Extension](CENNZnet-infrastructures/CENNZnet-browser-extension)
     - [Faucet](CENNZnet-infrastructures/CENNZnet-faucet)

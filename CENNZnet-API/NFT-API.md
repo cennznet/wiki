@@ -2,7 +2,8 @@
 
 The NFT module is available from API version 1.4.0+.
 
-This is the aggregated list of all API methods related to the NFT module. For the latest docs for particular versions of the API, please refer to the [docs in docs folder of the api.js repository](https://github.com/cennznet/api.js/tree/master/docs/cennznet).
+To learn more about how the NFT module works, refer to the [NFT Module Documentation](Runtime-modules/NFT).
+
 
 ## Token IDs
 NFTs on CENNZnet are uniquely identifiable by a tuple of their collection, series, and serial number.  
@@ -49,5 +50,7 @@ export function tokenInfoForCollection(instanceId: string, api: ApiInterfaceRx):
 const tokenInfos: DeriveTokenInfo[] = await api.derive.nft.tokenInfoForCollection(collectionId);
 const {tokenId, tokenAttributes, owner} = tokenInfos[0];
 ```
+
+## API References
 
 [NFT APIs](https://raw.githubusercontent.com/cennznet/api.js/master/docs/cennznet/nft.md ':include :type=tsdoc')
