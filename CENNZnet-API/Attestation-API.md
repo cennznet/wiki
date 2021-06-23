@@ -1,4 +1,4 @@
-# Attestation Module
+# Attestation API
 
 The Attestation module allows accounts to issue and verify claims against other accounts (including themselves).
 Decentralised identity systems work on subjectivity, choosing whether to treat a claim as valid or not is the task of verifiers.  
@@ -139,8 +139,6 @@ await api.tx.attestation
     .signAndSend(issuerKeyPair);
 ```
 
-## API Technical Reference
 
-[Extrinsic methods](https://raw.githubusercontent.com/cennznet/api.js/develop/docs/cennznet/extrinsics.md?#attestation)
-
-[Storage methods](https://raw.githubusercontent.com/cennznet/api.js/develop/docs/cennznet/storage.md?#attestation)
+## API References
+<!-- [Attestation APIs](https://raw.githubusercontent.com/cennznet/api.js/master/docs/cennznet/attestation.md ':include :type=tsdoc') -->

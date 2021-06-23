@@ -54,6 +54,7 @@
     - [Subscription Mechanism](CENNZnet-API/Subscriptions)
     - [Cookbook 👩‍🍳](CENNZnet-API/Cookbook)
     - [Full list of API methods](CENNZnet-API/Technical-Reference)
+    - [Attestation API](CENNZnet-API/Attestation-API)
     - [CENNZX API](CENNZnet-API/CENNZX-API)
     - [Generic Asset API](CENNZnet-API/Generic-Asset-API)
     - [NFT API](CENNZnet-API/NFT-API)
