@@ -10,8 +10,8 @@ The CENNZX UI is an open-source DApp built on CENNZnet.
 [The CENNZX UI Guide](https://medium.com/centrality/cennzx-ui-guide-b543293ffce0) shows how to use the [CENNZX UI](https://cennzx.centrality.me/).
 
 ## Repo
-The CENNZX UI repo is an excellent example of how to use the CENNZnet API and building a DApp that interacts with the [CENNZnet browser extension](References/CENNZnet-infrastructures/CENNZnet-browser-extension).
+The CENNZX UI repo is an excellent example of how to use the CENNZnet API and building a DApp that interacts with the [CENNZnet browser extension](CENNZnet-infrastructures/CENNZnet-browser-extension).
 
 The repo can be found [here](https://github.com/cennznet/cennzx-ui).
 
-For technical information on the CENNZX module, go to [here](References/Runtime-modules/CENNZX).
+For technical information on the CENNZX module, go to [here](Runtime-modules/CENNZX).

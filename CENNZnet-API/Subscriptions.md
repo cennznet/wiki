@@ -1,4 +1,4 @@
-# Subscriptions
+# The subscription mechanism
 
 The storage on CENNZnet is always changing. The CENNZnet API provides a subscription mechanism; this allows your D'App to update as soon as the storage that you care about changes.
 

@@ -1,5 +1,9 @@
 # Staking API
 
+Staking allows you to make passive income by using your nodes or tokens to take part in our Proof of Stake consensus mechanism.
+
+To learn more about how Staking and the Staking module works, refer to the [Staking Module Documentation](Runtime-modules/Staking).
+
 ## Common staking queries
 
 Get the active staking era info
@@ -30,3 +34,7 @@ Check a validator's total, own, and nominated stake
 ```js
 (await api.derive.staking.erasStakers(era, validatorStashAddress))
 ```
+
+## API References
+
+[Staking APIs](https://raw.githubusercontent.com/cennznet/api.js/master/docs/cennznet/staking.md ':include :type=tsdoc')
