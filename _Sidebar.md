@@ -31,7 +31,7 @@
     - [Generic Asset API](CENNZnet-API/Generic-Asset-API)
     - [NFT API](CENNZnet-API/NFT-API)
     - [Staking API](CENNZnet-API/Staking)
-    - [Doughnut Permissioning](Runtime-modules/Doughnut-Permissioning)
+    - [Doughnut Permissioning](CENNZnet-API/Doughnut-Permissioning)
     - Examples
         - [Generic Assets](CENNZnet-API/Examples/API-examples-Generic-Assets)
         - [CENNZX](CENNZnet-API/Examples/API-examples-CENNZX-Spot)
@@ -39,7 +39,6 @@
 ---
 - Runtime modules 🎩
     - [Overview](Runtime-modules/Modules-Overview)
-    - [Attestation](Runtime-modules/Attestation)
     - [CENNZX](Runtime-modules/CENNZX)
     - [Doughnut](Runtime-modules/Doughnut)
     - [NFT](Runtime-modules/NFT)
