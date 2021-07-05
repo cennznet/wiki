@@ -1,8 +1,8 @@
 # How to build a DApp
 
-A DApp(Decentralised App) is an app that uses a blockchain as the backend data store. The blockchain gives your app the benefits of decentralized storage and peer-to-peer communication.
+A DApp(Decentralised App) is an app that involves blockchain as a part of its data store. The blockchain component gives your app the benefits of decentralized storage and peer-to-peer communication.
 
-To build a DApp with CENNZnet, you will need:
+To build a DApp with CENNZnet is easy, you will need:
 * Build a frontend in your chosen framework as long as it is compatible with JavaScript.
 * Interact with CENNZnet's MainNet using the CENNZnet (JavaScript) API.
 * You may need to write and deploy Smart Contracts if you need custom methods that's not provided by the core modules.
