@@ -1,6 +1,8 @@
 ![CENNZnet](./assets/images/banner.png)
 
-CENNZnet is a public blockchain network that powers [decentralised applications (DApps)](https://cennz.net/blog/featured-blog-post/what-is-a-dapp/) and the crypto currencies CENNZ and CPAY. It is built on top of the [Plug](https://github.com/plugblockchain/plug-blockchain/) framework.
+CENNZnet provides an easy-to-use API that lets to build fully  [decentralised applications (DApps)](https://cennz.net/blog/featured-blog-post/what-is-a-dapp/), or add a decentralised component to your existing app.
+
+CENNZnet is a public blockchain network that powers DApps and the crypto currencies CENNZ and CPAY. It is built on top of the [Plug](https://github.com/plugblockchain/plug-blockchain/) framework.
 
 CENNZnet features:
 * ***Proof of Stake (PoS) [consensus mechanism](https://cennz.net/publications/understanding-consensus-mechanisms/)***: Facilitates a secure system while also rewarding our community and low energy requirements. 
