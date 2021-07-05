@@ -35,22 +35,6 @@ let quantity = 100;
 api.tx.nft.mintSeries(collectionId, quantity, tokenReceiver.address, seriesAttributes, metadataPath, null)
 ```
 
-## Derived methods
-Derived methods are helper methods written on the API side, to perform additional processing on the storage and RPC methods.
-
-```js
-import { DeriveTokenInfo } from '@cennznet/api/derives/nft/types';
-
-/**
- * @description Retrieve the list of all tokens in a collection
- */
-export function tokenInfoForCollection(instanceId: string, api: ApiInterfaceRx): () => Observable<DeriveTokenInfo[]> {};
-
-// Usage
-const tokenInfos: DeriveTokenInfo[] = await api.derive.nft.tokenInfoForCollection(collectionId);
-const {tokenId, tokenAttributes, owner} = tokenInfos[0];
-```
-
 ## API References
 
 [NFT APIs](https://raw.githubusercontent.com/cennznet/api.js/master/docs/cennznet/nft.md ':include :type=tsdoc')
