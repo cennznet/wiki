@@ -39,9 +39,11 @@ When storing sensitive data, the general approach is to do the following:
 1) store a hash of the sensitive thing on CENNZnet so it can be verified by anyone.
 2) share the actual information on secure channel off chain which can be compared to the thing on CENNZnet.
 
-## Quick start template
+## Quick start templates
 
-To start building with CENNZnet in 5 minutes, try the [CENNZnet Quick Start Template](https://github.com/cennznet/cennznet-vue-template).
+To start building with CENNZnet in 5 minutes, try the 
+[Typescript React Template](https://github.com/cennznet/typescript-react-app-cennznet-dApp-template) or the [VueJS Template](https://github.com/cennznet/cennznet-vue-template).
+
 
 This is a minimal DApp that connects to the CENNZNet MainNet via the CENNZnet API, and listens for the latest block number.
 
