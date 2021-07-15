@@ -18,7 +18,7 @@ Ubuntu OS
 ### 1) Download the Latest Snapshot  
 This is a snapshot of the CENNZnet blockchain maintained by Centrality.  
 It will give the node a large head start on syncing the block data.  
-**NOTE!** check https://s3-ap-southeast-1.amazonaws.com/cennznet-snapshots.centralityapp.com/azalea/1.2.2/validator/  
+**NOTE!** check https://s3-ap-southeast-1.amazonaws.com/cennznet-snapshots.centralityapp.com/azalea/1.2.2/validator/index.html
 for the most recent snapshot file and substitute it in the command below  
 ```bash
 SNAPSHOT_DATE=2021-03-16-1035
