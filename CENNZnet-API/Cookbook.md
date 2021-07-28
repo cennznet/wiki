@@ -31,9 +31,14 @@ curl -H "Content-Type: application/json" \
      -d '{ "jsonrpc":"2.0", "method":"chain_getBlock", "params":[<block number>],"id":1 }' http://example.com:9933 | jq .result.block.extrinsics
 ```
 
-alternatively, our block explorer provides a block API
+with `@cennznet/api` javascript
+```js
+let extrinsics = (await api.rpc.chain.getBlock("<blockHash>")).block.extrinsics;
+```
+
+alternatively, UNcover block explorer provides a block API
 ```bash
-curl -H "Content-Type: application/json" -d '{"block_num": 100000 }' https://scan-azalea.onfinality.me/api/scan/block | jq .data.extrinsics
+curl -H "Content-Type: application/json" -d '{"block_num": 100000 }' https://service.eks.centralityapp.com/cennznet-explorer-api/api/scan/block | jq .data.extrinsics
 ```
 
 example output:
@@ -66,7 +71,7 @@ To verify a transaction hash is in the chain, use our block explorer (UNCover) A
 
 ```bash
 curl -H "Content-Type: application/json" \
-  -d '{"hash": "0xbe3781892d397395afdde9086cc0028426612468bd37841241284e92facf34ea" }' https://scan-azalea.onfinality.me/api/scan/extrinsic | jq .data.success
+  -d '{"hash": "0xbe3781892d397395afdde9086cc0028426612468bd37841241284e92facf34ea" }' https://service.eks.centralityapp.com/cennznet-explorer-api/api/scan/extrinsic | jq .data.success
 ```
 
 ## Offline Transaction Signing
