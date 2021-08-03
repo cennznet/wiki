@@ -35,7 +35,10 @@ const injector = from(web3FromSource('cennznet-extension');
 const signer = injector.signer;
 
 // Create a transaction
-const transaction = api.tx.balances.transfer('5C7bLoDLAUjasvf2SPrSAZuiybFtgQ5ya5iqMgBeLzkwGRRr', 1000);
+let assetID = 16000; // asset ID for CENNZ on Nikau
+let destinationAccountID = '5C7bLoDLAUjasvf2SPrSAZuiybFtgQ5ya5iqMgBeLzkwGRRr';
+let amount = 1000;
+const transaction = api.tx.genericAsset.transfer(assetID, destinationAccountID, amount);
 
 // Sign the transaction
 transaction.signAndSend(signingAccount, {signer}
@@ -50,4 +53,4 @@ The CENNZnet extension is a fork of the Polkadot extension, so that it is suited
 
 The API remains consistent with the Polkadot extension. Please refer to the [Polkadot extension documentation](https://polkadot.js.org/docs/extension/) for usages.
 
-Notes for users of early versions fo the CENNZnet browser extension: the extension used to require the users to manually update metatdata before using the exntension. This is no longer required.
+Notes for users of early versions fo the CENNZnet browser extension: the extension used to require the users to manually update metadata before using the exntension. This is no longer required.
