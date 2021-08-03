@@ -70,6 +70,7 @@
 ---
 - CENNZnet Development 🛠
     - Guides
+        - [Transaction Codec](CENNZnet-development/Guides/Transaction-Codec)
         - [Setting up Linux subsystem on Windows](CENNZnet-development/Guides/Set-up-Linux-Sub-system-for-Windows)
         - [Making a New Release (Legacy)](CENNZnet-development/Guides/Making-a-New-Release)
         - [Regenerate genesis files](CENNZnet-development/Guides/Regenerating-genesis-files-on-Release)
