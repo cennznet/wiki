@@ -23,6 +23,14 @@ The CENNZnet API is a JavaScript API that allows you to interact with CENNZnet p
 
 This is the repository for this wiki you are reading now.
 
+## DApp Templates
+
+### React Template
+[Typescript React Template](https://github.com/cennznet/typescript-react-app-cennznet-dApp-template)
+
+### VueJs Template
+[VueJS Template](https://github.com/cennznet/cennznet-vue-template)
+
 ## Related repositories
 
 ### [CENNZX UI](https://github.com/cennznet/cennzx-ui)
