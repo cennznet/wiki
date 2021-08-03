@@ -25,6 +25,7 @@
 
 - API References 📚
     - [Full list of API methods](CENNZnet-API/Full-list)
+    - [Transaction Codec](CENNZnet-API/Transaction-Codec)
     - [Transaction Error Codes](CENNZnet-API/Transaction-Error-Codes)
     - [Attestation API](CENNZnet-API/Attestation-API)
     - [CENNZX API](CENNZnet-API/CENNZX-API)
