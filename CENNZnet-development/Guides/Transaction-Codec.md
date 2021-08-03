@@ -8,7 +8,7 @@ SCALE is a non-self describing binary codec used for substrate based blockchains
 Therefore the type to be encoded or decoded must be known by the producer or consumer ahead of time.
 This makes the encoding more terse at the expense of dynamic comprehension.
 
-Details on the [SCALE codec](https://substrate.dev/docs/en/knowledgebase/advanced/).
+Details on the [SCALE codec](https://substrate.dev/docs/en/knowledgebase/advanced/codec).
 
 ## Definition
 

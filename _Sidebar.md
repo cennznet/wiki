@@ -25,7 +25,6 @@
 
 - API References 📚
     - [Full list of API methods](CENNZnet-API/Full-list)
-    - [Transaction Codec](CENNZnet-API/Transaction-Codec)
     - [Transaction Error Codes](CENNZnet-API/Transaction-Error-Codes)
     - [Attestation API](CENNZnet-API/Attestation-API)
     - [CENNZX API](CENNZnet-API/CENNZX-API)
@@ -71,6 +70,7 @@
 ---
 - CENNZnet Development 🛠
     - Guides
+        - [Transaction Codec](CENNZnet-development/Guides/Transaction-Codec)
         - [Setting up Linux subsystem on Windows](CENNZnet-development/Guides/Set-up-Linux-Sub-system-for-Windows)
         - [Making a New Release (Legacy)](CENNZnet-development/Guides/Making-a-New-Release)
         - [Regenerate genesis files](CENNZnet-development/Guides/Regenerating-genesis-files-on-Release)
