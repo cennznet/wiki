@@ -10,8 +10,6 @@ For NFT (non-fungible tokens), use the dedicated [NFT](Runtime-modules/NFT) modu
 
 ## Available Assets
 Generic assets are uniquely identified by an integer Id e.g. on mainnet, CENNZ has asset id `1` and CPAY has asset id `2`.  
-Assets must be created and registered before accounts can hold balances of them.  
-
 To find all the available assets on a CENNZnet network:
 ```js
 const registeredAssets = await api.rpc.genericAsset.registeredAssets();
