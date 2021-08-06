@@ -1,51 +1,94 @@
 # Generic Asset API
 
-The Generic Asset module lets you mint, transfer, and burn different types of fungible tokens. It also allows you to check balance on accounts.
+The CENNZnet "Generic Asset" module manages the network's fungible tokens.  
+Users can hold and transfer balances of tokens, while token owners may mint and burn token amounts according to their monetary policies.  
+The native CENNZ and CPAY tokens are both instances of generic assets.  
+Any user can create their own tokens on the network using this module.  
+To learn more about how CENNZ and CPAY work in CENNZnet, refer to the [Token Economy](/Dapp-development/Guides/Token-Economy) document.  
 
-CENNZ and CPAY are both instances of Generic Asset. You can create you own type of tokens using this module. To learn more about how CENNZ and CPAY work in CENNZnet, refer to the [Token Economy](/Dapp-development/Guides/Token-Economy) document.
+For NFT (non-fungible tokens), use the dedicated [NFT](Runtime-modules/NFT) module. 
 
-For NFT(Non-fungible tokens), use the dedicated [NFT](Runtime-modules/NFT) module. 
+## Available Assets
+Generic assets are uniquely identified by an integer Id e.g. on mainnet, CENNZ has asset id `1` and CPAY has asset id `2`.  
+To find all the available assets on a CENNZnet network:
+```js
+const registeredAssets = await api.rpc.genericAsset.registeredAssets();
+```
 
+The response is a map of the available asset IDs and associated metadata. The metadata shows the symbol name and the number of decimal places for a balance of that asset.
+```js
+[
+ (1, { symbol: 'CPAY', decimalPlaces: 4 }),
+ (2, { symbol: 'CENNZ', decimalPlaces: 4 })
+]
+```
+
+## Understanding Balances
+Blockchains use integers for representing asset balances.  
+This means balances are always counted in terms of the smallest indivisible unit.  
+You can think of this like counting dollars in terms of cents.
+Consider a generic asset with 2 decimal places:
+A balance of `1` should be displayed to a user as `0.01`, while a whole token of this asset would be stored as `100`
+and displayed to users as `1.00`.  
+Dapps are responsible to ensure an asset's decimal places are respected when displaying balances.  
+
+The following table shows this concept, the displayed balance changes with decimal places while the stored balance value does **not**.
+
+|Balance|Decimal Places|Display|
+|---|---|---|
+|1|2|0.01|
+|1|4|0.0001|
+|1|18|0.000000000000000001|
+|100|2|1.00|
+|10000|4|1.0000|
+|1e18|18|1.000000000000000000|
 
 ## Example usages
 
-Listed below are some functionalities of the Generic Asset module.
+Listed below are the core functionalities of the Generic Asset module.
 
-Check out the [Generic Assets API Example](CENNZnet-API/Examples/API-examples-Generic-Assets) for detailed examples of common use cases!
-
-### Checking account balance
+### Check account balance
 ```js
-let assetID = 16000; // asset ID for CENNZ on Nikau
-let balance = await api.query.genericAsset.freeBalance(assetID, accountID);
+let assetId = 16000; // asset ID for CENNZ on Nikau testnet
+let balance = await api.query.genericAsset.freeBalance(assetId, address);
 ```
 
-### Transfer assets
-
+### Transfer tokens
 ```js
-api.tx.genericAsset.transfer(assetId, destinationAccountID, amount);
+await api.tx.genericAsset
+    .transfer(assetId, destinationAddress, amount)
+    .signAndSend(senderKeyPair);
 ```
 
 ### Checking total issuance of a token
-
 ```js
-let totalIssuance = await api.query.genericAsset.totalIssuance(assetID);
+let totalIssuance = await api.query.genericAsset.totalIssuance(assetId);
 ```
 
-### Creating a new type of token
+### Creating a new token
 
-This creates a new kind of asset and nominates the owner of this asset. The asset options allow the creator to set permissions and initial issuance of the token.
+This creates a new asset and configures the owner. The asset options allow the creator to set permissions and initial issuance of the token.
 
 ```js
-import { AssetInfo, AssetOptions } from '@cennznet/types';
-
-// Amount of test asset to create
-const initialIssuance = 900_000_000_000_000;
-const owner = api.registry.createType('Owner', assetOwner.address, 1); // Owner type is enum with 0 as none/null
-const permissions = api.registry.createType('PermissionsV1', { update: owner, mint: owner, burn: owner});
-const option = {initialIssuance , permissions};
-const assetOption: AssetOptions = api.registry.createType('AssetOptions', option);
-const assetInfo: AssetInfo = api.registry.createType('AssetInfo', {symbol: 'TEST', decimalPlaces: 4});
-let createAssetTx = api.tx.genericAsset.create(assetOwner.address, assetOption, assetInfo);
+// Number of whole tokens to issue
+const initialIssuance = 1_000_000;
+// Which address can mint, burn, and update permissions
+const permissions = {
+    update: assetOwner.address,
+    mint: assetOwner.address,
+    burn: assetOwner.address
+};
+const options = { initialIssuance , permissions };
+// metadata of the new asset
+const metadata = { symbol: 'TEST', decimalPlaces: 4 };
+// when the asset is created it will get this Id
+let testAssetId = await api.query.genericAsset.nextAssetId();
+// Make the asset
+let createAssetTx = await api.tx.genericAsset.create(
+    assetOwner.address,
+    options,
+    metadata
+).signAndSend(ownerKeyPair);
 ```
 
 ### Minting tokens
@@ -53,16 +96,21 @@ let createAssetTx = api.tx.genericAsset.create(assetOwner.address, assetOption, 
 Mints an asset, increases its total issuance. Deposits the newly minted currency into target account. **Requires mint permissions**.
 
 ```js
-api.tx.genericAsset.mint(assetID, destinationAccountID, amount);
+await api.tx.genericAsset
+    .mint(assetId, destinationAddress, amount)
+    .signAndSend(ownerKeyPair);
 ```
 
 ### Burning tokens
 
-Burns an asset, decreases its total issuance. Deduct the money from target account. **Requires burn permissions**.
+Burns an asset, decreases its total issuance. Deducts the tokens from target account. **Requires burn permissions**.
 ```js
-api.tx.genericAsset.burn(assetID, accountId, amount);
+await api.tx.genericAsset
+    .burn(assetId, address, amount)
+    .signAndSend(ownerKeyPair);;
 ```
 
 ## API References
+Check out the [Generic Assets API Example](CENNZnet-API/Examples/API-examples-Generic-Assets) for more detailed examples of common use cases!
 
 [Generic Asset APIs](https://raw.githubusercontent.com/cennznet/api.js/master/docs/cennznet/genericAsset.md ':include :type=tsdoc')

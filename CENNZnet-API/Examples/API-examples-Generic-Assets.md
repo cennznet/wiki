@@ -20,51 +20,23 @@ let txHash = await api.tx.genericAsset.transfer(cpayId, receiver, amount)
 As described in the [subscriptions documentation](subscriptions), getting a `txHash` does not mean the transaction has been included in a block. In addition, we probably want to know if the transaction was successful. To do this, we use a subscription:
 
 ```js
-let waiting = true;
-let success = false;
-
-console.log(`Alice is transferring 1_500_000_000 to Bob`);
-
 // Sign and send a transfer from Alice to Bob
-const unsub = await api.tx.genericAsset
-.transfer(assetId, keyring.bob.address, 1500000000)
-.signAndSend(keyring.alice, ({ events = [], status }) => {
-  console.log(`Current status is ${status.type}`);
+await api.tx.genericAsset
+  .transfer(assetId, keyring.bob.address, 100000)
+  .signAndSend(keyring.alice, ({ events = [], status }) => {
+    console.log(`Current status is ${status.type}`);
 
-  if (status.isFinalized) {
-    console.log(`Transaction included at blockHash ${status.asFinalized}`);
-
-    // Loop through Vec<EventRecord> to look for ExtrinsicSuccess
-    events.forEach(({ phase, event }) => {
-      console.log(`\t' ${phase}: ${event.section}.${event.method}:: ${event.data}`);
-      if (event.section == 'system' && event.method == 'ExtrinsicSuccess') {
-        success = true;
-      }
-    });
-    unsub();
-    waiting = false;
-  }
+    if (status.isFinalized) {
+      console.log(`Transaction included at blockHash ${status.asFinalized}`);
+      // Loop through Vec<EventRecord> to look for ExtrinsicSuccess
+      events.forEach(({ phase, event }) => {
+        console.log(`\t' ${phase}: ${event.section}.${event.method}:: ${event.data}`);
+        if (event.section == 'system' && event.method == 'ExtrinsicSuccess') {
+          console.log("Transaction is Successful");
+        }
+      });
+    }
 });
-
-// Wait until the extrinsic has been finalized
-// (note: don't do this in production, sometimes tx are never finalized)
-while(waiting) {
-  await sleepMs(100);
-}
-
-if (success) {
-  console.log("Transaction is Successful");
-} else {
-  console.log("Transaction Failed")
-}
-```
-
-The above example uses a custom sleepMs function, which can be defined as follows:
-
-```js
-function sleepMs(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
 ```
 
 The expected output shows the lifecycle of the transaction, and events emitted:
@@ -105,21 +77,4 @@ As new transactions are made, Alice's balance is updated in real-time:
 Alice's CENNZ balance is: 1000000000000000000000000000
 Alice's CENNZ balance is: 999998999999997480263496919
 Alice's CENNZ balance is: 1000998999999997480263496919
-```
-
-## Finding Available Assets
-An RPC query is provided to find the available generic assets on a CENNZnet blockchain.
-These assets have been minted/issued on the chain.
-
-```js
-const registeredAssets = await api.rpc.genericAsset.registeredAssets();
-```
-
-The response is a map of the available asset IDs and associated metadata.
-At the time of writing the metadata is the asset / symbol name and the number of decimal places for a balance of that asset.
-```js
-[
- (2, { symbol: 'CPAY', decimalPlaces: 4}),
- (1, { symbol: 'CENNZ', decimalPlaces: 4})
-],
 ```
