@@ -10,7 +10,7 @@ The [Proof of Stake consensus algorithm](https://cennz.net/knowledge-hub/blockch
 
 There are three key ingredients that makes blockchain unique:
 * Cryptography 
-* Data Structures 
+* Data structures 
 * Incentives
 
 Our article [What is blockchain](https://cennz.net/knowledge-hub/blockchain-101/what-is-blockchain/) will help you understand how it works!
