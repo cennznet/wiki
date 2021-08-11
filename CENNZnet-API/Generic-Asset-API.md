@@ -67,28 +67,44 @@ let totalIssuance = await api.query.genericAsset.totalIssuance(assetId);
 
 ### Creating a new token
 
-This creates a new asset and configures the owner. The asset options allow the creator to set permissions and initial issuance of the token.
+This creates a new asset and configures the owner. The asset options allow the creator to set permissions and initial issuance of the token. Before issuing the token, make sure your account has enough CPAY to pay for the gas fee. For the TestNet, use the [Faucet](CENNZnet-infrastructures/CENNZnet-faucet) to issue tokens to your account.
 
 ```js
 // Number of whole tokens to issue
 const initialIssuance = 1_000_000;
 // Which address can mint, burn, and update permissions
 const permissions = {
-    update: assetOwner.address,
-    mint: assetOwner.address,
-    burn: assetOwner.address
+    update: {
+        Address: assetOwner.address,
+    },
+    mint:  {
+        Address: assetOwner.address,
+    },
+    burn:  {
+        Address: assetOwner.address,
+    },
 };
 const options = { initialIssuance , permissions };
 // metadata of the new asset
 const metadata = { symbol: 'TEST', decimalPlaces: 4 };
 // when the asset is created it will get this Id
 let testAssetId = await api.query.genericAsset.nextAssetId();
-// Make the asset
+// Create the asset
 let createAssetTx = await api.tx.genericAsset.create(
     assetOwner.address,
     options,
     metadata
-).signAndSend(ownerKeyPair);
+).signAndSend(ownerKeyPair, async ({ events, status }) => {
+    // Add a callback to find out if the transaction was successful
+    if (status.isInBlock) {
+    for (const {event: {method, section, data}} of events) {
+        console.log('Method:', method.toString());
+        console.log('section:', section.toString());
+    }
+    console.log(Transaction included at blockHash ${status.asInBlock});
+    done();
+    }
+});
 ```
 
 ### Minting tokens
