@@ -1,10 +1,12 @@
 - Getting started 👋
-    - [Primer](Getting-started/CENNZnet-primer)
+    - [Blockchain Primer](Getting-started/blockchain-primer)
+    - [Where to find help?](Getting-started/Where-to-find-help)
     - [Technical Overview](Getting-started/CENNZnet-technical-overview)
     - [DApp Development](Getting-started/CENNZnet-dapp-development)
     - [The Networks](Getting-started/CENNZnet-networks)
     - [Repositories](Getting-started/CENNZnet-repos)
     - [Dev Environment Setup](Getting-started/Dev-environment-setup)
+    - [Contributing](Getting-started/contributing)
 
 ---
 - DApp Development Guides
