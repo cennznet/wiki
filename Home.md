@@ -33,7 +33,7 @@ Join the Discord server by clicking on the badge below!
 Start a full node named `my-node` and connect it to the CENNZnet MainNet:
 ```bash
 # via docker
-$ docker run cennznet/cennznet:1.4.0 \
+$ docker run cennznet/cennznet:1.5.1 \
     --chain=/cennznet/genesis/azalea.raw.json \
     --name=my-node \
     --telemetry-url 'ws://cennznet-telemetry.centrality.me:1024 0'

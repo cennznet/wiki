@@ -59,7 +59,7 @@ docker run -d \
     --restart=always \
     -p 9933:9933 \
     -v $(pwd)/data:/data \
-    cennznet/cennznet:1.4.0 \
+    cennznet/cennznet:1.5.1 \
     --validator \
     --node-key=$NODE_P2P_KEY \
     --name=$NODE_NAME \
