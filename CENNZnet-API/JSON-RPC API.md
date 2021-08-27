@@ -8,7 +8,7 @@ ___
 ### getBalance(account_id: `AccountId`, asset_id: `AssetId`): `Vec<EnhancedTokenId>`
 - **interface**: `api.rpc.genericAsset.getBalance`
 - **jsonrpc**: `genericAsset_getBalance`
-- **summary**: Get the locked, staked and free balance of an account
+- **summary**: Get the staked, reserved and free balance of an account
 
 #### Example request
 In the below request, we are getting the balances with the following parameters
