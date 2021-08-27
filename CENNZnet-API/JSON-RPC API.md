@@ -5,15 +5,17 @@ response structure is defined for each module below.
 ___
 ## Generic Asset
 
-### getBalance(account_id: `AccountId`, asset_id: `AssetId`): `Vec<EnhancedTokenId>`
-- **interface**: `api.rpc.genericAsset.getBalance`
+### getBalance
 - **jsonrpc**: `genericAsset_getBalance`
-- **summary**: Get the locked, staked and free balance of an account
+- **summary**: Get the staked, reserved and free balance of an account
 
 #### Example request
 In the below request, we are getting the balances with the following parameters
-- account_id = "5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY"
-- asset_id: 16000 (CENNZ Token)
+
+|Field |Type | Example|
+|---|---|---|
+|account id |String      | "5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY"  |
+|asset it   |Number      | 16000  |
 ```json
 {
   "id": 1,
@@ -44,15 +46,17 @@ that aren't locked or staked, reserved are locked tokens, and staked are tokens 
 
 ## NFT
 
-### collectedTokens(collection: `CollectionId`, address: `Address`): `Vec<EnhancedTokenId>`
-- **interface**: `api.rpc.nft.collectedTokens`
+### collectedTokens
 - **jsonrpc**: `nft_collectedTokens`
 - **summary**: Get the tokens owned by an address in a certain collection
 
 #### Example request
 In the below request, we are getting the tokens with the following parameters:
-- collection_id = 0
-- account_id = "5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY"
+  
+  |Field |Type | Example|
+  |---|---|---|
+  |collection id |Number      | 0                                                   |
+  |account id    |String      | "5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY"  |
 ```json
 {
   "id": 1,
@@ -90,12 +94,16 @@ Each token will be represented by an array of
 ```
 ---
 
-### getCollectionInfo(collection_id: `CollectionId`): `Vec<CollectionInfo>`
-- **interface**: `api.rpc.nft.getCollectionInfo`
+### getCollectionInfo
 - **json-rpc**: `nft_getCollectionInfo`
 - **summary**: Get the collection name, owner and royalties of a certain collection by supplying the collection_id
 
 #### Example request
+
+|Field |Type | Example|
+|---|---|---|
+|collection id |Number |0 |
+
 ```json
 {
   "id": 1,
@@ -129,8 +137,7 @@ a decimal between 0 and 1
 ```
 ---
 
-### getTokenInfo(collection_id: `CollectionId`, series_id: `SeriesId`, serial_number: `SerialNumber`): `Vec<TokenInfo>`
-- **interface**: `api.rpc.nft.getTokenInfo`
+### getTokenInfo
 - **json-rpc**: `nft_getTokenInfo`
 - **summary**: Get the attributes, owner and royalties from a supplied collection ID, token ID and serial number
 
@@ -139,6 +146,13 @@ In the below request, we are getting the token with the following parameters
 - collection_id = 0
 - series_id = 1
 - serial_number = 2
+
+|Field |Type | Example|
+|---|---|---|
+|collection id |Number  |0 |
+|series id     |Number  |1 |
+|serial number |Number  |3 |
+
 ```json
 {
   "id": 1,
@@ -177,17 +191,19 @@ the royalties of the collection will be displayed
 ```
 ---
 
-### getCollectionListings(collection_id: `CollectionId`, cursor: `u128`, limit: `u126`): `Vec<ListingResponse>`
-- **interface**: `api.rpc.nft.getCollectionListings`
+### getCollectionListings
 - **json-rpc**: `nft_getCollectionListings`
 - **summary**: Get an array of all listed NFTs in a collection. The cursor specifies the first listing_id to be returned,
 and the limit specifies how many listings to return. 
 
 #### Example request
-In the below request, we are requesting the first 2 listed NFTs in the collection, 
-- collection_id = 0
-- cursor = 0
-- limit = 2 (The maximum limit is set to 100)
+In the below request, we are requesting the first 2 listed NFTs in the collection. The maximum limit is set to 100
+
+|Field |Type | Example|
+|---|---|---|
+|collection id |Number  |0   |
+|cursor        |Number  |1   |
+|limit         |Number  |100 |
 ```json
 {
   "id": 1,
