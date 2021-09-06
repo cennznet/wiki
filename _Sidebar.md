@@ -6,7 +6,7 @@
     - [The Networks](Getting-started/CENNZnet-networks)
     - [Repositories](Getting-started/CENNZnet-repos)
     - [Dev Environment Setup](Getting-started/Dev-environment-setup)
-    - [Contributing](Getting-started/contributing)
+    - [Contributing](Getting-started/Contributing)
 
 ---
 - DApp Development Guides
