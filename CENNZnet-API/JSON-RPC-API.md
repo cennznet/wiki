@@ -7,11 +7,22 @@ Use a cURL like the one below to call any of these JSON-RPC requests from CENNZn
 Just change the method and params to what you're looking for, and it should return a JSON response.
 
 #### Example request
-`
+```
 curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "nft_getTokenInfo", "params": [0,0,0]}' https://cennznet.unfrastructure.io/public
-`
+```
 #### Example response
-
+```json
+{
+  "id": 1,
+  "jsonrpc": "2.0",
+  "method": "nft_getTokenInfo",
+  "params": [
+    0,
+    1,
+    3
+  ]
+}
+```
 ___
 ## Generic Asset
 
