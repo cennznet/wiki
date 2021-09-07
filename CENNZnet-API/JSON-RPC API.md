@@ -2,6 +2,16 @@
 
 CENNZnet supports multiple JSON-RPC calls that allows for easy access to a large range of features. The RPC request and
 response structure is defined for each module below.
+### Example usage
+Use a cURL like the one below to call any of these JSON-RPC requests from CENNZnet Azalea. 
+Just change the method and params to what you're looking for, and it should return a JSON response.
+
+#### Example request
+`
+curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method": "nft_getTokenInfo", "params": [0,0,0]}' https://cennznet.unfrastructure.io/public
+`
+#### Example response
+
 ___
 ## Generic Asset
 
