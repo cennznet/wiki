@@ -23,6 +23,7 @@
     - [Accounts and Keypairs 🔑](CENNZnet-API/Accounts-and-Keypairs)
     - [Subscription Mechanism](CENNZnet-API/Subscriptions)
     - [Cookbook 👩‍🍳](CENNZnet-API/Cookbook)
+    - [JSON-RPC](CENNZnet-API/JSON-RPC-API)
 ---
 
 - API References 📚
