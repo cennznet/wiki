@@ -9,7 +9,7 @@ The easiest way is to use the [CENNZnet Portal](https://cennznet.io/).
 Alternatively you can use the [Browser Extension](CENNZnet-infrastructures/CENNZnet-browser-extension) to create an account.
 
 ### Development notes
-The account you created can be used on both the MainNet and the TestNet. You can search for the transactions related to the account using [UNcover](CENNZnet-infrastructures/Uncover).
+The account you created can be used on both [the MainNet and the TestNet](Getting-started/CENNZnet-networks). You can search for the transactions related to the account using [UNcover](CENNZnet-infrastructures/Uncover). To view transactions on the TestNet(Nikau), make sure you select Nikau or use [this URL](https://uncoverexplorer.com/?network=Nikau) to access UNcover.
 
 To issue yourself tokens to use on the TestNet, you can use the [Faucet](CENNZnet-infrastructures/CENNZnet-faucet).
 
