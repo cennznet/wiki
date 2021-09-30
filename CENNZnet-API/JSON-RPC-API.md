@@ -64,6 +64,46 @@ that aren't locked or staked, reserved are locked tokens, and staked are tokens 
 ```
 ---
 
+### registeredAssets
+- **jsonrpc**: `genericAsset_registeredAssets`
+- **summary**: Get all asset data paired with their ids.
+
+#### Example request
+In the below request, we don't specify any parameters as the RPC call returns all assets and their ids
+
+```json
+{
+  "id": 1,
+  "jsonrpc": "2.0",
+  "method": "genericAsset_registeredAssets",
+  "params": []
+}
+```
+#### Example response
+In the below response, we receive an array of the current registered assets including the number of decimal places and 
+their related symbol represented as ASCII values i.e. CENNZ = [67, 69, 78, 78, 90]
+```json
+{
+  "jsonrpc": "2.0",
+  "result": [
+    [
+      1,
+      {
+        "decimal_places": 4,
+        "symbol": [
+          67,
+          69,
+          78,
+          78,
+          90
+        ]
+      }
+    ]
+  ],
+  "id": 1
+}
+```
+---
 
 ## NFT
 
