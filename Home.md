@@ -1,4 +1,4 @@
-![CENNZnet](./assets/images/banner.png)
+![CENNZnet](./assets/images/banner.gif)
 
 CENNZnet provides an easy-to-use API that lets to build fully  [decentralised applications (DApps)](https://cennz.net/blog/featured-blog-post/what-is-a-dapp/), or add a decentralised component to your existing app.
 
