@@ -232,8 +232,8 @@ In the below request, we are requesting the first 2 listed NFTs in the collectio
   "method": "nft_getTokenInfo",
   "params": [
     0,
-    1,
-    100
+    0,
+    2
   ]
 }
 ```
