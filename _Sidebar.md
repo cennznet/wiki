@@ -30,6 +30,7 @@
     - [Full list of API methods](CENNZnet-API/Full-list)
     - [Transaction Error Codes](CENNZnet-API/Transaction-Error-Codes)
     - [Attestation API](CENNZnet-API/Attestation-API)
+    - [Emery Bridge API](CENNZnet-API/Emery-Bridge-API)
     - [CENNZX API](CENNZnet-API/CENNZX-API)
     - [Generic Asset API](CENNZnet-API/Generic-Asset-API)
     - [NFT API](CENNZnet-API/NFT-API)

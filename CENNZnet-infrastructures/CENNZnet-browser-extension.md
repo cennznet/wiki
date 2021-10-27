@@ -12,7 +12,7 @@ The repo can be found [here](https://github.com/cennznet/extension)
 Please install from the [Chrome Web Store](https://chrome.google.com/webstore/detail/cennznet-extension/feckpephlmdcjnpoclagmaogngeffafk).
 
 ## UI User Guide
-The user guide for the CENNZnet browser extension can be found [here](https://medium.com/centrality/cennznet-browser-extension-user-guide-8f4d924a9f12).
+The user guide for the CENNZnet browser extension can be found [here](https://cennz.net/knowledge-hub/navigating-cennznet/cennznet-browser-extension-user-guide/).
 
 ## Using the extension with your DApp through the API hook
 
