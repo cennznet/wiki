@@ -34,6 +34,7 @@
     - [CENNZX API](CENNZnet-API/CENNZX-API)
     - [Generic Asset API](CENNZnet-API/Generic-Asset-API)
     - [NFT API](CENNZnet-API/NFT-API)
+    - [NFT Mass Drop](CENNZnet-API/NFT-Mass-Drop)
     - [Staking API](CENNZnet-API/Staking)
     - [Doughnut Permissioning](CENNZnet-API/Doughnut-Permissioning)
     - Examples
