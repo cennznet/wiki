@@ -26,13 +26,19 @@ Make sure you are minting from collection_id that you own, and specify the quant
 Include the option for `mass_drop`.
 
 The parameters for mass_drop are as follows:
-`price` is how much each NFT will cost.
-`asset_id` is type of asset that's required for the sale. See [Available Assets](CENNZnet-API/Generic-Asset-API?id=available-assets) on how to find the asset ID.
-`max_supply` is the total amount of tokens in the drop
-`transaction_limit` is how many tokens that can be bought in one transaction.
-`activation_time` is when the drop will be purchaseable by the public. The time is in block number, and it has to be in the future.
-`whitelist` is the accounts that will be able to participate in the presale. If it’s empty, then anyone can participate.
-`presale` is a limited drop of a subset of the tokens released, before the main drop. It requires a similar set of options to the min drop.
+* `price` is how much each NFT will cost.
+
+* `asset_id` is type of asset that's required for the sale. See [Available Assets](CENNZnet-API/Generic-Asset-API?id=available-assets) on how to find the asset ID.
+
+* `max_supply` is the total amount of tokens in the drop
+
+* `transaction_limit` is how many tokens that can be bought in one transaction.
+
+* `activation_time` is when the drop will be purchaseable by the public. The time is in block number, and it has to be in the future.
+
+* `whitelist` is the accounts that will be able to participate in the presale. If it’s empty, then anyone can participate.
+
+* `presale` is a limited drop of a subset of the tokens released, before the main drop. It requires a similar set of options to the main drop.
 
 ## Modifying the presale
 If a presale isn't specified at the time of creating the Mass Drop, you can modify it using the extrinsic method `api.tx.nft.setMassDropPresale(collection_id, series_id, presale)`.
