@@ -17,10 +17,10 @@ Unique tokens must be minted individually.
 A Series of tokens can be minted in a batch, or minted on demand using the Mass Drop feature.
 
 ### NFT Mass Drop
-The Mass Drop feature was developed to assist the workflow of NFT sales. 
+The Mass Drop feature is very handy tool that assists the workflow of NFT sales. 
 In a mass drop, you can create a series of NFTs in advance, and create a pre-sale.
 
-Refer to the [NFT Mass Drop Guide]()
+Refer to the [NFT Mass Drop Guide](CENNZnet-API/NFT-Mass-Drop) for more information.
 
 ## Minting an NFT
 
