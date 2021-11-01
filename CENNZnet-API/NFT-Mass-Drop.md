@@ -8,7 +8,7 @@ In a mass drop, you will set the maximum supply of the tokens, and the tokens ar
 The mass drop feature allows you to set the following:
 * The cost of each token
 * The maximum supply
-* The amount of tokens thta can be bought in one transaction 
+* The amount of tokens that can be bought in one transaction 
 * The start time of the main drop and pre-sale
 * The accounts that are invited to the pre-sale
 
