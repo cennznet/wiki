@@ -40,7 +40,16 @@ The parameters for mass_drop are as follows:
 
 * `presale` is a limited drop of a subset of the tokens released, before the main drop. It requires a similar set of options to the main drop.
 
+## Modifying the activation times
+
+When setting the activation time, the block number must be a block in the future, and the presale activation time must be before the mass drop activation time.
+
+The activation time can be modified using the following methods:
+* Mass Drop: `api.tx.nft.setMassDropActivationTime(collection_id, series_id, new_activation_time)`
+* Presale: `api.tx.nft.setPresaleActivationTime(collection_id, series_id, new_activation_time)` 
+
 ## Modifying the presale
+
 If a presale isn't specified at the time of creating the Mass Drop, you can modify it using the extrinsic method `api.tx.nft.setMassDropPresale(collection_id, series_id, presale)`.
 
 ![Mass drop presale](../../assets/images/nft-module/mass-drop-presale.png)
