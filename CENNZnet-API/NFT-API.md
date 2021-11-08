@@ -94,8 +94,8 @@ This enables use cases like 'lazy minting' where an NFT is only created after pa
 Note: to get the hex encoded metadata_path, you can use the [Javascript Playground in the CENNZnet Portal](https://cennznet.io/#/js).
 ```js
 // Hex encode the metadata_path
-let metadata_path = "";
-console.log(util.stringToHex("metadata_path"));
+let metadata_path = '';
+console.log(util.stringToHex(metadata_path));
 ```
 ![Encode path](../../assets/images/nft-module/hex_encode_string.png)
 
