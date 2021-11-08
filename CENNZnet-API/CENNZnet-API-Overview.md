@@ -23,7 +23,7 @@ There are the following types:
 
 ## API references
 
-The full list of APIs can be found in the [CENNZnet API Reference](CENNZnet-API/Technical-Reference).
+The full list of APIs can be found in the [CENNZnet API Reference](CENNZnet-API/Full-list).
 
 ## Using the API
 
