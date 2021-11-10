@@ -123,6 +123,34 @@ let quantity = 100;
 api.tx.nft.mintSeries(collectionId, quantity, tokenReceiver.address, seriesAttributes, metadataPath, null)
 ```
 
+### Minting unique NFTs in batches using the API
+To batch mint unique NFTs, you can use the `api.tx.utility.batch` method 
+```js
+const txs = data.map(d => {
+    const attributes = [{URL: `"Metadata ipfs://${d.cid}`}];
+    const royaltiesSchedule = null;
+    return api.tx.nft.mintUnique(collectionId, collectionOwner.address, attributes, d.metadataPath, royaltiesSchedule);
+  });
+
+  // get the nonce for the owner
+  const nonce = await api.rpc.system.accountNextIndex(collectionOwner.address);
+
+  const ex = api.tx.utility.batch(txs);
+  ex.signAndSend(collectionOwner, {nonce}, async ({events, status}) => {
+    if (status.isFinalized) {
+      console.log('Completed at block hash', status.asFinalized.toHex());
+      console.log('Events:');
+
+      events.forEach(({phase, event: {data, method, section}}) => {
+        console.log('\t', phase.toString(), `: ${section}.${method}`, data.toString());
+      });
+      process.exit(0);
+    }
+  });
+```
+
+
+Check out the complete [example in the API repo](https://github.com/cennznet/api.js/tree/master/docs/examples/promise/14_mint_multiple_nfts)
 
 
 ## NFT Demo DApp
