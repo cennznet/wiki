@@ -21,7 +21,7 @@ To issue yourself tokens to use on the TestNet, you can use the [Faucet](CENNZne
 ### Next steps
 Head to the guide [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp) to get started!
 
-## (optional) Running a local dev node
+## (Optional) Running a local dev node
 Running a local dev node gives you a sandbox to experiment with. This lets you start from a blank state, and gives you the best connection speed. To try out CENNZnet, you can [connect to the TestNet through a public socket](#/Getting-started/CENNZnet-networks?id=network-websocket-endpoints).
 
 To run a local node, you will need:
@@ -44,7 +44,7 @@ Run the docker desktop app to see if it gives errors. It's likely to prompt you 
 You may need to enable hardware assisted virtualization following the steps [here](https://docs.docker.com/docker-for-windows/troubleshoot/#virtualization-must-be-enabled).
 
 
-## (optional) CENNZnet development
+## (Optional) CENNZnet development
 To contribute to CENNZnet's core modules or create your own module, you will need a few additional dependencies.
 
 ### Rust
