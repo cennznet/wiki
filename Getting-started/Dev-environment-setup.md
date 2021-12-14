@@ -1,7 +1,12 @@
 # Dev environment setup
 
-## Creating an account
+## For DApp development with the CENNZnet API
+Install the latest stable versions of the following,
 
+* [Node.js (`>=10.16.3`)](https://nodejs.org/en/) 
+* [Yarn (`>= 1.19.0`)](https://yarnpkg.com/getting-started/install)
+
+### Creating an account
 You will need to have an account to create and sign transactions.
 The easiest way is to use the [CENNZnet Portal](https://cennznet.io/). 
 
@@ -13,13 +18,13 @@ The account you created can be used on both [the MainNet and the TestNet](Gettin
 
 To issue yourself tokens to use on the TestNet, you can use the [Faucet](CENNZnet-infrastructures/CENNZnet-faucet).
 
-## Depedencies for the CENNZnet API
-Install the latest stable versions of the following,
+### Next steps
+Head to the guide [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp) to get started!
 
-* [Node.js (`>=10.16.3`)](https://nodejs.org/en/) 
-* [Yarn (`>= 1.19.0`)](https://yarnpkg.com/getting-started/install)
+## (Optional) Running a local dev node
+Running a local dev node gives you a sandbox to experiment with. This lets you start from a blank state, and gives you the best connection speed. To try out CENNZnet, you can [connect to the TestNet through a public socket](#/Getting-started/CENNZnet-networks?id=network-websocket-endpoints).
 
-## Depedencies for running a local dev node
+To run a local node, you will need:
 * [Docker desktop](https://www.docker.com/products/docker-desktop)
 
 ### Windows specific depedencies for running a local dev node
@@ -39,7 +44,8 @@ Run the docker desktop app to see if it gives errors. It's likely to prompt you 
 You may need to enable hardware assisted virtualization following the steps [here](https://docs.docker.com/docker-for-windows/troubleshoot/#virtualization-must-be-enabled).
 
 
-## CENNZnet development
+## (Optional) CENNZnet development
+To contribute to CENNZnet's core modules or create your own module, you will need a few additional dependencies.
 
 ### Rust
 The recommended way to install Rust is to follow the official instructions [here](https://www.rust-lang.org/tools/install).
@@ -47,6 +53,3 @@ The recommended way to install Rust is to follow the official instructions [here
 ### Windows Subsystem for Linux
 Note that if you want to build Cennznet locally(instead of running a docker image) on Windows, you may need to use the Linux subsystem. You can follow the instructions here to [Setting up Linux subsystem on Windows](CENNZnet-development/Guides/Set-up-Linux-Sub-system-for-Windows).
 
-## Next steps
-
-Head to the guide [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp) to get started!
