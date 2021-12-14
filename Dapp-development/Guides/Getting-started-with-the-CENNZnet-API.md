@@ -102,9 +102,6 @@ Example 03_listen_to_balance_change shows how to listen to balance change using 
 * [Via RxJS](https://github.com/cennznet/api.js/blob/develop/docs/examples/rx/03_listen_to_balance_change/index.js).
 
 
-## Send messages to Smart Contracts
-To use the API with Smart Contracts, refer to the [Smart Contract Guide](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet)
-
 ## Next steps
 
 Dive into the References area to learn more about the CENNZnet API and runtime modules! 

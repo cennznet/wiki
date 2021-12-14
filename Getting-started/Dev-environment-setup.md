@@ -1,6 +1,12 @@
 # Dev environment setup
 
-## Creating an account
+## For DApp developmentwith the CENNZnet API
+Install the latest stable versions of the following,
+
+* [Node.js (`>=10.16.3`)](https://nodejs.org/en/) 
+* [Yarn (`>= 1.19.0`)](https://yarnpkg.com/getting-started/install)
+
+### Creating an account
 
 You will need to have an account to create and sign transactions.
 The easiest way is to use the [CENNZnet Portal](https://cennznet.io/). 
@@ -13,11 +19,6 @@ The account you created can be used on both [the MainNet and the TestNet](Gettin
 
 To issue yourself tokens to use on the TestNet, you can use the [Faucet](CENNZnet-infrastructures/CENNZnet-faucet).
 
-## Depedencies for the CENNZnet API
-Install the latest stable versions of the following,
-
-* [Node.js (`>=10.16.3`)](https://nodejs.org/en/) 
-* [Yarn (`>= 1.19.0`)](https://yarnpkg.com/getting-started/install)
 
 ## Depedencies for running a local dev node
 * [Docker desktop](https://www.docker.com/products/docker-desktop)
