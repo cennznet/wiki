@@ -19,7 +19,10 @@ The account you created can be used on both [the MainNet and the TestNet](Gettin
 To issue yourself tokens to use on the TestNet, you can use the [Faucet](CENNZnet-infrastructures/CENNZnet-faucet).
 
 ### Next steps
-Head to the guide [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp) to get started!
+
+Head to the [Technical Overview](Getting-started/CENNZnet-technical-overview) to understand how CENNZnet works internally and the main interfaces.
+
+Or jump into the guide [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp) to get started!
 
 ## (Optional) Running a local dev node
 Running a local dev node gives you a sandbox to experiment with. This lets you start from a blank state, and gives you the best connection speed. To try out CENNZnet, you can [connect to the TestNet through a public socket](#/Getting-started/CENNZnet-networks?id=network-websocket-endpoints).
