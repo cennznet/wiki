@@ -1,8 +1,7 @@
-# DApp Development
+# Getting started with CENNZnet DApp Development
 
-Setup a machine with the following dependencies installed:
-* [Docker](https://www.docker.com/)
-* [Node.JS](https://nodejs.org/en/)
+## What do I need to know about blockchain?
+CENNZnet does most of the hardwork, so you don't have to have a detailed understanding of how blockchain works. However it'd still help you find the best use cases and design the best DApp to have a basic understanding of how blockchain works. Head to the [Blockchain Primer](Getting-started/blockchain-primer) guide if you need :)
 
 ## What technologies do I need know to build DApps on CENNZnet?
 
@@ -10,7 +9,11 @@ You will need **JavaScript** to interact with CENNZnet through the [CENNZnet API
 
 In some cases, for example when building a crypto wallet app, the DApp only needs the functionalities provided by CENNZnet's runtime modules without any customisation. Then JavaScript would be the only prerequisite.
 
-Most DApps require customised storage on the blockchain. This is done through Smart contracts. On CENNZnet, smart contracts are small pieces of code written in [**Rust**](https://www.rust-lang.org/). This gives us the optimal performance and security.
+If you need features that aren't provided by the CENNZnet API, you can modify the runtime modules or create your own. The modules are written in the programming language Rust, which gives us the optimal performance and security.
+
+## How does CENNZnet work?
+
+The [Technical Overview](Getting-started/CENNZnet-technical-overview) explains how CENNZnet works internally and the main interfaces.
 
 ## Development tools
 
@@ -31,4 +34,4 @@ On the TestNet, you won't need to spend actual MainNet currencies. You can issue
 
 ## Next steps
 
-This guide [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp) covers the architecture of a DApp and where to go next :)
+Head over to [Dev Environment Setup](Getting-started/Dev-environment-setup) to get yourself ready for DApp development!
