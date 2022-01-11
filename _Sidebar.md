@@ -46,6 +46,8 @@
     - [Overview](Runtime-modules/Modules-Overview)
     - [CENNZX](Runtime-modules/CENNZX)
     - [Doughnut](Runtime-modules/Doughnut)
+    - [Governance](Runtime-modules/Governance)
+    - [Identity](Runtime-modules/Identity)
     - [NFT](Runtime-modules/NFT)
     - [Staking](Runtime-modules/Staking)
     - [Sylo Runtime Modules](Runtime-modules/Sylo-Runtime-Modules)
