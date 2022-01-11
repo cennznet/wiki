@@ -1,5 +1,7 @@
 # NFT Mass Drop
 
+**NOTE: the Mass Drop feature is temporarily disabled due to maintenance and upgrades.**
+
 The Mass Drop feature is very handy tool that assists the workflow of NFT sales. 
 In a mass drop, you can create a series of NFTs in advance, and create a pre-sale.
 
