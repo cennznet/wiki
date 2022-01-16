@@ -8,12 +8,12 @@ To learn more about the runtime modules, refer to the [List of CENNZnet modules]
 
 
 **sections**:
-- [constants](CENNZnet-API/Technical-Reference?id=title-constants)
-- [errors](CENNZnet-API/Technical-Reference?id=title-errors)
-- [events](CENNZnet-API/Technical-Reference?id=title-events)
-- [extrinsics](CENNZnet-API/Technical-Reference?id=title-extrinsics)
-- [rpc](CENNZnet-API/Technical-Reference?id=title-rpc)
-- [storage](CENNZnet-API/Technical-Reference?id=title-storage)
+- [constants](/CENNZnet-API/Full-list?id=title-constants)
+- [errors](/CENNZnet-API/Full-list?id=title-errors)
+- [events](/CENNZnet-API/Full-list?id=title-events)
+- [extrinsics](/CENNZnet-API/Full-list?id=title-extrinsics)
+- [rpc](/CENNZnet-API/Full-list?id=title-rpc)
+- [storage](/CENNZnet-API/Full-list?id=title-storage)
 
 [Constants](https://raw.githubusercontent.com/cennznet/api.js/develop/docs/cennznet/constants.md ':include :type=tsdoc')
 
