@@ -13,7 +13,7 @@ The `<name>.raw.json` versions should be used as they're compatible with multipl
 Then run a full node that connects to the MainNet:
 
 ```bash
-$ docker run cennznet/cennznet:1.5.1 \
+$ docker run cennznet/cennznet:2.0.0 \
     # genesis is included in the image
     --chain=/cennznet/genesis/azalea.raw.json \
     --name=<NODE_NAME> \
@@ -109,7 +109,7 @@ on the node key file.
 
 To get detailed descriptions on the flags, run either of the following:
 ```bash
-$ docker run cennznet/cennznet:1.5.1 --help  # using docker
+$ docker run cennznet/cennznet:2.0.0 --help  # using docker
 $ ./target/release/cennznet -- --help        # using binary
 ```
 
@@ -127,7 +127,7 @@ INFO ⚙️ Syncing 21.2 bps, target=#1140132 (1 peers), best: #532405 (0xfad8�
 ### Connecting to Rata for development
 [Rata](Getting-started/CENNZnet-technical-overview?id=cennznet-networks-and-genesis-files) is a playground network for testing. The following command would run a node that connects to Rata and  with full WebSocket connectivity enabled (unsafe for validators).
 ```bash
-docker run cennznet/cennznet:1.5.1 \
+docker run cennznet/cennznet:2.0.0 \
   --chain=/cennznet/genesis/rata.raw.json \
   --bootnodes=/dns4/bootnode-rata-0.centrality.me/tcp/30333/p2p/12D3KooWA6iSdKNJUpvNPTRzxiLfA2LzPgCTywWP2ZeRnabDaDEa \
   --unsafe-ws-external \
@@ -142,7 +142,7 @@ Make sure Rust is installed on your machine (see [here](Installing-Dependencies#
 Clone the repository and build the binary:
 
 ```bash
-$ git clone https://github.com/cennznet/cennznet --branch release/1.5.1 && cd cennznet
+$ git clone https://github.com/cennznet/cennznet --branch release/2.0.0 && cd cennznet
 $ cargo build --release
 ```
 

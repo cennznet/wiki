@@ -16,7 +16,7 @@ Key Links:
 - [CENNZnet node telemetry](http://cennznet-telemetry.centrality.me/#/CENNZnet-Azalea)
 - [CENNZnet UI](https://cennznet.io)
 - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags?page=1&ordering=last_updated)
-- [MainNet DB snapshots](https://s3-ap-southeast-1.amazonaws.com/cennznet-snapshots.centralityapp.com/azalea/1.2.2/validator/index.html)
+- [MainNet DB snapshots](https://s3-ap-southeast-1.amazonaws.com/cennznet-snapshots.centralityapp.com/azalea/2.0.0/validator/index.html)
 - [Polkadot Validator Guide](https://wiki.polkadot.network/docs/en/maintain-guides-secure-validator)
 
 ## Staking Overview
@@ -178,7 +178,7 @@ Some bootnodes are included in the genesis/chain config, to supply additional bo
 
 #### Starting a node from a snapshot
 
-1. Download the latest archive of validator nodes from [here](https://s3-ap-southeast-1.amazonaws.com/cennznet-snapshots.centralityapp.com/azalea/1.2.2/validator/index.html)
+1. Download the latest archive of validator nodes from [here](https://s3-ap-southeast-1.amazonaws.com/cennznet-snapshots.centralityapp.com/azalea/2.0.0/validator/index.html)
 2. Unzip the archive
 3. Customise and run the command below
 
