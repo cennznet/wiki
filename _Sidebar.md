@@ -15,6 +15,7 @@
 	- [Network Fees](Dapp-development/Guides/Network-fees)
 	- [Token Economy](Dapp-development/Guides/Token-Economy)
 	- [NFT Design](Dapp-development/Guides/How-to-design-NFTs)
+	- [NFT Metadata Standard](Dapp-development/Guides/NFT-metadata-standard)
 	- [NFT Royalties](Dapp-development/Guides/NFT-royalties)
 	- [Smart Contracts](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet)
 
