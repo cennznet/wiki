@@ -7,7 +7,7 @@ NFTs on CENNZnet should be linked to an offchain metadata file in the JSON forma
     "name": "A name for this token",
     "description": "A description for this token",
     "image": "The default image for this token",
-    "encodingFormat": "image/png",
+    "encoding_format": "image/png",
     "attributes": [
         { "trait_type": "background", "value": "blue" },
         { "trait_type": "power_level", "value": 9001 },
@@ -21,7 +21,7 @@ NFTs on CENNZnet should be linked to an offchain metadata file in the JSON forma
 | `name` | display name for the token |
 |`description` | human friendly description of the token |
 |`image` | default display image for the token |
-|`encodingFormat` (optional) | denotes the encoding format of `image` according to the common [IANA media types](https://www.iana.org/assignments/media-types/media-types.xhtml). If omitted `image/png` is assumed |
+|`encoding_format` (optional) | denotes the encoding format of `image` according to the common [IANA media types](https://www.iana.org/assignments/media-types/media-types.xhtml). If omitted `image/png` is assumed |
 |`attributes` | arbitrary length array of key/value objects where `trait_type` is the key and `value` is value. Can be left empty |
 |`animation_url` | URL to a multi-media attachment for the token e.g. GLTF, GLB, WEBM, MP4, M4V, OGV, and OGG or audio-only extensions MP3, WAV, and OGA. `animation_url` also supports HTML pages, allowing you to build rich experiences and interactive NFTs using JavaScript canvas, WebGL, and more.|
 | `*` | any additional fields are allowed e.g. for application specific purposes |
