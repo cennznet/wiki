@@ -104,4 +104,4 @@ These are some services which provide free ethereum full nodes:
 - https://moralis.io/
 
 Once an Ethereum full node connection is active, restart your CENNZnet validator providing the full node endpoint with the `--eth-http` flag.  
-This will allow the validator to connect wi th Ethereum and participate in the Emery bridging protocol and earn rewards from the bridging protocol.  
+This will allow the validator to connect with Ethereum and participate in the Emery bridging protocol and earn rewards from the bridging protocol.  
