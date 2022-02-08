@@ -47,6 +47,7 @@
     - [Overview](Runtime-modules/Modules-Overview)
     - [CENNZX](Runtime-modules/CENNZX)
     - [Doughnut](Runtime-modules/Doughnut)
+    - [EVM](Runtime-modules/EVM)
     - [Governance](Runtime-modules/Governance)
     - [Identity](Runtime-modules/Identity)
     - [NFT](Runtime-modules/NFT)
