@@ -269,7 +269,7 @@ In the below request, we are requesting the first 2 listed NFTs in the collectio
 {
   "id": 1,
   "jsonrpc": "2.0",
-  "method": "nft_getTokenInfo",
+  "method": "nft_getCollectionListings",
   "params": [
     0,
     0,
