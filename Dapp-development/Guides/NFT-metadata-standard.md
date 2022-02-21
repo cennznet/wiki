@@ -53,7 +53,18 @@ metadata
 
 e.g. `ipfs://bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi/123.json` returns the metadata JSON document for token with serial number 123
 
-### 3) Unique IPFS / Arweave files
+### 3) IPFS shared
+
+All NFTs in the series share the same metadata and this file should be uploaded as an IPFS directory.
+When fetching the metadata CID from any token in the series, it will return the same uri, pointing to the ipfs directory for the whole series
+
+```dir
+metadata.json
+```
+
+e.g. `ipfs://bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi.json` returns the metadata JSON document for the series
+
+### 4) Unique IPFS / Arweave files
 
 This will require the series creator to upload individual CIDs/file hashes with each token.
 It provides the same as 2) with flexibility to extend a collection or create metadata incrementally.
