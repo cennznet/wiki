@@ -55,8 +55,8 @@ e.g. `ipfs://bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi/123.jso
 
 ### 3) IPFS shared
 
-All NFTs in the series share the same metadata and this file should be uploaded as an IPFS directory.
-When fetching the metadata CID from any token in the series, it will return the same uri, pointing to the ipfs directory for the whole series
+All NFTs in the series share the same metadata, and the file is hosted on IPFS.
+When fetching the metadata CID from any token in the series, CENNZnet will return the same uri, pointing to the shared ipfs metadata file
 
 ```dir
 metadata.json
