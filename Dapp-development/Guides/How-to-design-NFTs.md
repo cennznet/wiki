@@ -100,9 +100,18 @@ await api.tx.nft.burn(tokenId).signAndSend(user);
 // after seeing the old token was burned, the collection owner mints-
 // a new nft to the user
 const tokenOwner = user;
-const metadataPath = null;
+const metadataPath = {"Https": "example.com/nft/metadata" };
 const royaltiesSchedule = null;
-await api.tx.nft.mintUnique(collectionId, tokenOwner, <newData>, user, metadataPath, royaltiesSchedule).signAndSend(collectionOwner);
+const quantity = 1;
+await api.tx.nft.mintSeries(collectionId, quantity, tokenOwner, metadataPath, royaltiesSchedule)
+.signAndSend(collectionOwner, async ({ status, events }) => {
+  if (status.isInBlock) {
+    events.forEach(({ event: {data, method }}) => {
+      if (method == 'CreateToken') {
+        tokenId = data[1];
+        console.log(`got token: ${tokenId}`);
+      }
+});
 ```
 
 ## IPFS

@@ -47,4 +47,16 @@ console.log(token0.toHuman());
 // All token Ids owned by an account in a given collection
 let owner = '5FLSigC9HGRKVhB9FiEo4Y3koPsNmBmLJbpXg2mp1hXcS59Y';
 let owned = (await api.query.nft.collectedTokens(collectionId, owner));
+
+// Get all listings of tokens for a given collection.
+const listedTokenInfo = await api.derive.nft.openCollectionListingsV2(collectionId); 
+/*
+ [{
+    listingId: 12, 
+    tokens: [
+        {owner: '0x..', tokenId: [16,0,1]},
+        {owner: '0x..', tokenId: [16,0,2]}
+    ]
+}];
+*/
 ```

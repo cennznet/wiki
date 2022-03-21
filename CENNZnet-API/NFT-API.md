@@ -8,13 +8,16 @@ To learn more about how the NFT module works, refer to the [NFT Module Documenta
 
 See the [NFT Design Guide](Dapp-development/Guides/How-to-design-NFTs) for tips on minimising costs and improving the efficiency of your design.
 
-### Types of NFT
-In CENNZnet, we support two types of NFTs:
-* Unique: each token is unique and unrelated to other tokens.
-* Series: each token is 1 of a set of n tokens. Every token in the series has the same metadata, but with a different token ID. 
+See the [NFT Metadata Standard](Dapp-development/Guides/NFT-metadata-standard) for the required data structure for your NFT metadata.
 
-Unique tokens must be minted individually. 
-A Series of tokens can be minted in a batch, or minted on demand using the Mass Drop feature.
+### Data model
+On CENNZnet, NFTs are organised in series and collections. A collection is a group of series. Each series is a set of tokens. Every token in the series has the same metadata, but with a different token ID. 
+
+The CENNZnet NFT data model closely resembles the ERC721 structure for future cross-chain compatibility.
+
+* 'Collections' are a grouping of series
+* 'Series' are equivalent to ERC721 home contracts
+* 'Serial numbers' are equivalent to ERC721 token address
 
 ### NFT Mass Drop
 The Mass Drop feature is very handy tool that assists the workflow of NFT sales. 
@@ -79,7 +82,7 @@ Or the "explorer" tab on cennznet.io
 ![collection created event](../../assets/images/nft-module/collection-created-event.png)
 
 
-### Mint a unique token in the collection (collection owner only)
+### Mint a token in the collection (collection owner only)
 
 When creating a token you can define its data fields or _attributes_  
 The token can be minted to another address.  
@@ -101,52 +104,30 @@ console.log(util.stringToHex(metadata_path));
 
 ---
 
-### Minting unique and series of NFTs using the API
+### Minting NFTs using the API
+Note: `mintUnique` has been deprecated since API v2.1, please use `mintSeries` instead by setting quantity to 1.
 
-To create a token which must always be unique use a `mintUnique` transaction  
-To create tokens which have copies use a `mintSeries` transaction  
+You can choose to store token metadata using 1 of 2 reference schemess:
+* HTTPS: token URIs assembled like https://api.example.com/metadata/<serialNumber>.json
+* IPFS directory: token URIs assembled like: ipfs://<directoryCID/<serialNumber>.json
+more details
+
 
 ```js
-let collectionId = 100;
-let tokenReceiver = '5HbSE3cPakKMk7cRjtE58WF6RD57boEQ2aFzPcSxmHmRYUCi';
-let uniqueTokenAttributes = [
-  {'Text': 'My rare token'},
-  {'Timestamp': 12345}
-];
-api.tx.nft.mintUnique(collectionId, tokenReceiver, uniqueTokenAttributes, null, null)
-
-let seriesAttributes = [
-  {'Text': 'My common token'},
-  {'Timestamp': 12345}
-];
-let quantity = 100;
-api.tx.nft.mintSeries(collectionId, quantity, tokenReceiver.address, seriesAttributes, metadataPath, null)
-```
-
-### Minting unique NFTs in batches using the API
-To batch mint unique NFTs, you can use the `api.tx.utility.batch` method 
-```js
-const txs = data.map(d => {
-    const attributes = [{URL: `"Metadata ipfs://${d.cid}`}];
-    const royaltiesSchedule = null;
-    return api.tx.nft.mintUnique(collectionId, collectionOwner.address, attributes, d.metadataPath, royaltiesSchedule);
-  });
-
-  // get the nonce for the owner
-  const nonce = await api.rpc.system.accountNextIndex(collectionOwner.address);
-
-  const ex = api.tx.utility.batch(txs);
-  ex.signAndSend(collectionOwner, {nonce}, async ({events, status}) => {
-    if (status.isFinalized) {
-      console.log('Completed at block hash', status.asFinalized.toHex());
-      console.log('Events:');
-
-      events.forEach(({phase, event: {data, method, section}}) => {
-        console.log('\t', phase.toString(), `: ${section}.${method}`, data.toString());
-      });
-      process.exit(0);
-    }
-  });
+const quantity = 1;
+const metadataPath = {"Https": "example.com/nft/metadata" };
+const collectionId = 1; // created using api.tx.nft.createCollection
+const owner = '0x...';
+const royaltiesSchedule = null;
+await api.tx.nft.mintSeries(collectionId, quantity, owner, metadataPath, royaltiesSchedule)
+.signAndSend(collectionOwner, async ({ status, events }) => {
+  if (status.isInBlock) {
+    events.forEach(({ event: {data, method }}) => {
+      if (method == 'CreateToken') {
+        tokenId = data[1];
+        console.log(`got token: ${tokenId}`);
+      }
+});
 ```
 
 
