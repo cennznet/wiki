@@ -11,11 +11,13 @@ See the [NFT Design Guide](Dapp-development/Guides/How-to-design-NFTs) for tips 
 See the [NFT Metadata Standard](Dapp-development/Guides/NFT-metadata-standard) for the required data structure for your NFT metadata.
 
 ### Data model
-On CENNZnet, NFTs are organised in series and collections. A collection is a group of series. Each series is a set of tokens. Every token in the series has the same metadata, but with a different token ID. The CENNZnet NFT data model closely resembles the ERC721 structure for future cross-chain compatibility.
+On CENNZnet, NFTs are organised in series and collections. A collection is a group of series. Each series is a set of tokens. Every token in the series has the same metadata, but with a different token ID. 
 
-'Collections' are a grouping of series
-'Series' are equivalent to ERC721 home contracts
-'Serial numbers' are equivalent to ERC721 token address
+The CENNZnet NFT data model closely resembles the ERC721 structure for future cross-chain compatibility.
+
+* 'Collections' are a grouping of series
+* 'Series' are equivalent to ERC721 home contracts
+* 'Serial numbers' are equivalent to ERC721 token address
 
 ### NFT Mass Drop
 The Mass Drop feature is very handy tool that assists the workflow of NFT sales. 
@@ -80,7 +82,7 @@ Or the "explorer" tab on cennznet.io
 ![collection created event](../../assets/images/nft-module/collection-created-event.png)
 
 
-### Mint a unique token in the collection (collection owner only)
+### Mint a token in the collection (collection owner only)
 
 When creating a token you can define its data fields or _attributes_  
 The token can be minted to another address.  
