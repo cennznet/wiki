@@ -105,6 +105,12 @@ console.log(util.stringToHex(metadata_path));
 ### Minting NFTs using the API
 Note: `mintUnique` has been deprecated since API v2.1, please use `mintSeries` instead by setting quantity to 1.
 
+You can choose to store token metadata using 1 of 2 reference schemess:
+* HTTPS: token URIs assembled like https://api.example.com/metadata/<serialNumber>.json
+* IPFS directory: token URIs assembled like: ipfs://<directoryCID/<serialNumber>.json
+more details
+
+
 ```js
 const quantity = 1;
 const metadataPath = {"Https": "example.com/nft/metadata" };
