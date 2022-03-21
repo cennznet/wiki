@@ -3,8 +3,16 @@
 ## For DApp development with the CENNZnet API
 Install the latest stable versions of the following,
 
-* [Node.js (`>=10.16.3`)](https://nodejs.org/en/) 
+* [Node.js (`>=14)](https://nodejs.org/en/) 
 * [Yarn (`>= 1.19.0`)](https://yarnpkg.com/getting-started/install)
+
+The library as a package is published [here](https://www.npmjs.com/package/@cennznet/api)
+
+To add the CENNZnet API to your project, run:
+```bash
+yarn add @cennznet/api
+```
+
 
 ### Creating an account
 You will need to have an account to create and sign transactions.

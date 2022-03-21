@@ -5,12 +5,7 @@ To understand how to use the API, please read the [CENNZnet API Overview](CENNZn
 
 ## Installation and Setup
 
-Install [Node.js (`>=10.16.3`)](https://nodejs.org/en/) and [Yarn (`>= 1.19.0`)](https://yarnpkg.com/).
-
-The library as a package is published [here](https://www.npmjs.com/package/@cennznet/api)
-```bash
-npm i --save @cennznet/api
-```
+First, [set up your  dev environment](Getting-started/Dev-environment-setup).
 
 ## Running a development node
 
