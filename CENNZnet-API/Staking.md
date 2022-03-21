@@ -8,12 +8,12 @@ To learn more about how Staking and the Staking module works, refer to the [Stak
 
 Get the active staking era info
 ```js
-(await api.derive.staking.overview()).activeEra.toNumber()
+(await api.derive.stakingCennznet.overview()).activeEra.toNumber()
 ```
 
 Get elected validator (stash) addresses only  
 ```js
-(await api.derive.staking.validators()).validators
+(await api.derive.stakingCennznet.validators()).validators
 ```
 
 Get validator (stash) addresses that are candidates for future elections.  
@@ -32,7 +32,7 @@ await api.query.staking.validators(validatorStashAddress)
 
 Check a validator's total, own, and nominated stake
 ```js
-(await api.derive.staking.erasStakers(era, validatorStashAddress))
+(await api.derive.stakingCennznet.erasStakers(era, validatorStashAddress))
 ```
 
 ## API References

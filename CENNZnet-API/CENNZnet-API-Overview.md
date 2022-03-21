@@ -18,7 +18,7 @@ There are the following types:
 * **consts**: allows you to read all runtime module constants. These can only change as part of a runtime upgrade. For example, `api.consts.system.blockHashCount`.
 * **tx**: allows you to call extrinsic methods, which makes a transaction that modifies chain states. For example, `api.tx.genericAsset.create`.
 * **query**: allows you to read runtime module storage, which is also referred to as chain state. For example, `api.query.cennzx.liquidityBalance`.
-* **derive**: provides compound queries that perform calculations based on storage queries in JavaScript. For example, `api.derive.staking.accountInfo`.
+* **derive**: provides compound queries that perform calculations based on storage queries in JavaScript. For example, `api.derive.stakingCennznet.accountInfo`.
 * **rpc**: generally provides additional calculation performed by the node on top of storage reads. For example, `api.rpc.staking.accruedPayout`. RPC is the underlying mechanism for the other API endpoints. Therefore the RPC API endpoint also contains methods for node operators, such as setting local node session keys.
 
 ## API references
