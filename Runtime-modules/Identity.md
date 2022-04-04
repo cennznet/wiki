@@ -18,7 +18,7 @@ The identity module is useful for tasks that are associated with a real person, 
 Use the method `identity.provideJudgement` to retrieve the identity claims associated with a CENNZnet account.
 
 ## Fees
-To use the identity module, the users would only need to pay a small amount of CPay for transaction fee for calling the method `identity.set_identity`. Unlike Substrate, there's no fees involved for the registrars when using the Identity module.
+To use the identity module, the users would only need to pay a small amount of CPAY for transaction fee for calling the method `identity.set_identity`. Unlike Substrate, there's no fees involved for the registrars when using the Identity module.
 
 ## The programming interface
 The identity module is based on the Substrate Identity pallet, which means this module follows the interface defined in the [Substrate docs](https://docs.substrate.io/rustdocs/latest/pallet_identity/index.html).

@@ -1,3 +1,7 @@
+[EVM Quickstart 📄](EVM/quickstart)
+
+---
+
 - Getting started 👋
     - [DApp Development](Getting-started/CENNZnet-dapp-development)
     - [Blockchain Primer](Getting-started/blockchain-primer)
@@ -7,19 +11,9 @@
     - [Repositories](Getting-started/CENNZnet-repos)
     - [Where to find help?](Getting-started/Where-to-find-help)
     - [Contributing](Getting-started/Contributing)
-
 ---
-- DApp Development Guides
-	- [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp)
-	- [Getting Started with the API](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API)
-	- [Network Fees](Dapp-development/Guides/Network-fees)
-	- [Token Economy](Dapp-development/Guides/Token-Economy)
-	- [NFT Design](Dapp-development/Guides/How-to-design-NFTs)
-	- [NFT Metadata Standard](Dapp-development/Guides/NFT-metadata-standard)
-	- [NFT Royalties](Dapp-development/Guides/NFT-royalties)
-	- [Smart Contracts](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet)
 
-- API Guides
+- `@cennznet/api` guides
     - [Overview](CENNZnet-API/CENNZnet-API-Overview)
     - [Accounts and Keypairs 🔑](CENNZnet-API/Accounts-and-Keypairs)
     - [Subscription Mechanism](CENNZnet-API/Subscriptions)
@@ -27,17 +21,31 @@
     - [JSON-RPC](CENNZnet-API/JSON-RPC-API)
 ---
 
+- NFTs
+	- [Intro](NFTs/How-to-design-NFTs)
+	- [Metadata](NFTs/NFT-metadata-standard)
+	- [Royalties](NFTs/NFT-royalties)
+---
+
+- Beginner Guides
+	- [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp)
+	- [Getting Started with  `@cennznet/api`](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API)
+	- [Network Fees](Dapp-development/Guides/Network-fees)
+	- [Token Economy](Dapp-development/Guides/Token-Economy)
+	- [Smart Contracts](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet)
+---
+
 - API References 📚
-    - [Full list of API methods](CENNZnet-API/Full-list)
+    - [API methods](CENNZnet-API/Full-list)
     - [Transaction Error Codes](CENNZnet-API/Transaction-Error-Codes)
-    - [Attestation API](CENNZnet-API/Attestation-API)
-    - [Emery Bridge API](CENNZnet-API/Emery-Bridge-API)
-    - [CENNZX API](CENNZnet-API/CENNZX-API)
-    - [Generic Asset API](CENNZnet-API/Generic-Asset-API)
-    - [NFT API](CENNZnet-API/NFT-API)
-    - [NFT Mass Drop](CENNZnet-API/NFT-Mass-Drop)
-    - [Staking API](CENNZnet-API/Staking)
-    - [Doughnut Permissioning](CENNZnet-API/Doughnut-Permissioning)
+    - [Attestation](CENNZnet-API/Attestation-API)
+    - [Emery Bridge](CENNZnet-API/Emery-Bridge-API)
+    - [CENNZX](CENNZnet-API/CENNZX-API)
+    - [Generic Asset](CENNZnet-API/Generic-Asset-API)
+    - [NFT](CENNZnet-API/NFT-API)
+    <!-- - [NFT Mass Drop](CENNZnet-API/NFT-Mass-Drop) -->
+    - [Staking](CENNZnet-API/Staking)
+    <!-- - [Doughnut Permissioning](CENNZnet-API/Doughnut-Permissioning) -->
     - Examples
         - [Generic Assets](CENNZnet-API/Examples/API-examples-Generic-Assets)
         - [CENNZX](CENNZnet-API/Examples/API-examples-CENNZX-Spot)
@@ -46,13 +54,13 @@
 - Runtime modules 🎩
     - [Overview](Runtime-modules/Modules-Overview)
     - [CENNZX](Runtime-modules/CENNZX)
-    - [Doughnut](Runtime-modules/Doughnut)
+    <!-- - [Doughnut](Runtime-modules/Doughnut) -->
     - [EVM](Runtime-modules/EVM)
     - [Governance](Runtime-modules/Governance)
     - [Identity](Runtime-modules/Identity)
     - [NFT](Runtime-modules/NFT)
     - [Staking](Runtime-modules/Staking)
-    - [Sylo Runtime Modules](Runtime-modules/Sylo-Runtime-Modules)
+    <!-- - [Sylo Runtime Modules](Runtime-modules/Sylo-Runtime-Modules) -->
 
 ---
 
@@ -66,15 +74,14 @@
 
 ---
 - Network Participation 🌐
-    - Node Operations
-        - [Types of nodes](Network-participating/Node-operating/Types-of-nodes)
-        - [Running a Full Node](Network-participating/Node-operating/Running-a-Full-Node)
-        - [Running a Validator Node](Network-participating/Node-operating/Running-a-validator)
-        - [Running from snapshots](Network-participating/Node-operating/Running-nodes-from-snapshots)
-        - [Running a Development Chain](Network-participating/Node-operating/Running-a-Dev-Chain)
+    - [Types of nodes](Network-participating/Node-operating/Types-of-nodes)
+    - [Validators](Network-participating/Node-operating/Running-a-validator)
+    - [Full Nodes](Network-participating/Node-operating/Running-a-Full-Node)
+    - [Using Snapshots](Network-participating/Node-operating/Running-nodes-from-snapshots)
+    - [Development Chain](Network-participating/Node-operating/Running-a-Dev-Chain)
     - Staking
-        - [Validator Staking Guide](Network-participating/Staking/Validator-Staking-Guide)
-        - [Nominator Staking Guide](Network-participating/Staking/Nominator-Staking-Guide)
+        - [Validator Staking](Network-participating/Staking/Validator-Staking-Guide)
+        - [Nominator Staking](Network-participating/Staking/Nominator-Staking-Guide)
 
 ---
 - CENNZnet Development 🛠

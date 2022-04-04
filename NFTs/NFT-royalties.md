@@ -3,7 +3,6 @@
 
 Royalty schedules allow commission fees to be automatically paid out to creators, collaborators, etc. on future sales of their NFTs on the CENNZnet platform.
 
-## Intro
 A royalties schedule could be set out like so
 
 | Address       | Entitlement   |

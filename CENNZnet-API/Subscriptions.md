@@ -10,7 +10,7 @@ In the API getting started guide, we get a user's balance by calling:
 
 ```js
 let balance = await api.query.genericAsset
-  .balance(assetId, keyring.alice.address);
+  .freeBalance(assetId, keyring.alice.address);
 ```
 
 If we want to subscribe to Alice's `freeBalance`, we add a callback function
@@ -19,7 +19,7 @@ If we want to subscribe to Alice's `freeBalance`, we add a callback function
 
 ```js
 let unsub = await api.query.genericAsset
-  .balance(assetId, keyring.alice.address, (balance) => {
+  .freeBalance(assetId, keyring.alice.address, (balance) => {
   console.log(`Alice has ${balance} in asset(${assetId})`);
 });
 ```

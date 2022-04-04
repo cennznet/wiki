@@ -1,4 +1,4 @@
-# NFT Design
+# NFT Primer
 
 In this guide we give a quick overview of the concepts related to NFTs and best practices for designing and storing them on CENNZnet.
 You should have some familiarity with the applications of cryptographic hashing to get the most out of this guide.
@@ -125,26 +125,3 @@ If we store our NFT metadata blob on an IPFS network we can roll the off-chain U
 ```
 
 https://nft.storage/ is a free service which builds on this to take some of the grunt work out of the IPFS setup process.
-
-## Semi-fungible Tokens (SFTs)
-
-The CENNZnet NFT module provide support for semi-fungible tokens.  
-SFTs represent a middle ground between between NFTs and fully fungible tokens.  
-They are ideal if you want a token which is trade-able 1:1 but also has some off-chain metadata associated with it.  
-A common example is an item with certified "copies" e.g. an art work, or less rare trading card.  
-
-You should consider an SFT if you want to do any combination of the following:  
-- represent something which is sellable or trade-able 1:1
-- represent something which is indivisible
-- represent an amount of something which is stored off-chain
-- represent balances of something which are not a currency
-
-## Creating SFTs
-
-To create an SFT on CENNZnet  
-1) First create a collection  
-2) Mint a series of tokens using `mintSeries`  
-The tokens will be issued with a unique serial number.  
-3) Issuing additional tokens in a series is always possible with `mintSeries`  
-
-See the [NFT API technical docs](../../CENNZnet-API/NFT-API) for further info on usage.  

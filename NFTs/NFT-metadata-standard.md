@@ -1,4 +1,4 @@
-## NFT Metadata Standard
+# Metadata Standard
 
 NFTs on CENNZnet should be linked to an offchain metadata file in the JSON format with the following minimal structure:
 

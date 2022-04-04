@@ -1,4 +1,4 @@
-# Getting started with the CENNZnet API
+# Getting started with `@cennznet/api.js`
 
 This guide will get you set up with the CENNZnet API and walk through a couple code examples.
 To understand how to use the API, please read the [CENNZnet API Overview](CENNZnet-API/CENNZnet-API-Overview).
