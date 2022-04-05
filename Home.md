@@ -54,7 +54,9 @@ setup hardhat config 👷‍♀️
   },
 ```
 
-That's it! you can run scripts and deploy contracts just like a regular Ethereum node. Keep [reading here](EVM/Guide.md) to learn more about building on the CENNZnet EVM  
+That's it! you can run scripts and deploy contracts just like a regular Ethereum node.
+
+?> **[Keep reading](EVM/Guide.md)** to learn more about building on the CENNZnet EVM  
 
 ## Operator Quick Start
 
