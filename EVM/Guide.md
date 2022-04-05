@@ -1,4 +1,5 @@
 # EVM Guide
+---
 
 CENNZnet is EVM compatible allowing developers to bring existing contracts and dapps to get started quickly.
 
@@ -9,7 +10,7 @@ Try the [faucet🚰](https://app-faucet.centrality.me) to add networks to your w
 
 There are some small differences, compared to Ethereum, to be aware of when building on CENNZnet explained below (marked with 👀)
 
-## Networks
+## Networks 🌐
 
 **Nikau** - Stable testnet, tracks the mainnet version
 **Rata** - Chaos testnet, has the latest features early in the release cycle
@@ -41,18 +42,18 @@ CENNZ is also a 4dp token but does not require any special handling as per the E
 
 ### CPAY Transfer Examples
 The following line of solidity code transfers `1 CPAY` to the `receiver`
-```solidity=
+```solidity
 receiver.call{value: 1 ether}("");
 ```
 
 Transfers `1.0001 CPAY` to `receiver` (i.e rounds up by `0.0001 CPAY`)
-```solidity=
+```solidity
 receiver.call{value: 1 ether + 1 wei}("");
 ```
 
 
 The following ethers transaction transfers `0.0001` CPAY to the receiver
-```typescript=
+```typescript
 await wallet.sendTransaction({
   to: receiver,
   value: 1,
@@ -60,7 +61,7 @@ await wallet.sendTransaction({
 ```
 
 transfers `1.2` CPAY to the receiver
-```typescript=
+```typescript
 await wallet.sendTransaction({
   to: receiver,
   value: ethers.utils.parseEther('1.2'),
@@ -72,10 +73,7 @@ await wallet.sendTransaction({
 - input and output amounts are expressed in wei (18dp) as normal
 - amounts (or fractions of amounts) transferred < `1e14 `are always rounded up by adding `1e14` / `0.0001 CPAY`
 
----
-
-
-## Transaction Fees
+## Transaction Fees ⛽️  
 CENNZnet supports EIP-1559 and legacy transaction fee models.
 Ethereum tooling is able to query fee estimation info accurately out of the box without any special handling required.
 The `eth_feeHistory` RPC is provided for this purpose see its docs for more details https://docs.alchemy.com/alchemy/apis/ethereum/eth_feehistory & https://gist.github.com/zsfelfoldi/473e29106d38525de6b4413e2ebcddf1
@@ -90,7 +88,7 @@ The runtime uses a different addressing scheme to the EVM.
 To convert a 20 byte ethereum address to its CENNZnet equivalent
 
 Use this conversion function:
-```typescript=
+```javascript
 const utils = require('@polkadot/util');
 const utilCrypto = require('@polkadot/util-crypto');
 
@@ -105,7 +103,6 @@ function cvmToAddress(cvmAddress) {
 ```
 The address may then be used via services like the [uncover explorer](https://uncoverexplorer.com)
 
----
 
 ## Using an Ethereum keypair with CENNZnet
 
@@ -115,7 +112,7 @@ To enable signing CENNZnet runtime transactions from an Ethereum wallet the `Eth
 
 The ethereum wallet can act as the derived CENNZnet address (attainable via  `cvmToAddress(ethAddress)`). The derived address must have sufficient CPAY for tx fees.
 
-```typescript=
+```typescript
 // Send a message to CENNZnet
 import { Api } from '@cennznet/api';
 
@@ -132,16 +129,20 @@ let signature = await ethereum.request({ method: 'personal_sign', params: [paylo
 let txHash = await cennznet.tx.ethWallet.call(call, ethAddress, signature).send();
 ```
 
----
-
 ## Interacting with the Runtime from EVM (Precompiles)
 
 👀 CENNZnet has a system to allow communication between the CENNZnet runtime and EVM contracts.
 This allows native CENNZnet currencies and NFTs to appear as regular ERC20s and ERC721s to ethereum tooling and contracts.
 Future protocol enhancements will add further functionality to supercharge contract development suchas as scheduling, cennzx liquidity, ethereum bridging and more.
 
-## Generic Asset to ERC20 Precompile
-```solidity=
+## Calling a Generic Asset
+Generic assets expose the ERC20 abi. To interact with a given generic asset first derive its corresponding contract address:  
+`web3.utils.toChecksumAddress("cccccccc" + numberToHex(<assetId>))`
+
+?> **Tip** `@polkadot/util` provides a `numberToHex` function 
+
+```solidity
+// CENNZ testnet address with assetId 16000
 address cennz = 0xcCccccCc00003E80000000000000000000000000;
 
 function balanceOfProxy(address who) public view returns (uint256) {
