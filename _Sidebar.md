@@ -1,5 +1,5 @@
 - Getting started 👋
-    - [DApp Development](Getting-started/CENNZnet-dapp-development)
+    - [Start Here](Getting-started/CENNZnet-dapp-development)
     - [Blockchain Primer](Getting-started/blockchain-primer)
     - [Dev Environment Setup](Getting-started/Dev-environment-setup)
     - [Technical Overview](Getting-started/CENNZnet-technical-overview)
