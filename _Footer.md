@@ -2,7 +2,7 @@
 
 [CENNZnet](http://cennz.net/) |
 [UI Portal](https://cennznet.io) |
-[Twitter @centralityai](https://twitter.com/centralityai) |
+[Twitter @CENNZnet](https://twitter.com/CENNZnet) |
 [Medium @centrality](https://medium.com/centrality) |
 [Careers](https://centrality.ai/careers/) | [Discord](https://discord.gg/AnB3tRtkJ4)
 
