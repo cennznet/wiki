@@ -9,7 +9,9 @@
     - [Contributing](Getting-started/Contributing)
 
 ---
+
 - DApp Development Guides
+    - [EVM](EVM/Guide.md)
 	- [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp)
 	- [Getting Started with the API](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API)
 	- [Network Fees](Dapp-development/Guides/Network-fees)
