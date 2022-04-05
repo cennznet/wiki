@@ -143,4 +143,4 @@ The [NFT Demo DApp](https://github.com/cennznet/NFTDemo) shows how to:
 
 ## API References
 
-[NFT APIs](https://raw.githubusercontent.com/cennznet/api.js/master/docs/cennznet/nft.md ':include :type=tsdoc')
+[NFT APIs](https://raw.githubusercontent.com/cennznet/api.js/develop/docs/cennznet/nft.md ':include :type=tsdoc')

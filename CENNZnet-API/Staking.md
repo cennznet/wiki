@@ -37,4 +37,4 @@ Check a validator's total, own, and nominated stake
 
 ## API References
 
-[Staking APIs](https://raw.githubusercontent.com/cennznet/api.js/master/docs/cennznet/staking.md ':include :type=tsdoc')
+[Staking APIs](https://raw.githubusercontent.com/cennznet/api.js/develop/docs/cennznet/staking.md ':include :type=tsdoc')
