@@ -11,6 +11,10 @@ In some cases, for example when building a crypto wallet app, the DApp only need
 
 If you need features that aren't provided by the CENNZnet API, you can modify the runtime modules or create your own. The modules are written in the programming language Rust, which gives us the optimal performance and security.
 
+## Coming to CENNZnet from Ethereum 
+
+If you have an understanding of DApp development on Ethereum, transitioning to CENNZnet is going to be a breeze. You can either use CENNZnet's runtime modules by interacting with the JavaScript API, or deploy Etherem smart contracts to CENNZnet using CENNZnet's [EVM module](Runtime-modules/EVM).
+
 ## How does CENNZnet work?
 
 The [Technical Overview](Getting-started/CENNZnet-technical-overview) explains how CENNZnet works internally and the main interfaces.
