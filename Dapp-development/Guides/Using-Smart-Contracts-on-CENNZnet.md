@@ -6,9 +6,12 @@ This guide shows you how to deploy and execute Smart Contracts natively on CENNZ
 
 CENNZnet's EVM runtime module provides the environment to run Smart Contracts. See the [EVM module documentation](Runtime-modules/EVM) for more details on the fees and considerations when using Smart Contracts.
 
+## Migrating from Ethereum to CENNZnet demo video
+https://youtu.be/f4wblOufvs4
+
+
 ## Prerequisites
 Install [MetaMask](https://metamask.io/)
-
 
 ## Connect MetaMask to CENNZnet
 Since the Remix IDE integrates with MetaMask nicely, we are going to use MetaMask as the wallet for CENNZnet. This allows us to sign CENNZnet transactions with MetaMask, which is required by deploying and executing contracts.
