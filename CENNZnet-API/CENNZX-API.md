@@ -16,4 +16,4 @@ To learn more about the technical details of the CENNZX module, refer to the [CE
 
 ## API References
 
-[CENNZX API References](https://raw.githubusercontent.com/cennznet/api.js/master/docs/cennznet/cennzx.md ':include :type=tsdoc')
+[CENNZX API References](https://raw.githubusercontent.com/cennznet/api.js/develop/docs/cennznet/cennzx.md ':include :type=tsdoc')

@@ -129,4 +129,4 @@ await api.tx.genericAsset
 ## API References
 Check out the [Generic Assets API Example](CENNZnet-API/Examples/API-examples-Generic-Assets) for more detailed examples of common use cases!
 
-[Generic Asset APIs](https://raw.githubusercontent.com/cennznet/api.js/master/docs/cennznet/genericAsset.md ':include :type=tsdoc')
+[Generic Asset APIs](https://raw.githubusercontent.com/cennznet/api.js/develop/docs/cennznet/genericAsset.md ':include :type=tsdoc')

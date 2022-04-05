@@ -141,4 +141,4 @@ await api.tx.attestation
 
 
 ## API References
-[Attestation APIs](https://raw.githubusercontent.com/cennznet/api.js/master/docs/cennznet/attestation.md ':include :type=tsdoc')
+[Attestation APIs](https://raw.githubusercontent.com/cennznet/api.js/develop/docs/cennznet/attestation.md ':include :type=tsdoc')
