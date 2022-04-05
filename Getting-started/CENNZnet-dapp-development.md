@@ -13,7 +13,13 @@ If you need features that aren't provided by the CENNZnet API, you can modify th
 
 ## Coming to CENNZnet from Ethereum 
 
-If you have an understanding of DApp development on Ethereum, transitioning to CENNZnet is going to be a breeze. You can either use CENNZnet's runtime modules by interacting with the JavaScript API, or deploy Etherem smart contracts to CENNZnet using CENNZnet's [EVM module](Runtime-modules/EVM).
+If you have an understanding of DApp development on Ethereum, transitioning to CENNZnet is going to be a breeze. You can either use CENNZnet's runtime modules by interacting with the JavaScript API, or [deploy Etherem smart contracts to CENNZnet ](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet).
+
+### Migrating a DApp from Ethereum to CENNZnet 
+
+Migrating an existing DApp from Ethereum to CENNZnet is very easy thanks to the [EVM module](Runtime-modules/EVM). Check out the demo here:
+
+[Demo video](https://youtu.be/f4wblOufvs4)
 
 ## How does CENNZnet work?
 
@@ -21,7 +27,11 @@ The [Technical Overview](Getting-started/CENNZnet-technical-overview) explains h
 
 ## Development tools
 
-[CENNZnet.io](https://cennznet.io/#/) is the most important development tool. If you are new to CENNZnet DApp development, be sure to read the following user guides to CENNZnet.io:
+[CENNZnet.io](https://cennznet.io/#/) is the most important development tool. If you are new to CENNZnet DApp development, be sure to get comfortable with cennznet.io!
+
+[CENNZnet Portal Tutorial Series on YouTube](https://youtu.be/Ikm2lqgeK-A)
+
+Textual guides:
 * [Intro Guide to CENNZnet.io](https://medium.com/centrality/using-cennznet-io-ac5a90f9a2cb)
 * [Advanced Guide to CENNZnet.io](https://medium.com/centrality/advanced-guide-to-cennznet-io-33be90f26ff3)
 
