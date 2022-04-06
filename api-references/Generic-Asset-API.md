@@ -6,7 +6,7 @@ The native CENNZ and CPAY tokens are both instances of generic assets.
 Any user can create their own tokens on the network using this module.  
 To learn more about how CENNZ and CPAY work in CENNZnet, refer to the [Token Economy](/Dapp-development/Guides/Token-Economy) document.  
 
-For NFT (non-fungible tokens), use the dedicated [NFT](Runtime-modules/NFT) module. 
+For NFT (non-fungible tokens), use the dedicated [NFT](runtime-modules/NFT) module. 
 
 ## Available Assets
 Generic assets are uniquely identified by an integer Id e.g. on mainnet, CENNZ has asset id `1` and CPAY has asset id `2`.  
@@ -67,7 +67,7 @@ let totalIssuance = await api.query.genericAsset.totalIssuance(assetId);
 
 ### Creating a new token
 
-This creates a new asset and configures the owner. The asset options allow the creator to set permissions and initial issuance of the token. Before issuing the token, make sure your account has enough CPAY to pay for the gas fee. For the TestNet, use the [Faucet](CENNZnet-infrastructures/CENNZnet-faucet) to issue tokens to your account.
+This creates a new asset and configures the owner. The asset options allow the creator to set permissions and initial issuance of the token. Before issuing the token, make sure your account has enough CPAY to pay for the gas fee. For the TestNet, use the [Faucet](dev-tools/CENNZnet-faucet) to issue tokens to your account.
 
 ```js
 // Number of whole tokens to issue

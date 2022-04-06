@@ -2,11 +2,11 @@
 
 The CENNZnet API allows you to interact with a CENNZnet blockchain through a node using JavaScript.
 
-Before you start here, please read the [CENNZnet technical Overview](Getting-started/CENNZnet-technical-overview) and follow our [Getting started with the CENNZnet API guide](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API).
+Before you start here, please read the [CENNZnet technical Overview](getting-started/CENNZnet-technical-overview) and follow our [Getting started with the CENNZnet API guide](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API).
 
 ## What can you do with the CENNZnet API?
 
-The CENNZnet API exposes functionalities of the CENNZnet runtime modules. To learn about the functionalities of the runtime modules, check the [CENNZnet modules overview](Runtime-modules/Modules-Overview).
+The CENNZnet API exposes functionalities of the CENNZnet runtime modules. To learn about the functionalities of the runtime modules, check the [CENNZnet modules overview](runtime-modules/Modules-Overview).
 
 ## Structure of the interface
 
@@ -23,7 +23,7 @@ There are the following types:
 
 ## API references
 
-The full list of APIs can be found in the [CENNZnet API Reference](CENNZnet-API/Full-list).
+The full list of APIs can be found in the [CENNZnet API Reference](api-references/Full-list).
 
 ## Using the API
 

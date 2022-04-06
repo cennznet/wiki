@@ -1,7 +1,7 @@
 # Getting started with CENNZnet DApp Development
 
 ## What do I need to know about blockchain?
-CENNZnet does most of the hardwork, so you don't have to have a detailed understanding of how blockchain works. However it'd still help you find the best use cases and design the best DApp to have a basic understanding of how blockchain works. Head to the [Blockchain Primer](Getting-started/blockchain-primer) guide if you need :)
+CENNZnet does most of the hardwork, so you don't have to have a detailed understanding of how blockchain works. However it'd still help you find the best use cases and design the best DApp to have a basic understanding of how blockchain works. Head to the [Blockchain Primer](getting-started/blockchain-primer) guide if you need :)
 
 ## What technologies do I need know to build DApps on CENNZnet?
 
@@ -17,13 +17,13 @@ If you have an understanding of DApp development on Ethereum, transitioning to C
 
 ### Migrating a DApp from Ethereum to CENNZnet 
 
-Migrating an existing DApp from Ethereum to CENNZnet is very easy thanks to the [EVM module](Runtime-modules/EVM). Check out the demo here:
+Migrating an existing DApp from Ethereum to CENNZnet is very easy thanks to the [EVM module](runtime-modules/EVM). Check out the demo here:
 
 [Demo video](https://youtu.be/f4wblOufvs4)
 
 ## How does CENNZnet work?
 
-The [Technical Overview](Getting-started/CENNZnet-technical-overview) explains how CENNZnet works internally and the main interfaces.
+The [Technical Overview](getting-started/CENNZnet-technical-overview) explains how CENNZnet works internally and the main interfaces.
 
 ## Development tools
 
@@ -44,8 +44,8 @@ Once your feature is ready to be shared with a wider audience, you can test it o
 
 The TestNet provides a similar environment to the MainNet, and it's a safe place to fail. 
 
-On the TestNet, you won't need to spend actual MainNet currencies. You can issue test currencies for yourself using the [CENNZnet Faucet](CENNZnet-infrastructures/CENNZnet-faucet).
+On the TestNet, you won't need to spend actual MainNet currencies. You can issue test currencies for yourself using the [CENNZnet Faucet](dev-tools/CENNZnet-faucet).
 
 ## Next steps
 
-Head over to [Dev Environment Setup](Getting-started/Dev-environment-setup) to get yourself ready for DApp development!
+Head over to [Dev Environment Setup](getting-started/Dev-environment-setup) to get yourself ready for DApp development!

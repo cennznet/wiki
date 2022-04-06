@@ -1,12 +1,12 @@
 - Getting started 👋
-    - [Start Here](Getting-started/CENNZnet-dapp-development)
-    - [Blockchain Primer](Getting-started/blockchain-primer)
-    - [Dev Environment Setup](Getting-started/Dev-environment-setup)
-    - [Technical Overview](Getting-started/CENNZnet-technical-overview)
-    - [The Networks](Getting-started/CENNZnet-networks)
-    - [Repositories](Getting-started/CENNZnet-repos)
-    - [Where to find help?](Getting-started/Where-to-find-help)
-    - [Contributing](Getting-started/Contributing)
+    - [Start Here](getting-started/CENNZnet-dapp-development)
+    - [Blockchain Primer](getting-started/blockchain-primer)
+    - [Dev Environment Setup](getting-started/Dev-environment-setup)
+    - [Technical Overview](getting-started/CENNZnet-technical-overview)
+    - [The Networks](getting-started/CENNZnet-networks)
+    - [Repositories](getting-started/CENNZnet-repos)
+    - [Where to find help?](getting-started/Where-to-find-help)
+    - [Contributing](getting-started/Contributing)
 
 ---
 
@@ -22,48 +22,48 @@
 	- [Smart Contracts](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet)
 
 - API Guides
-    - [Overview](CENNZnet-API/CENNZnet-API-Overview)
-    - [Accounts and Keypairs 🔑](CENNZnet-API/Accounts-and-Keypairs)
-    - [Subscription Mechanism](CENNZnet-API/Subscriptions)
-    - [Cookbook 👩‍🍳](CENNZnet-API/Cookbook)
-    - [JSON-RPC](CENNZnet-API/JSON-RPC-API)
+    - [Overview](api-guides/CENNZnet-API-Overview)
+    - [Accounts and Keypairs 🔑](api-guides/Accounts-and-Keypairs)
+    - [Subscription Mechanism](api-guides/Subscriptions)
+    - [Cookbook 👩‍🍳](api-guides/Cookbook)
+    - [JSON-RPC](api-guides/JSON-RPC-API)
 ---
 
 - API References 📚
-    - [Full list of API methods](CENNZnet-API/Full-list)
-    - [Transaction Error Codes](CENNZnet-API/Transaction-Error-Codes)
-    - [Attestation API](CENNZnet-API/Attestation-API)
-    - [Emery Bridge API](CENNZnet-API/Emery-Bridge-API)
-    - [CENNZX API](CENNZnet-API/CENNZX-API)
-    - [Generic Asset API](CENNZnet-API/Generic-Asset-API)
-    - [NFT API](CENNZnet-API/NFT-API)
-    - [NFT Mass Drop](CENNZnet-API/NFT-Mass-Drop)
-    - [Staking API](CENNZnet-API/Staking)
-    - [Doughnut Permissioning](CENNZnet-API/Doughnut-Permissioning)
+    - [Full list of API methods](api-references/Full-list)
+    - [Transaction Error Codes](api-references/Transaction-Error-Codes)
+    - [Attestation API](api-references/Attestation-API)
+    - [Emery Bridge API](api-references/Emery-Bridge-API)
+    - [CENNZX API](api-references/CENNZX-API)
+    - [Generic Asset API](api-references/Generic-Asset-API)
+    - [NFT API](api-references/NFT-API)
+    - [NFT Mass Drop](api-references/NFT-Mass-Drop)
+    - [Staking API](api-references/Staking)
+    - [Doughnut Permissioning](api-references/Doughnut-Permissioning)
     - Examples
-        - [Generic Assets](CENNZnet-API/Examples/API-examples-Generic-Assets)
-        - [CENNZX](CENNZnet-API/Examples/API-examples-CENNZX-Spot)
-        - [Attestation](CENNZnet-API/Examples/API-examples-Attestation)
+        - [Generic Assets](api-references/Examples/API-examples-Generic-Assets)
+        - [CENNZX](api-references/Examples/API-examples-CENNZX-Spot)
+        - [Attestation](api-references/Examples/API-examples-Attestation)
 ---
 - Runtime modules 🎩
-    - [Overview](Runtime-modules/Modules-Overview)
-    - [CENNZX](Runtime-modules/CENNZX)
-    - [Doughnut](Runtime-modules/Doughnut)
-    - [EVM](Runtime-modules/EVM)
-    - [Governance](Runtime-modules/Governance)
-    - [Identity](Runtime-modules/Identity)
-    - [NFT](Runtime-modules/NFT)
-    - [Staking](Runtime-modules/Staking)
-    - [Sylo Runtime Modules](Runtime-modules/Sylo-Runtime-Modules)
+    - [Overview](runtime-modules/Modules-Overview)
+    - [CENNZX](runtime-modules/CENNZX)
+    - [Doughnut](runtime-modules/Doughnut)
+    - [EVM](runtime-modules/EVM)
+    - [Governance](runtime-modules/Governance)
+    - [Identity](runtime-modules/Identity)
+    - [NFT](runtime-modules/NFT)
+    - [Staking](runtime-modules/Staking)
+    - [Sylo Runtime Modules](runtime-modules/Sylo-Runtime-Modules)
 
 ---
 
 - Dev Tools ✨
-    - [CENNZnet.io](CENNZnet-infrastructures/Exploring-the-CENNZnet-UI)
-    - [Browser Extension](CENNZnet-infrastructures/CENNZnet-browser-extension)
-    - [Faucet](CENNZnet-infrastructures/CENNZnet-faucet)
-    - [CENNZX Exchange](CENNZnet-infrastructures/CENNZX-Exchange)
-    - [UNcover](CENNZnet-infrastructures/Uncover)
+    - [CENNZnet.io](dev-tools/cennznet-io)
+    - [Browser Extension](dev-tools/CENNZnet-browser-extension)
+    - [Faucet](dev-tools/CENNZnet-faucet)
+    - [CENNZX Exchange](dev-tools/CENNZX-Exchange)
+    - [UNcover](dev-tools/Uncover)
     - [Docker Images](https://hub.docker.com/r/cennznet/cennznet/tags)
 
 ---

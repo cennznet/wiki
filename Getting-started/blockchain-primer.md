@@ -19,4 +19,4 @@ Our article [What is blockchain](https://cennz.net/knowledge-hub/blockchain-101/
 
 If the idea of DApps(Decentralised Apps) is new to you, please first read our article [What is a DApp and why are they useful?](https://cennz.net/blog/featured-blog-post/what-is-a-dapp/).
 
-The next step is to read the [CENNZnet technical overview](Getting-started/CENNZnet-technical-overview).
+The next step is to read the [CENNZnet technical overview](getting-started/CENNZnet-technical-overview).

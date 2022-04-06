@@ -4,7 +4,7 @@
 
 The NFT module is available from API version 1.4.0+.
 
-To learn more about how the NFT module works, refer to the [NFT Module Documentation](Runtime-modules/NFT).
+To learn more about how the NFT module works, refer to the [NFT Module Documentation](runtime-modules/NFT).
 
 See the [NFT Design Guide](Dapp-development/Guides/How-to-design-NFTs) for tips on minimising costs and improving the efficiency of your design.
 

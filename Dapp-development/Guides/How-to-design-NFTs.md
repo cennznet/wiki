@@ -147,4 +147,4 @@ To create an SFT on CENNZnet
 The tokens will be issued with a unique serial number.  
 3) Issuing additional tokens in a series is always possible with `mintSeries`  
 
-See the [NFT API technical docs](../../CENNZnet-API/NFT-API) for further info on usage.  
+See the [NFT API technical docs](../../api-references/NFT-API) for further info on usage.  

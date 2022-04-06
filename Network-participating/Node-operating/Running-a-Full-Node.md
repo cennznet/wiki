@@ -125,7 +125,7 @@ INFO ⚙️ Syncing 21.2 bps, target=#1140132 (1 peers), best: #532405 (0xfad8�
 ```
 
 ### Connecting to Rata for development
-[Rata](Getting-started/CENNZnet-technical-overview?id=cennznet-networks-and-genesis-files) is a playground network for testing. The following command would run a node that connects to Rata and  with full WebSocket connectivity enabled (unsafe for validators).
+[Rata](getting-started/CENNZnet-technical-overview?id=cennznet-networks-and-genesis-files) is a playground network for testing. The following command would run a node that connects to Rata and  with full WebSocket connectivity enabled (unsafe for validators).
 ```bash
 docker run cennznet/cennznet:2.0.0 \
   --chain=/cennznet/genesis/rata.raw.json \

@@ -22,13 +22,13 @@ There are a couple tools that let you interact with CENNZnet visually. These too
 
 [CENNZnet.io](http://cennznet.io/), also known as the CENNZnet Portal, provides a wallet and a GUI to the CENNZnet API. It connects to and communicates with a CENNZnet node.
 
-See the [CENNZnet.io reference](CENNZnet-infrastructures/Exploring-the-CENNZnet-UI) for more detail.
+See the [CENNZnet.io reference](dev-tools/cennznet-io) for more detail.
 
 #### UNcover 
 
 [UNcover](https://uncoverexplorer.com/) is an explorer that search for transactions, addresses, prices and other activities on CENNZnet MainNet. This information may not be stored on a single node.
 
-See the [UNcover reference](CENNZnet-infrastructures/Uncover) for more detail.
+See the [UNcover reference](dev-tools/Uncover) for more detail.
 
 ## How CENNZnet works
 

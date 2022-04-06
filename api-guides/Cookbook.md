@@ -65,7 +65,7 @@ example output:
 
 ## Check a transaction for success
 
-To verify a transaction when sending use the [subscription](CENNZnet-API/Subscriptions?id=transaction-subscriptions) api.
+To verify a transaction when sending use the [subscription](api-guides/Subscriptions?id=transaction-subscriptions) api.
 
 To verify a transaction hash is in the chain, use our block explorer (UNCover) API
 

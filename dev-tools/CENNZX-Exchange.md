@@ -14,4 +14,4 @@ The CENNZX UI repo is an excellent example of how to use the CENNZnet API and bu
 
 The repo can be found [here](https://github.com/cennznet/cennzx-ui).
 
-For technical information on the CENNZX module, go to [here](Runtime-modules/CENNZX).
+For technical information on the CENNZX module, go to [here](runtime-modules/CENNZX).

@@ -8,4 +8,4 @@ Here's a list of resources that explain how Staking works in CENNZnet.
 
 [Nominator staking Guide](Network-participating/Staking/Nominator-Staking-Guide): Technical information for Nominators.
 
-[Staking API](CENNZnet-API/Staking?id=common-staking-queries): The Staking related API methods.
+[Staking API](api-references/Staking?id=common-staking-queries): The Staking related API methods.

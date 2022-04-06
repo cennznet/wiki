@@ -1,11 +1,11 @@
 # Getting started with the CENNZnet API
 
 This guide will get you set up with the CENNZnet API and walk through a couple code examples.
-To understand how to use the API, please read the [CENNZnet API Overview](CENNZnet-API/CENNZnet-API-Overview).
+To understand how to use the API, please read the [CENNZnet API Overview](api-guides/CENNZnet-API-Overview).
 
 ## Installation and Setup
 
-First, [set up your  dev environment](Getting-started/Dev-environment-setup).
+First, [set up your  dev environment](getting-started/Dev-environment-setup).
 
 ## Running a development node
 
@@ -101,4 +101,4 @@ Example 03_listen_to_balance_change shows how to listen to balance change using 
 
 Dive into the References area to learn more about the CENNZnet API and runtime modules! 
 
-The [CENNZnet API Overview](CENNZnet-API/CENNZnet-API-Overview) is a good place to start!
+The [CENNZnet API Overview](api-guides/CENNZnet-API-Overview) is a good place to start!
