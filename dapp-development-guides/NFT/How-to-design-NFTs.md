@@ -1,9 +1,9 @@
 # NFT Design
+---
 
 In this guide we give a quick overview of the concepts related to NFTs and best practices for designing and storing them on CENNZnet.
 You should have some familiarity with the applications of cryptographic hashing to get the most out of this guide.
 
-## Intro
 Non-fungible tokens or *NFT*s are simply some owned data stored on a blockchain.
 Since NFTs are just arbitrary data, the things we can represent as NFTs are vast: artworks, in-game items, certifications, deeds of ownership, are some common examples.  
 If you can serialize it you can make it an NFT!  

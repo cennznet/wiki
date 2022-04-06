@@ -18,10 +18,11 @@
         - [Using Smart Contracts](dapp-development-guides/EVM/Using-Smart-Contracts-on-CENNZnet)
         - [Using the EVM](dapp-development-guides/EVM/Guide.md)
     - NFT
-        - [NFT Design](dapp-development-guides/NFT/How-to-design-NFTs)
-        - [NFT Metadata Standard](dapp-development-guides/NFT/NFT-metadata-standard)
-        - [NFT Royalties](dapp-development-guides/NFT/NFT-royalties)
+        - [Intro](dapp-development-guides/NFT/How-to-design-NFTs)
+        - [Metadata Standard](dapp-development-guides/NFT/NFT-metadata-standard)
+        - [Royalties](dapp-development-guides/NFT/NFT-royalties)
 
+---
 
 - API Guides
     - [Getting Started with the API](api-guides/Getting-started-with-the-CENNZnet-API)
