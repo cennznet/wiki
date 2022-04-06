@@ -4,7 +4,7 @@ The CENNZnet "Generic Asset" module manages the network's fungible tokens.
 Users can hold and transfer balances of tokens, while token owners may mint and burn token amounts according to their monetary policies.  
 The native CENNZ and CPAY tokens are both instances of generic assets.  
 Any user can create their own tokens on the network using this module.  
-To learn more about how CENNZ and CPAY work in CENNZnet, refer to the [Token Economy](/Dapp-development/Guides/Token-Economy) document.  
+To learn more about how CENNZ and CPAY work in CENNZnet, refer to the [Token Economy](/dapp-development-guides/Token-Economy) document.  
 
 For NFT (non-fungible tokens), use the dedicated [NFT](runtime-modules/NFT) module. 
 

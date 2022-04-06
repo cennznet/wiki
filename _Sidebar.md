@@ -11,17 +11,20 @@
 ---
 
 - DApp Development Guides
-    - [EVM](EVM/Guide.md)
-	- [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp)
-	- [Getting Started with the API](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API)
-	- [Network Fees](Dapp-development/Guides/Network-fees)
-	- [Token Economy](Dapp-development/Guides/Token-Economy)
-	- [NFT Design](Dapp-development/Guides/How-to-design-NFTs)
-	- [NFT Metadata Standard](Dapp-development/Guides/NFT-metadata-standard)
-	- [NFT Royalties](Dapp-development/Guides/NFT-royalties)
-	- [Smart Contracts](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet)
+	- [How to build a DApp](dapp-development-guides/How-to-build-a-DApp)
+	- [Network Fees](dapp-development-guides/Network-fees)
+	- [Token Economy](dapp-development-guides/Token-Economy)
+    - EVM / Smart Contracts
+        - [Using Smart Contracts](dapp-development-guides/EVM/Using-Smart-Contracts-on-CENNZnet)
+        - [Using the EVM](dapp-development-guides/EVM/Guide.md)
+    - NFT
+        - [NFT Design](dapp-development-guides/NFT/How-to-design-NFTs)
+        - [NFT Metadata Standard](dapp-development-guides/NFT/NFT-metadata-standard)
+        - [NFT Royalties](dapp-development-guides/NFT/NFT-royalties)
+
 
 - API Guides
+    - [Getting Started with the API](api-guides/Getting-started-with-the-CENNZnet-API)
     - [Overview](api-guides/CENNZnet-API-Overview)
     - [Accounts and Keypairs 🔑](api-guides/Accounts-and-Keypairs)
     - [Subscription Mechanism](api-guides/Subscriptions)

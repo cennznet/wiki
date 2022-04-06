@@ -22,18 +22,18 @@ The easiest way is to use the [CENNZnet Portal](https://cennznet.io/).
 Alternatively you can use the [Browser Extension](dev-tools/CENNZnet-browser-extension) to create an account.
 
 ### Development notes
-The account you created can be used on both [the MainNet and the TestNet](Getting-started/CENNZnet-networks). You can search for the transactions related to the account using [UNcover](dev-tools/Uncover). To view transactions on the TestNet(Nikau), make sure you select Nikau or use [this URL](https://uncoverexplorer.com/?network=Nikau) to access UNcover.
+The account you created can be used on both [the MainNet and the TestNet](getting-started/CENNZnet-networks). You can search for the transactions related to the account using [UNcover](dev-tools/Uncover). To view transactions on the TestNet(Nikau), make sure you select Nikau or use [this URL](https://uncoverexplorer.com/?network=Nikau) to access UNcover.
 
 To issue yourself tokens to use on the TestNet, you can use the [Faucet](dev-tools/CENNZnet-faucet).
 
 ### Next steps
 
-Head to the [Technical Overview](Getting-started/CENNZnet-technical-overview) to understand how CENNZnet works internally and the main interfaces.
+Head to the [Technical Overview](getting-started/CENNZnet-technical-overview) to understand how CENNZnet works internally and the main interfaces.
 
-Or jump into the guide [How to build a DApp](Dapp-development/Guides/How-to-build-a-DApp) to get started!
+Or jump into the guide [How to build a DApp](dapp-development-guides/How-to-build-a-DApp) to get started!
 
 ## (Optional) Running a local dev node
-Running a local dev node gives you a sandbox to experiment with. This lets you start from a blank state, and gives you the best connection speed. To try out CENNZnet, you can [connect to the TestNet through a public socket](#/Getting-started/CENNZnet-networks?id=network-websocket-endpoints).
+Running a local dev node gives you a sandbox to experiment with. This lets you start from a blank state, and gives you the best connection speed. To try out CENNZnet, you can [connect to the TestNet through a public socket](#/getting-started/CENNZnet-networks?id=network-websocket-endpoints).
 
 To run a local node, you will need:
 * [Docker desktop](https://www.docker.com/products/docker-desktop)

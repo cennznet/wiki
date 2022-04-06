@@ -82,7 +82,7 @@ This metadata material will need to be updated from time to time inorder for the
 
 ## Query an account's balance
 
-See the [generic asset's guide](Dapp-development/Guides/Token-Economy?id=displaying-and-querying-account-balances)
+See the [generic asset's guide](dapp-development-guides/Token-Economy?id=displaying-and-querying-account-balances)
 
 ## Estimate a transaction's fees
 

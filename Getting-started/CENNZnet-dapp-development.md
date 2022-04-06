@@ -13,7 +13,7 @@ If you need features that aren't provided by the CENNZnet API, you can modify th
 
 ## Coming to CENNZnet from Ethereum 
 
-If you have an understanding of DApp development on Ethereum, transitioning to CENNZnet is going to be a breeze. You can either use CENNZnet's runtime modules by interacting with the JavaScript API, or [deploy Etherem smart contracts to CENNZnet ](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet).
+If you have an understanding of DApp development on Ethereum, transitioning to CENNZnet is going to be a breeze. You can either use CENNZnet's runtime modules by interacting with the JavaScript API, or [deploy Etherem smart contracts to CENNZnet ](dapp-development-guides/Using-Smart-Contracts-on-CENNZnet).
 
 ### Migrating a DApp from Ethereum to CENNZnet 
 

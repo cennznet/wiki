@@ -2,7 +2,7 @@
 
 The CENNZnet API allows you to interact with a CENNZnet blockchain through a node using JavaScript.
 
-Before you start here, please read the [CENNZnet technical Overview](getting-started/CENNZnet-technical-overview) and follow our [Getting started with the CENNZnet API guide](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API).
+Before you start here, please read the [CENNZnet technical Overview](getting-started/CENNZnet-technical-overview) and follow our [Getting started with the CENNZnet API guide](dapp-development-guides/Getting-started-with-the-CENNZnet-API).
 
 ## What can you do with the CENNZnet API?
 

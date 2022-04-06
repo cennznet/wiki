@@ -8,7 +8,7 @@ This brings a few major benefits to CENNZnet and Ethereum users:
 * Easy Dapp migration: Ethereum DApp developers can now migrate their DApps to CENNZnet. This provides faster transaction speeds and lower transaction fees.
 * Write CENNZnet DApps with Solidity: Ethereum developers can keep using their favourite languages and tools when developing on CENNZnet.
 
-See the guide [Smart Contracts](Dapp-development/Guides/Using-Smart-Contracts-on-CENNZnet) on how to deploy and execute Smart Contracts on CENNZnet.
+See the guide [Smart Contracts](dapp-development-guides/EVM/Using-Smart-Contracts-on-CENNZnet) on how to deploy and execute Smart Contracts on CENNZnet.
 
 ## Combining CENNZnet modules with Smart Contracts
 The EVM module on CENNZnet allows you to call CENNZnet modules from your Smart Contracts. This can add the power of CENNZnet modules to existing Ethereum DApps.
