@@ -36,7 +36,7 @@ The CENNZnet API documentation is generated from the CENNZnet runtime modules wh
 
 The latest docs and sample API usages can be found [here](https://github.com/cennznet/api.js/tree/develop/docs).
 
-For an overview of the API, please read the [CENNZnet API Overview](CENNZnet-API/CENNZnet-API-Overview).
+For an overview of the API, please read the [CENNZnet API Overview](api-guides/CENNZnet-API-Overview).
 
 
 ## News and Updates

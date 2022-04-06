@@ -34,11 +34,11 @@ This is the repository for this wiki you are reading now.
 ## Related repositories
 
 ### [CENNZX UI](https://github.com/cennznet/cennzx-ui)
-The [CENNZX UI](CENNZnet-infrastructures/CENNZX-Exchange) is a DApp that interacts with the CENNZnet browser extension.
+The [CENNZX UI](dev-tools/CENNZX-Exchange) is a DApp that interacts with the CENNZnet browser extension.
 
 ### [CENNZnet browser extension](https://github.com/cennznet/extension)
 
-The [CENNZnet browser extension](CENNZnet-infrastructures/CENNZnet-browser-extension) allows DApp users to manage their CENNZnet accounts and sign transactions with their CENNZnet accounts.
+The [CENNZnet browser extension](dev-tools/CENNZnet-browser-extension) allows DApp users to manage their CENNZnet accounts and sign transactions with their CENNZnet accounts.
 
 ### [UNcover](https://github.com/cennznet/explorer)
 

@@ -7,7 +7,7 @@ The module has an integrated marketplace allowing NFT owners to:
 - create fixed price sales  
 - create auction sales  
 
-The [NFT API](CENNZnet-API/NFT-API) documention describes the interface of this module.
+The [NFT API](api-references/NFT-API) documention describes the interface of this module.
 
 ## Token Attributes & Example Queries
 

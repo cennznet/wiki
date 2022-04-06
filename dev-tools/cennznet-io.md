@@ -9,3 +9,5 @@ It is the main development tool for CENNZnet developers. It's highly recommended
 The user guides for CENNZnet.io can be found here:
 * [Intro Guide](https://cennz.net/knowledge-hub/navigating-cennznet/using-cennznet-io/)
 * [Advanced Guide](https://cennz.net/knowledge-hub/navigating-cennznet/advanced-guide-to-cennznet-io/)
+
+Or you can watch the [CENNZnet Portal Tutorial Series on YouTube](https://youtu.be/Ikm2lqgeK-A).

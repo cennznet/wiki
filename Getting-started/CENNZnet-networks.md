@@ -15,7 +15,7 @@ The easiest way to connect to one of the CENNZnet networks is to use the web por
 
 ![choose-network](../../assets/images/ui/choose-network.png)
 
-For more information, see the [CENNZnet.io user guides](CENNZnet-infrastructures/Exploring-the-CENNZnet-UI).
+For more information, see the [CENNZnet.io user guides](dev-tools/cennznet-io).
 
 ### Network websocket endpoints
 

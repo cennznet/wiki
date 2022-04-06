@@ -4,11 +4,11 @@
 
 The NFT module is available from API version 1.4.0+.
 
-To learn more about how the NFT module works, refer to the [NFT Module Documentation](Runtime-modules/NFT).
+To learn more about how the NFT module works, refer to the [NFT Module Documentation](runtime-modules/NFT).
 
-See the [NFT Design Guide](Dapp-development/Guides/How-to-design-NFTs) for tips on minimising costs and improving the efficiency of your design.
+See the [NFT Design Guide](dapp-development-guides/NFT/How-to-design-NFTs) for tips on minimising costs and improving the efficiency of your design.
 
-See the [NFT Metadata Standard](Dapp-development/Guides/NFT-metadata-standard) for the required data structure for your NFT metadata.
+See the [NFT Metadata Standard](dapp-development-guides/NFT/NFT-metadata-standard) for the required data structure for your NFT metadata.
 
 ### Data model
 On CENNZnet, NFTs are organised in series and collections. A collection is a group of series. Each series is a set of tokens. Every token in the series has the same metadata, but with a different token ID. 

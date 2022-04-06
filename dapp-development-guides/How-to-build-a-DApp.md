@@ -9,7 +9,7 @@ To build a DApp with CENNZnet is easy, you will need:
 
 ## The architecture of a DApp
 
-As described in the [CENNZnet technical overview](Getting-started/CENNZnet-technical-overview), your DApp can communicate with CENNZnet in 2 ways:
+As described in the [CENNZnet technical overview](getting-started/CENNZnet-technical-overview), your DApp can communicate with CENNZnet in 2 ways:
 1) Calling methods of the runtime modules
 2) Calling smart contracts
 
@@ -49,4 +49,4 @@ This is a minimal DApp that connects to the CENNZNet MainNet via the CENNZnet AP
 
 ## Next steps
 * [Get started with the CENNZnet API](Dapp-development/Guides/Getting-started-with-the-CENNZnet-API)
-* [Learn to use CENNZnet.io](CENNZnet-infrastructures/Exploring-the-CENNZnet-UI), which is the main dev tool for CENNZnet.
+* [Learn to use CENNZnet.io](dev-tools/cennznet-io), which is the main dev tool for CENNZnet.

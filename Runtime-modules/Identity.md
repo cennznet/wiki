@@ -7,7 +7,7 @@ The identity module allows users to make claims of ownerships of email and socia
 
 Associating an email or social account to your CENNZnet account is called a Registration. A CENNZnet account can have multiple Registrations. 
 
-The identity module is useful for tasks that are associated with a real person, for example, voting. The identity module is crucial for [Governance](Runtime-modules/Governance).
+The identity module is useful for tasks that are associated with a real person, for example, voting. The identity module is crucial for [Governance](runtime-modules/Governance).
 
 ## The process of associating an email/social account with a CENNZnet account
 * User sends a call `identity.set_identity` from the CENNZnet portal or CENNZnet API

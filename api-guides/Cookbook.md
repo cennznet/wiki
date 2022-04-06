@@ -65,7 +65,7 @@ example output:
 
 ## Check a transaction for success
 
-To verify a transaction when sending use the [subscription](CENNZnet-API/Subscriptions?id=transaction-subscriptions) api.
+To verify a transaction when sending use the [subscription](api-guides/Subscriptions?id=transaction-subscriptions) api.
 
 To verify a transaction hash is in the chain, use our block explorer (UNCover) API
 
@@ -82,7 +82,7 @@ This metadata material will need to be updated from time to time inorder for the
 
 ## Query an account's balance
 
-See the [generic asset's guide](Dapp-development/Guides/Token-Economy?id=displaying-and-querying-account-balances)
+See the [generic asset's guide](dapp-development-guides/Token-Economy?id=displaying-and-querying-account-balances)
 
 ## Estimate a transaction's fees
 

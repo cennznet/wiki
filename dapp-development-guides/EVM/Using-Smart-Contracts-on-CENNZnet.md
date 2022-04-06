@@ -4,7 +4,7 @@
 
 This guide shows you how to deploy and execute Smart Contracts natively on CENNZnet. While you can use any Ethereum dev tools on CENNZnet, we will be using the [Remix IDE](https://remix.ethereum.org/) in this guide.
 
-CENNZnet's EVM runtime module provides the environment to run Smart Contracts. See the [EVM module documentation](Runtime-modules/EVM) for more details on the fees and considerations when using Smart Contracts.
+CENNZnet's EVM runtime module provides the environment to run Smart Contracts. See the [EVM module documentation](runtime-modules/EVM) for more details on the fees and considerations when using Smart Contracts.
 
 ## Migrating from Ethereum to CENNZnet demo video
 https://youtu.be/f4wblOufvs4

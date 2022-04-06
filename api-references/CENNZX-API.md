@@ -10,9 +10,9 @@ To learn about how prices are determined, please refer to our [CENNZX guide]
 
 Because CENNZX is native to the CENNZnet protocol it is also integrated with network gas payment to provide transactors the ability to pay their fees in any liquid asset.
 
-The user guides for CENNZX can be found [here](CENNZnet-infrastructures/CENNZX-Exchange)
+The user guides for CENNZX can be found [here](dev-tools/CENNZX-Exchange)
 
-To learn more about the technical details of the CENNZX module, refer to the [CENNZX module Documentation](Runtime-modules/CENNZX). 
+To learn more about the technical details of the CENNZX module, refer to the [CENNZX module Documentation](runtime-modules/CENNZX). 
 
 ## API References
 
