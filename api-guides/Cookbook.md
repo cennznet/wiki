@@ -110,7 +110,7 @@ also see: https://polkadot.js.org/docs/api/cookbook/tx/#how-do-i-estimate-the-tr
 
 ### Pay Transaction Fees in Any Currency
 
-Transaction fees are usually paid in CPay, however fees can be paid in another token by using a `TransactionPayment` object:
+Transaction fees are usually paid in CPAY, however fees can be paid in another token by using a `TransactionPayment` object:
 
 ```js
 import { generateTransactionPayment } from '@cennznet/types/runtime/transaction-payment/TransactionPayment';
