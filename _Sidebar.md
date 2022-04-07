@@ -1,12 +1,12 @@
 - Getting started 👋
-    - [Start Here](getting-started/CENNZnet-dapp-development)
-    - [Blockchain Primer](getting-started/blockchain-primer)
-    - [Dev Environment Setup](getting-started/Dev-environment-setup)
-    - [Technical Overview](getting-started/CENNZnet-technical-overview)
-    - [The Networks](getting-started/CENNZnet-networks)
-    - [Repositories](getting-started/CENNZnet-repos)
-    - [Where to find help?](getting-started/Where-to-find-help)
-    - [Contributing](getting-started/Contributing)
+    - [Start Here](Getting-started/CENNZnet-dapp-development)
+    - [Blockchain Primer](Getting-started/blockchain-primer)
+    - [Dev Environment Setup](Getting-started/Dev-environment-setup)
+    - [Technical Overview](Getting-started/CENNZnet-technical-overview)
+    - [The Networks](Getting-started/CENNZnet-networks)
+    - [Repositories](Getting-started/CENNZnet-repos)
+    - [Where to find help?](Getting-started/Where-to-find-help)
+    - [Contributing](Getting-started/Contributing)
 
 ---
 
@@ -30,7 +30,6 @@
     - [Accounts and Keypairs 🔑](api-guides/Accounts-and-Keypairs)
     - [Subscription Mechanism](api-guides/Subscriptions)
     - [Cookbook 👩‍🍳](api-guides/Cookbook)
-    - [JSON-RPC](api-guides/JSON-RPC-API)
 ---
 
 - API References 📚
@@ -43,6 +42,7 @@
     - [NFT API](api-references/NFT-API)
     - [NFT Mass Drop](api-references/NFT-Mass-Drop)
     - [Staking API](api-references/Staking)
+    - [JSON-RPC](api-references/JSON-RPC-API)
     - [Doughnut Permissioning](api-references/Doughnut-Permissioning)
     - Examples
         - [Generic Assets](api-references/Examples/API-examples-Generic-Assets)
