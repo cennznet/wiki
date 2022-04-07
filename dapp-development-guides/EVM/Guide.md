@@ -19,7 +19,7 @@ There are some small differences, compared to Ethereum, to be aware of when buil
 |---------|----------|-------------------------------------------|
 | Rata    | 3000     | https://rata.centrality.me/public         |
 | Nikau   | 3001     | https://nikau.centrality.me/public        |
-| Mainnet | 1337     | https://cennznet.unfrastructure.io/public |
+| Mainnet | 21337    | https://cennznet.unfrastructure.io/public |
 
 
 The CENNZnet core team provides the above full node endpoints, rate limited at 20 requests/second.
