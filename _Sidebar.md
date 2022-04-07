@@ -50,15 +50,15 @@
         - [Attestation](api-references/Examples/API-examples-Attestation)
 ---
 - Runtime modules 🎩
-    - [Overview](runtime-modules/Modules-Overview)
-    - [CENNZX](runtime-modules/CENNZX)
-    - [Doughnut](runtime-modules/Doughnut)
-    - [EVM](runtime-modules/EVM)
-    - [Governance](runtime-modules/Governance)
-    - [Identity](runtime-modules/Identity)
-    - [NFT](runtime-modules/NFT)
-    - [Staking](runtime-modules/Staking)
-    - [Sylo Runtime Modules](runtime-modules/Sylo-Runtime-Modules)
+    - [Overview](Runtime-modules/Modules-Overview)
+    - [CENNZX](Runtime-modules/CENNZX)
+    - [Doughnut](Runtime-modules/Doughnut)
+    - [EVM](Runtime-modules/EVM)
+    - [Governance](Runtime-modules/Governance)
+    - [Identity](Runtime-modules/Identity)
+    - [NFT](Runtime-modules/NFT)
+    - [Staking](Runtime-modules/Staking)
+    - [Sylo Runtime Modules](Runtime-modules/Sylo-Runtime-Modules)
 
 ---
 
