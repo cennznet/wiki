@@ -13,6 +13,7 @@ There are some small differences, compared to Ethereum, to be aware of when buil
 ## Networks 🌐
 
 **Nikau** - Stable testnet, tracks the mainnet version
+
 **Rata** - Chaos testnet, has the latest features early in the release cycle
 
 | name    | chain id | rpc                              |
@@ -116,7 +117,7 @@ The ethereum wallet can act as the derived CENNZnet address (attainable via  `cv
 // Send a message to CENNZnet
 import { Api } from '@cennznet/api';
 
-let cennznet = await Api.connect('nikau');
+const cennznet = await Api.create({network: 'nikau'});
 // Build the CENNZnet transaction payload
 let nonce = await cennznet.rpc.system.accountNextIndex(ethAddress);
 let runtimeCall = cennznet.tx.system.remark(utils.stringToHex(`Hello from Metamask!: ${ethAddress}`));
