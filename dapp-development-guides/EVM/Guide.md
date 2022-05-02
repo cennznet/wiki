@@ -79,7 +79,7 @@ CENNZnet supports EIP-1559 and legacy transaction fee models.
 Ethereum tooling is able to query fee estimation info accurately out of the box without any special handling required.
 The `eth_feeHistory` RPC is provided for this purpose see its docs for more details https://docs.alchemy.com/alchemy/apis/ethereum/eth_feehistory & https://gist.github.com/zsfelfoldi/473e29106d38525de6b4413e2ebcddf1
 
-👀 Priority fees may appear to be high when expressed in gwei i.e.`5000 gwei`+ recall this number is converted into a nominal CPAY value ~`<0.0001 CPAY`
+👀 Priority fees may appear to be high when expressed in gwei i.e.`5000 gwei`+ recall this number is converted into a nominal CPAY value ~ `<0.0001 CPAY`
 
 ## Addresses
 EVM contract developers on CENNZnet can use existing ethereum wallets and addresses without any changes.
@@ -132,24 +132,35 @@ let txHash = await cennznet.tx.ethWallet.call(call, ethAddress, signature).send(
 
 ## Interacting with the Runtime from EVM (Precompiles)
 
-👀 CENNZnet has a system to allow communication between the CENNZnet runtime and EVM contracts.
+CENNZnet uses a precompile system to allow communication between the CENNZnet runtime and EVM contracts.
 This allows native CENNZnet currencies and NFTs to appear as regular ERC20s and ERC721s to ethereum tooling and contracts.
 Future protocol enhancements will add further functionality to supercharge contract development suchas as scheduling, cennzx liquidity, ethereum bridging and more.
 
-## Calling a Generic Asset
-Generic assets expose the ERC20 abi. To interact with a given generic asset first derive its corresponding contract address:  
-`web3.utils.toChecksumAddress("cccccccc" + numberToHex(<assetId>))`
+## Working with Generic Assets
+Generic assets (GAs) implement the ERC20 abi. This allows them to be fully programmable and used anywhere a normal ERC20 token can.
+To interact with a given generic asset first derive its corresponding contract address:  
+```typescript 
+import web3 from 'web3';
+import { numberToHex } from '@polkadot/util';
+let assetId = '<YOUR_ASSET_ID>'; // e.g. 16001
+let tokenContractAddress = web3.utils.toChecksumAddress("cccccccc" + numberToHex(assetId));
+```
 
-?> **Tip** `@polkadot/util` provides a `numberToHex` function 
+
+The following code snippet interacts with the testnet CENNZ token address using its ERC20 abi.
+
+?> **Important** use solidity `^0.8.13`
 
 ```solidity
+pragma solidity ^0.8.13;
+import "@openzeppelin/contracts/interfaces/IERC20";
+
 // CENNZ testnet address with assetId 16000
 address cennz = 0xcCccccCc00003E80000000000000000000000000;
 
 function balanceOfProxy(address who) public view returns (uint256) {
     return IERC20(cennz).balanceOf(who);
 }
-
 
 function transferFromProxy(uint256 amount) external {
     IERC20(cennz).transferFrom(msg.sender, address(this), amount);
