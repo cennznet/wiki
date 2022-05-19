@@ -59,6 +59,9 @@
     - [NFT](Runtime-modules/NFT)
     - [Staking](Runtime-modules/Staking)
     - [Sylo Runtime Modules](Runtime-modules/Sylo-Runtime-Modules)
+---
+  - EVM
+    - [Fee Preference Calls](EVM/Evm-Calls-With-Fee-Proxy)
 
 ---
 
