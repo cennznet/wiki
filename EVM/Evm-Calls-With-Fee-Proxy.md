@@ -1,13 +1,20 @@
 ## Calling the EVM with specified fee preferences
 
-The CENNZnet EVM integration allows for users to call smart contract methods using the CENNZnet runtime.
-One downside is that all transaction fees are paid in CENNZnet's native fee currency (CPAY). 
+The CENNZnet EVM integration allows for users to call smart contract methods from an Ethereum wallet.
+CENNZnet also includes multicurrency fee payment integration so that a user can call the EVM and pay the transaction
+fees in any asset, not just CPAY. This allows users to call our fee preferences proxy and specify the asset they 
+would like to use to pay the transaction fees. 
 
-We have allowed for users to call our fee preferences proxy and specify the asset they would like to use to pay the 
-transaction fees
+One requirement for this is that there is liquidity in CENNZX for that asset with CPAY. This is due to the fact
+that behind the scenes, CENNZX is used to swap the desired fee asset to CPAY.
 
-To get started, let's take a look at a standard Transfer Solidity transaction using CENNZnet's EVM. This is similar
-to calling GenericAsset.transfer, however we are using the EVM as an entry point to the runtime.
+We can use the multicurrency fee payment feature by calling the callWithFeePreferences method where the target is the
+dedicated FEE PROXY. The address for the FEE PROXY is below:
+```
+FEE_PROXY = 0x00000000000000000000000000000000000004bb
+```
+
+To get started, let's take a look at a standard ERC20 transfer using CENNZnet's EVM. 
 
 ```
     function transfer(address who, uint256 amount)
