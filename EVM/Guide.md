@@ -44,12 +44,12 @@ CENNZ is also a 4dp token but does not require any special handling as per the E
 ### CPAY Transfer Examples
 The following line of solidity code transfers `1 CPAY` to the `receiver`
 ```solidity
-receiver.call{value: 1 ether}("");
+receiver.call{value: 1 ether}("")
 ```
 
 Transfers `1.0001 CPAY` to `receiver` (i.e rounds up by `0.0001 CPAY`)
 ```solidity
-receiver.call{value: 1 ether + 1 wei}("");
+receiver.call{value: 1 ether + 1 wei}("")
 ```
 
 
@@ -156,7 +156,7 @@ pragma solidity ^0.8.13;
 import "@openzeppelin/contracts/interfaces/IERC20";
 
 // CENNZ testnet address with assetId 16000
-address cennz = 0xcCccccCc00003E80000000000000000000000000;
+address cennz = 0xcCccccCc00003E80000000000000000000000000
 
 function balanceOfProxy(address who) public view returns (uint256) {
     return IERC20(cennz).balanceOf(who);

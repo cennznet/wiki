@@ -40,7 +40,7 @@ docker run -p 9933:9933 cennznet/cennznet:2.1.0 --dev --tmp
 ```
 
 setup hardhat config 👷‍♀️
-```json
+```
 // hardhat.config.js
   networks: {
     cennznet: {
@@ -56,7 +56,7 @@ setup hardhat config 👷‍♀️
 
 That's it! you can run scripts and deploy contracts just like a regular Ethereum node.
 
-?> **[Keep reading](dapp-development-guides/EVM/Guide.md)** to learn more about building on the CENNZnet EVM  
+?> **[Keep reading](EVM/Guide.md)** to learn more about building on the CENNZnet EVM  
 
 ## Operator Quick Start
 

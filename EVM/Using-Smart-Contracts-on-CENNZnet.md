@@ -4,7 +4,7 @@
 
 This guide shows you how to deploy and execute Smart Contracts natively on CENNZnet. While you can use any Ethereum dev tools on CENNZnet, we will be using the [Remix IDE](https://remix.ethereum.org/) in this guide.
 
-CENNZnet's EVM runtime module provides the environment to run Smart Contracts. See the [EVM module documentation](runtime-modules/EVM) for more details on the fees and considerations when using Smart Contracts.
+CENNZnet's EVM runtime module provides the environment to run Smart Contracts. See the [EVM module documentation](../Runtime-modules/EVM.md) for more details on the fees and considerations when using Smart Contracts.
 
 ## Migrating from Ethereum to CENNZnet demo video
 https://youtu.be/f4wblOufvs4
@@ -28,7 +28,7 @@ Follow the [Remix docs](https://remix-ide.readthedocs.io/en/latest/create_deploy
 ### Compile the contract
 
 Go to the SOLIDITY COMPILER tab in Remix and compile the contract:
-![compile-contract](../../assets/images/smart-contract/compile-contract.png)
+![compile-contract](../assets/images/smart-contract/compile-contract.png)
 
 ### Deploy the contract
 
@@ -36,10 +36,10 @@ Go to the DEPLOY & RUN TRANSACTIONS tab in Remix.
 
 *Select Injected Web3 for Environment.* This will connect to the network that MetaMask is connected to. MetaMask should now be configured to CENNZnet.
 
-![deploy-contract](../../assets/images/smart-contract/deploy-contract.png)
+![deploy-contract](../assets/images/smart-contract/deploy-contract.png)
 
 ## Execute a contract
 
 Once deployed, you can use the DEPLOY & RUN TRANSACTIONS tab in Remix to interact with the contract.
 
-![execute-contract](../../assets/images/smart-contract/execute-contract.png)
+![execute-contract](../assets/images/smart-contract/execute-contract.png)
