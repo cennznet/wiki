@@ -7,16 +7,16 @@
     - [Repositories](Getting-started/CENNZnet-repos)
     - [Where to find help?](Getting-started/Where-to-find-help)
     - [Contributing](Getting-started/Contributing)
-
 ---
-
+- EVM / Smart Contracts
+    - [Using Smart Contracts](EVM/Using-Smart-Contracts-on-CENNZnet)
+    - [Using the EVM](EVM/Guide)
+    - [Fee Preference Calls](EVM/Evm-Calls-With-Fee-Proxy)
+---
 - DApp Development Guides
 	- [How to build a DApp](dapp-development-guides/How-to-build-a-DApp)
 	- [Network Fees](dapp-development-guides/Network-fees)
 	- [Token Economy](dapp-development-guides/Token-Economy)
-    - EVM / Smart Contracts
-        - [Using Smart Contracts](dapp-development-guides/EVM/Using-Smart-Contracts-on-CENNZnet)
-        - [Using the EVM](dapp-development-guides/EVM/Guide.md)
     - NFT
         - [Intro](dapp-development-guides/NFT/How-to-design-NFTs)
         - [Metadata Standard](dapp-development-guides/NFT/NFT-metadata-standard)
@@ -59,7 +59,6 @@
     - [NFT](Runtime-modules/NFT)
     - [Staking](Runtime-modules/Staking)
     - [Sylo Runtime Modules](Runtime-modules/Sylo-Runtime-Modules)
-
 ---
 
 - Dev Tools ✨
