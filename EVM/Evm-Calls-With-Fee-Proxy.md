@@ -7,7 +7,8 @@ One restriction is that there must be liquidity in CENNZX for the fee asset and 
 that behind the scenes, CENNZX is used to swap the desired fee asset to CPAY (ensuring network fee is always settled in CPAY terms).
 Ultimately this means the user doesn't need to hold any CPAY, only their specified or application specific fee asset
 
-To use multi-currency fee payment calls should be wrapped via the `callWithFeePreferences` method using the fee proxy precompile (`0x00000000000000000000000000000000000004bb`)
+To use multi-currency fee payment calls should be wrapped via the `callWithFeePreferences` method using the fee proxy precompile.
+It is available at address `0x00000000000000000000000000000000000004bb` on all networks.
 ```solidity
 /// @param feeTokenAddress derived address of the generic asset for fee payment
 /// @param slippage max price slippage for the fee payment (expressed as numerator of x/1000)
@@ -58,7 +59,7 @@ Now dispatch the CENNZ transfer via the fee proxy precompile
 
     const feeProxyAddress = '0x00000000000000000000000000000000000004bb';
     const feeProxy = new Contract(feeProxyAddress, feeProxyAbi, cennznetSigner);
-    // The asset to use as the fee payment asset
+    // CENNZ testnet token address derived from the generic asset Id (`16000`)
     const cennzTokenAddress = 0xcCccccCc00003E80000000000000000000000000;
     // The slippage value for exchanging between payment asset and CPAY (out of 1000)
     const slippage = 50; // 5%
