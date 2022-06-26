@@ -35,8 +35,8 @@ To keep compatibility simple CENNZnet takes care of scaling inputs down by `1e-1
 Any fractional amounts < `1e14` / `0.0001 CPAY` are always rounded up only by adding `1e14`
 
 **CENNZ** is available as an ERC20 token at:
-- **Mainnet** address: `0xcCccccCc00003E80000000000000000000000000`
-- **Testnet** address: `0xcCcCCccC00000001000000000000000000000000`
+- **Mainnet** address: `0xcCcCCccC00000001000000000000000000000000`
+- **Testnet** address: `0xcCccccCc00003E80000000000000000000000000`
 
 CENNZ is also a 4dp token but does not require any special handling as per the ERC20 standard.
 
