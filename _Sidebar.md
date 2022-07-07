@@ -11,7 +11,8 @@
 - EVM / Smart Contracts
     - [Using Smart Contracts](EVM/Using-Smart-Contracts-on-CENNZnet)
     - [Using the EVM](EVM/Guide)
-    - [Fee Preference Calls](EVM/Evm-Calls-With-Fee-Proxy)
+    - [Fee Proxy Precompile](EVM/Evm-Calls-With-Fee-Proxy)
+    - [Token Peg Precompile](EVM/erc20-peg-precompile.md)
 ---
 - DApp Development Guides
 	- [How to build a DApp](dapp-development-guides/How-to-build-a-DApp)
