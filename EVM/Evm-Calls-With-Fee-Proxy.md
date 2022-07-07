@@ -54,14 +54,13 @@ the value of transferInput is encoded similar to the following:
 Now dispatch the CENNZ transfer via the fee proxy precompile
 ```javascript
     const feeProxyAbi = [
-        'function callWithFeePreferences(address asset, uint32 slippage, address target, bytes input)',
+        'function callWithFeePreferences(address asset, uint128 maxPayment, address target, bytes input)',
     ]
 
     const feeProxyAddress = '0x00000000000000000000000000000000000004bb';
     const feeProxy = new Contract(feeProxyAddress, feeProxyAbi, cennznetSigner);
     // CENNZ testnet token address derived from the generic asset Id (`16000`)
     const cennzTokenAddress = 0xcCccccCc00003E80000000000000000000000000;
-    // The slippage value for exchanging between payment asset and CPAY (out of 1000)
     const maxPayment = 50000; // 5 CENNZ
     // Call the fee proxy contract with the above values and input from the previous example.
     feeProxy.callWithFeePreferences(cennzTokenAddress, maxPayment, cennzTokenAddress, transferInput);
