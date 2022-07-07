@@ -1,4 +1,4 @@
-## Calling the EVM with specified fee preferences
+## Calling the EVM with fee preferences
 
 The CENNZnet EVM includes multi-currency fee payment so users can pay transaction fees in any asset, not just CPAY.
 To use multi-currency functionality calls should be proxied via a 'fee proxy' precompile, which allows users to specify
@@ -11,10 +11,10 @@ To use multi-currency fee payment calls should be wrapped via the `callWithFeePr
 It is available at address `0x00000000000000000000000000000000000004bb` on all networks.
 ```solidity
 /// @param feeTokenAddress derived address of the generic asset for fee payment
-/// @param slippage max price slippage for the fee payment (expressed as numerator of x/1000)
+/// @param maxPayment the maximum quantity of fee token to pay or fail
 /// @param targetContract the real contract to call
 /// @param targetInput the ethereum abi encoded input for targetContract
-function callWithFeePreferences(address feeTokenAddress, uint32 slippage, address targetContract, bytes targetInput);
+function callWithFeePreferences(address feeTokenAddress, uint128 maxPayment, address targetContract, bytes targetInput);
 ```
 
 To get started, let's take a look a standard ERC20 transfer using CENNZnet's EVM, where fees will be paid using CENNZ.
@@ -62,7 +62,7 @@ Now dispatch the CENNZ transfer via the fee proxy precompile
     // CENNZ testnet token address derived from the generic asset Id (`16000`)
     const cennzTokenAddress = 0xcCccccCc00003E80000000000000000000000000;
     // The slippage value for exchanging between payment asset and CPAY (out of 1000)
-    const slippage = 50; // 5%
+    const maxPayment = 50000; // 5 CENNZ
     // Call the fee proxy contract with the above values and input from the previous example.
-    feeProxy.callWithFeePreferences(cennzTokenAddress, slippage, cennzTokenAddress, transferInput);
+    feeProxy.callWithFeePreferences(cennzTokenAddress, maxPayment, cennzTokenAddress, transferInput);
 ```
