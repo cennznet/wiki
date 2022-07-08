@@ -30,7 +30,7 @@ NFTs on CENNZnet should be linked to an offchain metadata file in the JSON forma
 ## Metadata Reference Scheme
 
 When creating an NFT series a metadata reference scheme must be specified.
-There are two supported schemes with different tradeoffs.
+There a few supported schemes with different tradeoffs.
 
 ### 1) HTTP(S)
 
@@ -69,4 +69,4 @@ e.g. `ipfs://bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi.json` r
 
 This will require the series creator to upload individual CIDs/file hashes with each token.
 It provides the same as 2) with flexibility to extend a collection or create metadata incrementally.
-This option is not supported initially for simplicity sake.
+This option is **not** supported initially for simplicity sake.
