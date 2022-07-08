@@ -8,21 +8,24 @@
     - [Where to find help?](Getting-started/Where-to-find-help)
     - [Contributing](Getting-started/Contributing)
 ---
+
 - EVM / Smart Contracts
     - [Using Smart Contracts](EVM/Using-Smart-Contracts-on-CENNZnet)
     - [Using the EVM](EVM/Guide)
     - [Fee Proxy Precompile](EVM/Evm-Calls-With-Fee-Proxy)
     - [Token Peg Precompile](EVM/erc20-peg-precompile.md)
 ---
+
+- NFT
+    - [Metadata Standard](NFT/NFT-metadata-standard)
+    - [Royalties](NFT/NFT-royalties)
+    - [Concepts](NFT/How-to-design-NFTs)
+---
+
 - DApp Development Guides
 	- [How to build a DApp](dapp-development-guides/How-to-build-a-DApp)
 	- [Network Fees](dapp-development-guides/Network-fees)
 	- [Token Economy](dapp-development-guides/Token-Economy)
-    - NFT
-        - [Intro](dapp-development-guides/NFT/How-to-design-NFTs)
-        - [Metadata Standard](dapp-development-guides/NFT/NFT-metadata-standard)
-        - [Royalties](dapp-development-guides/NFT/NFT-royalties)
-
 ---
 
 - API Guides
