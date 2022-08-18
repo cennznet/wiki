@@ -36,14 +36,14 @@ const seriesId = '<YOUR_SERIES_ID>'; // e.g. 0
 const collectionIdHex = numberToHex(collectionId); // 0x0108
 const seriesIdHex = numberToHex(seriesId); // 0x00
 // convert to 8 hex character so collectionId becomes 0x00000108 and series id 0x00000000 
-// pad withh remaining 16 0s
+// pad with remaining 16 0s
 let nftContractAddress = web3.utils.toChecksumAddress("0xAAAAAAAA" + "0x00000108" + "0x00000000" + "0000000000000000");
 ```
 Contract address - 0xaAaAAAAA00000108000000000000000000000000
 
 The following code snippet interacts with the testnet NFT token address using its IERC721Metadata interface.
 
-?> **Important** use solidity `^0.8.13`
+ **Important** use solidity `^0.8.13`
 
 ```solidity
 pragma solidity ^0.8.13;
