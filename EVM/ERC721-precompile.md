@@ -117,11 +117,14 @@ Contract address is 0xaAAAaaAA00000000000000000000000000000000
 
 Now you can use this NFT to do transaction like approve and transferFrom
 
+![NFT3](images/NFT3.png)
+
+![NFT3](images/NFT4.png)
 
 Can look at the event on block explorer to verify or check the balance of the owner which changes from 100 to 99
 <br><br>
 <b>INITIAL BALANCE</b>
-![NFT3](images/balance0.png)
+![Balance](images/balance0.png)
 
 <br>
 <B>BALANCE  AFTER TRANSFER FROM</B>
