@@ -10,7 +10,8 @@ This allows native CENNZnet  NFTs to appear as regular ERC721s to ethereum tooli
 NFT implement the ERC721 abi. This allows them to be fully programmable and used anywhere a normal ERC721 token can.
 To interact with a given CENNZnet NFT first derive its corresponding contract address.
 
-On CENNZnet, NFT is combination of collection id, series id and serial number <br>
+On CENNZnet, a native NFT Id is a combination of collection id, series id and serial number
+
 NFT - [0, 0, 0] - nft created in collection id 0, series id 0 and serial number 0
 
 Let us take a testnet NFT for [example](https://nikau.uncoverexplorer.com/extrinsic/4845487-1)
@@ -18,15 +19,11 @@ which is at collection id - 264, series id - 0 and serial number 0
 
 Steps to derive the contract address of this NFT
 1. All NFT starts with `0xAAAAAAAA`
-    The following distribution has been decided for the precompiles
-    0-1023: Ethereum Mainnet Precompiles
-    1024-2047 Precompiles that are not in Ethereum Mainnet but are neither CENNZnet specific
-    2048-4095 CENNZnet specific precompiles
    NFT precompile addresses can only fall between
    0xAAAAAAAA00000000000000000000000000000000 - 0xAAAAAAAAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
    /// The precompile for NFT series (X,Y) where X & Y are a u32 (i.e.8 bytes), 
       0xAAAAAAAA + Bytes(CollectionId) + Bytes(SeriesId)
-2. Get numberToHex of collection Id and series Id and derive the contract address
+2. Get numberToHex of collection id and series id and derive the contract address
 
 ```typescript 
 import web3 from 'web3';
@@ -71,7 +68,7 @@ interface IERC721Metadata is IERC721 {
 }
 
 ```
-
+## Viewing NFTs
 ![NFT](images/NFT1.png) 
 
 To check this NFT  on remix, we use contract at address (0xaAaAAAAA00000108000000000000000000000000)
@@ -81,6 +78,8 @@ Please ensure you are connected to the right chain on metamask (https://chainlis
 
 You should be able to read all the state info of any NFT on CENNZnet
 
+## Transferring NFTs
+
 To do a transaction, the metamask address used should own the NFT. 
 Either transfer your CENNZnet NFT to you MetaMask wallet address or create new with eth wallet.
 Lets us now look at a way of creating CENNZnet NFT via eth wallet
@@ -89,7 +88,7 @@ Lets us now look at a way of creating CENNZnet NFT via eth wallet
 		if (typeof global.ethereum !== "undefined") {
 			ethereum = global.ethereum;
 		}
-		let api = await Api.create({ network: "nikau" });
+		let api = await Api.create({ network: "local" });
 
 		const collectionName = "col1";
 		await api.tx.nft
@@ -127,7 +126,7 @@ Can look at the event on block explorer to verify or check the balance of the ow
 ![Balance](images/balance0.png)
 
 <br>
-<B>BALANCE  AFTER TRANSFER FROM</B>
+<B>BALANCE  AFTER TRANSFER_FROM</B>
 
 ![NFT3](images/balance1.png)
 
